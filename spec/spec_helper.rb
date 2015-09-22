@@ -1,0 +1,12 @@
+require_relative "../lib/rbattlenet.rb"
+require 'vcr'
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/vcr_cassettes'
+  c.hook_into :webmock
+end
+
+RSpec.configure do |config|
+  config.color = true
+end
+#https://github.com/BinaryMuse/battlenet/blob/master/spec/integration/character_spec.rb
