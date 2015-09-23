@@ -6,7 +6,7 @@ RBattlenet.authenticate(key)
 RBattlenet.set_region("us", "en_us")
 
 
-response = RBattlenet::Wow::Character.search("milhause", "saurfang", "pet slots")
+response = RBattlenet::Wow::Achievement.search("2144")
 
 puts response
 

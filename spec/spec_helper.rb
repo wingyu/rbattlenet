@@ -9,4 +9,3 @@ end
 RSpec.configure do |config|
   config.color = true
 end
-#https://github.com/BinaryMuse/battlenet/blob/master/spec/integration/character_spec.rb
