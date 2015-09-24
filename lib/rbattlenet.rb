@@ -5,6 +5,7 @@ require_relative "./rbattlenet/wow/character.rb"
 require_relative "./rbattlenet/wow/achievement.rb"
 require_relative "./rbattlenet/wow/auction.rb"
 require_relative "./rbattlenet/wow/battlepet.rb"
+require_relative "./rbattlenet/wow/challenge.rb"
 
 
 module RBattlenet
@@ -13,6 +14,7 @@ module RBattlenet
 
   def self.authenticate(api_key)
     const_set("API_KEY", api_key)
+    @@options = { query: {locale: @@locale, apikey: API_KEY} }
   end
 
   def self.set_region(region, locale)
@@ -24,13 +26,29 @@ module RBattlenet
 
   private
 
-  def self.base_uri(path)
-    "https://#{@@region}.api.battle.net/#{path}&locale=#{@@locale}&apikey=#{API_KEY}"
-  end
+  class << self
+    def get(uri, options = @@options)
+      HTTParty.get(uri, options)
+    end
 
-  def self.parse_field(field)
-    unless field.nil?
-      field.gsub(/\s\S/,&:upcase).gsub(/\s/, "")
+    def base_uri(path)
+      "https://#{@@region}.api.battle.net/#{path}"
+    end
+
+    def parse_spaces(input)
+      input.gsub(" ", '%20')
+    end
+
+    def merge_options(options)
+      query_fields = options.inject(&:merge)
+
+      {query: @@options[:query].merge(query_fields)}
+    end
+
+    def parse_field(field)
+      unless field.nil?
+        field.gsub(/\s\S/,&:upcase).gsub(/\s/, "")
+      end
     end
   end
 end

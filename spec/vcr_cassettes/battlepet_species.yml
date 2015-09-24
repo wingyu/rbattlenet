@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Thu, 24 Sep 2015 05:51:35 GMT
+      - Thu, 24 Sep 2015 12:25:48 GMT
       Server:
       - Apache
       Vary:
@@ -31,7 +31,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1e-71.mashery.com
+      - prod-j-worker-us-east-1b-76.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -39,15 +39,15 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '9'
+      - '19'
       X-Plan-Quota-Reset:
-      - Thursday, September 24, 2015 6:00:00 AM GMT
+      - Thursday, September 24, 2015 1:00:00 PM GMT
       Content-Length:
       - '512'
       Connection:
       - keep-alive
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"speciesId":258,"petTypeId":9,"creatureId":42078,"name":"Mini Thor","canBattle":true,"icon":"t_roboticon","description":"Powerful
         artillery of the Terran army. The Thor is always the first one in and the
         last one out!","source":"Promotion: StarCraft II: Wings of Liberty Collector''s
@@ -56,5 +56,5 @@ http_interactions:
         Grenade","icon":"inv_misc_pyriumgrenade","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":2,"order":5,"requiredLevel":20,"id":293,"name":"Launch
         Rocket","icon":"ability_mount_rocketmount","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":1,"order":4,"requiredLevel":15,"id":634,"name":"Minefield","icon":"inv_misc_bomb_09","cooldown":5,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false}]}'
     http_version: 
-  recorded_at: Thu, 24 Sep 2015 05:51:35 GMT
+  recorded_at: Thu, 24 Sep 2015 12:25:48 GMT
 recorded_with: VCR 2.9.3

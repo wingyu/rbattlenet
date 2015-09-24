@@ -3,12 +3,13 @@ module RBattlenet
     class Character
       def self.search(name, realm, field = nil)
         field = RBattlenet.parse_field(field)
-        realm = realm.gsub(" ", '%20')
+        realm =  RBattlenet.parse_spaces(realm)
+        options = RBattlenet.merge_options([{fields: field}])
 
         uri = RBattlenet.
-          base_uri("#{GAME}/character/#{realm}/#{name}?fields=#{field}")
+          base_uri("#{GAME}/character/#{realm}/#{name}")
 
-        HTTParty.get(uri)
+        RBattlenet.get(uri, options)
       end
     end
   end

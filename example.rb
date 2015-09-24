@@ -3,8 +3,8 @@ require_relative "./lib/rbattlenet.rb"
 key =  ENV["API"]
 
 RBattlenet.authenticate(key)
-RBattlenet.set_region("us", "en_us")
+RBattlenet.set_region("eu", "en_gb")
 
 
-response = RBattlenet::Wow::Battlepet.search_stats(258, 25, 5, 4)
+response = RBattlenet::Wow::Character.search("madfrogz", "outland", "achievements")
 puts response

@@ -5,7 +5,7 @@ module RBattlenet
         uri = RBattlenet.
           base_uri("#{GAME}/achievement/#{id}?")
 
-        HTTParty.get(uri)
+        RBattlenet.get(uri)
       end
     end
   end

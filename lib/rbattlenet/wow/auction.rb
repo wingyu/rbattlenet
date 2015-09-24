@@ -4,7 +4,7 @@ module RBattlenet
       def self.search(realm)
         uri = RBattlenet.base_uri("#{GAME}/auction/data/#{realm}?")
 
-        HTTParty.get(uri)
+        RBattlenet.get(uri)
       end
     end
   end
