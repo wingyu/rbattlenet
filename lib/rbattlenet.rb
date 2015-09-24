@@ -4,6 +4,8 @@ require "rbattlenet/version"
 require_relative "./rbattlenet/wow/character.rb"
 require_relative "./rbattlenet/wow/achievement.rb"
 require_relative "./rbattlenet/wow/auction.rb"
+require_relative "./rbattlenet/wow/battlepet.rb"
+
 
 module RBattlenet
   @@region = "us"
