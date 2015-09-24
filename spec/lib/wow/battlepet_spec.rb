@@ -12,7 +12,7 @@ describe RBattlenet::Wow::Battlepet do
         ability = RBattlenet::Wow::Battlepet.
           search_abilities(640)
 
-        expect(ability['id']).to eq 640 
+        expect(ability['id']).to eq 640
       end
     end
   end
@@ -23,7 +23,7 @@ describe RBattlenet::Wow::Battlepet do
         species = RBattlenet::Wow::Battlepet.
           search_species(258)
 
-        expect(species['speciesId']).to eq 258 
+        expect(species['speciesId']).to eq 258
       end
     end
   end

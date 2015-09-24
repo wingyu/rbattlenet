@@ -37,7 +37,7 @@ describe RBattlenet::Wow::Character do
     end
 
     context "non-US region" do
-      it "fetches non-US character data" do
+      it "fetches character data" do
         VCR.use_cassette('character_madfrogz') do
           RBattlenet.set_region("eu", "en_GB")
           character = RBattlenet::Wow::Character.

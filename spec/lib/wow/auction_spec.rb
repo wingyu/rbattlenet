@@ -5,6 +5,7 @@ describe RBattlenet::Wow::Auction do
     RBattlenet.authenticate(ENV["API"])
     RBattlenet.set_region("us", "en_us")
   end
+
   describe "#search" do
     context "US region" do
       it "fetches auction data" do
@@ -18,7 +19,7 @@ describe RBattlenet::Wow::Auction do
     end
 
     context "non-US region" do
-      it "fetches non-US auction data" do
+      it "fetches auction data" do
         VCR.use_cassette('auction_eu') do
           RBattlenet.set_region("eu", "en_GB")
 
