@@ -7,44 +7,21 @@ describe RBattlenet::Wow::Character do
   end
 
   describe "#search" do
-    context "US region" do
-      it "fetches character data" do
-        VCR.use_cassette('character_milhause') do
-          character = RBattlenet::Wow::Character.
-            search("milhause", "saurfang")
+    it "fetches character data" do
+      VCR.use_cassette('character_profile') do
+        character = RBattlenet::Wow::Character.
+          search("milhause", "saurfang")
 
-          expect(character['level']).to eq 100
-        end
-      end
-
-      it "fetches character data with multi-worded realm" do
-        VCR.use_cassette('character_agripper') do
-          character = RBattlenet::Wow::Character.
-            search("agripper", "Altar of Storms")
-
-          expect(character['level']).to eq 100
-        end
-      end
-
-      it "fetches optional field data" do
-        VCR.use_cassette('character_milhause_petslots') do
-          character = RBattlenet::Wow::Character.
-            search("milhause", "saurfang", "pet slots")
-
-          expect(character['petSlots'].count).to eq 3
-        end
+        expect(character['level']).to eq 100
       end
     end
 
-    context "non-US region" do
-      it "fetches character data" do
-        VCR.use_cassette('character_madfrogz') do
-          RBattlenet.set_region("eu", "en_GB")
-          character = RBattlenet::Wow::Character.
-            search("madfrogz", "outland")
+    it "fetches optional field data" do
+      VCR.use_cassette('character_fields') do
+        character = RBattlenet::Wow::Character.
+          search("milhause", "saurfang", "pet slots")
 
-          expect(character['level']).to eq 100
-        end
+        expect(character['petSlots'].count).to eq 3
       end
     end
   end

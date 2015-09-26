@@ -23,9 +23,9 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 26 Sep 2015 02:19:04 GMT
+      - Sat, 26 Sep 2015 03:01:44 GMT
       Last-Modified:
-      - Sat, 26 Sep 2015 02:04:44 GMT
+      - Sat, 26 Sep 2015 02:34:44 GMT
       Server:
       - Apache
       Vary:
@@ -33,7 +33,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1e-79.mashery.com
+      - prod-j-worker-us-east-1e-85.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -41,17 +41,17 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '4'
+      - '14'
       X-Plan-Quota-Reset:
-      - Saturday, September 26, 2015 3:00:00 AM GMT
+      - Saturday, September 26, 2015 4:00:00 AM GMT
       Content-Length:
-      - '203'
+      - '204'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"lastModified":1443233084000,"name":"Razors Edge","realm":"Saurfang","battlegroup":"AU/NZ
+      string: '{"lastModified":1443234884000,"name":"Razors Edge","realm":"Saurfang","battlegroup":"AU/NZ
         Battle Group","level":25,"side":0,"achievementPoints":2185,"emblem":{"icon":39,"iconColor":"ffb1b8b1","border":2,"borderColor":"ffffffff","backgroundColor":"ff4f2300"}}'
     http_version: 
-  recorded_at: Sat, 26 Sep 2015 02:19:05 GMT
+  recorded_at: Sat, 26 Sep 2015 03:01:45 GMT
 recorded_with: VCR 2.9.3

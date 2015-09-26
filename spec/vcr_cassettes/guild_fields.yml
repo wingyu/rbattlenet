@@ -23,9 +23,9 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 26 Sep 2015 02:29:34 GMT
+      - Sat, 26 Sep 2015 03:00:56 GMT
       Last-Modified:
-      - Sat, 26 Sep 2015 02:04:44 GMT
+      - Sat, 26 Sep 2015 02:34:44 GMT
       Server:
       - Apache
       Vary:
@@ -33,7 +33,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-68.mashery.com
+      - prod-j-worker-us-east-1d-70.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -41,9 +41,9 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '8'
+      - '15'
       X-Plan-Quota-Reset:
-      - Saturday, September 26, 2015 3:00:00 AM GMT
+      - Saturday, September 26, 2015 4:00:00 AM GMT
       Content-Length:
       - '13341'
       Connection:
@@ -51,7 +51,7 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJsYXN0TW9kaWZpZWQiOjE0NDMyMzMwODQwMDAsIm5hbWUiOiJSYXpvcnMg
+        eyJsYXN0TW9kaWZpZWQiOjE0NDMyMzQ4ODQwMDAsIm5hbWUiOiJSYXpvcnMg
         RWRnZSIsInJlYWxtIjoiU2F1cmZhbmciLCJiYXR0bGVncm91cCI6IkFVL05a
         IEJhdHRsZSBHcm91cCIsImxldmVsIjoyNSwic2lkZSI6MCwiYWNoaWV2ZW1l
         bnRQb2ludHMiOjIxODUsIm1lbWJlcnMiOlt7ImNoYXJhY3RlciI6eyJuYW1l
@@ -3291,5 +3291,5 @@ http_interactions:
         IjoyLCJib3JkZXJDb2xvciI6ImZmZmZmZmZmIiwiYmFja2dyb3VuZENvbG9y
         IjoiZmY0ZjIzMDAifX0=
     http_version: 
-  recorded_at: Sat, 26 Sep 2015 02:30:21 GMT
+  recorded_at: Sat, 26 Sep 2015 03:01:49 GMT
 recorded_with: VCR 2.9.3
