@@ -1,7 +1,7 @@
 module RBattlenet
   module Wow
     class Achievement
-      def self.search(id)
+      def self.find(id)
         uri = RBattlenet.
           base_uri("#{GAME}/achievement/#{id}?")
 

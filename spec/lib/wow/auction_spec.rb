@@ -6,15 +6,13 @@ describe RBattlenet::Wow::Auction do
     RBattlenet.set_region("us", "en_us")
   end
 
-  describe "#search" do
-    context "US region" do
-      it "fetches auction data" do
-        VCR.use_cassette('auction') do
-          auction = RBattlenet::Wow::Auction.
-            search("saurfang")
+  describe "#find" do
+    it "fetches auction data" do
+      VCR.use_cassette('auction') do
+        auction = RBattlenet::Wow::Auction.
+          find("saurfang")
 
-          expect(auction['files'].count).to eq 1
-        end
+        expect(auction['files'].count).to eq 1
       end
     end
   end

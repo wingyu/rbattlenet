@@ -1,7 +1,7 @@
 module RBattlenet
   module Wow
     class Challenge
-      def self.search_realm(realm)
+      def self.find_realm(realm)
         realm =  RBattlenet.parse_spaces(realm)
 
         uri = RBattlenet.
@@ -10,7 +10,7 @@ module RBattlenet
         RBattlenet.get(uri)
       end
 
-      def self.search_region
+      def self.find_region
         uri = RBattlenet.
           base_uri("#{GAME}/challenge/region")
 

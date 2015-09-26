@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 26 Sep 2015 03:01:25 GMT
+      - Sat, 26 Sep 2015 03:11:23 GMT
       Server:
       - Apache
       Vary:
@@ -31,7 +31,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1e-85.mashery.com
+      - prod-j-worker-us-east-1b-52.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -39,7 +39,7 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '8'
+      - '23'
       X-Plan-Quota-Reset:
       - Saturday, September 26, 2015 4:00:00 AM GMT
       Content-Length:
@@ -56,5 +56,5 @@ http_interactions:
         Grenade","icon":"inv_misc_pyriumgrenade","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":2,"order":5,"requiredLevel":20,"id":293,"name":"Launch
         Rocket","icon":"ability_mount_rocketmount","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":1,"order":4,"requiredLevel":15,"id":634,"name":"Minefield","icon":"inv_misc_bomb_09","cooldown":5,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false}]}'
     http_version: 
-  recorded_at: Sat, 26 Sep 2015 03:01:25 GMT
+  recorded_at: Sat, 26 Sep 2015 03:11:23 GMT
 recorded_with: VCR 2.9.3

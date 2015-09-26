@@ -6,11 +6,11 @@ describe RBattlenet::Wow::Achievement do
     RBattlenet.set_region("us", "en_us")
   end
 
-  describe "#search" do
+  describe "#find" do
     it "fetches achievement data" do
       VCR.use_cassette('achievement') do
         achievement = RBattlenet::Wow::Achievement.
-          search("2144")
+          find("2144")
 
         expect(achievement['points']).to eq 50
       end

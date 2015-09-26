@@ -6,11 +6,11 @@ describe "non-US region and locale functionality" do
     RBattlenet.set_region("us", "en_us")
   end
 
-  context "Character search" do
-    it "fetches optional field data" do
+  context "Find character" do
+    it "fetches parses and fetches optional field data" do
       VCR.use_cassette('query_fields') do
         character = RBattlenet::Wow::Character.
-          search("milhause", "saurfang", "pet slots")
+          find("milhause", "saurfang", "pet slots")
 
         expect(character['petSlots'].count).to eq 3
       end

@@ -1,7 +1,7 @@
 module RBattlenet
   module Wow
     class Character
-      def self.search(name, realm, field = nil)
+      def self.find(name, realm, field = nil)
         field = RBattlenet.parse_field(field)
         realm =  RBattlenet.parse_spaces(realm)
         options = RBattlenet.merge_options([{fields: field}])

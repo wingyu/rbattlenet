@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 26 Sep 2015 03:00:54 GMT
+      - Sat, 26 Sep 2015 03:11:17 GMT
       Last-Modified:
       - Mon, 02 Mar 2015 15:49:44 GMT
       Server:
@@ -33,7 +33,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-77.mashery.com
+      - prod-j-worker-us-east-1e-72.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -41,7 +41,7 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '13'
+      - '28'
       X-Plan-Quota-Reset:
       - Saturday, September 26, 2015 4:00:00 AM GMT
       Content-Length:
@@ -53,5 +53,5 @@ http_interactions:
       string: '{"lastModified":1425311384000,"name":"Milhause","realm":"Saurfang","battlegroup":"AU/NZ
         Battle Group","class":10,"race":25,"gender":0,"level":100,"achievementPoints":1140,"thumbnail":"internal-record-3695/234/162958314-avatar.jpg","calcClass":"f","petSlots":[{"slot":1,"isEmpty":true,"isLocked":true,"abilities":[]},{"slot":2,"isEmpty":true,"isLocked":true,"abilities":[]},{"slot":3,"isEmpty":true,"isLocked":true,"abilities":[]}],"totalHonorableKills":1435}'
     http_version: 
-  recorded_at: Sat, 26 Sep 2015 03:01:42 GMT
+  recorded_at: Sat, 26 Sep 2015 03:11:46 GMT
 recorded_with: VCR 2.9.3

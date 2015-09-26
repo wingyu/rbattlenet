@@ -1,7 +1,7 @@
 module RBattlenet
   module Wow
     class Guild
-      def self.search(name, realm, field = nil)
+      def self.find(name, realm, field = nil)
         name = RBattlenet.parse_spaces(name)
         realm =  RBattlenet.parse_spaces(realm)
         options = RBattlenet.merge_options([{fields: field}])
