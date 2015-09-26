@@ -7,6 +7,7 @@ require_relative "./rbattlenet/wow/auction.rb"
 require_relative "./rbattlenet/wow/battlepet.rb"
 require_relative "./rbattlenet/wow/challenge.rb"
 require_relative "./rbattlenet/wow/item.rb"
+require_relative "./rbattlenet/wow/guild.rb"
 
 
 module RBattlenet
