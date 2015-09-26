@@ -48,9 +48,12 @@ module RBattlenet
       {query: @@options[:query].merge(query_fields)}
     end
 
-    def parse_field(field)
-      unless field.nil?
-        field.gsub(/\s\S/,&:upcase).gsub(/\s/, "")
+    def parse_fields(fields)
+      unless fields.nil?
+        fields.map! do |field|
+          field.gsub(/\s\S/,&:upcase).gsub(/\s/, "")
+        end
+        fields.join("+")
       end
     end
   end

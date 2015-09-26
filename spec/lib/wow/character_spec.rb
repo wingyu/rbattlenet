@@ -19,7 +19,7 @@ describe RBattlenet::Wow::Character do
     it "fetches optional field data" do
       VCR.use_cassette('character_fields') do
         character = RBattlenet::Wow::Character.
-          find("milhause", "saurfang", "pet slots")
+          find("milhause", "saurfang", ["pet slots"])
 
         expect(character['petSlots'].count).to eq 3
       end
