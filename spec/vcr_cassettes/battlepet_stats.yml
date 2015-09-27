@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sun, 27 Sep 2015 11:17:07 GMT
+      - Sun, 27 Sep 2015 12:08:53 GMT
       Server:
       - Apache
       Vary:
@@ -31,7 +31,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-52.mashery.com
+      - prod-j-worker-us-east-1e-85.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -39,9 +39,9 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '56'
+      - '17'
       X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 12:00:00 PM GMT
+      - Sunday, September 27, 2015 1:00:00 PM GMT
       Content-Length:
       - '103'
       Connection:
@@ -50,5 +50,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"speciesId":258,"breedId":5,"petQualityId":4,"level":25,"health":1587,"power":315,"speed":297}'
     http_version: 
-  recorded_at: Sun, 27 Sep 2015 11:17:07 GMT
+  recorded_at: Sun, 27 Sep 2015 12:08:53 GMT
 recorded_with: VCR 2.9.3

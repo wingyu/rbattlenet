@@ -17,6 +17,7 @@ require_relative "./rbattlenet/wow/data_resources.rb"
 
 
 require_relative "./rbattlenet/d3/profile.rb"
+require_relative "./rbattlenet/d3/data_resources.rb"
 
 module RBattlenet
   @@region = "us"

@@ -16,4 +16,15 @@ describe RBattlenet::D3::Profile do
       end
     end
   end
+
+  describe "#find_hero" do
+    it "fetches hero data" do
+      VCR.use_cassette('profile_hero') do
+        hero = RBattlenet::D3::Profile.
+          find_hero("FaYe-2543", 58290259)
+
+        expect(hero['class']).to eq "demon-hunter"
+      end
+    end
+  end
 end
