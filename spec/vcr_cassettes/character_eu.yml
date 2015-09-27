@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sun, 27 Sep 2015 05:34:17 GMT
+      - Sun, 27 Sep 2015 07:58:14 GMT
       Last-Modified:
       - Wed, 13 May 2015 09:51:30 GMT
       Server:
@@ -33,7 +33,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-67.mashery.com
+      - prod-j-worker-us-east-1b-59.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -41,9 +41,9 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '42'
+      - '55'
       X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 6:00:00 AM GMT
+      - Sunday, September 27, 2015 8:00:00 AM GMT
       Content-Length:
       - '200'
       Connection:
@@ -52,5 +52,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"lastModified":1431510690000,"name":"Madfrogz","realm":"Outland","battlegroup":"Misery","class":1,"race":1,"gender":1,"level":100,"achievementPoints":6635,"thumbnail":"outland/175/77018287-avatar.jpg","calcClass":"Z","totalHonorableKills":14209}'
     http_version: 
-  recorded_at: Sun, 27 Sep 2015 05:34:22 GMT
+  recorded_at: Sun, 27 Sep 2015 07:58:21 GMT
 recorded_with: VCR 2.9.3

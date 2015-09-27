@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sun, 27 Sep 2015 05:34:45 GMT
+      - Sun, 27 Sep 2015 07:58:39 GMT
       Last-Modified:
       - Mon, 02 Mar 2015 15:49:44 GMT
       Server:
@@ -33,7 +33,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1e-71.mashery.com
+      - prod-j-worker-us-east-1b-76.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -41,9 +41,9 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '50'
+      - '63'
       X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 6:00:00 AM GMT
+      - Sunday, September 27, 2015 8:00:00 AM GMT
       Content-Length:
       - '228'
       Connection:
@@ -53,5 +53,5 @@ http_interactions:
       string: '{"lastModified":1425311384000,"name":"Milhause","realm":"Saurfang","battlegroup":"AU/NZ
         Battle Group","class":10,"race":25,"gender":0,"level":100,"achievementPoints":1140,"thumbnail":"internal-record-3695/234/162958314-avatar.jpg","calcClass":"f","totalHonorableKills":1435}'
     http_version: 
-  recorded_at: Sun, 27 Sep 2015 05:34:46 GMT
+  recorded_at: Sun, 27 Sep 2015 07:58:39 GMT
 recorded_with: VCR 2.9.3

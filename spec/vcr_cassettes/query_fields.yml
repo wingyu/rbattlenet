@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sun, 27 Sep 2015 05:34:20 GMT
+      - Sun, 27 Sep 2015 07:58:19 GMT
       Last-Modified:
       - Mon, 02 Mar 2015 15:49:44 GMT
       Server:
@@ -33,7 +33,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-56.mashery.com
+      - prod-j-worker-us-east-1e-72.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -41,9 +41,9 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '41'
+      - '54'
       X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 6:00:00 AM GMT
+      - Sunday, September 27, 2015 8:00:00 AM GMT
       Content-Length:
       - '371'
       Connection:
@@ -54,5 +54,5 @@ http_interactions:
         Battle Group","class":10,"race":25,"gender":0,"level":100,"achievementPoints":1140,"thumbnail":"internal-record-3695/234/162958314-avatar.jpg","calcClass":"f","guild":{"name":"Razors
         Edge","realm":"Saurfang","battlegroup":"AU/NZ Battle Group","members":331,"achievementPoints":2185,"emblem":{"icon":39,"iconColor":"ffb1b8b1","border":2,"borderColor":"ffffffff","backgroundColor":"ff4f2300"}},"petSlots":[{"slot":1,"isEmpty":true,"isLocked":true,"abilities":[]},{"slot":2,"isEmpty":true,"isLocked":true,"abilities":[]},{"slot":3,"isEmpty":true,"isLocked":true,"abilities":[]}],"totalHonorableKills":1435}'
     http_version: 
-  recorded_at: Sun, 27 Sep 2015 05:34:21 GMT
+  recorded_at: Sun, 27 Sep 2015 07:58:19 GMT
 recorded_with: VCR 2.9.3

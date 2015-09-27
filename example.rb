@@ -4,5 +4,5 @@ key =  ENV["API"]
 
 RBattlenet.authenticate(key)
 
-response = RBattlenet::Wow::Realm.find
+response = RBattlenet::Wow::DataResources.find_pet_types
 p response

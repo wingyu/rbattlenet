@@ -23,9 +23,9 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sun, 27 Sep 2015 05:34:25 GMT
+      - Sun, 27 Sep 2015 07:58:24 GMT
       Last-Modified:
-      - Sun, 27 Sep 2015 05:27:30 GMT
+      - Sun, 27 Sep 2015 07:27:30 GMT
       Server:
       - Apache
       Vary:
@@ -33,7 +33,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-69.mashery.com
+      - prod-j-worker-us-east-1d-70.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -41,16 +41,16 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '44'
+      - '57'
       X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 6:00:00 AM GMT
+      - Sunday, September 27, 2015 8:00:00 AM GMT
       Content-Length:
-      - '132'
+      - '130'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"files":[{"url":"http://us.battle.net/auction-data/9d118aafe2d7615f7d1034cf285220d1/auctions.json","lastModified":1443331650000}]}'
+      string: '{"files":[{"url":"http://us.battle.net/auction-data/9d118aafe2d7615f7d1034cf285220d1/auctions.json","lastModified":1443338850000}]}'
     http_version: 
-  recorded_at: Sun, 27 Sep 2015 05:34:25 GMT
+  recorded_at: Sun, 27 Sep 2015 07:58:24 GMT
 recorded_with: VCR 2.9.3
