@@ -10,8 +10,7 @@ require_relative "./rbattlenet/wow/item.rb"
 require_relative "./rbattlenet/wow/guild.rb"
 require_relative "./rbattlenet/wow/pvp.rb"
 require_relative "./rbattlenet/wow/quest.rb"
-
-
+require_relative "./rbattlenet/wow/realm.rb"
 
 module RBattlenet
   @@region = "us"

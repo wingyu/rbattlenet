@@ -4,5 +4,5 @@ key =  ENV["API"]
 
 RBattlenet.authenticate(key)
 
-response = RBattlenet::Wow::Guild.find("razors edge", "saurfang", ["members"])
+response = RBattlenet::Wow::Realm.find
 p response
