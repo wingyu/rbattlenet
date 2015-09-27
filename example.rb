@@ -6,5 +6,5 @@ RBattlenet.authenticate(key)
 RBattlenet.set_region("eu", "en_gb")
 
 
-response = RBattlenet::Wow::Character.search("madfrogz", "outland", "achievements")
+response = RBattlenet::Wow::Character.find("madfrogz", "outland", ["guild", "petSlots"])
 puts response

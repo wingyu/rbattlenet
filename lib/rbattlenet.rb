@@ -17,7 +17,8 @@ module RBattlenet
 
   def self.authenticate(api_key)
     const_set("API_KEY", api_key)
-    @@options = { query: {locale: @@locale, apikey: API_KEY} }
+
+    @@options = "?locale=#{@@locale}&apikey=#{API_KEY}"
   end
 
   def self.set_region(region, locale)
@@ -31,7 +32,7 @@ module RBattlenet
 
   class << self
     def get(uri, options = @@options)
-      HTTParty.get(uri, options)
+      HTTParty.get(uri + options)
     end
 
     def base_uri(path)
@@ -43,9 +44,7 @@ module RBattlenet
     end
 
     def merge_options(options)
-      query_fields = options.inject(&:merge)
-
-      {query: @@options[:query].merge(query_fields)}
+      @@options + "&fields=#{options}"
     end
 
     def parse_fields(fields)
