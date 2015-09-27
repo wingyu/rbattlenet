@@ -19,9 +19,9 @@ describe RBattlenet::Wow::Guild do
     it "fetches optional field data" do
       VCR.use_cassette('guild_fields') do
         guild = RBattlenet::Wow::Guild.
-          find("razors edge", "saurfang", "members")
+          find("razors edge", "saurfang", ["members"])
 
-        expect(guild['members'].count).to eq 331
+        expect(guild['members'][0]['character']['name']).to eq "Tornak"
       end
     end
   end

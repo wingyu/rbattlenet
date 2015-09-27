@@ -16,9 +16,9 @@ module RBattlenet
   @@locale = "en_us"
 
   def self.authenticate(api_key)
-    const_set("API_KEY", api_key)
+    @@api_key = api_key
 
-    @@options = "?locale=#{@@locale}&apikey=#{API_KEY}"
+    @@options = "?locale=#{@@locale}&apikey=#{@@api_key}"
   end
 
   def self.set_region(region, locale)
@@ -44,7 +44,7 @@ module RBattlenet
     end
 
     def merge_options(options)
-      @@options + "&fields=#{options}"
+      @@options + "#{options}"
     end
 
     def parse_fields(fields)
@@ -52,7 +52,7 @@ module RBattlenet
         fields.map! do |field|
           field.gsub(/\s\S/,&:upcase).gsub(/\s/, "")
         end
-        fields.join("+")
+        "&fields=" + fields.join("+")
       end
     end
   end

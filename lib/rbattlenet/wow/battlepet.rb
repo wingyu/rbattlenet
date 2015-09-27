@@ -16,9 +16,9 @@ module RBattlenet
       end
 
       def self.find_stats(species_id, level, breed_id, quality_id)
-        stats = [ {level: level},
-                  {breedId: breed_id},
-                  {qualityId: quality_id} ]
+        stats = ["&level=#{level}",
+                  "&breedId=#{breed_id}",
+                  "&qualityId=#{quality_id}"].join
 
         options = RBattlenet.merge_options(stats)
 
