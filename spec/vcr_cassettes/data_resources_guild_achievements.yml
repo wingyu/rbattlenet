@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sun, 27 Sep 2015 07:58:56 GMT
+      - Sun, 27 Sep 2015 11:17:42 GMT
       Server:
       - Apache
       Vary:
@@ -31,7 +31,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1e-85.mashery.com
+      - prod-j-worker-us-east-1b-56.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -39,9 +39,9 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '71'
+      - '67'
       X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 8:00:00 AM GMT
+      - Sunday, September 27, 2015 12:00:00 PM GMT
       Content-Length:
       - '25008'
       Connection:
@@ -1437,5 +1437,5 @@ http_interactions:
         of Niuzao Temple","orderIndex":8,"max":1}],"accountWide":false,"factionId":2}],"name":"Guild
         Feats of Strength"}]}'
     http_version: 
-  recorded_at: Sun, 27 Sep 2015 07:58:57 GMT
+  recorded_at: Sun, 27 Sep 2015 11:17:43 GMT
 recorded_with: VCR 2.9.3

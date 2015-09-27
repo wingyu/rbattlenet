@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sun, 27 Sep 2015 07:59:00 GMT
+      - Sun, 27 Sep 2015 11:17:48 GMT
       Server:
       - Apache
       Vary:
@@ -31,7 +31,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-70.mashery.com
+      - prod-j-worker-us-east-1e-79.mashery.com
       X-Plan-Qps-Allotted:
       - '100'
       X-Plan-Qps-Current:
@@ -39,9 +39,9 @@ http_interactions:
       X-Plan-Quota-Allotted:
       - '36000'
       X-Plan-Quota-Current:
-      - '73'
+      - '69'
       X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 8:00:00 AM GMT
+      - Sunday, September 27, 2015 12:00:00 PM GMT
       Content-Length:
       - '38985'
       Connection:
@@ -585,7 +585,7 @@ http_interactions:
         Iiwicm9sZSI6IlRBTksiLCJiYWNrZ3JvdW5kSW1hZ2UiOiJiZy1wYWxhZGlu
         LXByb3RlY3Rpb24iLCJpY29uIjoiYWJpbGl0eV9wYWxhZGluX3NoaWVsZG9m
         dGhldGVtcGxhciIsImRlc2NyaXB0aW9uIjoiVXNlcyBIb2x5IG1hZ2ljIHRv
-        IHNoaWVsZCBoZXJzZWxmIGFuZCBkZWZlbmQgYWxsaWVzIGZyb20gYXR0YWNr
+        IHNoaWVsZCBoaW1zZWxmIGFuZCBkZWZlbmQgYWxsaWVzIGZyb20gYXR0YWNr
         ZXJzLiIsIm9yZGVyIjoxfX1dXSxbW3sidGllciI6MywiY29sdW1uIjowLCJz
         cGVsbCI6eyJpZCI6MTE0MDM5LCJuYW1lIjoiSGFuZCBvZiBQdXJpdHkiLCJp
         Y29uIjoic3BlbGxfaG9seV9zZWFsb2Z3aXNkb20iLCJkZXNjcmlwdGlvbiI6
@@ -626,7 +626,7 @@ http_interactions:
         OiJUQU5LIiwiYmFja2dyb3VuZEltYWdlIjoiYmctcGFsYWRpbi1wcm90ZWN0
         aW9uIiwiaWNvbiI6ImFiaWxpdHlfcGFsYWRpbl9zaGllbGRvZnRoZXRlbXBs
         YXIiLCJkZXNjcmlwdGlvbiI6IlVzZXMgSG9seSBtYWdpYyB0byBzaGllbGQg
-        aGVyc2VsZiBhbmQgZGVmZW5kIGFsbGllcyBmcm9tIGF0dGFja2Vycy4iLCJv
+        aGltc2VsZiBhbmQgZGVmZW5kIGFsbGllcyBmcm9tIGF0dGFja2Vycy4iLCJv
         cmRlciI6MX19XSxbeyJ0aWVyIjo0LCJjb2x1bW4iOjIsInNwZWxsIjp7Imlk
         Ijo4NjE3MiwibmFtZSI6IkRpdmluZSBQdXJwb3NlIiwiaWNvbiI6InNwZWxs
         X2hvbHlfZGl2aW5lcHVycG9zZSIsImRlc2NyaXB0aW9uIjoiV29yZCBvZiBH
@@ -762,7 +762,7 @@ http_interactions:
         YW1lIjoiUHJvdGVjdGlvbiIsInJvbGUiOiJUQU5LIiwiYmFja2dyb3VuZElt
         YWdlIjoiYmctcGFsYWRpbi1wcm90ZWN0aW9uIiwiaWNvbiI6ImFiaWxpdHlf
         cGFsYWRpbl9zaGllbGRvZnRoZXRlbXBsYXIiLCJkZXNjcmlwdGlvbiI6IlVz
-        ZXMgSG9seSBtYWdpYyB0byBzaGllbGQgaGVyc2VsZiBhbmQgZGVmZW5kIGFs
+        ZXMgSG9seSBtYWdpYyB0byBzaGllbGQgaGltc2VsZiBhbmQgZGVmZW5kIGFs
         bGllcyBmcm9tIGF0dGFja2Vycy4iLCJvcmRlciI6MX0seyJuYW1lIjoiUmV0
         cmlidXRpb24iLCJyb2xlIjoiRFBTIiwiYmFja2dyb3VuZEltYWdlIjoiYmct
         cGFsYWRpbi1yZXRyaWJ1dGlvbiIsImljb24iOiJzcGVsbF9ob2x5X2F1cmFv
@@ -2080,7 +2080,7 @@ http_interactions:
         IjoiYmctZGVhdGhrbmlnaHQtdW5ob2x5IiwiaWNvbiI6InNwZWxsX2RlYXRo
         a25pZ2h0X3VuaG9seXByZXNlbmNlIiwiZGVzY3JpcHRpb24iOiJBIG1hc3Rl
         ciBvZiBkZWF0aCBhbmQgZGVjYXksIHNwcmVhZGluZyBpbmZlY3Rpb24gYW5k
-        IGNvbnRyb2xsaW5nIHVuZGVhZCBtaW5pb25zIHRvIGRvIGhpcyBiaWRkaW5n
+        IGNvbnRyb2xsaW5nIHVuZGVhZCBtaW5pb25zIHRvIGRvIGhlciBiaWRkaW5n
         LiIsIm9yZGVyIjoyfV19LCI3Ijp7ImdseXBocyI6W3siZ2x5cGgiOjIxMSwi
         aXRlbSI6NDE1NDEsIm5hbWUiOiJHbHlwaCBvZiBXYXRlciBTaGllbGQiLCJp
         Y29uIjoiYWJpbGl0eV9zaGFtYW5fd2F0ZXJzaGllbGQiLCJ0eXBlSWQiOjB9
@@ -4026,5 +4026,5 @@ http_interactions:
         aCIsImRlc2NyaXB0aW9uIjoiVXNlcyBoZWFsLW92ZXItdGltZSBOYXR1cmUg
         c3BlbGxzIHRvIGtlZXAgYWxsaWVzIGFsaXZlLiIsIm9yZGVyIjozfV19fQ==
     http_version: 
-  recorded_at: Sun, 27 Sep 2015 07:59:00 GMT
+  recorded_at: Sun, 27 Sep 2015 11:17:49 GMT
 recorded_with: VCR 2.9.3

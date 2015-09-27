@@ -16,6 +16,8 @@ require_relative "./rbattlenet/wow/spell.rb"
 require_relative "./rbattlenet/wow/data_resources.rb"
 
 
+require_relative "./rbattlenet/d3/profile.rb"
+
 module RBattlenet
   @@region = "us"
   @@locale = "en_us"
@@ -29,9 +31,11 @@ module RBattlenet
   def self.set_region(region, locale)
     @@region = region
     @@locale = locale
+    @@options = "?locale=#{@@locale}&apikey=#{@@api_key}"
   end
 
   module Wow; GAME = "wow" end
+  module D3; GAME = "d3" end
 
   private
 
