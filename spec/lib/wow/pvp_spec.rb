@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Pvp do
 
   describe "#find_bracket" do
     it "fetches pvp leaderboard  data" do
-      VCR.use_cassette('pvp_2v2') do
+      VCR.use_cassette('wow_pvp_2v2') do
         leaderboard = RBattlenet::Wow::Pvp.
           find_bracket("2v2")
 
@@ -17,7 +17,7 @@ describe RBattlenet::Wow::Pvp do
     end
 
     it "fetches pvp leaderboard  data" do
-      VCR.use_cassette('pvp_3v3') do
+      VCR.use_cassette('wow_pvp_3v3') do
         leaderboard = RBattlenet::Wow::Pvp.
           find_bracket("3v3")
 
@@ -25,7 +25,7 @@ describe RBattlenet::Wow::Pvp do
       end
     end
 
-    it "fetches pvp leaderboard  data" do
+    it "does not fetch data due to invalid input" do
       expect do
         RBattlenet::Wow::Pvp.find_bracket("10v10")
       end.to raise_error

@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Item do
 
   describe "#find_item" do
     it "fetches item data" do
-      VCR.use_cassette('item') do
+      VCR.use_cassette('wow_item') do
         item = RBattlenet::Wow::Item.
           find_item(18803)
 
@@ -19,7 +19,7 @@ describe RBattlenet::Wow::Item do
 
   describe "#find_item_set" do
     it "fetches item set data" do
-      VCR.use_cassette('item_set') do
+      VCR.use_cassette('wow_item_set') do
         item_set = RBattlenet::Wow::Item.
           find_item_set(1060)
 

@@ -8,7 +8,7 @@ describe RBattlenet::Wow::DataResources do
 
   describe "#find_battlegroups" do
     it "fetches battlegroups data" do
-      VCR.use_cassette('data_resources_battlegroup') do
+      VCR.use_cassette('wow_data_resources_battlegroup') do
         battlegroups = RBattlenet::Wow::DataResources.
           find_battlegroups
 
@@ -20,7 +20,7 @@ describe RBattlenet::Wow::DataResources do
 
   describe "#find_character_races" do
     it "fetches character_races data" do
-      VCR.use_cassette('data_resources_character_races') do
+      VCR.use_cassette('wow_data_resources_character_races') do
         character_races = RBattlenet::Wow::DataResources.
           find_character_races
 
@@ -32,7 +32,7 @@ describe RBattlenet::Wow::DataResources do
 
   describe "#find_character_classes" do
     it "fetches character_classes data" do
-      VCR.use_cassette('data_resources_character_classes') do
+      VCR.use_cassette('wow_data_resources_character_classes') do
         character_classes = RBattlenet::Wow::DataResources.
           find_character_classes
 
@@ -44,7 +44,7 @@ describe RBattlenet::Wow::DataResources do
 
   describe "#find_character_achievements" do
     it "fetches character_achievements data" do
-      VCR.use_cassette('data_resources_character_achievements') do
+      VCR.use_cassette('wow_data_resources_character_achievements') do
         character_achievements = RBattlenet::Wow::DataResources.
           find_character_achievements
 
@@ -56,7 +56,7 @@ describe RBattlenet::Wow::DataResources do
 
   describe "#find_guild_rewards" do
     it "fetches guild_rewards data" do
-      VCR.use_cassette('data_resources_guild_rewards') do
+      VCR.use_cassette('wow_data_resources_guild_rewards') do
         guild_rewards = RBattlenet::Wow::DataResources.
           find_guild_rewards
 
@@ -68,7 +68,7 @@ describe RBattlenet::Wow::DataResources do
 
   describe "#find_guild_perks" do
     it "fetches guild_perks data" do
-      VCR.use_cassette('data_resources_guild_perks') do
+      VCR.use_cassette('wow_data_resources_guild_perks') do
         guild_perks = RBattlenet::Wow::DataResources.
           find_guild_perks
 
@@ -80,7 +80,7 @@ describe RBattlenet::Wow::DataResources do
 
   describe "#find_guild_achievements" do
     it "fetches guild_achievements data" do
-      VCR.use_cassette('data_resources_guild_achievements') do
+      VCR.use_cassette('wow_data_resources_guild_achievements') do
         guild_achievements = RBattlenet::Wow::DataResources.
           find_guild_achievements
 
@@ -92,7 +92,7 @@ describe RBattlenet::Wow::DataResources do
 
   describe "#find_item_classes" do
     it "fetches item_classes data" do
-      VCR.use_cassette('data_resources_item_classes') do
+      VCR.use_cassette('wow_data_resources_item_classes') do
         item_classes = RBattlenet::Wow::DataResources.
           find_item_classes
 
@@ -104,7 +104,7 @@ describe RBattlenet::Wow::DataResources do
 
   describe "#find_talents" do
     it "fetches talents data" do
-      VCR.use_cassette('data_resources_talents') do
+      VCR.use_cassette('wow_data_resources_talents') do
         talents = RBattlenet::Wow::DataResources.
           find_talents
 
@@ -116,7 +116,7 @@ describe RBattlenet::Wow::DataResources do
 
   describe "#find_pet_types" do
     it "fetches pet_types data" do
-      VCR.use_cassette('data_resources_pet_types') do
+      VCR.use_cassette('wow_data_resources_pet_types') do
         pet_types = RBattlenet::Wow::DataResources.
           find_pet_types
 

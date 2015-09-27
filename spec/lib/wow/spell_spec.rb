@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Spell do
 
   describe "#find" do
     it "fetches spell data" do
-      VCR.use_cassette('spell') do
+      VCR.use_cassette('wow_spell') do
         spell = RBattlenet::Wow::Spell.
           find(8056)
 

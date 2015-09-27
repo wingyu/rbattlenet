@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Auction do
 
   describe "#find" do
     it "fetches auction data" do
-      VCR.use_cassette('auction') do
+      VCR.use_cassette('wow_auction') do
         auction = RBattlenet::Wow::Auction.
           find("saurfang")
 

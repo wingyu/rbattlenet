@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Battlepet do
 
   describe "#find_abilities" do
     it "fetches abilities data" do
-      VCR.use_cassette('battlepet_abilities') do
+      VCR.use_cassette('wow_battlepet_abilities') do
         ability = RBattlenet::Wow::Battlepet.
           find_abilities(640)
 
@@ -19,7 +19,7 @@ describe RBattlenet::Wow::Battlepet do
 
   describe "#find_species" do
     it "fetches species data" do
-      VCR.use_cassette('battlepet_species') do
+      VCR.use_cassette('wow_battlepet_species') do
         species = RBattlenet::Wow::Battlepet.
           find_species(258)
 
@@ -30,7 +30,7 @@ describe RBattlenet::Wow::Battlepet do
 
   describe "#find_stats" do
     it "fetches stats data" do
-      VCR.use_cassette('battlepet_stats') do
+      VCR.use_cassette('wow_battlepet_stats') do
         stats = RBattlenet::Wow::Battlepet.
           find_stats(258, 25, 5, 4)
 

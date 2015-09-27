@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Challenge do
 
   describe "#find_realm" do
     it "fetches realm leaderboard data" do
-      VCR.use_cassette('challenge_realm') do
+      VCR.use_cassette('wow_challenge_realm') do
         realm_leaderboard = RBattlenet::Wow::Challenge.
           find_realm("saurfang")
 
@@ -19,7 +19,7 @@ describe RBattlenet::Wow::Challenge do
 
   describe "#find_region" do
     it "fetches region leaderboard data" do
-      VCR.use_cassette('challenge_region') do
+      VCR.use_cassette('wow_challenge_region') do
         region_leaderboard = RBattlenet::Wow::Challenge.
           find_region
 

@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Character do
 
   describe "#find" do
     it "fetches character data" do
-      VCR.use_cassette('character_profile') do
+      VCR.use_cassette('wow_character_profile') do
         character = RBattlenet::Wow::Character.
           find("milhause", "saurfang")
 
@@ -17,7 +17,7 @@ describe RBattlenet::Wow::Character do
     end
 
     it "fetches optional field data" do
-      VCR.use_cassette('character_fields') do
+      VCR.use_cassette('wow_character_fields') do
         character = RBattlenet::Wow::Character.
           find("milhause", "saurfang", ["pet slots"])
 

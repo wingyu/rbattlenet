@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Recipe do
 
   describe "#find" do
     it "fetches recipe data" do
-      VCR.use_cassette('recipe') do
+      VCR.use_cassette('wow_recipe') do
         recipe = RBattlenet::Wow::Recipe.
           find(33994)
 

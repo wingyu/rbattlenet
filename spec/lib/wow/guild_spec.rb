@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Guild do
 
   describe "#find" do
     it "fetches guild profile data" do
-      VCR.use_cassette('guild_profile') do
+      VCR.use_cassette('wow_guild_profile') do
         guild = RBattlenet::Wow::Guild.
           find("razors edge", "saurfang")
 
@@ -17,7 +17,7 @@ describe RBattlenet::Wow::Guild do
     end
 
     it "fetches optional field data" do
-      VCR.use_cassette('guild_fields') do
+      VCR.use_cassette('wow_guild_fields') do
         guild = RBattlenet::Wow::Guild.
           find("razors edge", "saurfang", ["members"])
 

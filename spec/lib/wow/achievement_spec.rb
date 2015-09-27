@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Achievement do
 
   describe "#find" do
     it "fetches achievement data" do
-      VCR.use_cassette('achievement') do
+      VCR.use_cassette('wow_achievement') do
         achievement = RBattlenet::Wow::Achievement.
           find("2144")
 

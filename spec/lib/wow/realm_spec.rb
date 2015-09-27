@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Realm do
 
   describe "#find" do
     it "fetches realm data" do
-      VCR.use_cassette('realm') do
+      VCR.use_cassette('wow_realm') do
         realms = RBattlenet::Wow::Realm.
           find
 

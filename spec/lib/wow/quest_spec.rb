@@ -8,7 +8,7 @@ describe RBattlenet::Wow::Quest do
 
   describe "#find" do
     it "fetches quest data" do
-      VCR.use_cassette('quest') do
+      VCR.use_cassette('wow_quest') do
         quest = RBattlenet::Wow::Quest.
           find(13146)
 
