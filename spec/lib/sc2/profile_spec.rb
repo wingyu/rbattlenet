@@ -19,7 +19,7 @@ describe RBattlenet::Sc2::Profile do
 
   describe "#find_ladders" do
     it "fetches ladders data" do
-      VCR.use_cassette('sc2_ladders') do
+      VCR.use_cassette('sc2_profile_ladders') do
         ladders = RBattlenet::Sc2::Profile.
           find_ladders(2137104, 1, 'skt')
           
@@ -30,7 +30,7 @@ describe RBattlenet::Sc2::Profile do
 
   describe "#find_match_history" do
     it "fetches match_history data" do
-      VCR.use_cassette('sc2_match_history') do
+      VCR.use_cassette('sc2_profile_match_history') do
         match_history = RBattlenet::Sc2::Profile.
           find_match_history(2137104, 1, 'skt')
           

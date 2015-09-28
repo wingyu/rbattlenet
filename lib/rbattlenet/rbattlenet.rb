@@ -22,6 +22,7 @@ require_relative "./d3/data_resources.rb"
 
 #Starcraft 2 API
 require_relative "./sc2/profile.rb"
+require_relative "./sc2/ladder.rb"
 require_relative "./sc2/data_resources.rb"
 
 
@@ -67,7 +68,7 @@ module RBattlenet
       input.gsub(" ", '%20')
     end
 
-    #Mergers required and optional query parameters
+    #Merges required and optional query parameters
     def merge_queries(queries)
       @@queries + "#{queries}"
     end
