@@ -10,7 +10,7 @@ describe RBattlenet::Wow::Item do
     it "fetches item data" do
       VCR.use_cassette('wow_item') do
         item = RBattlenet::Wow::Item.
-          find_item(18803)
+          find(18803)
 
         expect(item['name']).to eq "Finkle's Lava Dredger"
       end
@@ -21,7 +21,7 @@ describe RBattlenet::Wow::Item do
     it "fetches item set data" do
       VCR.use_cassette('wow_item_set') do
         item_set = RBattlenet::Wow::Item.
-          find_item_set(1060)
+          find_set(1060)
 
         expect(item_set["name"]).to eq "Deep Earth Vestments"
       end
