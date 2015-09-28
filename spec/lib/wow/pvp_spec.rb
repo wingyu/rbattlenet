@@ -28,7 +28,7 @@ describe RBattlenet::Wow::Pvp do
     it "does not fetch data due to invalid input" do
       expect do
         RBattlenet::Wow::Pvp.find_bracket("10v10")
-      end.to raise_error
+      end.to raise_error(RuntimeError)
     end
   end
 end
