@@ -21,8 +21,8 @@ require_relative "./d3/profile.rb"
 require_relative "./d3/data_resources.rb"
 
 #Starcraft 2 API
-require_relative "./s2/profile.rb"
-require_relative "./s2/data_resources.rb"
+require_relative "./sc2/profile.rb"
+require_relative "./sc2/data_resources.rb"
 
 
 module RBattlenet
@@ -33,7 +33,7 @@ module RBattlenet
   def self.authenticate(api_key)
     @@api_key = api_key
 
-    @@options = "?locale=#{@@locale}&apikey=#{@@api_key}"
+    @@queries = "?locale=#{@@locale}&apikey=#{@@api_key}"
   end
 
   #Set region and locale for requests.
@@ -41,12 +41,12 @@ module RBattlenet
   def self.set_region(region, locale)
     @@region = region
     @@locale = locale
-    @@options = "?locale=#{@@locale}&apikey=#{@@api_key}"
+    @@queries = "?locale=#{@@locale}&apikey=#{@@api_key}"
   end
 
   module Wow; GAME = "wow" end
   module D3; GAME = "d3" end
-  module S2; GAME = "s2" end
+  module Sc2; GAME = "sc2" end
 
 
   private
@@ -54,8 +54,8 @@ module RBattlenet
   class << self
 
     #Wrapper for HTTParty requests that injects query parameters
-    def get(uri, options = @@options)
-      HTTParty.get(uri + options)
+    def get(uri, queries = @@queries)
+      HTTParty.get(uri + queries)
     end
     
     #Sets base uri for requests
@@ -68,8 +68,8 @@ module RBattlenet
     end
 
     #Mergers required and optional query parameters
-    def merge_options(options)
-      @@options + "#{options}"
+    def merge_queries(queries)
+      @@queries + "#{queries}"
     end
 
     #Parses two-worded fields into the correct format

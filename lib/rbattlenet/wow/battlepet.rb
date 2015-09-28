@@ -20,12 +20,12 @@ module RBattlenet
                   "&breedId=#{breed_id}",
                   "&qualityId=#{quality_id}"].join
 
-        options = RBattlenet.merge_options(stats)
+        queries = RBattlenet.merge_queries(stats)
 
         uri = RBattlenet.
           base_uri("#{GAME}/battlePet/stats/#{species_id}")
 
-        RBattlenet.get(uri, options)
+        RBattlenet.get(uri, queries)
       end
     end
   end

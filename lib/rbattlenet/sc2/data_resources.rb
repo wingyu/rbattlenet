@@ -1,5 +1,5 @@
 module RBattlenet
-  module S2
+  module Sc2
     class DataResources
       def self.find_item(data)
         uri = RBattlenet.base_uri("#{GAME}/data/item/#{data}")

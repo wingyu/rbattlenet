@@ -4,12 +4,12 @@ module RBattlenet
       def self.find(name, realm, fields = nil)
         fields = RBattlenet.parse_fields(fields)
         realm =  RBattlenet.parse_spaces(realm)
-        options = RBattlenet.merge_options(fields)
+        queries = RBattlenet.merge_queries(fields)
 
         uri = RBattlenet.
           base_uri("#{GAME}/character/#{realm}/#{name}")
 
-        RBattlenet.get(uri, options)
+        RBattlenet.get(uri, queries)
       end
     end
   end
