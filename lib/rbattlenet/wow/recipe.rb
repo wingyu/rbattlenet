@@ -1,7 +1,7 @@
 module RBattlenet
   module Wow
     class Recipe
-      def self.find(id)
+      def self.find(id:)
         uri = RBattlenet.
           base_uri("#{GAME}/recipe/#{id}")
 

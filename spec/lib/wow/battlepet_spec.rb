@@ -2,15 +2,15 @@ require 'spec_helper'
 
 describe RBattlenet::Wow::Battlepet do
   before do
-    RBattlenet.authenticate(ENV["API"])
-    RBattlenet.set_region("us", "en_us")
+    RBattlenet.authenticate(api_key: ENV["API"])
+    RBattlenet.set_region(region: "us", locale: "en_us")
   end
 
   describe "#find_abilities" do
     it "fetches abilities data" do
       VCR.use_cassette('wow_battlepet_abilities') do
         ability = RBattlenet::Wow::Battlepet.
-          find_abilities(640)
+          find_abilities(id: 640)
 
         expect(ability['id']).to eq 640
       end
@@ -21,7 +21,7 @@ describe RBattlenet::Wow::Battlepet do
     it "fetches species data" do
       VCR.use_cassette('wow_battlepet_species') do
         species = RBattlenet::Wow::Battlepet.
-          find_species(258)
+          find_species(species_id: 258)
 
         expect(species['speciesId']).to eq 258
       end
@@ -32,7 +32,10 @@ describe RBattlenet::Wow::Battlepet do
     it "fetches stats data" do
       VCR.use_cassette('wow_battlepet_stats') do
         stats = RBattlenet::Wow::Battlepet.
-          find_stats(258, 25, 5, 4)
+          find_stats(species_id: 258,
+            level: 25,
+            breed_id: 5,
+            quality_id: 4)
 
         expect(stats['power']).to eq 315 
       end

@@ -2,15 +2,15 @@ require 'spec_helper'
 
 describe RBattlenet::Wow::Character do
   before do
-    RBattlenet.authenticate(ENV["API"])
-    RBattlenet.set_region("us", "en_us")
+    RBattlenet.authenticate(api_key: ENV["API"])
+    RBattlenet.set_region(region: "us", locale: "en_us")
   end
 
   describe "#find" do
     it "fetches character data" do
       VCR.use_cassette('wow_character_profile') do
         character = RBattlenet::Wow::Character.
-          find("milhause", "saurfang")
+          find(name: "milhause", realm: "saurfang")
 
         expect(character['level']).to eq 100
       end
@@ -19,7 +19,7 @@ describe RBattlenet::Wow::Character do
     it "fetches optional field data" do
       VCR.use_cassette('wow_character_fields') do
         character = RBattlenet::Wow::Character.
-          find("milhause", "saurfang", ["pet slots"])
+          find(name: "milhause", realm: "saurfang", fields: ["pet slots"])
 
         expect(character['petSlots'].count).to eq 3
       end

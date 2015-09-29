@@ -1,7 +1,7 @@
 module RBattlenet
   module Wow
     class Challenge
-      def self.find_realm(realm)
+      def self.find_realm(realm:)
         realm =  RBattlenet.parse_spaces(realm)
 
         uri = RBattlenet.

@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe RBattlenet::Wow::DataResources do
   before do
-    RBattlenet.authenticate(ENV["API"])
-    RBattlenet.set_region("us", "en_us")
+    RBattlenet.authenticate(api_key: ENV["API"])
+    RBattlenet.set_region(region: "us", locale: "en_us")
   end
 
   describe "#find_battlegroups" do

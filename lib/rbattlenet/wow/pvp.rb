@@ -1,7 +1,7 @@
 module RBattlenet
   module Wow
     class Pvp
-      def self.find_bracket(bracket)
+      def self.find_bracket(bracket:)
         bracket = parse_bracket(bracket)
         uri = RBattlenet.base_uri("#{GAME}/leaderboard/#{bracket}?")
 

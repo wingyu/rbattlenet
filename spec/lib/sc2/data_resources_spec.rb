@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe RBattlenet::Sc2::DataResources do
   before do
-    RBattlenet.authenticate(ENV["API"])
-    RBattlenet.set_region("us", "en_US")
+    RBattlenet.authenticate(api_key: ENV["API"])
+    RBattlenet.set_region(region: "us", locale: "en_US")
   end
 
   describe "#find_achievements" do
