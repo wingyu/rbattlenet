@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = RBattlenet::VERSION
   spec.authors       = ["Vincent Wong"]
   spec.email         = ["wingyu64@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{A wrapper for the Blizzard's Battle.net API}
+  spec.description   = %q{My attempt at creating a Ruby wrapper for the Blizzard's Battle.net Community Platform API.}
+  spec.homepage      = "https://github.com/wingyu/rbattlenet"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
