@@ -26,7 +26,6 @@ require_relative "./sc2/ladder.rb"
 require_relative "./sc2/data_resources.rb"
 
 #Error-handling
-require_relative "./errors/connection_error.rb"
 require_relative "./errors/invalid_input.rb"
 require_relative "./errors/error.rb"
 
@@ -36,17 +35,18 @@ module RBattlenet
 
   #Set API Key for requests. Required
   def self.authenticate(api_key:)
-    @@queries = "?locale=#{@@locale}&apikey=#{@@api_key}"
-
     @@api_key = api_key
+
+    @@queries = "?locale=#{@@locale}&apikey=#{@@api_key}"
+    return true
   end
 
   #Set region and locale for requests.
   #This defaults to the US region and en_US locale
   def self.set_region(region:, locale:)
-    @@queries = "?locale=#{@@locale}&apikey=#{@@api_key}"
-
     @@region, @@locale = region, locale
+    @@queries = "?locale=#{@@locale}&apikey=#{@@api_key}"
+    return true
   end
 
   module Wow; GAME = "wow" end
