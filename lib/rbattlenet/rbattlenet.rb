@@ -25,6 +25,10 @@ require_relative "./sc2/profile.rb"
 require_relative "./sc2/ladder.rb"
 require_relative "./sc2/data_resources.rb"
 
+#Error-handling
+require_relative "./errors/connection_error.rb"
+require_relative "./errors/invalid_input.rb"
+require_relative "./errors/error.rb"
 
 module RBattlenet
   @@region = "us"
@@ -56,7 +60,11 @@ module RBattlenet
 
     #Wrapper for HTTParty requests that injects query parameters
     def get(uri, queries = @@queries)
-      HTTParty.get(uri + queries)
+      begin
+        HTTParty.get(uri + queries)
+      rescue
+        RBattlenet::Errors::ConnectionError
+      end
     end
     
     #Sets base uri for requests

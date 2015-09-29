@@ -13,7 +13,7 @@ module RBattlenet
         if valid_bracket?(bracket)
           bracket
         else
-          raise "Only 2v2, 3v3, 5v5 and rbg can be accepted as inputs"
+          raise RBattlenet::Errors::InvalidInput
         end
       end
 
