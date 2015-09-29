@@ -114,13 +114,8 @@ character = RBattlenet::Wow::Character.find("milhause", "saurfang")
 <a name="wow-achievement"></a>
 ### Achievement
 
-*Parameters*
-
-`id` the ID of the achievement.
-
-
 ```ruby
-achievement = RBattlenet::Wow::Achievement.find("2144")
+achievement = RBattlenet::Wow::Achievement.find(id: 2144)
 ```
 
 ---
@@ -129,13 +124,8 @@ achievement = RBattlenet::Wow::Achievement.find("2144")
 <a name="wow-auction"></a>
 ### Auction
 
-*Parameters*
-
-`realm` the realm name.
-
-
 ```ruby
-RBattlenet::Wow::Auction.find("saurfang")
+RBattlenet::Wow::Auction.find(realm: "saurfang")
 ```
 
 ---
@@ -146,43 +136,25 @@ RBattlenet::Wow::Auction.find("saurfang")
 <a name="wow-battle-pet-ability"></a>
 #### Abilities
 
-*Parameters*
-
-`id` the ID of the battle pet ability.
-
-
 ```ruby
-RBattlenet::Wow::Battlepet.find_abilities(640)
+RBattlenet::Wow::Battlepet.find_abilities(id: 640)
 ```
 
 <a name="wow-battle-pet-species"></a>
 #### Species
 
-*Parameters*
-
-`id` the ID of the battle pet species.
-
-
 ```ruby
-RBattlenet::Wow::Battlepet.find_species(258)
+RBattlenet::Wow::Battlepet.find_species(species_id: 258)
 ```
 
 <a name="wow-battle-pet-stats"></a>
 #### Stats
 
-*Parameters*
-
-`id` the ID of the battle pet species.
-
-`level` the level of the battle pet
-
-`breedId` the breed id
-
-`qualityId` the quality id
-
-
 ```ruby
-RBattlenet::Wow::Battlepet.find_stats(258, 25, 5, 4)
+RBattlenet::Wow::Battlepet.find_stats(species_id: 258,
+  level: 25,
+  breed_id: 5,
+  quality_id: 4)
 ```
 
 ---
@@ -193,13 +165,8 @@ RBattlenet::Wow::Battlepet.find_stats(258, 25, 5, 4)
 <a name="wow-challenge-realm-leaderboard"></a>
 #### Realm Leaderboard
 
-*Parameters*
-
-`realm` the realm name.
-
-
 ```ruby
-RBattlenet::Wow::Challenge.find_realm("saurfang")
+RBattlenet::Wow::Challenge.find_realm(realm: "saurfang")
 ```
 
 <a name="wow-challenge-region-leaderboard"></a>
@@ -218,21 +185,21 @@ RBattlenet::Wow::Challenge.find_region
 <a name="wow-character-profile"></a>
 #### Profile
 
-Returns profile data about the character.
-
 
 ```ruby
-RBattlenet::Wow::Character.find("milhause", "saurfang")
+RBattlenet::Wow::Character.find(name: "milhause", realm: "saurfang")
 ```
 
 <a name="wow-character-fields"></a>
 #### Additional Fields
 
-Returns the additional data of the character. To see all possible fields visit: [https://dev.battle.net/](https://dev.battle.net)
+To see all possible fields visit: [https://dev.battle.net/](https://dev.battle.net)
 
 
 ```ruby
-RBattlenet::Wow::Character.find("milhause", "saurfang", ["pet slots", "guild"])
+RBattlenet::Wow::Character.find(name: "milhause",
+  realm: "saurfang",
+  fields: ["pet slots", "guild"])
 ```
 
 <a name="wow-data"></a>
@@ -326,29 +293,16 @@ RBattlenet::Wow::DataResources.find_talents
 <a name="wow-item-item"></a>
 #### Item
 
-Returns the item data of the specified item ID.
-
-*Parameters*
-
-`id` the item ID.
-
-
 ```ruby
-RBattlenet::Wow::Item.find(18803);
+RBattlenet::Wow::Item.find(id: 18803);
 ```
 
 <a name="wow-item-item-set"></a>
 #### Item Set
 
-Returns the item set data of the specified set ID.
-
-*Parameters*
-
-`id` the item set ID.
-
 
 ```ruby
-RBattlenet::Wow::Item.find_set(1060)
+RBattlenet::Wow::Item.find_set(id: 1060)
 ```
 
 ---
@@ -359,17 +313,8 @@ RBattlenet::Wow::Item.find_set(1060)
 <a name="wow-guild-profile"></a>
 #### Profile
 
-Returns basic data on a guild.
-
-*Parameters*
-
-`realm` the realm of the guild.
-
-`name` the name of the guild.
-
-
 ```ruby
-RBattlenet::Wow::Guild.find("razors edge", "saurfang")
+RBattlenet::Wow::Guild.find(name: "razors edge", realm:"saurfang")
 ```
 
 <a name="wow-guild-fields"></a>
@@ -377,7 +322,9 @@ RBattlenet::Wow::Guild.find("razors edge", "saurfang")
 
 
 ```ruby
-RBattlenet::Wow::Guild.find("razors edge", "saurfang", ["members", "news"])
+RBattlenet::Wow::Guild.find(name: "razors edge",
+  realm: "saurfang",
+  fields: ["members", "news"])
 ```
 
 ---
@@ -388,13 +335,8 @@ RBattlenet::Wow::Guild.find("razors edge", "saurfang", ["members", "news"])
 <a name="wow-pvp-leaderboards"></a>
 #### Leaderboards
 
-*Parameters*
-
-`bracket` [`2v2`, `3v3`, `5v5`, `rbg`]
-
-
 ```ruby
-RBattlenet::Wow::Pvp.find_bracket("2v2")
+RBattlenet::Wow::Pvp.find_bracket(bracket: "2v2")
 ```
 
 ---
@@ -402,22 +344,14 @@ RBattlenet::Wow::Pvp.find_bracket("2v2")
 <a name="wow-quest"></a>
 ### Quest
 
-*Parameters*
-
-`id` the quest ID.
-
-
 ```ruby
-RBattlenet::Wow::Quest.find(13146)
+RBattlenet::Wow::Quest.find(id: 13146)
 ```
 
 ---
 
 <a name="wow-realm-status"></a>
 ### Realm Status
-
-
-All realms
 
 ```ruby
 RBattlenet::Wow::Realm.find
@@ -428,13 +362,8 @@ RBattlenet::Wow::Realm.find
 <a name="wow-recipe"></a>
 ### Recipe
 
-*Parameters*
-
-`id` the recipe ID.
-
-
 ```ruby
-RBattlenet::Wow::Recipe.find(33994)
+RBattlenet::Wow::Recipe.find(id: 33994)
 ```
 
 ---
@@ -442,13 +371,8 @@ RBattlenet::Wow::Recipe.find(33994)
 <a name="wow-spell"></a>
 ### Spell
 
-*Parameters*
-
-`id` the spell ID.
-
-
 ```ruby
-RBattlenet::Wow::Spell.find(8056)
+RBattlenet::Wow::Spell.find(id: 8056)
 ```
 
 ---
@@ -458,36 +382,23 @@ RBattlenet::Wow::Spell.find(8056)
 <a name="sc2-profile"></a>
 ### Profile
 
-*Parameters*
-
-`id` the unique player ID.
-
-`region` the player's region ID.
-
-`name` the player's profile name.
-
 ```ruby
-RBattlenet::Sc2::Profile.find(2137104, 1, 'skt')
+RBattlenet::Sc2::Profile.find(id: 2137104, region: 1, name: 'skt')
 ```
 
 <a name="sc2-profile-ladders"></a>
 #### Ladders
 
-Returns ladder data for the specified player.
-
-
 ```ruby
-RBattlenet::Sc2::Profile.find_ladders(2137104, 1, 'skt')
+RBattlenet::Sc2::Profile.find_ladders(id: 2137104, region: 1, name: 'skt')
 ```
 
 <a name="sc2-profile-match-history"></a>
 #### Match history
 
-Returns match history data for the specified player.
-
 
 ```ruby
-RBattlenet::Sc2::Profile.find_match_history(2137104, 1, 'skt')
+RBattlenet::Sc2::Profile.find_match_history(id: 2137104, region: 1, name: 'skt')
 ```
 
 ---
@@ -495,13 +406,8 @@ RBattlenet::Sc2::Profile.find_match_history(2137104, 1, 'skt')
 <a name="sc2-ladder"></a>
 ### Ladder
 
-*Parameters*
-
-`id` the unique ladder ID.
-
-
 ```ruby
-RBattlenet::Sc2::Ladder.find(2200)
+RBattlenet::Sc2::Ladder.find(id: 2200)
 ```
 
 ---
@@ -536,36 +442,24 @@ RBattlenet::Sc2::DataResources.find_rewards
 <a name="d3-data-artisan"></a>
 #### Artisan
 
-*Parameters*
-
-`artisan` the name of the artisan (eg. `blacksmith`, `jeweller`, `mystic`)
-
 ```ruby
-RBattlenet::D3::DataResources.find_artisan('blacksmith')
+RBattlenet::D3::DataResources.find_artisan(artisan: 'blacksmith')
 ```
 
 <a name="d3-data-follower"></a>
 #### Follower
 
-*Parameters*
-
-`follower` the name of the follower (eg. `templar`, `enchantress`, `scoundrel`)
-
 ```ruby
-RBattlenet::D3::DataResources.find_follower('templar')
+RBattlenet::D3::DataResources.find_follower(follower: 'templar')
 ```
 
 <a name="d3-data-item"></a>
 #### Item
 
-*Parameters*
-
-`item` the item data string.
-
 ```ruby
 data = "CrABCL-oudQGEgcIBBWZWjYNHWU61OAdyg3pEx07J28kHevi5AUd8dNq1TCLAjj_AkAAUBJYBGD_AmorCgwIABDX3bKmiICA4DESGwi5u5abChIHCAQVIpaumDCPAjgAQAFYBJABAGorCgwIABCl3rKmiICA4DESGwiR9M-gAhIHCAQVIpaumDCLAjgAQAFYBJABAIABRqUBOydvJK0Bj5DKULUBAXBvArgB9aCdsg7AAQEYsuqy0wFQAFgC"
 
-RBattlenet::D3::DataResources.find_item(data)
+RBattlenet::D3::DataResources.find_item(data: data)
 ```
 
 ---
@@ -576,25 +470,15 @@ RBattlenet::D3::DataResources.find_item(data)
 <a name="d3-profile-career"></a>
 #### Career
 
-*Parameters*
-
-`tag` the player's battle tag.
-
 ```ruby
-RBattlenet::D3::Profile.find_career("FaYe-2543")
+RBattlenet::D3::Profile.find_career(battletag: "FaYe-2543")
 ```
 
 <a name="d3-profile-hero"></a>
 #### Hero
 
-*Parameters*
-
-`tag` the player battle tag.
-
-`hero` the hero ID.
-
 ```ruby
-RBattlenet::D3::.find_hero("FaYe-2543", 58290259)
+RBattlenet::D3::.find_hero(battletag: "FaYe-2543", id: 58290259)
 ```
 
 ---
