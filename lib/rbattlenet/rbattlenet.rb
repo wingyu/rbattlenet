@@ -36,17 +36,17 @@ module RBattlenet
 
   #Set API Key for requests. Required
   def self.authenticate(api_key:)
-    @@api_key = api_key
-
     @@queries = "?locale=#{@@locale}&apikey=#{@@api_key}"
+
+    @@api_key = api_key
   end
 
   #Set region and locale for requests.
   #This defaults to the US region and en_US locale
   def self.set_region(region:, locale:)
-    @@region = region
-    @@locale = locale
     @@queries = "?locale=#{@@locale}&apikey=#{@@api_key}"
+
+    @@region, @@locale = region, locale
   end
 
   module Wow; GAME = "wow" end
