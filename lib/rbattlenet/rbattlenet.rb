@@ -61,7 +61,7 @@ module RBattlenet
     #Wrapper for HTTParty requests that injects query parameters
     def get(uri, queries = @@queries)
       begin
-        HTTParty.get(uri + queries)
+        HTTParty.get(URI.escape(uri + queries))
       rescue
         RBattlenet::Errors::ConnectionError
       end
@@ -70,10 +70,6 @@ module RBattlenet
     #Sets base uri for requests
     def base_uri(path)
       "https://#{@@region}.api.battle.net/#{path}"
-    end
-
-    def parse_spaces(input)
-      input.gsub(" ", '%20')
     end
 
     #Merges required and optional query parameters
