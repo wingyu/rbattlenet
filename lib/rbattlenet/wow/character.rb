@@ -3,7 +3,6 @@ module RBattlenet
     class Character
       def self.find(name:, realm:, fields: nil)
         fields = RBattlenet.parse_fields(fields)
-        realm =  RBattlenet.parse_spaces(realm)
         queries = RBattlenet.merge_queries(fields)
 
         uri = RBattlenet.
