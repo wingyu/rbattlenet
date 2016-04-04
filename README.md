@@ -331,13 +331,13 @@ RBattlenet::Wow::Spell.find(id: 8056)
 ### Profile
 
 ```ruby
-RBattlenet::Sc2::Profile.find(id: 2137104, region: 1, name: 'skt')
+RBattlenet::Sc2::Profile.find(id: 1234567, region: 1, name: 'name')
 ```
 
 #### Ladders
 
 ```ruby
-RBattlenet::Sc2::Profile.find_ladders(id: 2137104, region: 1, name: 'skt')
+RBattlenet::Sc2::Profile.find_ladders(id: 1234567, region: 1, name: 'name')
 ```
 
 #### Match history
@@ -411,13 +411,13 @@ RBattlenet::D3::DataResources.find_item(data: data)
 #### Career
 
 ```ruby
-RBattlenet::D3::Profile.find_career(battletag: "FaYe-2543")
+RBattlenet::D3::Profile.find_career(battletag: "username")
 ```
 
 #### Hero
 
 ```ruby
-RBattlenet::D3::.find_hero(battletag: "FaYe-2543", id: 58290259)
+RBattlenet::D3::.find_hero(battletag: "username", id: 1234567)
 ```
 
 ---
