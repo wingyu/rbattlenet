@@ -46,6 +46,13 @@ RBattlenet.set_region(region: "eu", locale: "en_GB")
 character = RBattlenet::Wow::Character.find(name: "milhause", realm: "saurfang")
 #character["name"] will give you "Milhause"
 ```
+
+## Testing
+```ruby
+API=<your_api> bundle exec rspec
+```
+
+
 ## Documentation
 ### [World of Warcraft](#wow)
 
