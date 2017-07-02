@@ -26,5 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock"
 
   spec.add_runtime_dependency "httparty", "~> 0.13.6"
-  spec.add_runtime_dependency "typhoeus", "~> 1.1.2"
+  spec.add_runtime_dependency "typhoeus", "~> 1.1"
 end
