@@ -12,7 +12,7 @@ module RBattlenet
       end
 
       #Prepare parallel requests using Typhoeus for wowaudit
-      def self.prepare_multiple(characters:, fields: nil)
+      def self.find_all(characters:, fields: nil)
         fields = RBattlenet.parse_fields(fields)
         queries = RBattlenet.merge_queries(fields)
 
@@ -21,7 +21,7 @@ module RBattlenet
           character.uri = URI.escape(uri + queries)
         end
 
-        RBattlenet.process_multiple(characters)
+        RBattlenet.get_multiple(characters)
       end
     end
   end
