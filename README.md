@@ -1,5 +1,4 @@
 # RBattlenet
-[![Code Climate](https://codeclimate.com/github/wingyu/rbattlenet/badges/gpa.svg)](https://codeclimate.com/github/wingyu/rbattlenet)
 
 A Ruby gem that wraps Blizzard's Battle.net Community Platform API.
 Currently, RBattlenet only covers the World of Warcraft, Diablo 3 and StarCraft 2 APIs
@@ -9,16 +8,12 @@ Currently, RBattlenet only covers the World of Warcraft, Diablo 3 and StarCraft 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rbattlenet'
+gem 'rbattlenet', git: "git://github.com/Sheday/rbattlenet.git"
 ```
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install rbattlenet
 
 ## Usage
 

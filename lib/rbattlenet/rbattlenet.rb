@@ -66,7 +66,20 @@ module RBattlenet
         RBattlenet::Errors::ConnectionError
       end
     end
-    
+
+    #Custom wrapper using Typheous parallel requests for wowaudit
+    def process_multiple(characters)
+      hydra = Typhoeus::Hydra.new
+      requests = characters.each do |character|
+        request = Typhoeus::Request.new(character.uri)
+        request.on_complete do |response|
+          character.process_result(response)
+        end
+        hydra.queue(request)
+      end
+      hydra.run
+      characters.map{ |character| character.result }
+
     #Sets base uri for requests
     def base_uri(path)
       "https://#{@@region}.api.battle.net/#{path}"
