@@ -79,6 +79,7 @@ module RBattlenet
       end
       hydra.run
       characters.map{ |character| character.result }
+    end
 
     #Sets base uri for requests
     def base_uri(path)
