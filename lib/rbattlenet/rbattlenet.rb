@@ -70,15 +70,14 @@ module RBattlenet
     #Custom wrapper using Typheous parallel requests for wowaudit
     def get_multiple(characters)
       hydra = Typhoeus::Hydra.new
-      requests = characters.each do |character|
-        request = Typhoeus::Request.new(character.uri)
+      requests = characters.each do |uri, character|
+        request = Typhoeus::Request.new(uri)
         request.on_complete do |response|
           character.process_result(response)
         end
         hydra.queue(request)
       end
       hydra.run
-      characters.map{ |character| character.result }
     end
 
     #Sets base uri for requests
