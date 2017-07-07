@@ -78,6 +78,7 @@ module RBattlenet
         hydra.queue(request)
       end
       hydra.run
+      characters
     end
 
     #Sets base uri for requests
