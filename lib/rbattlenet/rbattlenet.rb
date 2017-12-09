@@ -57,10 +57,10 @@ module RBattlenet
 
   class << self
 
-    #Wrapper for HTTParty requests that injects query parameters
+    #Wrapper for Typhoeus requests that injects query parameters
     def get(uri, queries = @@queries)
       begin
-        HTTParty.get(URI.escape(uri + queries))
+        Typhoeus.get(URI.escape(uri + queries))
       rescue
         RBattlenet::Errors::ConnectionError
       end
