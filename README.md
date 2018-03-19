@@ -52,6 +52,11 @@ character = RBattlenet::Wow::Character.find(name: "milhause", realm: "saurfang")
 API=<your_api> bundle exec rspec
 ```
 
+## TODOs
+
+- Refactor specs to use Mocks/Stubs instead of making real API calls
+- Add specs that make real API calls that only run when a flag if provided
+- Add a CHANGELOG
 
 ## Documentation
 ### [World of Warcraft](#wow)
