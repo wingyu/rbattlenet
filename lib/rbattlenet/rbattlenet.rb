@@ -60,12 +60,7 @@ module RBattlenet
 
     #Wrapper for Typhoeus requests that injects query parameters
     def get(uri, queries = @@queries)
-      result = Typhoeus.get(URI.escape(uri + queries)).body
-      begin
-        JSON.load result
-      rescue
-        result
-      end
+      Typhoeus.get(URI.escape(uri + queries))
     end
 
     #Custom wrapper using Typheous parallel requests for wowaudit
