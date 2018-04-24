@@ -1,5 +1,5 @@
+require 'httparty'
 require "rbattlenet/version"
-require "typhoeus"
 
 #World of Warcraft API
 require_relative "./wow/character.rb"
@@ -58,15 +58,19 @@ module RBattlenet
 
   class << self
 
-    #Wrapper for Typhoeus requests that injects query parameters
+    #Wrapper for HTTParty requests that injects query parameters
     def get(uri, queries = @@queries)
-      Typhoeus.get(URI.escape(uri + queries))
+      begin
+        HTTParty.get(URI.escape(uri + queries))
+      rescue
+        RBattlenet::Errors::ConnectionError
+      end
     end
 
     #Custom wrapper using Typheous parallel requests for wowaudit
     def get_multiple(characters)
       hydra = Typhoeus::Hydra.new
-      characters.each do |uri, character|
+      requests = characters.each do |uri, character|
         request = Typhoeus::Request.new(uri)
         request.on_complete do |response|
           character.process_result(response)
@@ -99,3 +103,4 @@ module RBattlenet
     end
   end
 end
+
