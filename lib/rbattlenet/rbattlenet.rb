@@ -83,7 +83,7 @@ module RBattlenet
 
     #Sets base uri for requests
     def base_uri(path)
-      "https://#{@@region}.api.battle.net/#{path}"
+      "https://#{@@region}.api.blizzard.com/#{path}"
     end
 
     #Merges required and optional query parameters
@@ -103,4 +103,3 @@ module RBattlenet
     end
   end
 end
-
