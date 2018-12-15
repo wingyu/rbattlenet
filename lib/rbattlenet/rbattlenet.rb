@@ -33,11 +33,19 @@ module RBattlenet
   @@region = "us"
   @@locale = "en_us"
 
-  #Set API Key for requests. Required
-  def self.authenticate(api_key:)
-    @@api_key = api_key
-
-    @@queries = "?locale=#{@@locale}&apikey=#{@@api_key}"
+  #Set Access Token for requests. Required
+  def self.authenticate(client_id:, client_secret:)
+    response = HTTParty.post("https://us.battle.net/oauth/token",
+      basic_auth: {
+        username: client_id,
+        password: client_secret,
+      },
+      body: {
+        grant_type: :client_credentials
+      }
+    )
+    @@token = response['access_token']
+    @@queries = "?locale=#{@@locale}&access_token=#{@@token}"
     return true
   end
 
@@ -45,7 +53,7 @@ module RBattlenet
   #This defaults to the US region and en_US locale
   def self.set_region(region:, locale:)
     @@region, @@locale = region, locale
-    @@queries = "?locale=#{@@locale}&apikey=#{@@api_key}"
+    @@queries = "?locale=#{@@locale}&access_token=#{@@token}"
     return true
   end
 
