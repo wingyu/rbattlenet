@@ -50,6 +50,12 @@ module RBattlenet
         uri = RBattlenet.base_uri("#{GAME}/data/pet/types")
         RBattlenet.get(uri)
       end
+
+      def self.token()
+        queries = "namespace=dynamic-#{RBattlenet.region}"
+        uri = RBattlenet.base_uri('data/wow/token/')
+        RBattlenet.get(uri, queries)
+      end
     end
   end
 end

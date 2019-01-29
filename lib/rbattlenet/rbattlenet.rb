@@ -55,6 +55,10 @@ module RBattlenet
     return true
   end
 
+  def self.region
+    @@region
+  end
+
   module Wow; GAME = "wow" end
   module D3; GAME = "d3" end
   module Sc2; GAME = "sc2" end

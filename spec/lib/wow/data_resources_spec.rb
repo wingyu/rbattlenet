@@ -95,4 +95,13 @@ describe RBattlenet::Wow::DataResources do
       end
     end
   end
+
+  describe '#token' do
+    it 'fetches token data' do
+      VCR.use_cassette('wow_data_resources_token') do
+        token = RBattlenet::Wow::DataResources.token
+        expect(token['price']).not_to be_nil
+      end
+    end
+  end
 end
