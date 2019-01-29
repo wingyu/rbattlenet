@@ -25,6 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'vcr', '~> 2.9.3'
   spec.add_development_dependency "webmock"
 
-  spec.add_runtime_dependency "typhoeus", "~> 1.1"
   spec.add_runtime_dependency 'httparty', '~> 0.16.1'
 end
