@@ -3,14 +3,9 @@ module RBattlenet
     class Guild
       def self.find(name:, realm:, fields: nil)
         fields = RBattlenet.parse_fields(fields)
-        queries = RBattlenet.merge_queries(fields)
-
-        uri = RBattlenet.
-          base_uri("#{GAME}/guild/#{realm}/#{name}")
-
-        RBattlenet.get(uri, queries)
+        uri = RBattlenet.base_uri("#{GAME}/guild/#{realm}/#{name}")
+        RBattlenet.get(uri, fields)
       end
     end
   end
 end
-
