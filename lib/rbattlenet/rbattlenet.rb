@@ -65,11 +65,12 @@ module RBattlenet
   class << self
 
     #Wrapper for HTTParty requests that injects query parameters
-    def get(uri, queries = '')
+    def get(uri, queries = nil)
       begin
         headers = {}
         headers['Authorization'] = "Bearer #{@@token}" if @@token
-        HTTParty.get(CGI.escape(uri + '?' + queries), headers: headers)
+        uri = "#{uri}?#{queries}" unless queries.nil?
+        HTTParty.get(uri, headers: headers)
       rescue
         RBattlenet::Errors::ConnectionError
       end
