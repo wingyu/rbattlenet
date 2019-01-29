@@ -8,7 +8,7 @@ Currently, RBattlenet only covers the World of Warcraft, Diablo 3 and StarCraft 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rbattlenet', git: "git://github.com/Sheday/rbattlenet.git"
+gem 'rbattlenet', git: "git://github.com/Youness-e/rbattlenet.git"
 ```
 
 And then execute:
