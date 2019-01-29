@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe RBattlenet::Wow::Pvp do
   before do
-    RBattlenet.authenticate(api_key: ENV["API"])
+    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
     RBattlenet.set_region(region: "us", locale: "en_us")
   end
 
