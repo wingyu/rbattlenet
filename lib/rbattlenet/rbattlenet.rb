@@ -45,7 +45,6 @@ module RBattlenet
       }
     )
     @@token = response['access_token']
-    @@queries = "?locale=#{@@locale}&access_token=#{@@token}"
     return true
   end
 
@@ -53,7 +52,6 @@ module RBattlenet
   #This defaults to the US region and en_US locale
   def self.set_region(region:, locale:)
     @@region, @@locale = region, locale
-    @@queries = "?locale=#{@@locale}&access_token=#{@@token}"
     return true
   end
 
@@ -67,9 +65,11 @@ module RBattlenet
   class << self
 
     #Wrapper for HTTParty requests that injects query parameters
-    def get(uri, queries = @@queries)
+    def get(uri, queries = '')
       begin
-        HTTParty.get(URI.escape(uri + queries))
+        headers = {}
+        headers['Authorization'] = "Bearer #{@@token}" if @@token
+        HTTParty.get(CGI.escape(uri + '?' + queries), headers: headers)
       rescue
         RBattlenet::Errors::ConnectionError
       end
@@ -92,11 +92,6 @@ module RBattlenet
     #Sets base uri for requests
     def base_uri(path)
       "https://#{@@region}.api.blizzard.com/#{path}"
-    end
-
-    #Merges required and optional query parameters
-    def merge_queries(queries)
-      @@queries + "#{queries}"
     end
 
     #Parses two-worded fields into the correct format
