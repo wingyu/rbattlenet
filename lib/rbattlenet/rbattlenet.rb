@@ -70,7 +70,7 @@ module RBattlenet
         headers = {}
         headers['Authorization'] = "Bearer #{@@token}" if @@token
         uri = "#{uri}?#{queries}" unless queries.nil?
-        HTTParty.get(uri, headers: headers)
+        HTTParty.get(URI.encode(uri), headers: headers)
       rescue
         RBattlenet::Errors::ConnectionError
       end
@@ -102,7 +102,7 @@ module RBattlenet
         fields.map! do |field|
           field.gsub(/\s\S/,&:upcase).gsub(/\s/, "")
         end
-        "&fields=" + fields.join("+")
+        "fields=" + fields.join("+")
       end
     end
   end
