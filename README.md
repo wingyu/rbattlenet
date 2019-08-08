@@ -1,7 +1,7 @@
 # RBattlenet
 
 A Ruby gem that wraps Blizzard's Battle.net Community Platform API.
-Currently, RBattlenet only covers the World of Warcraft, Diablo 3 and StarCraft 2 APIs
+Currently, RBattlenet only covers the Hearthstone, World of Warcraft, Diablo 3 and StarCraft 2 APIs
 
 ## Installation
 
