@@ -25,7 +25,6 @@ Your private Battle.net API key must be present in order to get a valid Battle.n
 client_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 client_secret = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
 
-CLIENT_ID=d82dc8a00e864da48479a2c9b7b5026d CLIENT_SECRET=sVrYVAaw9aWFdsPzCQC9ez9DHI1i9f9j rspec
 RBattlenet.authenticate(client_id: client_id, client_secret: client_secret)
 ```
 
