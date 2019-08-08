@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://us.api.blizzard.com/hearthstone/cards/52119-arch-villain-rafaam?locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 08 Aug 2019 08:03:17 GMT
+      Server:
+      - nginx/1.16.0
+      Content-Security-Policy:
+      - block-all-mixed-content
+      ETag:
+      - W/"228-xsW7tvxZaZhK26qa9hNlnUKFANc"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '552'
+      x-trace-traceid:
+      - 15b200b7-a8ec-3fd0-a6cd-fa164cefad29
+      x-trace-spanid:
+      - 15b200b7-a8ec-4920-a6cd-fa164cefad29
+      x-trace-parentspanid:
+      - 15b200b7-a8ec-48f0-a6cd-fa164cefad29
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":52119,"collectible":1,"slug":"52119-arch-villain-rafaam","classId":9,"cardTypeId":4,"cardSetId":1130,"rarityId":5,"artistName":"Alex
+        Horley","health":8,"attack":7,"manaCost":7,"name":"Arch-Villain Rafaam","text":"<b><b>Taunt</b>
+        Battlecry:</b> Replace your hand and deck with <b>Legendary</b> minions.","image":"https://d15f34w2p8l1cc.cloudfront.net/hearthstone/b2a53d6abba799b02f3f70c48cbc4c6dc072f8bea7087c942ea933ac3bcfc4e3.png","flavorText":"Minions
+        must wash hands before being LIQUIDATED AND REPLACED BY SOMEONE BETTER.","keywordIds":[1,8]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/hearthstone/cards/52119-arch-villain-rafaam?locale=en_US
+  recorded_at: Thu, 08 Aug 2019 08:03:15 GMT
+recorded_with: VCR 2.9.3

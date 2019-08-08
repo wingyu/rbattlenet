@@ -2,59 +2,55 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.battle.net/wow/battlePet/species/258??locale=en_us&apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx
+    uri: https://us.api.blizzard.com/wow/pet/species/258
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
+      Date:
+      - Thu, 08 Aug 2019 06:11:24 GMT
+      Server:
+      - Apache-Coyote/1.1
       Content-Language:
       - en-US
-      Content-Type:
+      content-type:
       - application/json;charset=UTF-8
-      Date:
-      - Sun, 27 Sep 2015 14:31:49 GMT
-      Server:
-      - Apache
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
+      content-length:
+      - '1348'
+      x-trace-traceid:
+      - 15b200b6-1018-ea00-e32b-fa164dc0bcb5
+      x-trace-spanid:
+      - 15b200b6-1018-ebf0-e32b-fa164dc0bcb5
+      x-trace-parentspanid:
+      - 15b200b6-1018-ebc0-e32b-fa164dc0bcb5
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-80.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '11'
-      X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 3:00:00 PM GMT
-      Content-Length:
-      - '512'
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"speciesId":258,"petTypeId":9,"creatureId":42078,"name":"Mini Thor","canBattle":true,"icon":"t_roboticon","description":"Powerful
         artillery of the Terran army. The Thor is always the first one in and the
         last one out!","source":"Promotion: StarCraft II: Wings of Liberty Collector''s
-        Edition","abilities":[{"slot":1,"order":1,"requiredLevel":2,"id":640,"name":"Toxic
-        Smoke","icon":"spell_shadow_plaguecloud","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":0,"order":0,"requiredLevel":1,"id":777,"name":"Missile","icon":"ability_racial_rocketbarrage","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":0,"order":3,"requiredLevel":10,"id":455,"name":"Batter","icon":"inv_mace_02","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":2,"order":2,"requiredLevel":4,"id":636,"name":"Sticky
-        Grenade","icon":"inv_misc_pyriumgrenade","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":2,"order":5,"requiredLevel":20,"id":293,"name":"Launch
-        Rocket","icon":"ability_mount_rocketmount","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":1,"order":4,"requiredLevel":15,"id":634,"name":"Minefield","icon":"inv_misc_bomb_09","cooldown":5,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false}]}'
-    http_version: 
-  recorded_at: Sun, 27 Sep 2015 14:31:50 GMT
+        Edition","abilities":[{"slot":0,"order":0,"requiredLevel":1,"id":777,"name":"Missile","icon":"ability_racial_rocketbarrage","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":1,"order":1,"requiredLevel":2,"id":640,"name":"Toxic
+        Smoke","icon":"spell_shadow_plaguecloud","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":2,"order":2,"requiredLevel":4,"id":636,"name":"Sticky
+        Grenade","icon":"inv_misc_pyriumgrenade","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":0,"order":3,"requiredLevel":10,"id":455,"name":"Batter","icon":"inv_mace_02","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":1,"order":4,"requiredLevel":15,"id":634,"name":"Minefield","icon":"inv_misc_bomb_09","cooldown":5,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":2,"order":5,"requiredLevel":20,"id":293,"name":"Launch
+        Rocket","icon":"ability_mount_rocketmount","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/wow/pet/species/258
+  recorded_at: Thu, 08 Aug 2019 06:11:22 GMT
 recorded_with: VCR 2.9.3

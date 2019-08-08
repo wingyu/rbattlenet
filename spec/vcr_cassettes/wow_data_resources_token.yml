@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://us.api.blizzard.com/data/wow/token/?namespace=dynamic-us
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Thu, 08 Aug 2019 06:11:50 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Thu, 8 Aug 2019 06:10:16 GMT
+      Battlenet-Namespace:
+      - dynamic-us
+      Cache-Control:
+      - public, max-age=300
+      Battlenet-Schema:
+      - token
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15b200b8-27d9-2570-9c49-fa164c2234c3
+      x-trace-spanid:
+      - 15b200b8-27d9-2750-9c49-fa164c2234c3
+      x-trace-parentspanid:
+      - 15b200b8-27d9-2720-9c49-fa164c2234c3
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://us.api.blizzard.com/data/wow/token/?namespace=dynamic-us"}},"last_updated_timestamp":1565244616000,"price":1321570000}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/data/wow/token/?namespace=dynamic-us
+  recorded_at: Thu, 08 Aug 2019 06:11:48 GMT
+recorded_with: VCR 2.9.3

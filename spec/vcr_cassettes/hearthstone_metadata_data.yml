@@ -1,0 +1,125 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://us.api.blizzard.com/hearthstone/metadata?locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 08 Aug 2019 08:16:26 GMT
+      Server:
+      - nginx/1.16.0
+      Content-Security-Policy:
+      - block-all-mixed-content
+      ETag:
+      - W/"2d2a-We1UbvJ46LhKxpzfNNfxFTo+Cy8"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '11562'
+      x-trace-traceid:
+      - 15b200b7-2b61-6210-cb05-fa164d1bd489
+      x-trace-spanid:
+      - 15b200b7-2b61-6cc0-cb05-fa164d1bd489
+      x-trace-parentspanid:
+      - 15b200b7-2b61-6c90-cb05-fa164d1bd489
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"sets":[{"id":1158,"slug":"saviors-of-uldum","releaseDate":"2019-08-06T00:00:00","name":"Saviors
+        of Uldum","collectibleCount":135,"collectibleRevealedCount":135,"nonCollectibleCount":37,"nonCollectibleRevealedCount":35},{"id":1130,"slug":"rise-of-shadows","releaseDate":"2019-04-01T00:00:00","name":"Rise
+        of Shadows","collectibleCount":136,"collectibleRevealedCount":136,"nonCollectibleCount":37,"nonCollectibleRevealedCount":36},{"id":1129,"slug":"rastakhans-rumble","releaseDate":"2018-12-01T00:00:00","name":"Rastakhan''s
+        Rumble","collectibleCount":135,"collectibleRevealedCount":135,"nonCollectibleCount":29,"nonCollectibleRevealedCount":29},{"id":1127,"slug":"the-boomsday-project","releaseDate":"2018-08-01T00:00:00","name":"The
+        Boomsday Project","collectibleCount":136,"collectibleRevealedCount":136,"nonCollectibleCount":22,"nonCollectibleRevealedCount":20},{"id":1125,"slug":"the-witchwood","releaseDate":"2018-04-01T00:00:00","name":"The
+        Witchwood","collectibleCount":129,"collectibleRevealedCount":129,"nonCollectibleCount":24,"nonCollectibleRevealedCount":24},{"id":1004,"slug":"kobolds-and-catacombs","releaseDate":"2017-12-01T00:00:00","name":"Kobolds
+        and Catacombs","collectibleCount":135,"collectibleRevealedCount":135,"nonCollectibleCount":72,"nonCollectibleRevealedCount":72},{"id":1001,"slug":"knights-of-the-frozen-throne","releaseDate":"2017-08-01T00:00:00","name":"Knights
+        of the Frozen Throne","collectibleCount":135,"collectibleRevealedCount":135,"nonCollectibleCount":48,"nonCollectibleRevealedCount":48},{"id":27,"slug":"journey-to-ungoro","releaseDate":"2017-04-01T00:00:00","name":"Journey
+        to Un''Goro","collectibleCount":135,"collectibleRevealedCount":135,"nonCollectibleCount":52,"nonCollectibleRevealedCount":52},{"id":25,"slug":"mean-streets-of-gadgetzan","releaseDate":"2016-12-01T00:00:00","name":"Mean
+        Streets of Gadgetzan","collectibleCount":132,"collectibleRevealedCount":132,"nonCollectibleCount":82,"nonCollectibleRevealedCount":82},{"id":23,"slug":"one-night-in-karazhan","releaseDate":"2016-08-01T00:00:00","name":"One
+        Night in Karazhan","type":"adventure","collectibleCount":45,"collectibleRevealedCount":45,"nonCollectibleCount":53,"nonCollectibleRevealedCount":53},{"id":21,"slug":"whispers-of-the-old-gods","releaseDate":"2016-04-01T00:00:00","name":"Whispers
+        of the Old Gods","collectibleCount":134,"collectibleRevealedCount":134,"nonCollectibleCount":31,"nonCollectibleRevealedCount":31},{"id":20,"slug":"league-of-explorers","releaseDate":"2015-11-01T00:00:00","name":"League
+        of Explorers","type":"adventure","collectibleCount":45,"collectibleRevealedCount":45,"nonCollectibleCount":15,"nonCollectibleRevealedCount":15},{"id":15,"slug":"the-grand-tournament","releaseDate":"2015-08-01T00:00:00","name":"The
+        Grand Tournament","collectibleCount":132,"collectibleRevealedCount":132,"nonCollectibleCount":27,"nonCollectibleRevealedCount":27},{"id":14,"slug":"blackrock-mountain","releaseDate":"2015-04-01T00:00:00","name":"Blackrock
+        Mountain","type":"adventure","collectibleCount":31,"collectibleRevealedCount":31,"nonCollectibleCount":12,"nonCollectibleRevealedCount":12},{"id":13,"slug":"goblins-vs-gnomes","releaseDate":"2014-12-01T00:00:00","name":"Goblins
+        vs Gnomes","collectibleCount":123,"collectibleRevealedCount":123,"nonCollectibleCount":20,"nonCollectibleRevealedCount":20},{"id":12,"slug":"naxxramas","releaseDate":"2014-06-01T00:00:00","name":"Curse
+        of Naxxramas","type":"adventure","collectibleCount":30,"collectibleRevealedCount":30,"nonCollectibleCount":114,"nonCollectibleRevealedCount":114},{"id":2,"slug":"basic","name":"Basic","collectibleCount":142,"collectibleRevealedCount":142,"nonCollectibleCount":43,"nonCollectibleRevealedCount":43},{"id":3,"slug":"classic","name":"Classic","collectibleCount":245,"collectibleRevealedCount":245,"nonCollectibleCount":66,"nonCollectibleRevealedCount":63},{"id":4,"slug":"hall-of-fame","name":"Hall
+        of Fame","collectibleCount":24,"collectibleRevealedCount":24,"nonCollectibleCount":9,"nonCollectibleRevealedCount":9}],"setGroups":[{"slug":"dragon","year":2019,"cardSets":["saviors-of-uldum","rise-of-shadows"],"name":"Year
+        of the Dragon","standard":true,"icon":"icon_cardset_yearofthedragon"},{"slug":"raven","year":2018,"cardSets":["rastakhans-rumble","the-boomsday-project","the-witchwood"],"name":"Year
+        of the Raven","standard":true,"icon":"icon_cardset_yearoftheraven"},{"slug":"mammoth","year":2017,"cardSets":["kobolds-and-catacombs","knights-of-the-frozen-throne","journey-to-ungoro"],"name":"Year
+        of the Mammoth","standard":false,"icon":"icon_cardset_yearofthemammoth"},{"slug":"kraken","year":2016,"cardSets":["mean-streets-of-gadgetzan","one-night-in-karazhan","whispers-of-the-old-gods"],"name":"Year
+        of the Kraken","icon":"icon_cardset_yearofthekraken"},{"slug":"classic","year":2015,"cardSets":["league-of-explorers","the-grand-tournament","blackrock-mountain","goblins-vs-gnomes","naxxramas"],"name":"Classic
+        Sets","yearRange":"2014-2015","icon":"icon_cardset_classic"},{"slug":"standard","cardSets":["saviors-of-uldum","rise-of-shadows","rastakhans-rumble","the-boomsday-project","the-witchwood","basic","classic"],"name":"Standard
+        Cards"},{"slug":"wild","cardSets":["saviors-of-uldum","rise-of-shadows","rastakhans-rumble","the-boomsday-project","the-witchwood","kobolds-and-catacombs","knights-of-the-frozen-throne","journey-to-ungoro","mean-streets-of-gadgetzan","one-night-in-karazhan","whispers-of-the-old-gods","league-of-explorers","the-grand-tournament","blackrock-mountain","goblins-vs-gnomes","naxxramas","basic","classic","hall-of-fame"],"name":"All
+        Cards"}],"types":[{"id":3,"slug":"hero","name":"Hero"},{"id":4,"slug":"minion","name":"Minion"},{"id":5,"slug":"spell","name":"Spell"},{"id":7,"slug":"weapon","name":"Weapon"}],"rarities":[{"id":1,"slug":"common","craftingCost":[40,400],"dustValue":[5,50],"name":"Common"},{"id":2,"slug":"free","craftingCost":[null,null],"dustValue":[null,null],"name":"Free"},{"id":3,"slug":"rare","craftingCost":[100,800],"dustValue":[20,100],"name":"Rare"},{"id":4,"slug":"epic","craftingCost":[400,1600],"dustValue":[100,400],"name":"Epic"},{"id":5,"slug":"legendary","craftingCost":[1600,3200],"dustValue":[400,1600],"name":"Legendary"}],"classes":[{"id":"*","slug":"all","name":"All
+        Classes"},{"id":2,"slug":"druid","name":"Druid"},{"id":3,"slug":"hunter","name":"Hunter"},{"id":4,"slug":"mage","name":"Mage"},{"id":5,"slug":"paladin","name":"Paladin"},{"id":6,"slug":"priest","name":"Priest"},{"id":7,"slug":"rogue","name":"Rogue"},{"id":8,"slug":"shaman","name":"Shaman"},{"id":9,"slug":"warlock","name":"Warlock"},{"id":10,"slug":"warrior","name":"Warrior"},{"id":12,"slug":"neutral","name":"Neutral"}],"minionTypes":[{"id":14,"slug":"murloc","name":"Murloc"},{"id":15,"slug":"demon","name":"Demon"},{"id":17,"slug":"mech","name":"Mech"},{"id":18,"slug":"elemental","name":"Elemental"},{"id":20,"slug":"beast","name":"Beast"},{"id":21,"slug":"totem","name":"Totem"},{"id":23,"slug":"pirate","name":"Pirate"},{"id":24,"slug":"dragon","name":"Dragon"}],"keywords":[{"id":1,"slug":"taunt","name":"Taunt","refText":"Enemies
+        must attack minions that have Taunt.","text":"Enemies must attack this minion."},{"id":2,"slug":"spellpower","name":"Spell
+        Damage","refText":"Your spells deal extra damage.","text":"Your spell cards
+        deal {0} extra damage."},{"id":3,"slug":"divine-shield","name":"Divine Shield","refText":"The
+        first time a Shielded minion takes damage, ignore it.","text":"The first time
+        this minion takes damage, ignore it."},{"id":4,"slug":"charge","name":"Charge","refText":"Can
+        attack immediately. ","text":"Can attack immediately. "},{"id":5,"slug":"secret","name":"Secret","refText":"Hidden
+        until a specific action occurs on your opponent''s turn.","text":"Hidden until
+        a specific action occurs on your opponent''s turn."},{"id":6,"slug":"stealth","name":"Stealth","refText":"Can''t
+        be attacked or targeted until it attacks.","text":"Can''t be attacked or targeted
+        until it attacks."},{"id":8,"slug":"battlecry","name":"Battlecry","refText":"Does
+        something when you play it from your hand.","text":"Does something when you
+        play it from your hand."},{"id":10,"slug":"freeze","name":"Freeze","refText":"Frozen
+        characters lose their next attack.","text":"Frozen characters lose their next
+        attack."},{"id":11,"slug":"windfury","name":"Windfury","refText":"Can attack
+        twice each turn.","text":"Can attack twice each turn."},{"id":12,"slug":"deathrattle","name":"Deathrattle","refText":"Does
+        something when it dies.","text":"Does something when it dies."},{"id":13,"slug":"combo","name":"Combo","refText":"A
+        bonus if you already played a card this turn.","text":"A bonus if you already
+        played a card this turn."},{"id":14,"slug":"overload","name":"Overload","refText":"Cards
+        with Overload limit your mana next turn.","text":"You have X less mana next
+        turn."},{"id":15,"slug":"silence","name":"Silence","refText":"Removes all
+        card text and enchantments.","text":"Removes all card text and enchantments."},{"id":16,"slug":"counter","name":"Counter","refText":"A
+        card that is Countered has no effect.","text":"A card that is Countered has
+        no effect."},{"id":17,"slug":"immune","name":"Immune","refText":"Immune characters
+        can''t be damaged.","text":"Can''t be damaged."},{"id":20,"slug":"inspire","name":"Inspire","refText":"Does
+        something after you use your Hero Power.","text":"Does something after you
+        use your Hero Power."},{"id":21,"slug":"discover","name":"Discover","refText":"Choose
+        one of three cards to add to your hand.","text":"Choose one of three cards
+        to add to your hand."},{"id":31,"slug":"quest","name":"Quest","refText":"Starts
+        in your hand. Complete for a reward.","text":"Starts in your hand. Complete
+        for a reward."},{"id":32,"slug":"poisonous","name":"Poisonous","refText":"Destroy
+        any minion damaged by this.","text":"Destroy any minion damaged by this."},{"id":34,"slug":"adapt","name":"Adapt","refText":"Choose
+        one of 3 bonuses.","text":"Choose one of 3 bonuses."},{"id":38,"slug":"lifesteal","name":"Lifesteal","refText":"Damage
+        dealt also heals your hero.","text":"Damage dealt also heals your hero."},{"id":39,"slug":"recruit","name":"Recruit","refText":"Summon
+        a minion from your deck.","text":"Summon a minion from your deck."},{"id":52,"slug":"echo","name":"Echo","refText":"Repeatable
+        the turn you play this.","text":"Repeatable the turn you play this."},{"id":53,"slug":"rush","name":"Rush","refText":"Can
+        attack minions immediately.","text":"Can attack minions immediately."},{"id":61,"slug":"overkill","name":"Overkill","refText":"Deal
+        excess damage on your turn for a bonus.","text":"Deal excess damage on your
+        turn for a bonus."},{"id":66,"slug":"modular","name":"Magnetic","refText":"Play
+        this to the left of a Mech to fuse them together!","text":"Play this to the
+        left of a Mech to fuse them together!"},{"id":71,"slug":"evilzug","name":"Lackey","refText":"Lackeys
+        are 1-Cost minions with Battlecries.","text":"Lackeys are 1-Cost minions with
+        Battlecries."},{"id":76,"slug":"twinspell","name":"Twinspell","refText":"Can
+        be cast twice.","text":"Can be cast twice."},{"id":77,"slug":"mega-windfury","name":"Mega-Windfury","refText":"Can
+        attack four times each turn.","text":"Can attack four times each turn."},{"id":78,"slug":"reborn","name":"Reborn","refText":"Resurrects
+        with 1 Health the first time it dies.","text":"Resurrects with 1 Health the
+        first time it dies."}],"filterableFields":["collectible","classId","cardSetId","minionTypeId","rarityId","cardTypeId","manaCost","attack","health","armor"],"numericFields":["manaCost","attack","health","armor"]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/hearthstone/metadata?locale=en_US
+  recorded_at: Thu, 08 Aug 2019 08:16:23 GMT
+recorded_with: VCR 2.9.3

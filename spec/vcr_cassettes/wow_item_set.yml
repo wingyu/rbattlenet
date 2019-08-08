@@ -2,49 +2,43 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.battle.net/wow/item/set/1060?apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx&locale=en_us
+    uri: https://us.api.blizzard.com/wow/item/set/1060
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
+      Date:
+      - Thu, 08 Aug 2019 06:11:55 GMT
+      Server:
+      - Apache-Coyote/1.1
       Content-Language:
       - en-US
-      Content-Type:
+      content-type:
       - application/json;charset=UTF-8
-      Date:
-      - Sun, 27 Sep 2015 14:32:35 GMT
-      Server:
-      - Apache
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
+      content-length:
+      - '328'
+      x-trace-traceid:
+      - 15b200b6-7a42-6540-91ec-fa164dd23032
+      x-trace-spanid:
+      - 15b200b6-7a42-6680-91ec-fa164dd23032
+      x-trace-parentspanid:
+      - 15b200b6-7a42-6650-91ec-fa164dd23032
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-81.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '30'
-      X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 3:00:00 PM GMT
-      Content-Length:
-      - '236'
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
       encoding: UTF-8
@@ -52,6 +46,8 @@ http_interactions:
         the mana cost of Healing Touch and Rejuvenation by 5%.","threshold":2},{"description":"Your
         Rejuvenation and Regrowth spells have a 10% chance to Timeslip and have double
         the normal duration.","threshold":4}],"items":[76749,76750,76751,76752,76753]}'
-    http_version: 
-  recorded_at: Sun, 27 Sep 2015 14:32:35 GMT
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/wow/item/set/1060
+  recorded_at: Thu, 08 Aug 2019 06:11:52 GMT
 recorded_with: VCR 2.9.3

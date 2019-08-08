@@ -2,53 +2,49 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.battle.net/wow/battlePet/ability/640??locale=en_us&apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx
+    uri: https://us.api.blizzard.com/wow/pet/ability/640
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
+      Date:
+      - Thu, 08 Aug 2019 06:11:23 GMT
+      Server:
+      - Apache-Coyote/1.1
       Content-Language:
       - en-US
-      Content-Type:
+      content-type:
       - application/json;charset=UTF-8
-      Date:
-      - Sun, 27 Sep 2015 14:31:48 GMT
-      Server:
-      - Apache
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
+      content-length:
+      - '139'
+      x-trace-traceid:
+      - 15b200b5-60d0-b320-f58a-fa164c1165d9
+      x-trace-spanid:
+      - 15b200b5-60d0-b520-f58a-fa164c1165d9
+      x-trace-parentspanid:
+      - 15b200b5-60d0-b4f0-f58a-fa164c1165d9
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-68.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '10'
-      X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 3:00:00 PM GMT
-      Content-Length:
-      - '135'
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":640,"name":"Toxic Smoke","icon":"spell_shadow_plaguecloud","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false}'
-    http_version: 
-  recorded_at: Sun, 27 Sep 2015 14:31:49 GMT
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/wow/pet/ability/640
+  recorded_at: Thu, 08 Aug 2019 06:11:21 GMT
 recorded_with: VCR 2.9.3

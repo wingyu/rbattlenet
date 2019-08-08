@@ -2,148 +2,85 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eu.api.battle.net/d3/data/item/CrABCL-oudQGEgcIBBWZWjYNHWU61OAdyg3pEx07J28kHevi5AUd8dNq1TCLAjj_AkAAUBJYBGD_AmorCgwIABDX3bKmiICA4DESGwi5u5abChIHCAQVIpaumDCPAjgAQAFYBJABAGorCgwIABCl3rKmiICA4DESGwiR9M-gAhIHCAQVIpaumDCLAjgAQAFYBJABAIABRqUBOydvJK0Bj5DKULUBAXBvArgB9aCdsg7AAQEYsuqy0wFQAFgC?apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx&locale=en_GB
+    uri: https://eu.api.blizzard.com/d3/data/item/corrupted-ashbringer-Unique_Sword_2H_104_x1
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
-      Content-Language:
-      - en-GB
-      Content-Type:
-      - application/json;charset=UTF-8
       Date:
-      - Sun, 27 Sep 2015 14:31:34 GMT
-      Last-Modified:
-      - Thu, 03 Sep 2015 18:46:20 GMT
+      - Thu, 08 Aug 2019 06:10:59 GMT
       Server:
-      - Apache
+      - Apache-Coyote/1.1
       Vary:
       - Accept-Encoding
-      X-Frame-Options:
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '3290'
+      x-trace-traceid:
+      - 15b200c1-e7d4-2760-3ab6-fa165a196292
+      x-trace-spanid:
+      - 15b200c1-e7d4-3f20-3ab6-fa165a196292
+      x-trace-parentspanid:
+      - 15b200c1-e7d4-3ef0-3ab6-fa165a196292
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-56.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '1'
-      X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 3:00:00 PM GMT
-      Content-Length:
-      - '1336'
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        ewogICJpZCIgOiAiVW5pcXVlX0Nsb2FrXzAwMl94MSIsCiAgIm5hbWUiIDog
-        IlRoZSBDbG9hayBvZiB0aGUgR2Fyd3VsZiIsCiAgImljb24iIDogInVuaXF1
-        ZV9jbG9ha18wMDJfeDFfZGVtb25odW50ZXJfbWFsZSIsCiAgImRpc3BsYXlD
-        b2xvciIgOiAib3JhbmdlIiwKICAidG9vbHRpcFBhcmFtcyIgOiAiaXRlbS9D
-        ckFCQ0wtb3VkUUdFZ2NJQkJXWldqWU5IV1U2MU9BZHlnM3BFeDA3SjI4a0hl
-        dmk1QVVkOGROcTFUQ0xBampfQWtBQVVCSllCR0RfQW1vckNnd0lBQkRYM2JL
-        bWlJQ0E0REVTR3dpNXU1YWJDaElIQ0FRVklwYXVtRENQQWpnQVFBRllCSkFC
-        QUdvckNnd0lBQkNsM3JLbWlJQ0E0REVTR3dpUjlNLWdBaElIQ0FRVklwYXVt
-        RENMQWpnQVFBRllCSkFCQUlBQlJxVUJPeWR2SkswQmo1REtVTFVCQVhCdkFy
-        Z0I5YUNkc2c3QUFRRVlzdXF5MHdGUUFGZ0MiLAogICJyZXF1aXJlZExldmVs
-        IiA6IDcwLAogICJpdGVtTGV2ZWwiIDogNzAsCiAgInN0YWNrU2l6ZU1heCIg
-        OiAwLAogICJib251c0FmZml4ZXMiIDogMCwKICAiYm9udXNBZmZpeGVzTWF4
-        IiA6IDAsCiAgImFjY291bnRCb3VuZCIgOiB0cnVlLAogICJmbGF2b3JUZXh0
-        IiA6ICJUaGUgY2xvYWsgb2Ygb25lIHdpdGggYW4gYWZmaW5pdHkgdG93YXJk
-        IHdvbHZlcy4iLAogICJ0eXBlTmFtZSIgOiAiTGVnZW5kYXJ5IENsb2FrIiwK
-        ICAidHlwZSIgOiB7CiAgICAidHdvSGFuZGVkIiA6IGZhbHNlLAogICAgImlk
-        IiA6ICJDbG9hayIKICB9LAogICJkYW1hZ2VSYW5nZSIgOiAiMOKAkzAgRGFt
-        YWdlIiwKICAiYXJtb3IiIDogewogICAgIm1pbiIgOiA2NjAuMCwKICAgICJt
-        YXgiIDogNjYwLjAKICB9LAogICJzbG90cyIgOiBbICJjaGVzdCIgXSwKICAi
-        YXR0cmlidXRlcyIgOiB7CiAgICAicHJpbWFyeSIgOiBbIHsKICAgICAgInRl
-        eHQiIDogIis0NTYgRGV4dGVyaXR5IiwKICAgICAgImNvbG9yIiA6ICJibHVl
-        IiwKICAgICAgImFmZml4VHlwZSIgOiAiZGVmYXVsdCIKICAgIH0sIHsKICAg
-        ICAgInRleHQiIDogIkluY3JlYXNlcyBIYXRyZWQgUmVnZW5lcmF0aW9uIGJ5
-        IDEuMjMgcGVyIFNlY29uZCAoRGVtb24gSHVudGVyIE9ubHkpIiwKICAgICAg
-        ImNvbG9yIiA6ICJibHVlIiwKICAgICAgImFmZml4VHlwZSIgOiAidXRpbGl0
-        eSIKICAgIH0sIHsKICAgICAgInRleHQiIDogIisxMCUgTW92ZW1lbnQgU3Bl
-        ZWQiLAogICAgICAiY29sb3IiIDogImJsdWUiLAogICAgICAiYWZmaXhUeXBl
-        IiA6ICJ1dGlsaXR5IgogICAgfSBdLAogICAgInNlY29uZGFyeSIgOiBbIHsK
-        ICAgICAgInRleHQiIDogIlJlZHVjZXMgZGFtYWdlIGZyb20gcmFuZ2VkIGF0
-        dGFja3MgYnkgNi4wJS4iLAogICAgICAiY29sb3IiIDogImJsdWUiLAogICAg
-        ICAiYWZmaXhUeXBlIiA6ICJkZWZhdWx0IgogICAgfSBdLAogICAgInBhc3Np
-        dmUiIDogWyB7CiAgICAgICJ0ZXh0IiA6ICJDb21wYW5pb24gLSBXb2xmIENv
-        bXBhbmlvbiBub3cgc3VtbW9ucyAzIHdvbHZlcy4iLAogICAgICAiY29sb3Ii
-        IDogIm9yYW5nZSIsCiAgICAgICJhZmZpeFR5cGUiIDogImRlZmF1bHQiCiAg
-        ICB9IF0KICB9LAogICJhdHRyaWJ1dGVzUmF3IiA6IHsKICAgICJEdXJhYmls
-        aXR5X0N1ciIgOiB7CiAgICAgICJtaW4iIDogMzgzLjAsCiAgICAgICJtYXgi
-        IDogMzgzLjAKICAgIH0sCiAgICAiU29ja2V0cyIgOiB7CiAgICAgICJtaW4i
-        IDogMi4wLAogICAgICAibWF4IiA6IDIuMAogICAgfSwKICAgICJMb290XzJf
-        MF9Ecm9wIiA6IHsKICAgICAgIm1pbiIgOiAxLjAsCiAgICAgICJtYXgiIDog
-        MS4wCiAgICB9LAogICAgIk1vdmVtZW50X1NjYWxhciIgOiB7CiAgICAgICJt
-        aW4iIDogMC4xLAogICAgICAibWF4IiA6IDAuMQogICAgfSwKICAgICJEZXh0
-        ZXJpdHlfSXRlbSIgOiB7CiAgICAgICJtaW4iIDogNDU2LjAsCiAgICAgICJt
-        YXgiIDogNDU2LjAKICAgIH0sCiAgICAiSXRlbV9MZWdlbmRhcnlfSXRlbV9C
-        YXNlX0l0ZW0iIDogewogICAgICAibWluIiA6IDQuMDg1NzYwMUU3LAogICAg
-        ICAibWF4IiA6IDQuMDg1NzYwMUU3CiAgICB9LAogICAgIkl0ZW1fUG93ZXJf
-        UGFzc2l2ZSNJdGVtUGFzc2l2ZV9VbmlxdWVfUmluZ181MDFfeDEiIDogewog
-        ICAgICAibWluIiA6IDEuMCwKICAgICAgIm1heCIgOiAxLjAKICAgIH0sCiAg
-        ICAiRGFtYWdlX1BlcmNlbnRfUmVkdWN0aW9uX0Zyb21fUmFuZ2VkIiA6IHsK
-        ICAgICAgIm1pbiIgOiAwLjA2MDAwMDAwMDAwMDAwMDA1LAogICAgICAibWF4
-        IiA6IDAuMDYwMDAwMDAwMDAwMDAwMDUKICAgIH0sCiAgICAiQXJtb3JfSXRl
-        bSIgOiB7CiAgICAgICJtaW4iIDogNjYwLjAsCiAgICAgICJtYXgiIDogNjYw
-        LjAKICAgIH0sCiAgICAiSXRlbV9CaW5kaW5nX0xldmVsX092ZXJyaWRlIiA6
-        IHsKICAgICAgIm1pbiIgOiAyLjAsCiAgICAgICJtYXgiIDogMi4wCiAgICB9
-        LAogICAgIkR1cmFiaWxpdHlfTWF4IiA6IHsKICAgICAgIm1pbiIgOiAzODMu
-        MCwKICAgICAgIm1heCIgOiAzODMuMAogICAgfSwKICAgICJJdGVtX0xlZ2Vu
-        ZGFyeUl0ZW1fTGV2ZWxfT3ZlcnJpZGUiIDogewogICAgICAibWluIiA6IDcw
-        LjAsCiAgICAgICJtYXgiIDogNzAuMAogICAgfSwKICAgICJTZWFzb24iIDog
-        ewogICAgICAibWluIiA6IDAuMCwKICAgICAgIm1heCIgOiAwLjAKICAgIH0s
-        CiAgICAiUmVzb3VyY2VfUmVnZW5fUGVyX1NlY29uZCNIYXRyZWQiIDogewog
-        ICAgICAibWluIiA6IDEuMjMzMzMzMzMzMzMzMzMzNCwKICAgICAgIm1heCIg
-        OiAxLjIzMzMzMzMzMzMzMzMzMzQKICAgIH0KICB9LAogICJyYW5kb21BZmZp
-        eGVzIiA6IFsgXSwKICAiZ2VtcyIgOiBbIHsKICAgICJpdGVtIiA6IHsKICAg
-        ICAgImlkIiA6ICJFbWVyYWxkXzE4IiwKICAgICAgIm5hbWUiIDogIlJveWFs
-        IEVtZXJhbGQiLAogICAgICAiaWNvbiIgOiAiZW1lcmFsZF8xOF9kZW1vbmh1
-        bnRlcl9tYWxlIiwKICAgICAgImRpc3BsYXlDb2xvciIgOiAiYmx1ZSIsCiAg
-        ICAgICJ0b29sdGlwUGFyYW1zIiA6ICJpdGVtL0Noc0l1YnVXbXdvU0J3Z0VG
-        U0tXcnBnd2p3STRBRUFCV0FTUUFRQVl1NmVMOVF3IgogICAgfSwKICAgICJp
-        c0dlbSIgOiB0cnVlLAogICAgImlzSmV3ZWwiIDogZmFsc2UsCiAgICAiYXR0
-        cmlidXRlcyIgOiB7CiAgICAgICJwcmltYXJ5IiA6IFsgewogICAgICAgICJ0
-        ZXh0IiA6ICIrMjIwIERleHRlcml0eSIsCiAgICAgICAgImNvbG9yIiA6ICJi
-        bHVlIiwKICAgICAgICAiYWZmaXhUeXBlIiA6ICJkZWZhdWx0IgogICAgICB9
-        IF0sCiAgICAgICJzZWNvbmRhcnkiIDogWyBdLAogICAgICAicGFzc2l2ZSIg
-        OiBbIF0KICAgIH0sCiAgICAiYXR0cmlidXRlc1JhdyIgOiB7CiAgICAgICJE
-        ZXh0ZXJpdHlfSXRlbSIgOiB7CiAgICAgICAgIm1pbiIgOiAyMjAuMCwKICAg
-        ICAgICAibWF4IiA6IDIyMC4wCiAgICAgIH0KICAgIH0KICB9LCB7CiAgICAi
-        aXRlbSIgOiB7CiAgICAgICJpZCIgOiAiRW1lcmFsZF8xOCIsCiAgICAgICJu
-        YW1lIiA6ICJSb3lhbCBFbWVyYWxkIiwKICAgICAgImljb24iIDogImVtZXJh
-        bGRfMThfZGVtb25odW50ZXJfbWFsZSIsCiAgICAgICJkaXNwbGF5Q29sb3Ii
-        IDogImJsdWUiLAogICAgICAidG9vbHRpcFBhcmFtcyIgOiAiaXRlbS9DaHNJ
-        a2ZUUG9BSVNCd2dFRlNLV3JwZ3dpd0k0QUVBQldBU1FBUUFZdTZlTDlRdyIK
-        ICAgIH0sCiAgICAiaXNHZW0iIDogdHJ1ZSwKICAgICJpc0pld2VsIiA6IGZh
-        bHNlLAogICAgImF0dHJpYnV0ZXMiIDogewogICAgICAicHJpbWFyeSIgOiBb
-        IHsKICAgICAgICAidGV4dCIgOiAiKzIyMCBEZXh0ZXJpdHkiLAogICAgICAg
-        ICJjb2xvciIgOiAiYmx1ZSIsCiAgICAgICAgImFmZml4VHlwZSIgOiAiZGVm
-        YXVsdCIKICAgICAgfSBdLAogICAgICAic2Vjb25kYXJ5IiA6IFsgXSwKICAg
-        ICAgInBhc3NpdmUiIDogWyBdCiAgICB9LAogICAgImF0dHJpYnV0ZXNSYXci
-        IDogewogICAgICAiRGV4dGVyaXR5X0l0ZW0iIDogewogICAgICAgICJtaW4i
-        IDogMjIwLjAsCiAgICAgICAgIm1heCIgOiAyMjAuMAogICAgICB9CiAgICB9
-        CiAgfSBdLAogICJzb2NrZXRFZmZlY3RzIiA6IFsgXSwKICAiY3JhZnRlZEJ5
-        IiA6IFsgXSwKICAic2Vhc29uUmVxdWlyZWRUb0Ryb3AiIDogLTEsCiAgImlz
-        U2Vhc29uUmVxdWlyZWRUb0Ryb3AiIDogZmFsc2UsCiAgImRlc2NyaXB0aW9u
-        IiA6IG51bGwsCiAgImJsb2NrQ2hhbmNlIiA6ICIrMC4wJSBDaGFuY2UgdG8g
-        QmxvY2siCn0=
-    http_version: 
-  recorded_at: Sun, 27 Sep 2015 14:31:36 GMT
+      encoding: UTF-8
+      string: '{"id":"Unique_Sword_2H_104_x1","slug":"corrupted-ashbringer","name":"Corrupted
+        Ashbringer","icon":"unique_sword_2h_104_x1_demonhunter_male","tooltipParams":"/item/corrupted-ashbringer-Unique_Sword_2H_104_x1","requiredLevel":70,"stackSizeMax":0,"accountBound":true,"flavorText":"Stories
+        tell of a great paladin who wore a single gauntlet of silver and wielded a
+        mighty sword with a flashing jewel. He dispatched thousands of Risen Dead
+        and Wretched Mothers, but fell to a tragic end. This sword bears some resemblance
+        to the legends, but its jewel is dark and threatening. Perhaps there is more
+        to the story?","flavorTextHtml":"<span class=\"d3-color-ffc7b377\">Stories
+        tell of a great paladin who wore a single gauntlet of silver and wielded a
+        mighty sword with a flashing jewel. He dispatched thousands of Risen Dead
+        and Wretched Mothers, but fell to a tragic end. This sword bears some resemblance
+        to the legends, but its jewel is dark and threatening. Perhaps there is more
+        to the story?</span>","typeName":"Legendary Two-Handed Sword","type":{"twoHanded":true,"id":"Sword2H"},"damage":"1137-1702
+        Damage\n1.15 Attacks per Second","dps":"1,632.4","damageHtml":"<p>1137-1702
+        <span class=\"d3-color-FF888888\">Damage</span></p>\n<p>1.15 <span class=\"d3-color-FF888888\">Attacks
+        per Second</span></p>","color":"orange","isSeasonRequiredToDrop":false,"seasonRequiredToDrop":-1,"slots":["right-hand","left-hand","follower-left-hand"],"attributes":{"primary":[{"textHtml":"<span
+        class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+[1177
+        - 1439]-[1410 - 1788] Poison Damage</span>","text":"+[1177 - 1439]-[1410 -
+        1788] Poison Damage"}],"secondary":[{"textHtml":"<span class=\"tooltip-icon-bullet\"></span>
+        <span class=\"d3-color-ff6969ff\">+[9142 - 13,371] Life after Each Kill</span>","text":"+[9142
+        - 13,371] Life after Each Kill"},{"textHtml":"<span class=\"tooltip-icon-utility\"></span>
+        <span class=\"d3-color-ff6969ff\">+[9 - 15]% Damage to Undead</span>","text":"+[9
+        - 15]% Damage to Undead"},{"textHtml":"<span class=\"d3-color-ffff8000\"><span
+        class=\"tooltip-icon-utility\"></span> Chance on kill to raise a skeleton
+        to fight for you. Upon accumulating 5 skeletons, they each explode for 1000%
+        weapon damage and the sword transforms into Ashbringer for a short time. Attacking
+        with Ashbringer burns your enemy for <span class=\"d3-color-magic\">5462%</span>
+        weapon damage as Holy.</span> <span class=\"d3-color-ff9b9b9b\">[5000 - 6000]%</span>","text":"Chance
+        on kill to raise a skeleton to fight for you. Upon accumulating 5 skeletons,
+        they each explode for 1000% weapon damage and the sword transforms into Ashbringer
+        for a short time. Attacking with Ashbringer burns your enemy for 5462% weapon
+        damage as Holy. [5000 - 6000]%"}],"other":[]},"randomAffixes":[{"oneOf":[{"textHtml":"<span
+        class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+[946
+        - 1125] Strength</span>","text":"+[946 - 1125] Strength"},{"textHtml":"<span
+        class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+[946
+        - 1125] Intelligence</span>","text":"+[946 - 1125] Intelligence"},{"textHtml":"<span
+        class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+[946
+        - 1125] Dexterity</span>","text":"+[946 - 1125] Dexterity"}]}],"setItems":[]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/item/corrupted-ashbringer-Unique_Sword_2H_104_x1
+  recorded_at: Thu, 08 Aug 2019 06:10:56 GMT
 recorded_with: VCR 2.9.3

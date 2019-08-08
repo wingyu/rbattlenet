@@ -2,53 +2,49 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.battle.net/wow/data/pet/types?apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx&locale=en_us
+    uri: https://us.api.blizzard.com/wow/data/pet/types
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
+      Date:
+      - Thu, 08 Aug 2019 06:11:49 GMT
+      Server:
+      - Apache-Coyote/1.1
       Content-Language:
       - en-US
-      Content-Type:
+      content-type:
       - application/json;charset=UTF-8
-      Date:
-      - Sun, 27 Sep 2015 14:32:28 GMT
-      Server:
-      - Apache
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
+      content-length:
+      - '1018'
+      x-trace-traceid:
+      - 15b200e8-ad15-5e10-9756-fa164cbd2448
+      x-trace-spanid:
+      - 15b200e8-ad15-5f40-9756-fa164cbd2448
+      x-trace-parentspanid:
+      - 15b200e8-ad15-5f10-9756-fa164cbd2448
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-69.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '26'
-      X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 3:00:00 PM GMT
-      Content-Length:
-      - '305'
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"petTypes":[{"id":0,"key":"humanoid","name":"Humanoid","typeAbilityId":238,"strongAgainstId":1,"weakAgainstId":7},{"id":1,"key":"dragonkin","name":"Dragonkin","typeAbilityId":245,"strongAgainstId":5,"weakAgainstId":3},{"id":2,"key":"flying","name":"Flying","typeAbilityId":239,"strongAgainstId":8,"weakAgainstId":1},{"id":3,"key":"undead","name":"Undead","typeAbilityId":242,"strongAgainstId":0,"weakAgainstId":8},{"id":4,"key":"critter","name":"Critter","typeAbilityId":236,"strongAgainstId":3,"weakAgainstId":0},{"id":5,"key":"magical","name":"Magic","typeAbilityId":243,"strongAgainstId":2,"weakAgainstId":9},{"id":6,"key":"elemental","name":"Elemental","typeAbilityId":241,"strongAgainstId":9,"weakAgainstId":4},{"id":7,"key":"beast","name":"Beast","typeAbilityId":237,"strongAgainstId":4,"weakAgainstId":2},{"id":8,"key":"water","name":"Aquatic","typeAbilityId":240,"strongAgainstId":6,"weakAgainstId":5},{"id":9,"key":"mechanical","name":"Mechanical","typeAbilityId":244,"strongAgainstId":7,"weakAgainstId":6}]}'
-    http_version: 
-  recorded_at: Sun, 27 Sep 2015 14:32:28 GMT
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/wow/data/pet/types
+  recorded_at: Thu, 08 Aug 2019 06:11:47 GMT
 recorded_with: VCR 2.9.3

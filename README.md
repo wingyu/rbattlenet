@@ -1,24 +1,19 @@
 # RBattlenet
-[![Code Climate](https://codeclimate.com/github/wingyu/rbattlenet/badges/gpa.svg)](https://codeclimate.com/github/wingyu/rbattlenet)
 
 A Ruby gem that wraps Blizzard's Battle.net Community Platform API.
-Currently, RBattlenet only covers the World of Warcraft, Diablo 3 and StarCraft 2 APIs
+Currently, RBattlenet only covers the Hearthstone, World of Warcraft, Diablo 3 and StarCraft 2 APIs
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rbattlenet'
+gem 'rbattlenet', github: 'austra/rbattlenet'
 ```
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install rbattlenet
 
 ## Usage
 
@@ -27,9 +22,10 @@ Or install it yourself as:
 Your private Battle.net API key must be present in order to get a valid Battle.net API response. Before any requests are made, your API key must be set like so:
 
 ```ruby
-api_key = "abcdefgh"
+client_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+client_secret = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
 
-RBattlenet.authenticate(api_key: api_key)
+RBattlenet.authenticate(client_id: client_id, client_secret: client_secret)
 ```
 
 #### Step 2. Setting your region and locale (Optional)
@@ -37,19 +33,32 @@ RBattlenet.authenticate(api_key: api_key)
 Your region and locale defaults to US and en_US respectively. However, these can be changed like so:
 
 ```ruby
-RBattlenet.set_region(region: "eu", locale: "en_GB")
+RBattlenet.set_region(region: "us", locale: "en_US")
 ```
 
 #### Step 3. Call the API methods to request data
 
 ```ruby
-character = RBattlenet::Wow::Character.find(name: "milhause", realm: "saurfang")
-#character["name"] will give you "Milhause"
+character = RBattlenet::Wow::DataResources.find_character_classes
+
+{"classes"=>
+  [{"id"=>1, "mask"=>1, "powerType"=>"rage", "name"=>"Warrior"},
+   {"id"=>2, "mask"=>2, "powerType"=>"mana", "name"=>"Paladin"},
+   {"id"=>3, "mask"=>4, "powerType"=>"focus", "name"=>"Hunter"},
+   {"id"=>4, "mask"=>8, "powerType"=>"energy", "name"=>"Rogue"},
+   {"id"=>5, "mask"=>16, "powerType"=>"mana", "name"=>"Priest"},
+   {"id"=>6, "mask"=>32, "powerType"=>"runic-power", "name"=>"Death Knight"},
+   {"id"=>7, "mask"=>64, "powerType"=>"mana", "name"=>"Shaman"},
+   {"id"=>8, "mask"=>128, "powerType"=>"mana", "name"=>"Mage"},
+   {"id"=>9, "mask"=>256, "powerType"=>"mana", "name"=>"Warlock"},
+   {"id"=>10, "mask"=>512, "powerType"=>"energy", "name"=>"Monk"},
+   {"id"=>11, "mask"=>1024, "powerType"=>"mana", "name"=>"Druid"},
+   {"id"=>12, "mask"=>2048, "powerType"=>"fury", "name"=>"Demon Hunter"}]}
 ```
 
 ## Testing
 ```ruby
-API=<your_api> bundle exec rspec
+CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
 ```
 
 ## TODOs
@@ -59,6 +68,12 @@ API=<your_api> bundle exec rspec
 - Add a CHANGELOG
 
 ## Documentation
+### [Hearthstone](#hearthstone)
+
+* [Card](#hearthstone-card)
+* [Deck](#hearthstone-deck)
+* [Metadata](#hearthstone-metadata)
+
 ### [World of Warcraft](#wow)
 
 * [Achievement](#wow-achievement)
@@ -86,6 +101,58 @@ API=<your_api> bundle exec rspec
 * [Data Resources](#d3-data)
 * [Profile](#d3-profile)
 
+---
+<a name="hearthstone"></a>
+## Hearthstone
+https://develop.battle.net/documentation/api-reference/hearthstone-game-data-api
+
+<a name="hearthstone-card"></a>
+### Cards
+
+```ruby
+args = {
+  set: 'rise-of-shadows',
+  class: 'mage',
+  mana_cost: 10,
+  attack: 4,
+  health: 10,
+  collectible: 1,        
+  rarity: 'legendary',
+  type: 'minion',
+  minion_type: 'dragon',
+  keyword: 'battlecry',
+  text_filter: 'kalecgos',
+  page: 1,
+  page_size: 5,
+  sort: 'name',
+  order: 'desc'
+}
+```
+
+```ruby
+cards = RBattlenet::Hearthstone::Card.find_cards(args)
+card  = RBattlenet::Hearthstone::Card.find_card(id_or_slug: '52119-arch-villain-rafaam')
+```
+
+---
+
+<a name="hearthstone-deck"></a>
+### Decks
+
+```ruby
+deck = RBattlenet::Hearthstone::Deck.find_deck(deckcode: 'AAECAQcG+wyd8AKS+AKggAOblAPanQMMS6IE/web8wLR9QKD+wKe+wKz/AL1gAOXlAOalAOSnwMA')
+```
+
+---
+
+<a name="hearthstone-metadata"></a>
+### Metadata
+
+```ruby
+metadata = RBattlenet::Hearthstone::Metadata.all_metadata()
+# valid types:  sets, setGroups, types, rarities, classes, minionTypes, and keywords.
+metadata = RBattlenet::Hearthstone::Metadata.find_metadata(type: 'sets')
+```
 ---
 
 <a name="wow"></a>
@@ -343,7 +410,7 @@ RBattlenet::Wow::Spell.find(id: 8056)
 ### Profile
 
 ```ruby
-RBattlenet::Sc2::Profile.find(id: 1234567, region: 1, name: 'name')
+Not working: RBattlenet::Sc2::Profile.find(id: 1234567, region: 1, name: 'name')
 ```
 
 #### Ladders
@@ -356,7 +423,7 @@ RBattlenet::Sc2::Profile.find_ladders(id: 1234567, region: 1, name: 'name')
 
 
 ```ruby
-RBattlenet::Sc2::Profile.find_match_history(id: 2137104, region: 1, name: 'skt')
+RBattlenet::Sc2::Profile.find_match_history(id: 2137104, region: 1, realm: 1)
 ```
 
 ---

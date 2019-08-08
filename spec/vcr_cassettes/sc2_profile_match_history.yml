@@ -2,206 +2,69 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.battle.net/sc2/profile/2137104/1/skt/matches?apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx&locale=en_US
+    uri: https://us.api.blizzard.com/sc2/legacy/profile/1/1/2137104/matches
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
-      Content-Language:
-      - en-US
-      Content-Type:
-      - application/json;charset=UTF-8
+      Access-Control-Allow-Origin:
+      - "*"
       Date:
-      - Mon, 28 Sep 2015 11:37:57 GMT
+      - Thu, 08 Aug 2019 06:11:22 GMT
       Server:
-      - Apache
+      - nginx/1.13.12
+      Content-Security-Policy:
+      - block-all-mixed-content
       Vary:
       - Accept-Encoding
-      X-Frame-Options:
+      X-Powered-By:
+      - Express
+      ETag:
+      - W/"912-QLwiY2rAxq7zZldRXmqg0GG0UHM"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '2322'
+      x-trace-traceid:
+      - 15b200b5-ba44-1910-a36f-fa164d02be05
+      x-trace-spanid:
+      - 15b200b5-ba44-39c0-a36f-fa164d02be05
+      x-trace-parentspanid:
+      - 15b200b5-ba44-3990-a36f-fa164d02be05
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-67.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '23'
-      X-Plan-Quota-Reset:
-      - Monday, September 28, 2015 12:00:00 PM GMT
-      Transfer-Encoding:
-      - chunked
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: |-
-        {
-          "matches" : [ {
-            "map" : "Airstrike",
-            "type" : "CUSTOM",
-            "decision" : "BAILER",
-            "speed" : "FASTER",
-            "date" : 1425172458
-          }, {
-            "map" : "Daybreak LE",
-            "type" : "CUSTOM",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1362927359
-          }, {
-            "map" : "SC Universe RPG: Chronicles of Fate",
-            "type" : "CUSTOM",
-            "decision" : "BAILER",
-            "speed" : "NORMAL",
-            "date" : 1362922742
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1362919799
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "LOSS",
-            "speed" : "FASTER",
-            "date" : 1362919486
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "LOSS",
-            "speed" : "FASTER",
-            "date" : 1362919222
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1362817866
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "LOSS",
-            "speed" : "FASTER",
-            "date" : 1362817616
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1362817129
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1362816853
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "LOSS",
-            "speed" : "FASTER",
-            "date" : 1362816609
-          }, {
-            "map" : "Snipers Promod US",
-            "type" : "CUSTOM",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1362816364
-          }, {
-            "map" : "Squadron Tower Defense",
-            "type" : "CUSTOM",
-            "decision" : "BAILER",
-            "speed" : "FASTER",
-            "date" : 1362812010
-          }, {
-            "map" : "Discord IV",
-            "type" : "CUSTOM",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1362760339
-          }, {
-            "map" : "Ohana LE",
-            "type" : "CUSTOM",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1362745580
-          }, {
-            "map" : "Ohana LE",
-            "type" : "CUSTOM",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1362744850
-          }, {
-            "map" : "Xel'Naga Caverns",
-            "type" : "CUSTOM",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1362731369
-          }, {
-            "map" : "Xel'Naga Caverns",
-            "type" : "CUSTOM",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1362730677
-          }, {
-            "map" : "Cloud Kingdom LE",
-            "type" : "CO_OP",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1361358095
-          }, {
-            "map" : "Antiga Shipyard",
-            "type" : "CO_OP",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1361337148
-          }, {
-            "map" : "Daybreak LE",
-            "type" : "CO_OP",
-            "decision" : "WIN",
-            "speed" : "FASTER",
-            "date" : 1361326016
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "LOSS",
-            "speed" : "FASTER",
-            "date" : 1360850110
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "LOSS",
-            "speed" : "FASTER",
-            "date" : 1360849788
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "LOSS",
-            "speed" : "FASTER",
-            "date" : 1353303575
-          }, {
-            "map" : "StarJeweled",
-            "type" : "CUSTOM",
-            "decision" : "LOSS",
-            "speed" : "FASTER",
-            "date" : 1353302859
-          } ]
-        }
-    http_version: 
-  recorded_at: Mon, 28 Sep 2015 11:37:57 GMT
+      string: '{"matches":[{"map":"Airstrike","type":"Custom","decision":"Left","speed":"Faster","date":1425172458},{"map":"Daybreak
+        LE","type":"Custom","decision":"Win","speed":"Faster","date":1362927359},{"map":"SC
+        Universe RPG: Chronicles of Fate","type":"Custom","decision":"Left","speed":"Normal","date":1362922742},{"map":"StarJeweled","type":"Custom","decision":"Win","speed":"Faster","date":1362919799},{"map":"StarJeweled","type":"Custom","decision":"Loss","speed":"Faster","date":1362919486},{"map":"StarJeweled","type":"Custom","decision":"Loss","speed":"Faster","date":1362919222},{"map":"StarJeweled","type":"Custom","decision":"Win","speed":"Faster","date":1362817866},{"map":"StarJeweled","type":"Custom","decision":"Loss","speed":"Faster","date":1362817616},{"map":"StarJeweled","type":"Custom","decision":"Win","speed":"Faster","date":1362817129},{"map":"StarJeweled","type":"Custom","decision":"Win","speed":"Faster","date":1362816853},{"map":"StarJeweled","type":"Custom","decision":"Loss","speed":"Faster","date":1362816609},{"map":"Snipers
+        Promod US","type":"Custom","decision":"Win","speed":"Faster","date":1362816364},{"map":"Squadron
+        Tower Defense","type":"Custom","decision":"Left","speed":"Faster","date":1362812010},{"map":"Discord
+        IV","type":"Custom","decision":"Win","speed":"Faster","date":1362760339},{"map":"Ohana
+        LE","type":"Custom","decision":"Win","speed":"Faster","date":1362745580},{"map":"Ohana
+        LE","type":"Custom","decision":"Win","speed":"Faster","date":1362744850},{"map":"Xel''Naga
+        Caverns","type":"Custom","decision":"Win","speed":"Faster","date":1362731369},{"map":"Xel''Naga
+        Caverns","type":"Custom","decision":"Win","speed":"Faster","date":1362730677},{"map":"Cloud
+        Kingdom LE","type":"Co-Op","decision":"Win","speed":"Faster","date":1361358095},{"map":"Antiga
+        Shipyard","type":"Co-Op","decision":"Win","speed":"Faster","date":1361337148},{"map":"Daybreak
+        LE","type":"Co-Op","decision":"Win","speed":"Faster","date":1361326016},{"map":"StarJeweled","type":"Custom","decision":"Loss","speed":"Faster","date":1360850110},{"map":"StarJeweled","type":"Custom","decision":"Loss","speed":"Faster","date":1360849788},{"map":"StarJeweled","type":"Custom","decision":"Loss","speed":"Faster","date":1353303575},{"map":"StarJeweled","type":"Custom","decision":"Loss","speed":"Faster","date":1353302859}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/sc2/legacy/profile/1/1/2137104/matches
+  recorded_at: Thu, 08 Aug 2019 06:11:19 GMT
 recorded_with: VCR 2.9.3

@@ -2,18 +2,17 @@ require 'spec_helper'
 
 describe RBattlenet::D3::DataResources do
   before do
-    RBattlenet.authenticate(api_key: ENV["API"])
+    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
     RBattlenet.set_region(region: "eu", locale: "en_GB")
   end
 
   describe "#find_item" do
     it "fetches item data" do
-      VCR.use_cassette('d3_item_data') do
-        data = "CrABCL-oudQGEgcIBBWZWjYNHWU61OAdyg3pEx07J28kHevi5AUd8dNq1TCLAjj_AkAAUBJYBGD_AmorCgwIABDX3bKmiICA4DESGwi5u5abChIHCAQVIpaumDCPAjgAQAFYBJABAGorCgwIABCl3rKmiICA4DESGwiR9M-gAhIHCAQVIpaumDCLAjgAQAFYBJABAIABRqUBOydvJK0Bj5DKULUBAXBvArgB9aCdsg7AAQEYsuqy0wFQAFgC"
-        item = RBattlenet::D3::DataResources.
-          find_item(data: data)
+      VCR.use_cassette('d3_item_data', :record => :all) do
+        data = "corrupted-ashbringer-Unique_Sword_2H_104_x1"
+        item = RBattlenet::D3::DataResources.find_item(data: data)
 
-        expect(item['name']).to eq "The Cloak of the Garwulf"
+        expect(item['name']).to eq "Corrupted Ashbringer"
       end
     end
   end
