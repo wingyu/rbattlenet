@@ -2,56 +2,52 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.battle.net/wow/character/saurfang/milhause?apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx&fields=petSlots&locale=en_us
+    uri: https://us.api.blizzard.com/wow/character/saurfang/milhause?fields=petSlots
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
-      Content-Language:
-      - en-US
-      Content-Type:
-      - application/json;charset=UTF-8
       Date:
-      - Sun, 27 Sep 2015 14:32:01 GMT
+      - Thu, 08 Aug 2019 06:11:39 GMT
+      Server:
+      - Apache-Coyote/1.1
       Last-Modified:
       - Mon, 02 Mar 2015 15:49:44 GMT
-      Server:
-      - Apache
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
+      Content-Language:
+      - en-US
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '458'
+      x-trace-traceid:
+      - 15b200b2-f213-58d0-ca62-fa164dd3675a
+      x-trace-spanid:
+      - 15b200b2-f213-6430-ca62-fa164dd3675a
+      x-trace-parentspanid:
+      - 15b200b2-f213-6400-ca62-fa164dd3675a
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-69.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '16'
-      X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 3:00:00 PM GMT
-      Content-Length:
-      - '284'
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"lastModified":1425311384000,"name":"Milhause","realm":"Saurfang","battlegroup":"AU/NZ
-        Battle Group","class":10,"race":25,"gender":0,"level":100,"achievementPoints":1140,"thumbnail":"internal-record-3695/234/162958314-avatar.jpg","calcClass":"f","petSlots":[{"slot":1,"isEmpty":true,"isLocked":true,"abilities":[]},{"slot":2,"isEmpty":true,"isLocked":true,"abilities":[]},{"slot":3,"isEmpty":true,"isLocked":true,"abilities":[]}],"totalHonorableKills":1435}'
-    http_version: 
-  recorded_at: Sun, 27 Sep 2015 14:32:01 GMT
+        Battle Group","class":10,"race":25,"gender":0,"level":100,"achievementPoints":1045,"thumbnail":"saurfang/234/162958314-avatar.jpg","calcClass":"f","faction":0,"petSlots":[{"slot":1,"isEmpty":true,"isLocked":true,"abilities":[]},{"slot":2,"isEmpty":true,"isLocked":true,"abilities":[]},{"slot":3,"isEmpty":true,"isLocked":true,"abilities":[]}],"totalHonorableKills":1435}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/wow/character/saurfang/milhause?fields=petSlots
+  recorded_at: Thu, 08 Aug 2019 06:11:36 GMT
 recorded_with: VCR 2.9.3

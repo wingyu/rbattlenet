@@ -2,53 +2,49 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.battle.net/wow/battlePet/stats/258?apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx&breedId=5&level=25&locale=en_us&qualityId=4
+    uri: https://us.api.blizzard.com/wow/pet/stats/258?&level=25&breedId=5&qualityId=4
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
+      Date:
+      - Thu, 08 Aug 2019 06:11:25 GMT
+      Server:
+      - Apache-Coyote/1.1
       Content-Language:
       - en-US
-      Content-Type:
+      content-type:
       - application/json;charset=UTF-8
-      Date:
-      - Sun, 27 Sep 2015 14:31:51 GMT
-      Server:
-      - Apache
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
+      content-length:
+      - '95'
+      x-trace-traceid:
+      - 15b200b6-7a3d-ccb0-91ec-fa164dd23032
+      x-trace-spanid:
+      - 15b200b6-7a3d-cde0-91ec-fa164dd23032
+      x-trace-parentspanid:
+      - 15b200b6-7a3d-cdb0-91ec-fa164dd23032
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-80.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '12'
-      X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 3:00:00 PM GMT
-      Content-Length:
-      - '103'
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"speciesId":258,"breedId":5,"petQualityId":4,"level":25,"health":1587,"power":315,"speed":297}'
-    http_version: 
-  recorded_at: Sun, 27 Sep 2015 14:31:51 GMT
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/wow/pet/stats/258?&level=25&breedId=5&qualityId=4
+  recorded_at: Thu, 08 Aug 2019 06:11:23 GMT
 recorded_with: VCR 2.9.3

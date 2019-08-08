@@ -22,9 +22,11 @@ And then execute:
 Your private Battle.net API key must be present in order to get a valid Battle.net API response. Before any requests are made, your API key must be set like so:
 
 ```ruby
-api_key = "abcdefgh"
+client_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+client_secret = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
 
-RBattlenet.authenticate(api_key: api_key)
+CLIENT_ID=d82dc8a00e864da48479a2c9b7b5026d CLIENT_SECRET=sVrYVAaw9aWFdsPzCQC9ez9DHI1i9f9j rspec
+RBattlenet.authenticate(client_id: client_id, client_secret: client_secret)
 ```
 
 #### Step 2. Setting your region and locale (Optional)
@@ -32,14 +34,27 @@ RBattlenet.authenticate(api_key: api_key)
 Your region and locale defaults to US and en_US respectively. However, these can be changed like so:
 
 ```ruby
-RBattlenet.set_region(region: "eu", locale: "en_GB")
+RBattlenet.set_region(region: "us", locale: "en_US")
 ```
 
 #### Step 3. Call the API methods to request data
 
 ```ruby
-character = RBattlenet::Wow::Character.find(name: "milhause", realm: "saurfang")
-#character["name"] will give you "Milhause"
+character = RBattlenet::Wow::DataResources.find_character_classes
+
+{"classes"=>
+  [{"id"=>1, "mask"=>1, "powerType"=>"rage", "name"=>"Warrior"},
+   {"id"=>2, "mask"=>2, "powerType"=>"mana", "name"=>"Paladin"},
+   {"id"=>3, "mask"=>4, "powerType"=>"focus", "name"=>"Hunter"},
+   {"id"=>4, "mask"=>8, "powerType"=>"energy", "name"=>"Rogue"},
+   {"id"=>5, "mask"=>16, "powerType"=>"mana", "name"=>"Priest"},
+   {"id"=>6, "mask"=>32, "powerType"=>"runic-power", "name"=>"Death Knight"},
+   {"id"=>7, "mask"=>64, "powerType"=>"mana", "name"=>"Shaman"},
+   {"id"=>8, "mask"=>128, "powerType"=>"mana", "name"=>"Mage"},
+   {"id"=>9, "mask"=>256, "powerType"=>"mana", "name"=>"Warlock"},
+   {"id"=>10, "mask"=>512, "powerType"=>"energy", "name"=>"Monk"},
+   {"id"=>11, "mask"=>1024, "powerType"=>"mana", "name"=>"Druid"},
+   {"id"=>12, "mask"=>2048, "powerType"=>"fury", "name"=>"Demon Hunter"}]}
 ```
 
 ## Testing
@@ -338,7 +353,7 @@ RBattlenet::Wow::Spell.find(id: 8056)
 ### Profile
 
 ```ruby
-RBattlenet::Sc2::Profile.find(id: 1234567, region: 1, name: 'name')
+Not working: RBattlenet::Sc2::Profile.find(id: 1234567, region: 1, name: 'name')
 ```
 
 #### Ladders
@@ -351,7 +366,7 @@ RBattlenet::Sc2::Profile.find_ladders(id: 1234567, region: 1, name: 'name')
 
 
 ```ruby
-RBattlenet::Sc2::Profile.find_match_history(id: 2137104, region: 1, name: 'skt')
+RBattlenet::Sc2::Profile.find_match_history(id: 2137104, region: 1, realm: 1)
 ```
 
 ---

@@ -2,54 +2,51 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.battle.net/wow/data/character/classes?apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx&locale=en_us
+    uri: https://us.api.blizzard.com/wow/data/character/classes
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
+      Date:
+      - Thu, 08 Aug 2019 06:11:41 GMT
+      Server:
+      - Apache-Coyote/1.1
       Content-Language:
       - en-US
-      Content-Type:
+      content-type:
       - application/json;charset=UTF-8
-      Date:
-      - Sun, 27 Sep 2015 14:32:12 GMT
-      Server:
-      - Apache
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
+      content-length:
+      - '688'
+      x-trace-traceid:
+      - 15b200b6-101b-63a0-e32b-fa164dc0bcb5
+      x-trace-spanid:
+      - 15b200b6-101b-64d0-e32b-fa164dc0bcb5
+      x-trace-parentspanid:
+      - 15b200b6-101b-64a0-e32b-fa164dc0bcb5
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-62.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '19'
-      X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 3:00:00 PM GMT
-      Content-Length:
-      - '241'
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"classes":[{"id":3,"mask":4,"powerType":"focus","name":"Hunter"},{"id":4,"mask":8,"powerType":"energy","name":"Rogue"},{"id":1,"mask":1,"powerType":"rage","name":"Warrior"},{"id":2,"mask":2,"powerType":"mana","name":"Paladin"},{"id":7,"mask":64,"powerType":"mana","name":"Shaman"},{"id":8,"mask":128,"powerType":"mana","name":"Mage"},{"id":5,"mask":16,"powerType":"mana","name":"Priest"},{"id":6,"mask":32,"powerType":"runic-power","name":"Death
-        Knight"},{"id":11,"mask":1024,"powerType":"mana","name":"Druid"},{"id":9,"mask":256,"powerType":"mana","name":"Warlock"},{"id":10,"mask":512,"powerType":"energy","name":"Monk"}]}'
-    http_version: 
-  recorded_at: Sun, 27 Sep 2015 14:32:12 GMT
+      string: '{"classes":[{"id":1,"mask":1,"powerType":"rage","name":"Warrior"},{"id":2,"mask":2,"powerType":"mana","name":"Paladin"},{"id":3,"mask":4,"powerType":"focus","name":"Hunter"},{"id":4,"mask":8,"powerType":"energy","name":"Rogue"},{"id":5,"mask":16,"powerType":"mana","name":"Priest"},{"id":6,"mask":32,"powerType":"runic-power","name":"Death
+        Knight"},{"id":7,"mask":64,"powerType":"mana","name":"Shaman"},{"id":8,"mask":128,"powerType":"mana","name":"Mage"},{"id":9,"mask":256,"powerType":"mana","name":"Warlock"},{"id":10,"mask":512,"powerType":"energy","name":"Monk"},{"id":11,"mask":1024,"powerType":"mana","name":"Druid"},{"id":12,"mask":2048,"powerType":"fury","name":"Demon
+        Hunter"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/wow/data/character/classes
+  recorded_at: Thu, 08 Aug 2019 06:11:39 GMT
 recorded_with: VCR 2.9.3

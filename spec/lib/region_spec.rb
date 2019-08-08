@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "non-US region and locale functionality" do
   before do
-    RBattlenet.authenticate(api_key: ENV["API"])
+    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
     RBattlenet.set_region(region: "us", locale: "en_us")
   end
 
@@ -13,7 +13,7 @@ describe "non-US region and locale functionality" do
         character = RBattlenet::Wow::Character.
           find(name: "madfrogz", realm: "outland")
 
-        expect(character['level']).to eq 100
+        expect(character['level']).to eq 120
       end
     end
   end

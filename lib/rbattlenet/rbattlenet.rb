@@ -73,8 +73,19 @@ module RBattlenet
       begin
         headers = {}
         headers['Authorization'] = "Bearer #{@@token}" if @@token
+
         uri = "#{uri}?#{queries}" unless queries.nil?
-        HTTParty.get(URI.encode(uri), headers: headers)
+        #HTTParty.get(URI.encode(uri), headers: headers)
+        uri = URI.encode(uri)
+
+        request = Typhoeus::Request.new(uri, headers: headers)
+
+        hydra = Typhoeus::Hydra.new
+        hydra.queue(request)
+        hydra.run
+        response = request.response
+
+        JSON.parse(response.body)
       rescue
         RBattlenet::Errors::ConnectionError
       end

@@ -2,55 +2,55 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.battle.net/wow/data/character/races?apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx&locale=en_us
+    uri: https://us.api.blizzard.com/wow/data/character/races
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
+      Date:
+      - Thu, 08 Aug 2019 06:11:41 GMT
+      Server:
+      - Apache-Coyote/1.1
       Content-Language:
       - en-US
-      Content-Type:
+      content-type:
       - application/json;charset=UTF-8
-      Date:
-      - Sun, 27 Sep 2015 14:32:10 GMT
-      Server:
-      - Apache
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
+      content-length:
+      - '1339'
+      x-trace-traceid:
+      - 15b200e8-ad13-f140-9756-fa164cbd2448
+      x-trace-spanid:
+      - 15b200e8-ad13-f270-9756-fa164cbd2448
+      x-trace-parentspanid:
+      - 15b200e8-ad13-f240-9756-fa164cbd2448
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1e-73.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '18'
-      X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 3:00:00 PM GMT
-      Content-Length:
-      - '274'
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"races":[{"id":1,"mask":1,"side":"alliance","name":"Human"},{"id":2,"mask":2,"side":"horde","name":"Orc"},{"id":3,"mask":4,"side":"alliance","name":"Dwarf"},{"id":4,"mask":8,"side":"alliance","name":"Night
         Elf"},{"id":5,"mask":16,"side":"horde","name":"Undead"},{"id":6,"mask":32,"side":"horde","name":"Tauren"},{"id":7,"mask":64,"side":"alliance","name":"Gnome"},{"id":8,"mask":128,"side":"horde","name":"Troll"},{"id":9,"mask":256,"side":"horde","name":"Goblin"},{"id":10,"mask":512,"side":"horde","name":"Blood
-        Elf"},{"id":11,"mask":1024,"side":"alliance","name":"Draenei"},{"id":22,"mask":2097152,"side":"alliance","name":"Worgen"},{"id":24,"mask":8388608,"side":"neutral","name":"Pandaren"},{"id":25,"mask":16777216,"side":"alliance","name":"Pandaren"},{"id":26,"mask":33554432,"side":"horde","name":"Pandaren"}]}'
-    http_version: 
-  recorded_at: Sun, 27 Sep 2015 14:32:11 GMT
+        Elf"},{"id":11,"mask":1024,"side":"alliance","name":"Draenei"},{"id":22,"mask":2097152,"side":"alliance","name":"Worgen"},{"id":24,"mask":8388608,"side":"neutral","name":"Pandaren"},{"id":25,"mask":16777216,"side":"alliance","name":"Pandaren"},{"id":26,"mask":33554432,"side":"horde","name":"Pandaren"},{"id":27,"mask":67108864,"side":"horde","name":"Nightborne"},{"id":28,"mask":134217728,"side":"horde","name":"Highmountain
+        Tauren"},{"id":29,"mask":268435456,"side":"alliance","name":"Void Elf"},{"id":30,"mask":536870912,"side":"alliance","name":"Lightforged
+        Draenei"},{"id":31,"mask":1073741824,"side":"horde","name":"Zandalari Troll"},{"id":32,"mask":-2147483648,"side":"alliance","name":"Kul
+        Tiran"},{"id":34,"mask":2,"side":"alliance","name":"Dark Iron Dwarf"},{"id":36,"mask":8,"side":"horde","name":"Mag''har
+        Orc"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/wow/data/character/races
+  recorded_at: Thu, 08 Aug 2019 06:11:38 GMT
 recorded_with: VCR 2.9.3

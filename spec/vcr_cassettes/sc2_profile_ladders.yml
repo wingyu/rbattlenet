@@ -2,58 +2,57 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.battle.net/sc2/profile/2137104/1/skt/ladders?apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx&locale=en_US
+    uri: https://us.api.blizzard.com/sc2/legacy/profile/1/1/2137104/ladders
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
-      Content-Language:
-      - en-US
-      Content-Type:
-      - application/json;charset=UTF-8
+      Access-Control-Allow-Origin:
+      - "*"
       Date:
-      - Mon, 28 Sep 2015 11:37:56 GMT
+      - Thu, 08 Aug 2019 06:11:20 GMT
       Server:
-      - Apache
+      - nginx/1.13.12
+      Content-Security-Policy:
+      - block-all-mixed-content
       Vary:
       - Accept-Encoding
-      X-Frame-Options:
+      X-Powered-By:
+      - Express
+      ETag:
+      - W/"3f-VWIXFQ/97RiigAUvY3NoA/2tDiQ"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '63'
+      x-trace-traceid:
+      - 15b200b6-0627-a1a0-b567-fa164c660728
+      x-trace-spanid:
+      - 15b200b6-0627-f690-b567-fa164c660728
+      x-trace-parentspanid:
+      - 15b200b6-0627-f660-b567-fa164c660728
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-67.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '22'
-      X-Plan-Quota-Reset:
-      - Monday, September 28, 2015 12:00:00 PM GMT
-      Content-Length:
-      - '84'
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: |-
-        {
-          "currentSeason" : [ ],
-          "previousSeason" : [ ],
-          "showcasePlacement" : [ ]
-        }
-    http_version: 
-  recorded_at: Mon, 28 Sep 2015 11:37:56 GMT
+      string: '{"currentSeason":[],"previousSeason":[],"showcasePlacement":[]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/sc2/legacy/profile/1/1/2137104/ladders
+  recorded_at: Thu, 08 Aug 2019 06:11:18 GMT
 recorded_with: VCR 2.9.3

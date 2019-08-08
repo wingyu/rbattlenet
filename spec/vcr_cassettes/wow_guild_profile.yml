@@ -2,56 +2,52 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.battle.net/wow/guild/saurfang/razors%20edge?apikey=uc5zg6857kv8mfcvnvhxyhxqm6ug8wyx&locale=en_us
+    uri: https://eu.api.blizzard.com/wow/guild/sargeras/Remember%20My%20Duck
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
   response:
     status:
       code: 200
       message: OK
     headers:
-      Content-Language:
-      - en-US
-      Content-Type:
-      - application/json;charset=UTF-8
       Date:
-      - Sun, 27 Sep 2015 14:32:29 GMT
-      Last-Modified:
-      - Sun, 27 Sep 2015 14:04:44 GMT
+      - Thu, 08 Aug 2019 06:11:51 GMT
       Server:
-      - Apache
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Thu, 08 Aug 2019 03:01:26 GMT
+      Content-Language:
+      - en-GB
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '328'
+      x-trace-traceid:
+      - 15b200be-c5e3-b2b0-4ade-fa165a07058b
+      x-trace-spanid:
+      - 15b200be-c5e3-d130-4ade-fa165a07058b
+      x-trace-parentspanid:
+      - 15b200be-c5e3-d100-4ade-fa165a07058b
+      x-frame-options:
       - SAMEORIGIN
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1e-74.mashery.com
-      X-Plan-Qps-Allotted:
-      - '100'
-      X-Plan-Qps-Current:
-      - '1'
-      X-Plan-Quota-Allotted:
-      - '36000'
-      X-Plan-Quota-Current:
-      - '27'
-      X-Plan-Quota-Reset:
-      - Sunday, September 27, 2015 3:00:00 PM GMT
-      Content-Length:
-      - '204'
-      Connection:
+      X-Content-Type-Options:
+      - nosniff
+      connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"lastModified":1443362684000,"name":"Razors Edge","realm":"Saurfang","battlegroup":"AU/NZ
-        Battle Group","level":25,"side":0,"achievementPoints":2185,"emblem":{"icon":39,"iconColor":"ffb1b8b1","border":2,"borderColor":"ffffffff","backgroundColor":"ff4f2300"}}'
-    http_version: 
-  recorded_at: Sun, 27 Sep 2015 14:32:30 GMT
+      string: '{"lastModified":1565233286000,"name":"Remember My Duck","realm":"Sargeras","battlegroup":"Embuscade
+        / Hinterhalt","level":25,"side":1,"achievementPoints":1590,"emblem":{"icon":164,"iconColor":"ff101517","iconColorId":15,"border":3,"borderColor":"ff0f1415","borderColorId":15,"backgroundColor":"ff4f2300","backgroundColorId":44}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/wow/guild/sargeras/Remember%20My%20Duck
+  recorded_at: Thu, 08 Aug 2019 06:11:50 GMT
 recorded_with: VCR 2.9.3
