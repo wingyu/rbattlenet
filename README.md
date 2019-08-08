@@ -104,6 +104,7 @@ CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
 ---
 <a name="hearthstone"></a>
 ## Hearthstone
+https://develop.battle.net/documentation/api-reference/hearthstone-game-data-api
 
 <a name="hearthstone-card"></a>
 ### Cards
