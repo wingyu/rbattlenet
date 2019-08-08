@@ -58,7 +58,7 @@ character = RBattlenet::Wow::DataResources.find_character_classes
 
 ## Testing
 ```ruby
-API=<your_api> bundle exec rspec
+CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
 ```
 
 ## TODOs
