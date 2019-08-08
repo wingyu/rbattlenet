@@ -103,7 +103,7 @@ CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
 
 ---
 <a name="hearthstone"></a>
-## Starcraft 2
+## Hearthstone
 
 <a name="hearthstone-card"></a>
 ### Cards
