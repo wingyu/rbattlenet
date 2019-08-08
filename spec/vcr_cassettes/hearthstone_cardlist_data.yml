@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://us.api.blizzard.com/hearthstone/cards?locale=en_US&set=rise-of-shadows&class=mage&attack=4&health=10&collectible=1&rarity=legendary&type=minion&keyword=battlecry&page=1&sort=name&order=desc&manaCost=10&pageSize=5&minionType=dragon&textFilter=kalecgos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 08 Aug 2019 08:03:16 GMT
+      Server:
+      - nginx/1.16.0
+      Content-Security-Policy:
+      - block-all-mixed-content
+      ETag:
+      - W/"248-iBeZdkBXF1px226tYLvIavvv6DY"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '584'
+      x-trace-traceid:
+      - 15b200b6-133a-ce40-e32b-fa164dc0bcb5
+      x-trace-spanid:
+      - 15b200b6-133a-d270-e32b-fa164dc0bcb5
+      x-trace-parentspanid:
+      - 15b200b6-133a-d240-e32b-fa164dc0bcb5
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"cards":[{"id":53002,"collectible":1,"slug":"53002-kalecgos","classId":4,"minionTypeId":24,"cardTypeId":4,"cardSetId":1130,"rarityId":5,"artistName":"Chris
+        Rahn","health":12,"attack":4,"manaCost":10,"name":"Kalecgos","text":"Your
+        first spell each turn costs (0). <b>Battlecry:</b> <b>Discover</b> a spell.","image":"https://d15f34w2p8l1cc.cloudfront.net/hearthstone/6775e749482c49eb9ca6c118547c28354a07cc7ebeca57a9ff69ee9a8fdc7004.png","flavorText":"He
+        was once the Aspect of Magic but gave it up to focus on cheap tricks.","keywordIds":[8,21]}],"cardCount":1,"pageCount":1,"page":1}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://us.api.blizzard.com/hearthstone/cards?locale=en_US&set=rise-of-shadows&class=mage&attack=4&health=10&collectible=1&rarity=legendary&type=minion&keyword=battlecry&page=1&sort=name&order=desc&manaCost=10&pageSize=5&minionType=dragon&textFilter=kalecgos
+  recorded_at: Thu, 08 Aug 2019 08:03:14 GMT
+recorded_with: VCR 2.9.3

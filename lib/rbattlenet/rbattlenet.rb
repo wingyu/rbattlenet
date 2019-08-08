@@ -25,6 +25,11 @@ require_relative "./sc2/profile.rb"
 require_relative "./sc2/ladder.rb"
 require_relative "./sc2/data_resources.rb"
 
+#Hearthstone API
+require_relative "./hearthstone/card.rb"
+require_relative "./hearthstone/deck.rb"
+require_relative "./hearthstone/metadata.rb"
+
 #Error-handling
 require_relative "./errors/invalid_input.rb"
 require_relative "./errors/error.rb"
@@ -62,6 +67,7 @@ module RBattlenet
   module Wow; GAME = "wow" end
   module D3; GAME = "d3" end
   module Sc2; GAME = "sc2" end
+  module Hearthstone; GAME = "hearthstone" end
 
 
   private
@@ -70,12 +76,15 @@ module RBattlenet
 
     #Wrapper for HTTParty requests that injects query parameters
     def get(uri, queries = nil)
+
       begin
         headers = {}
         headers['Authorization'] = "Bearer #{@@token}" if @@token
 
-        uri = "#{uri}?#{queries}" unless queries.nil?
-        #HTTParty.get(URI.encode(uri), headers: headers)
+        uri = "#{uri}?locale=#{@@locale}"
+        uri = "#{uri}&#{queries}" unless queries.nil?
+        # Was having trouble with vcr, so switched to Typhoeus to be consistent with get_multiple
+        # HTTParty.get(URI.encode(uri), headers: headers)
         uri = URI.encode(uri)
 
         request = Typhoeus::Request.new(uri, headers: headers)
