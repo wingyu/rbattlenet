@@ -9,7 +9,7 @@ describe RBattlenet::Hearthstone::Metadata do
   describe '#find_all_metadata' do
     it 'fetches all metadata' do
       VCR.use_cassette('hearthstone_metadata_data') do
-        data = RBattlenet::Hearthstone::Metadata.all_metadata()
+        data = RBattlenet::Hearthstone::Metadata.all_metadata
 
         expect(data.keys).to include("sets")
       end

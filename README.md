@@ -8,7 +8,7 @@ Currently, RBattlenet only covers the World of Warcraft, Diablo 3 and StarCraft 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rbattlenet', git: "git://github.com/Youness-e/rbattlenet.git"
+gem 'rbattlenet', git: "git://github.com/austra/rbattlenet.git"
 ```
 
 And then execute:
@@ -68,6 +68,12 @@ CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
 - Add a CHANGELOG
 
 ## Documentation
+### [Hearthstone](#hearthstone)
+
+* [Card](#hearthstone-card)
+* [Deck](#hearthstone-deck)
+* [Metadata](#hearthstone-metadata)
+
 ### [World of Warcraft](#wow)
 
 * [Achievement](#wow-achievement)
@@ -95,6 +101,57 @@ CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
 * [Data Resources](#d3-data)
 * [Profile](#d3-profile)
 
+---
+<a name="hearthstone"></a>
+## Starcraft 2
+
+<a name="hearthstone-card"></a>
+### Cards
+
+```ruby
+args = {
+  set: 'rise-of-shadows',
+  class: 'mage',
+  mana_cost: 10,
+  attack: 4,
+  health: 10,
+  collectible: 1,        
+  rarity: 'legendary',
+  type: 'minion',
+  minion_type: 'dragon',
+  keyword: 'battlecry',
+  text_filter: 'kalecgos',
+  page: 1,
+  page_size: 5,
+  sort: 'name',
+  order: 'desc'
+}
+```
+
+```ruby
+cards = RBattlenet::Hearthstone::Card.find_cards(args)
+card  = RBattlenet::Hearthstone::Card.find_card(id_or_slug: '52119-arch-villain-rafaam')
+```
+
+---
+
+<a name="hearthstone-deck"></a>
+### Decks
+
+```ruby
+deck = RBattlenet::Hearthstone::Deck.find_deck(deckcode: 'AAECAQcG+wyd8AKS+AKggAOblAPanQMMS6IE/web8wLR9QKD+wKe+wKz/AL1gAOXlAOalAOSnwMA')
+```
+
+---
+
+<a name="hearthstone-metadata"></a>
+### Metadata
+
+```ruby
+metadata = RBattlenet::Hearthstone::Metadata.all_metadata()
+# valid types:  sets, setGroups, types, rarities, classes, minionTypes, and keywords.
+metadata = RBattlenet::Hearthstone::Metadata.find_metadata(type: 'sets')
+```
 ---
 
 <a name="wow"></a>
