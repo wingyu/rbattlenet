@@ -1,4 +1,6 @@
 require 'httparty'
+require 'typhoeus'
+
 require "rbattlenet/version"
 
 #World of Warcraft API
@@ -31,6 +33,7 @@ require_relative "./hearthstone/deck.rb"
 require_relative "./hearthstone/metadata.rb"
 
 #Error-handling
+require_relative "./errors/connection_error.rb"
 require_relative "./errors/invalid_input.rb"
 require_relative "./errors/error.rb"
 
@@ -96,7 +99,7 @@ module RBattlenet
 
         JSON.parse(response.body)
       rescue
-        RBattlenet::Errors::ConnectionError
+        raise RBattlenet::Errors::ConnectionError.new
       end
     end
 
