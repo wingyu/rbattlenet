@@ -1,7 +1,6 @@
 # RBattlenet
 
-A Ruby gem that wraps Blizzard's Battle.net Community Platform API.
-Currently, RBattlenet only covers the Hearthstone, World of Warcraft, Diablo 3 and StarCraft 2 APIs
+A Ruby gem that wraps Blizzard's Game Data and Profile APIs.
 
 ## Installation
 
@@ -28,44 +27,29 @@ client_secret = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
 RBattlenet.authenticate(client_id: client_id, client_secret: client_secret)
 ```
 
-#### Step 2. Setting your region and locale (Optional)
+#### Step 2. Changing default options (Optional)
 
-Your region and locale defaults to US and en_US respectively. However, these can be changed like so:
+Your region and locale defaults to EU and en_GB respectively. However, these can be changed like so:
 
 ```ruby
-RBattlenet.set_region(region: "us", locale: "en_US")
+RBattlenet.set_options(region: "us", locale: "en_US")
 ```
 
 #### Step 3. Call the API methods to request data
 
 ```ruby
-character = RBattlenet::Wow::DataResources.find_character_classes
-
-{"classes"=>
-  [{"id"=>1, "mask"=>1, "powerType"=>"rage", "name"=>"Warrior"},
-   {"id"=>2, "mask"=>2, "powerType"=>"mana", "name"=>"Paladin"},
-   {"id"=>3, "mask"=>4, "powerType"=>"focus", "name"=>"Hunter"},
-   {"id"=>4, "mask"=>8, "powerType"=>"energy", "name"=>"Rogue"},
-   {"id"=>5, "mask"=>16, "powerType"=>"mana", "name"=>"Priest"},
-   {"id"=>6, "mask"=>32, "powerType"=>"runic-power", "name"=>"Death Knight"},
-   {"id"=>7, "mask"=>64, "powerType"=>"mana", "name"=>"Shaman"},
-   {"id"=>8, "mask"=>128, "powerType"=>"mana", "name"=>"Mage"},
-   {"id"=>9, "mask"=>256, "powerType"=>"mana", "name"=>"Warlock"},
-   {"id"=>10, "mask"=>512, "powerType"=>"energy", "name"=>"Monk"},
-   {"id"=>11, "mask"=>1024, "powerType"=>"mana", "name"=>"Druid"},
-   {"id"=>12, "mask"=>2048, "powerType"=>"fury", "name"=>"Demon Hunter"}]}
+item = RBattlenet::Wow::Item.find(18803)
 ```
 
 ## Testing
 ```ruby
-CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
+bundle exec rspec
 ```
 
-## TODOs
-
-- Refactor specs to use Mocks/Stubs instead of making real API calls
-- Add specs that make real API calls that only run when a flag if provided
-- Add a CHANGELOG
+If you wish to test with real API connections:
+```ruby
+CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> REAL_CONNECTIONS=1 bundle exec rspec
+```
 
 ## Documentation
 ### [Hearthstone](#hearthstone)
@@ -116,7 +100,7 @@ args = {
   mana_cost: 10,
   attack: 4,
   health: 10,
-  collectible: 1,        
+  collectible: 1,
   rarity: 'legendary',
   type: 'minion',
   minion_type: 'dragon',
