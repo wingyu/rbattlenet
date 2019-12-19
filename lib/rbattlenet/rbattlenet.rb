@@ -8,6 +8,7 @@ require "rbattlenet/endpoints/base"
 
 #World of Warcraft API
 require_relative "./endpoints/wow/character.rb"
+require_relative "./endpoints/wow/guild.rb"
 require_relative "./endpoints/wow/item.rb"
 
 #Diablo 3 API
@@ -29,11 +30,6 @@ module RBattlenet
   @@locale = "en_gb"
   @@raw = false
 
-  module Wow; GAME = "wow" end
-  module D3; GAME = "d3" end
-  module Sc2; GAME = "sc2" end
-  module Hearthstone; GAME = "hearthstone" end
-
   class << self
     #Set Access Token for requests. Required
     def authenticate(client_id:, client_secret:)
@@ -51,7 +47,7 @@ module RBattlenet
       true
     end
 
-    def get(requests)
+    def get(subjects)
       store = @@raw ? [] : RBattlenet::ResultCollection.new
 
       headers = {}
@@ -59,15 +55,19 @@ module RBattlenet
 
       # Limit concurrency to prevent hitting the API request per-second cap.
       hydra = Typhoeus::Hydra.new(max_concurrency: 50)
-      requests.each do |uri, source_object|
-        request = Typhoeus::Request.new(uri, headers: headers)
+      subjects.each do |uris, subject|
+        uris.each do |field, uri|
+          request = Typhoeus::Request.new(uri, headers: headers)
 
-        request.on_complete do |response|
-          store << response
-          yield source_object, store.last
+          request.on_complete do |response|
+            store.add(subject, field, response)
+            if data = store.complete(subject, uris.size)
+              yield subject, data
+            end
+          end
+
+          hydra.queue request
         end
-
-        hydra.queue request
       end
 
       hydra.run
@@ -77,7 +77,7 @@ module RBattlenet
     end
 
     def uri(path)
-      "https://#{@@region}.api.blizzard.com/#{path}?namespace=static-#{@@region}&locale=#{@@locale}"
+      "https://#{@@region}.api.blizzard.com/#{path}#{@@region}&locale=#{@@locale}"
     end
   end
 end

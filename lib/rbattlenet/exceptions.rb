@@ -25,5 +25,11 @@ module RBattlenet
         super("Unable to connect or send HTTP request")
       end
     end
+
+    class InvalidFieldsOption < Error
+      def initialize
+        super("Fields should be provided as an Array and should all be supported")
+      end
+    end
   end
 end

@@ -1,8 +1,18 @@
 module RBattlenet
   module Endpoints
     class Base
-      def self.find(subjects)
-        RBattlenet.get [subjects].flatten.map{ |subject| [path(subject), subject] } do
+      SUPPORTED_FIELDS = [:itself]
+
+      def self.find(subjects, fields: [:itself])
+        if !fields.is_a? Array || (fields.symbolize_keys! - SUPPORTED_FIELDS).any?
+          raise RBattlenet::Errors::InvalidFieldsOption.new
+        end
+
+        payload = [subjects].flatten.map do |subject|
+          [(fields + [:itself]).uniq.map{ |field| [field, send(field).path(subject)] }, subject]
+        end
+
+        RBattlenet.get payload do
           yield if block_given?
         end
       end
