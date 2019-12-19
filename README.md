@@ -39,6 +39,8 @@ RBattlenet.set_options(region: "us", locale: "en_US")
 
 ```ruby
 item = RBattlenet::Wow::Item.find(18803)
+
+item.name # => "Finkle's Lava Dredger"
 ```
 
 ## Testing
