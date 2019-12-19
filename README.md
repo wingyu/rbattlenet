@@ -10,10 +10,6 @@ Add this line to your application's Gemfile:
 gem 'rbattlenet'
 ```
 
-And then execute:
-
-    $ bundle
-
 ## Usage
 
 #### Step 1. Setting your Battle.net API Key

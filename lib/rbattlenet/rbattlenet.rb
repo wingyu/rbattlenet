@@ -63,8 +63,8 @@ module RBattlenet
         request = Typhoeus::Request.new(uri, headers: headers)
 
         request.on_complete do |response|
-          yield source_object, response if block_given?
           store << response
+          yield source_object, store.last
         end
 
         hydra.queue request
@@ -76,8 +76,8 @@ module RBattlenet
       raise RBattlenet::Errors::ConnectionError.new
     end
 
-    def uri(path, query = nil)
-      "https://#{@@region}.api.blizzard.com/#{path}?namespace=static-#{@@region}&locale=#{@@locale}&#{query}"
+    def uri(path)
+      "https://#{@@region}.api.blizzard.com/#{path}?namespace=static-#{@@region}&locale=#{@@locale}"
     end
   end
 end

@@ -1,21 +1,32 @@
+require 'forwardable'
+
 module RBattlenet
-  class ResultCollection < OpenStruct
+  class ResultCollection
+    extend Forwardable
+
+    attr_reader :results
+
+    def initialize
+      @results = []
+    end
+
     def <<(response)
-      raise RBattlenet::Errors::ConnectionError.new unless response.code == 200
-      (self.results ||= []) << JSON.parse(response.body, object_class: Result)
-      self.code = response.code
+      @results << if response.code == 200
+        JSON.parse(response.body, object_class: Result)
+      else
+        EmptyResult.new(status_code: response.code, response: response)
+      end
     end
 
-    def first
-      raise RBattlenet::Errors::NoResultsError.new if !self.results
-      self.results.first
-    end
+    def_delegators :results, :first, :last, :size
+  end
 
-    def size
-      raise RBattlenet::Errors::NoResultsError.new if !self.results
-      self.results.size
+  class Result < OpenStruct
+    def initialize
+      super
+      self.status_code = 200
     end
   end
 
-  class Result < OpenStruct; end
+  class EmptyResult < OpenStruct; end
 end

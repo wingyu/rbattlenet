@@ -25,11 +25,5 @@ module RBattlenet
         super("Unable to connect or send HTTP request")
       end
     end
-
-    class NoResultsError < Error
-      def initialize
-        super("Could not retrieve object, no requests have resolved yet")
-      end
-    end
   end
 end
