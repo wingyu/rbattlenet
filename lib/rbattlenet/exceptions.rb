@@ -37,5 +37,11 @@ module RBattlenet
         super("Retrieving all entities of this endpoint is not supported")
       end
     end
+
+    class FindNotSupported < Error
+      def initialize
+        super("Finding entities of this endpoint is not supported")
+      end
+    end
   end
 end

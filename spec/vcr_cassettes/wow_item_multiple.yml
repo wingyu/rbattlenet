@@ -21,7 +21,7 @@ http_interactions:
       Battlenet-Schema-Revision:
       - '1'
       Date:
-      - Fri, 20 Dec 2019 17:37:21 GMT
+      - Fri, 20 Dec 2019 20:19:02 GMT
       Server:
       - Apache-Coyote/1.1
       Last-Modified:
@@ -39,11 +39,11 @@ http_interactions:
       transfer-encoding:
       - chunked
       x-trace-traceid:
-      - 15c864f8-4d06-1b40-fdd2-fa165ba06406
+      - 15c86389-4570-7c20-6753-fa165ab86060
       x-trace-spanid:
-      - 15c864f8-4d06-1e90-fdd2-fa165ba06406
+      - 15c86389-4570-7ed0-6753-fa165ab86060
       x-trace-parentspanid:
-      - 15c864f8-4d06-1e50-fdd2-fa165ba06406
+      - 15c86389-4570-7ea0-6753-fa165ab86060
       x-frame-options:
       - SAMEORIGIN
       X-Content-Type-Options:
@@ -58,7 +58,7 @@ http_interactions:
     http_version: '1.1'
     adapter_metadata:
       effective_url: https://eu.api.blizzard.com/data/wow/item/18803?namespace=static-eu&locale=en_gb
-  recorded_at: Fri, 20 Dec 2019 17:37:21 GMT
+  recorded_at: Fri, 20 Dec 2019 20:19:02 GMT
 - request:
     method: get
     uri: https://eu.api.blizzard.com/data/wow/item/18804?namespace=static-eu&locale=en_gb
@@ -80,7 +80,7 @@ http_interactions:
       Battlenet-Schema-Revision:
       - '1'
       Date:
-      - Fri, 20 Dec 2019 17:37:20 GMT
+      - Fri, 20 Dec 2019 20:19:01 GMT
       Server:
       - Apache-Coyote/1.1
       Last-Modified:
@@ -98,11 +98,11 @@ http_interactions:
       transfer-encoding:
       - chunked
       x-trace-traceid:
-      - 15c86551-97f6-d7a0-f981-fa165bcda32d
+      - 15c864e7-b09c-b430-c980-fa165ba0f208
       x-trace-spanid:
-      - 15c86551-97f6-d8c0-f981-fa165bcda32d
+      - 15c864e7-b09c-b6a0-c980-fa165ba0f208
       x-trace-parentspanid:
-      - 15c86551-97f6-d890-f981-fa165bcda32d
+      - 15c864e7-b09c-b670-c980-fa165ba0f208
       x-frame-options:
       - SAMEORIGIN
       X-Content-Type-Options:
@@ -117,5 +117,5 @@ http_interactions:
     http_version: '1.1'
     adapter_metadata:
       effective_url: https://eu.api.blizzard.com/data/wow/item/18804?namespace=static-eu&locale=en_gb
-  recorded_at: Fri, 20 Dec 2019 17:37:21 GMT
+  recorded_at: Fri, 20 Dec 2019 20:19:02 GMT
 recorded_with: VCR 2.9.3

@@ -9,6 +9,8 @@ module RBattlenet
       end
 
       def self.find(subjects, fields: [:itself])
+        raise RBattlenet::Errors::FindNotSupported.new unless defined?(path)
+
         if !fields.is_a? Array || (fields.map(&:to_sym) - SUPPORTED_FIELDS).any?
           raise RBattlenet::Errors::InvalidFieldsOption.new
         end
