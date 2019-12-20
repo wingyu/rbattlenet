@@ -4,10 +4,7 @@ require 'vcr'
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/vcr_cassettes'
   c.hook_into :typhoeus
-
-  if ENV["REAL_CONNECTIONS"]
-    c.allow_http_connections_when_no_cassette = true
-  end
+  c.allow_http_connections_when_no_cassette = true
 end
 
 RSpec.configure do |config|

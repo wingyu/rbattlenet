@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/item/18803?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Fri, 20 Dec 2019 17:37:21 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:28:21 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - item
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c864f8-4d06-1b40-fdd2-fa165ba06406
+      x-trace-spanid:
+      - 15c864f8-4d06-1e90-fdd2-fa165ba06406
+      x-trace-parentspanid:
+      - 15c864f8-4d06-1e50-fdd2-fa165ba06406
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/item/18803?namespace=static-8.2.5_31884-eu"}},"id":18803,"name":"Finkle''s
+        Lava Dredger","quality":{"type":"EPIC","name":"Epic"},"level":58,"required_level":60,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/18803?namespace=static-8.2.5_31884-eu"},"id":18803},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/2?namespace=static-8.2.5_31884-eu"},"name":"Weapon","id":2},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/2/item-subclass/5?namespace=static-8.2.5_31884-eu"},"name":"Mace","id":5},"inventory_type":{"type":"TWOHWEAPON","name":"Two-Hand"},"purchase_price":579383,"sell_price":115876,"max_count":0,"is_equippable":true,"is_stackable":false,"description":"Property
+        of Finkle Einhorn, Grandmaster Adventurer"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/item/18803?namespace=static-eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 17:37:21 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/item/18804?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Fri, 20 Dec 2019 17:37:20 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:28:21 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - item
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86551-97f6-d7a0-f981-fa165bcda32d
+      x-trace-spanid:
+      - 15c86551-97f6-d8c0-f981-fa165bcda32d
+      x-trace-parentspanid:
+      - 15c86551-97f6-d890-f981-fa165bcda32d
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/item/18804?namespace=static-8.2.5_31884-eu"}},"id":18804,"name":"Lord
+        Grayson''s Satchel","quality":{"type":"COMMON","name":"Common"},"level":1,"required_level":0,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/18804?namespace=static-8.2.5_31884-eu"},"id":18804},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/12?namespace=static-8.2.5_31884-eu"},"name":"Quest","id":12},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/12/item-subclass/0?namespace=static-8.2.5_31884-eu"},"name":"Quest","id":0},"inventory_type":{"type":"NON_EQUIP","name":"Non-equippable"},"purchase_price":0,"sell_price":0,"max_count":1,"is_equippable":false,"is_stackable":false,"description":"Your
+        finished Divination Scryer and Blessed Arcanite Barding are inside the satchel."}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/item/18804?namespace=static-eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 17:37:21 GMT
+recorded_with: VCR 2.9.3

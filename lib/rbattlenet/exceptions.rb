@@ -31,5 +31,11 @@ module RBattlenet
         super("Fields should be provided as an Array and should all be supported")
       end
     end
+
+    class IndexNotSupported < Error
+      def initialize
+        super("Retrieving all entities of this endpoint is not supported")
+      end
+    end
   end
 end

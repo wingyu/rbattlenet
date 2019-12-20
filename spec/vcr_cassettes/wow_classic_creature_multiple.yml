@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/creature/30?namespace=static-classic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Fri, 20 Dec 2019 18:45:47 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Mon, 9 Dec 2019 02:11:33 GMT
+      Battlenet-Namespace:
+      - static-1.13.2_31446-classic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - creature
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c864e7-a1e4-a570-c980-fa165ba0f208
+      x-trace-spanid:
+      - 15c864e7-a1e4-a8c0-c980-fa165ba0f208
+      x-trace-parentspanid:
+      - 15c864e7-a1e4-a890-c980-fa165ba0f208
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/creature/30?namespace=static-1.13.2_31446-classic-eu"}},"id":30,"name":"Forest
+        Spider","type":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-type/1?namespace=static-1.13.2_31446-classic-eu"},"name":"Beast","id":1},"family":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/3?namespace=static-1.13.2_31446-classic-eu"},"name":"Spider","id":3},"creature_displays":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/382?namespace=static-1.13.2_31446-classic-eu"}}],"is_tameable":true}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/creature/30?namespace=static-classic-eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 18:45:47 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/creature/300?namespace=static-classic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Fri, 20 Dec 2019 18:45:47 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Battlenet-Namespace:
+      - static-1.13.2_31446-classic-eu
+      vary:
+      - accept-encoding
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86601-b8b0-6f50-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86601-b8b0-7b30-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86601-b8b0-7b00-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"code":404,"type":"BLZWEBAPI00000404","detail":"Not Found"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/creature/300?namespace=static-classic-eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 18:45:47 GMT
+recorded_with: VCR 2.9.3

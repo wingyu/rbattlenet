@@ -1,8 +1,8 @@
 module RBattlenet
   module Wow
     class Item < RBattlenet::Endpoints::Base
-      def self.path(item)
-        RBattlenet.uri("data/wow/item/#{item}?namespace=static-")
+      def self.path(id)
+        RBattlenet.uri("data/wow/item/#{id}?namespace=static-")
       end
     end
   end

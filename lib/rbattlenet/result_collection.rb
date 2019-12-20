@@ -23,20 +23,22 @@ module RBattlenet
     end
 
     def complete(subject, results_needed)
-      subject_results = @results.select{ |result| result.source == subject }
+      subject_results = @results.group_by(&:source)[subject]
       if subject_results.size == results_needed
         @results.reject!{ |result| result.source == subject }
 
-        if empty = subject_results.select{ |result| result.class == RBattlenet::EmptyResult }.first
-          return empty
+        unless base_result = subject_results.select{ |result| result.class == EmptyResult }.first
+          base_result = subject_results.select{ |result| result.field == :itself }.first
+          (subject_results - [base_result]).each{ |result| base_result << result }
         end
-
-        base_result = subject_results.select{ |result| result.field == :itself }.first
-        (subject_results - [base_result]).each{ |result| base_result << result }
 
         @results << base_result
         base_result
       end
+    end
+
+    def has_errors?
+      @results.map(&:class).include? EmptyResult
     end
 
     def_delegators :results, :first, :last, :size
@@ -44,7 +46,7 @@ module RBattlenet
 
   class Result < OpenStruct
     def <<(result)
-      send("#{result.field}=", result)
+      send("#{result.field}=", result.send(result.field))
     end
   end
 
