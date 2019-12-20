@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/hearthstone/cards/53002-kalecgos?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Fri, 20 Dec 2019 21:01:48 GMT
+      Server:
+      - nginx/1.16.1
+      Content-Security-Policy:
+      - block-all-mixed-content
+      ETag:
+      - W/"2d1-YgZmMBYFNzqlIL36qMhdEhr+vmo"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '721'
+      x-trace-traceid:
+      - 15c865d2-fd30-ddf0-59a1-fa165a07058b
+      x-trace-spanid:
+      - 15c865d2-fd30-e2a0-59a1-fa165a07058b
+      x-trace-parentspanid:
+      - 15c865d2-fd30-e270-59a1-fa165a07058b
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":53002,"collectible":1,"slug":"53002-kalecgos","classId":4,"multiClassIds":[],"minionTypeId":24,"cardTypeId":4,"cardSetId":1130,"rarityId":5,"artistName":"Chris
+        Rahn","health":12,"attack":4,"manaCost":10,"name":"Kalecgos","text":"Your
+        first spell each turn costs (0). <b>Battlecry:</b> <b>Discover</b> a spell.","image":"https://d15f34w2p8l1cc.cloudfront.net/hearthstone/b79e0753562329f02fa672a6de3ca332e8445b6947bd0c08d5d58d0353a9f46e.png","imageGold":"","flavorText":"He
+        was once the Aspect of Magic but gave it up to focus on cheap tricks.","cropImage":"https://d15f34w2p8l1cc.cloudfront.net/hearthstone/726f8cfeaae9700c3ea1ebefcd2f66e71f35bc2559a92d582f3b79a6eea25d02.jpg","childIds":[57805],"keywordIds":[8,21]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/hearthstone/cards/53002-kalecgos?eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 21:01:48 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/hearthstone/cards/52119-arch-villain-rafaam?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Fri, 20 Dec 2019 21:01:49 GMT
+      Server:
+      - nginx/1.16.1
+      Content-Security-Policy:
+      - block-all-mixed-content
+      ETag:
+      - W/"2da-+l9HNt8JIo7U6jayeC7hxVchhYc"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '730'
+      x-trace-traceid:
+      - 15c86389-4d89-6ba0-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c86389-4d89-8390-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c86389-4d89-8360-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":52119,"collectible":1,"slug":"52119-arch-villain-rafaam","classId":9,"multiClassIds":[],"cardTypeId":4,"cardSetId":1130,"rarityId":5,"artistName":"Alex
+        Horley Orlandelli","health":8,"attack":7,"manaCost":7,"name":"Arch-Villain
+        Rafaam","text":"<b><b>Taunt</b> Battlecry:</b> Replace your hand and deck
+        with <b>Legendary</b> minions.","image":"https://d15f34w2p8l1cc.cloudfront.net/hearthstone/56c8b21f56380e726255287ff4ce9fd4f50041cdbc1f246009f6288a8d8287ad.png","imageGold":"","flavorText":"Minions
+        must wash hands before being LIQUIDATED AND REPLACED BY SOMEONE BETTER.","cropImage":"https://d15f34w2p8l1cc.cloudfront.net/hearthstone/88803effaa821c7d76f5f0c3b1fd044ba62a884dcc207cb318d32583986fe9a6.jpg","keywordIds":[1,8]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/hearthstone/cards/52119-arch-villain-rafaam?eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 21:01:49 GMT
+recorded_with: VCR 2.9.3
