@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/profile/21/2137104?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      content-length:
+      - '0'
+      x-trace-traceid:
+      - 15c86601-ea3e-3630-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86601-ea3e-36b0-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86601-ea3e-3680-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/profile/21/2137104?eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 23:13:17 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/profile/21/2137105?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      content-length:
+      - '0'
+      x-trace-traceid:
+      - 15c86389-6647-d5b0-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c86389-6647-d620-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c86389-6647-d5f0-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/profile/21/2137105?eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 23:13:17 GMT
+recorded_with: VCR 2.9.3

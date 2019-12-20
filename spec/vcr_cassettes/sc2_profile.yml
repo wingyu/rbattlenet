@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/profile/21/1000?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      content-length:
+      - '0'
+      x-trace-traceid:
+      - 15c86601-ea0f-82d0-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86601-ea0f-8340-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86601-ea0f-8310-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/profile/21/1000?eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 23:12:10 GMT
+recorded_with: VCR 2.9.3

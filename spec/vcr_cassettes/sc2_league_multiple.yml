@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/sc2/league/37/201/0/6?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Fri, 20 Dec 2019 21:42:21 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Tue, 22 Jan 2019 23:05:23 GMT
+      Battlenet-Namespace:
+      - prod
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - league
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '244'
+      x-trace-traceid:
+      - 15c865c0-a056-4d90-85af-fa165b14433f
+      x-trace-spanid:
+      - 15c865c0-a056-5440-85af-fa165b14433f
+      x-trace-parentspanid:
+      - 15c865c0-a056-5410-85af-fa165b14433f
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/sc2/league/37/201/0/6?namespace=prod"}},"key":{"league_id":6,"season_id":37,"queue_id":201,"team_type":0},"tier":[{"id":0,"division":[{"id":1,"ladder_id":207508,"member_count":186}]}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/sc2/league/37/201/0/6?eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 21:42:22 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/sc2/league/36/201/0/6?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Fri, 20 Dec 2019 21:42:21 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Tue, 20 Nov 2018 22:59:34 GMT
+      Battlenet-Namespace:
+      - prod
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - league
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86601-d9fc-fd50-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86601-d9fd-0460-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86601-d9fd-0430-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/sc2/league/36/201/0/6?namespace=prod"}},"key":{"league_id":6,"season_id":36,"queue_id":201,"team_type":0},"tier":[{"id":0,"division":[{"id":1,"ladder_id":204698,"member_count":187}]}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/sc2/league/36/201/0/6?eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 21:42:22 GMT
+recorded_with: VCR 2.9.3
