@@ -9,7 +9,7 @@ describe RBattlenet::Sc2::Leaderboard do
     it "fetches leaderboard profile data" do
       with_connection("sc2_leaderboard") do
         result = RBattlenet::Sc2::Leaderboard.find(2)
-        expect(result.ladderTeams.size).to be >= 195
+        expect(result.ladderTeams.size).to be >= 100
       end
     end
   end

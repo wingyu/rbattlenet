@@ -47,7 +47,7 @@ module RBattlenet
 
   class Result < OpenStruct
     def <<(result)
-      send("#{result.field}=", result.send(result.field))
+      send("#{result.field}=", result.send(result.field) || result)
     end
   end
 

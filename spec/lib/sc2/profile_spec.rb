@@ -22,8 +22,7 @@ describe RBattlenet::Sc2::Profile do
           { region_id: 2, realm_id: 1, id: 2137105 },
         ])
         expect(collection.results.size).to eq 2
-        expect(collection.results[0].summary.displayName).to eq "katarn"
-        expect(collection.results[1].summary.displayName).to eq "Shadow"
+        expect(collection.results.map(&:summary).map(&:displayName).sort).to eq ["Shadow", "katarn"]
       end
     end
   end

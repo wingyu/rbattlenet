@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/ladder/season/2?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Sat, 21 Dec 2019 13:30:55 GMT
+      Server:
+      - nginx/1.13.12
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      ETag:
+      - W/"56-Jot+8Gc0VWzs92lG7GbZDTxsfJA"
+      Cache-Control:
+      - no-cache
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '86'
+      x-trace-traceid:
+      - 15c86389-fc70-d720-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c86389-fc70-e990-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c86389-fc70-e960-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"seasonId":42,"number":4,"year":2019,"startDate":"1574819530","endDate":"1579759200"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/ladder/season/2?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 13:30:55 GMT
+recorded_with: VCR 2.9.3

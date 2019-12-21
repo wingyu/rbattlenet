@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/player/2137104?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Sat, 21 Dec 2019 13:30:38 GMT
+      Server:
+      - nginx/1.13.12
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      ETag:
+      - W/"ea-UuZ9XtWMhb53iegLggcRXuz8vMc"
+      Cache-Control:
+      - no-cache
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '234'
+      x-trace-traceid:
+      - 15c864f8-ebb0-94c0-fdd2-fa165ba06406
+      x-trace-spanid:
+      - 15c864f8-ebb0-b2d0-fdd2-fa165ba06406
+      x-trace-parentspanid:
+      - 15c864f8-ebb0-b2a0-fdd2-fa165ba06406
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Rigs","profileUrl":"https://www.starcraft2.com/profile/1/1/1235050","avatarUrl":"https://static.starcraft2.com/starport/d0e7c831-18ab-4cd6-adc7-9d4a28f49ec7/portraits/0-5.jpg","profileId":"1235050","regionId":1,"realmId":1}]'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/player/2137104?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 13:30:38 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/player/2137105?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Sat, 21 Dec 2019 13:30:38 GMT
+      Server:
+      - nginx/1.13.12
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      ETag:
+      - W/"e9-ZIl20Y8o+VWfmRR7KrzEklgDF2g"
+      Cache-Control:
+      - no-cache
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '233'
+      x-trace-traceid:
+      - 15c864e8-3b66-f840-c980-fa165ba0f208
+      x-trace-spanid:
+      - 15c864e8-3b67-7f80-c980-fa165ba0f208
+      x-trace-parentspanid:
+      - 15c864e8-3b67-7f50-c980-fa165ba0f208
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"name":"add","profileUrl":"https://www.starcraft2.com/profile/1/1/7137118","avatarUrl":"https://static.starcraft2.com/starport/d0e7c831-18ab-4cd6-adc7-9d4a28f49ec7/portraits/0-0.jpg","profileId":"7137118","regionId":1,"realmId":1}]'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/player/2137105?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 13:30:39 GMT
+recorded_with: VCR 2.9.3

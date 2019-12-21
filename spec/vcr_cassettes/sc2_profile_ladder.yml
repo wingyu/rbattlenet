@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/profile/2/1/2137104/ladder/2200?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Sat, 21 Dec 2019 13:30:50 GMT
+      Server:
+      - nginx/1.13.12
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      ETag:
+      - W/"3f-8wkTgLYLXVSkkKiEg/YCYSFXxUw"
+      Cache-Control:
+      - max-age=300
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '63'
+      x-trace-traceid:
+      - 15c865d3-b121-bb90-59a1-fa165a07058b
+      x-trace-spanid:
+      - 15c865d3-b122-6400-59a1-fa165a07058b
+      x-trace-parentspanid:
+      - 15c865d3-b122-63d0-59a1-fa165a07058b
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"ladderTeams":[],"allLadderMemberships":[],"ranksAndPools":[]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/profile/2/1/2137104/ladder/2200?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 13:30:50 GMT
+recorded_with: VCR 2.9.3

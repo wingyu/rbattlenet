@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/legacy/profile/2/1/2137105/matches?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Sat, 21 Dec 2019 13:30:45 GMT
+      Server:
+      - nginx/1.13.12
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      ETag:
+      - W/"be-WeSmcMKBk1FozoGFReITxQF1ruk"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '190'
+      x-trace-traceid:
+      - 15c865c1-20f2-0100-85af-fa165b14433f
+      x-trace-spanid:
+      - 15c865c1-20f2-0470-85af-fa165b14433f
+      x-trace-parentspanid:
+      - 15c865c1-20f2-0440-85af-fa165b14433f
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"matches":[{"map":"Gutterhulk","type":"2v2","decision":"Loss","speed":"Faster","date":1305807240},{"map":"Left
+        2 Die","type":"Custom","decision":"Loss","speed":"Faster","date":1305805702}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/legacy/profile/2/1/2137105/matches?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 13:30:45 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/legacy/profile/2/1/2137104/matches?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Sat, 21 Dec 2019 13:30:45 GMT
+      Server:
+      - nginx/1.13.12
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      ETag:
+      - W/"172-KzguATtsSHWJp/ps7sfTItF91/I"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '370'
+      x-trace-traceid:
+      - 15c86389-fc67-dd60-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c86389-fc67-e510-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c86389-fc67-e4e0-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"matches":[{"map":"Bel''Shir Vestige LE","type":"Co-Op","decision":"Win","speed":"Faster","date":1368973017},{"map":"Ulaan
+        Deeps","type":"Co-Op","decision":"Loss","speed":"Faster","date":1305856218},{"map":"Monsoon","type":"3v3","decision":"Loss","speed":"Faster","date":1305854720},{"map":"Monsoon","type":"Co-Op","decision":"Loss","speed":"Faster","date":1305853807}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/legacy/profile/2/1/2137104/matches?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 13:30:45 GMT
+recorded_with: VCR 2.9.3
