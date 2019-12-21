@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/artisan/blacksmith/recipe/apprentice-flamberge?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:41:07 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=1BAE44C97A1165F1621C9D81E5C685A4.blade02_eu_b_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '642'
+      x-trace-traceid:
+      - 15c86552-5318-c070-f981-fa165bcda32d
+      x-trace-spanid:
+      - 15c86552-5318-cb70-f981-fa165bcda32d
+      x-trace-parentspanid:
+      - 15c86552-5318-cb40-f981-fa165bcda32d
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":"Sword_2H_003","slug":"apprentice-flamberge","name":"Apprentice
+        Flamberge","cost":1000,"reagents":[{"quantity":5,"item":{"id":"Crafting_AssortedParts_01","slug":"reusable-parts","name":"Reusable
+        Parts","icon":"crafting_assortedparts_01_demonhunter_male","path":"item/reusable-parts-Crafting_AssortedParts_01"}},{"quantity":5,"item":{"id":"Crafting_Magic_01","slug":"arcane-dust","name":"Arcane
+        Dust","icon":"crafting_magic_01_demonhunter_male","path":"item/arcane-dust-Crafting_Magic_01"}}],"itemProduced":{"id":"Sword_2H_003","slug":"dervish","name":"Dervish","icon":"sword_2h_003_demonhunter_male","path":"item/dervish-Sword_2H_003"}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/artisan/blacksmith/recipe/apprentice-flamberge?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:07 GMT
+recorded_with: VCR 2.9.3

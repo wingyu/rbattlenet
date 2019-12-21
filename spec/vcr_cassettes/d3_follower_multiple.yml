@@ -1,0 +1,181 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/follower/enchantress?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:41:03 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=A153BD7D3A558F37676F2610727DCF0E.blade05_eu_a_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c8638a-17a0-e0d0-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638a-17a0-e9c0-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638a-17a0-e990-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"slug":"enchantress","name":"Enchantress","realName":"Eirena","portrait":"enchantress","skills":[{"slug":"charm","name":"Charm","icon":"enchantress_charm","level":15,"tooltipUrl":"/follower/enchantress/skill/charm","description":"Cooldown:
+        18 seconds\n\nCharms an enemy to fight for you for 8 seconds.","descriptionHtml":"<p><span
+        class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">18</span>
+        seconds</p>\n\n<p>Charms an enemy to fight for you for <span class=\"d3-color-green\">8</span>
+        seconds.</p>"},{"slug":"forceful-push","name":"Forceful Push","icon":"enchantress_forcefulpush","level":15,"tooltipUrl":"/follower/enchantress/skill/forceful-push","description":"Cooldown:
+        5 seconds\n\nSummon an Arcane explosion 8 yards around an enemy, dealing 410%
+        weapon damage as Arcane and knocking back all monsters caught within it.","descriptionHtml":"<p><span
+        class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">5</span>
+        seconds</p>\n\n<p>Summon an Arcane explosion <span class=\"d3-color-green\">8</span>
+        yards around an enemy, dealing <span class=\"d3-color-green\">410%</span>
+        weapon damage as Arcane and knocking back all monsters caught within it.</p>"},{"slug":"missile-ward","name":"Missile
+        Ward","icon":"enchantress_missileward","level":20,"tooltipUrl":"/follower/enchantress/skill/missile-ward","description":"Buffs
+        you and the Enchantress, reducing damage from ranged attacks by 6%.","descriptionHtml":"<p>Buffs
+        you and the Enchantress, reducing damage from ranged attacks by <span class=\"d3-color-green\">6%</span>.</p>"},{"slug":"powered-armor","name":"Powered
+        Armor","icon":"enchantress_poweredarmor","level":20,"tooltipUrl":"/follower/enchantress/skill/powered-armor","description":"Buffs
+        you and the Enchantress, increasing Armor by 3% and slowing melee attackers
+        by 60% for 1 second.","descriptionHtml":"<p>Buffs you and the Enchantress,
+        increasing Armor by <span class=\"d3-color-green\">3%</span> and slowing melee
+        attackers by <span class=\"d3-color-green\">60%</span> for <span class=\"d3-color-green\">1</span>
+        second.</p>"},{"slug":"disorient","name":"Disorient","icon":"enchantress_disorient","level":25,"tooltipUrl":"/follower/enchantress/skill/disorient","description":"Cooldown:
+        6 seconds\n\nCast a flash of light in an area, causing enemies to be disoriented
+        for 2 seconds.","descriptionHtml":"<p><span class=\"d3-color-gold\">Cooldown:</span>
+        <span class=\"d3-color-green\">6</span> seconds</p>\n\n<p>Cast a flash of
+        light in an area, causing enemies to be disoriented for <span class=\"d3-color-green\">2</span>
+        seconds. </p>"},{"slug":"erosion","name":"Erosion","icon":"enchantress_scorchedearth","level":25,"tooltipUrl":"/follower/enchantress/skill/erosion","description":"Cooldown:
+        15 seconds\n\nConjures a pool of energy that deals 330% weapon damage as Arcane
+        over 5 seconds. Affected enemies will also take 3% increased damage.","descriptionHtml":"<p><span
+        class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">15</span>
+        seconds</p>\n\n<p>Conjures a pool of energy that deals <span class=\"d3-color-green\">330%</span>
+        weapon damage as Arcane over <span class=\"d3-color-green\">5</span> seconds.
+        Affected enemies will also take <span class=\"d3-color-green\">3%</span> increased
+        damage.</p>"},{"slug":"mass-control","name":"Mass Control","icon":"enchantress_masscharm","level":30,"tooltipUrl":"/follower/enchantress/skill/mass-control","description":"Cooldown:
+        18 seconds\n\nLob a bulb of magical energy that hexes enemies in an area into
+        chickens for 5 seconds.","descriptionHtml":"<p><span class=\"d3-color-gold\">Cooldown:</span>
+        <span class=\"d3-color-green\">18</span> seconds</p>\n\n<p>Lob a bulb of magical
+        energy that hexes enemies in an area into chickens for <span class=\"d3-color-green\">5</span>
+        seconds.</p>"},{"slug":"focused-mind","name":"Focused Mind","icon":"enchantress_focusedmind","level":30,"tooltipUrl":"/follower/enchantress/skill/focused-mind","description":"A
+        40 yard aura that increases attack speed for you and the Enchantress by 3%.","descriptionHtml":"<p>A
+        <span class=\"d3-color-green\">40</span> yard aura that increases attack speed
+        for you and the Enchantress by <span class=\"d3-color-green\">3%</span>.</p>"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/follower/enchantress?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:04 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/follower/templar?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:41:04 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=0734765CF0033253550090C5444A8DA1.blade10_eu_b_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '4238'
+      x-trace-traceid:
+      - 15c864f8-ff6c-3f40-fdd2-fa165ba06406
+      x-trace-spanid:
+      - 15c864f8-ff6c-4ea0-fdd2-fa165ba06406
+      x-trace-parentspanid:
+      - 15c864f8-ff6c-4e70-fdd2-fa165ba06406
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"slug":"templar","name":"Templar","realName":"Kormac","portrait":"templar","skills":[{"slug":"intervene","name":"Intervene","icon":"templar_intervene","level":5,"tooltipUrl":"/follower/templar/skill/intervene","description":"Cooldown:
+        10 seconds\n\nTaunt enemies within 10 yards of you for 3 seconds when you
+        are hit.","descriptionHtml":"<p><span class=\"d3-color-gold\">Cooldown:</span>
+        <span class=\"d3-color-green\">10</span> seconds</p>\n\n<p>Taunt enemies within
+        <span class=\"d3-color-green\">10</span> yards of you for <span class=\"d3-color-green\">3</span>
+        seconds when you are hit.</p>"},{"slug":"heal","name":"Heal","icon":"templar_heal_110","level":5,"tooltipUrl":"/follower/templar/skill/heal","description":"Cooldown:
+        30 seconds\n\nHeals you and the Templar for 193,112 Life.","descriptionHtml":"<p><span
+        class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">30</span>
+        seconds</p>\n\n<p>Heals you and the Templar for <span class=\"d3-color-green\">193,112</span>
+        Life.</p>"},{"slug":"loyalty","name":"Loyalty","icon":"templar_loyalty","level":10,"tooltipUrl":"/follower/templar/skill/loyalty","description":"Regenerates
+        6437 Life per second for you and the Templar.","descriptionHtml":"<p>Regenerates
+        <span class=\"d3-color-green\">6437</span> Life per second for you and the
+        Templar.</p>"},{"slug":"intimidate","name":"Intimidate","icon":"templar_intimidate","level":10,"tooltipUrl":"/follower/templar/skill/intimidate","description":"Enemies
+        that hit or are hit by the Templar are slowed by 80% for 3 seconds.","descriptionHtml":"<p>Enemies
+        that hit or are hit by the Templar are slowed by <span class=\"d3-color-green\">80%</span>
+        for <span class=\"d3-color-green\">3</span> seconds.</p>"},{"slug":"onslaught","name":"Onslaught","icon":"templar_onslaught","level":15,"tooltipUrl":"/follower/templar/skill/onslaught","description":"Cooldown:
+        10 seconds\n\nDelivers a massive blow to an enemy for 800% weapon damage.","descriptionHtml":"<p><span
+        class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">10</span>
+        seconds</p>\n\n<p>Delivers a massive blow to an enemy for <span class=\"d3-color-green\">800%</span>
+        weapon damage.</p>"},{"slug":"charge","name":"Charge","icon":"templar_shieldcharge","level":15,"tooltipUrl":"/follower/templar/skill/charge","description":"Cooldown:
+        10 seconds\n\nCharges a target, dealing 280% weapon damage and stunning all
+        enemies within 8 yards for 3 seconds.","descriptionHtml":"<p><span class=\"d3-color-gold\">Cooldown:</span>
+        <span class=\"d3-color-green\">10</span> seconds</p>\n\n<p>Charges a target,
+        dealing <span class=\"d3-color-green\">280%</span> weapon damage and stunning
+        all enemies within <span class=\"d3-color-green\">8</span> yards for <span
+        class=\"d3-color-green\">3</span> seconds.</p>"},{"slug":"inspire","name":"Inspire","icon":"templar_inspire","level":20,"tooltipUrl":"/follower/templar/skill/inspire","description":"Increases
+        your resource generation.\n\nMana: 7 per second.\nHatred: 1 per second.\nWrath:
+        1.1 per second.\nArcane Power: 1.4 per second.\nFury: 10% generated.\nSpirit:
+        10% generated.\nEssence: 10% generated.","descriptionHtml":"<p>Increases your
+        resource generation.</p>\n\n<p>Mana: <span class=\"d3-color-green\">7</span>
+        per second.</p>\n<p>Hatred: <span class=\"d3-color-green\">1</span> per second.</p>\n<p>Wrath:
+        <span class=\"d3-color-green\">1.1</span> per second.</p>\n<p>Arcane Power:
+        <span class=\"d3-color-green\">1.4</span> per second.</p>\n<p>Fury: <span
+        class=\"d3-color-green\">10%</span> generated.</p>\n<p>Spirit: <span class=\"d3-color-green\">10%</span>
+        generated.</p>\n<p>Essence: <span class=\"d3-color-green\">10%</span> generated.</p>"},{"slug":"guardian","name":"Guardian","icon":"templar_guardian","level":20,"tooltipUrl":"/follower/templar/skill/guardian","description":"Cooldown:
+        30 seconds\n\nRush to your aid, knocking back enemies within 15 yards and
+        healing you for 182,383 Life.","descriptionHtml":"<p><span class=\"d3-color-gold\">Cooldown:</span>
+        <span class=\"d3-color-green\">30</span> seconds</p>\n\n<p>Rush to your aid,
+        knocking back enemies within <span class=\"d3-color-green\">15</span> yards
+        and healing you for <span class=\"d3-color-green\">182,383</span> Life.</p>"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/follower/templar?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:04 GMT
+recorded_with: VCR 2.9.3

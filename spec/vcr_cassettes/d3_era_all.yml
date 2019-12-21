@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/d3/era/?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sat, 21 Dec 2019 15:41:02 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sat, 21 Dec 2019 15:41:00 GMT
+      Battlenet-Namespace:
+      - 2-6-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - era
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '1086'
+      x-trace-traceid:
+      - 15c865d3-cd2e-f090-59a1-fa165a07058b
+      x-trace-spanid:
+      - 15c865d3-cd2e-f820-59a1-fa165a07058b
+      x-trace-parentspanid:
+      - 15c865d3-cd2e-f7c0-59a1-fa165a07058b
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/d3/era/?namespace=2-6-eu"}},"era":[{"href":"https://eu.api.blizzard.com/data/d3/era/1?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/era/2?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/era/3?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/era/4?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/era/5?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/era/6?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/era/7?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/era/8?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/era/9?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/era/10?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/era/11?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/era/12?namespace=2-6-EU"}],"current_era":12,"last_update_time":"Sat,
+        21 Dec 2019 15:41:00 UTC","generated_by":"AMS1A-D3-PURPLE-JOB001-01 2.6.7
+        branches/2_6_7-branches/2_6_7"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/d3/era/?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:03 GMT
+recorded_with: VCR 2.9.3

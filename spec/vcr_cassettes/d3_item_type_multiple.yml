@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/item-type/sword2h?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:41:07 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=3D49786CD97829D54520D976EAACC0C0.blade01_eu_a_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86552-5318-7010-f981-fa165bcda32d
+      x-trace-spanid:
+      - 15c86552-5318-7540-f981-fa165bcda32d
+      x-trace-parentspanid:
+      - 15c86552-5318-7510-f981-fa165bcda32d
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"Sword_2H_101","slug":"great-sword","name":"Great Sword","icon":"sword_2h_101_demonhunter_male","path":"item/great-sword-Sword_2H_101"},{"id":"Unique_Sword_2H_002_x1","slug":"the-zweihander","name":"The
+        Zweihander","icon":"unique_sword_2h_002_x1_demonhunter_male","path":"item/the-zweihander-Unique_Sword_2H_002_x1"},{"id":"Sword_2H_206","slug":"warlord-sword","name":"Warlord
+        Sword","icon":"sword_2h_206_demonhunter_male","path":"item/warlord-sword-Sword_2H_206"},{"id":"Sword_2H_001","slug":"twohanded-sword","name":"Two-Handed
+        Sword","icon":"sword_2h_001_demonhunter_male","path":"item/twohanded-sword-Sword_2H_001"},{"id":"Unique_Sword_2H_008_x1","slug":"the-sultan-of-blinding-sand","name":"The
+        Sultan of Blinding Sand","icon":"unique_sword_2h_008_x1_demonhunter_male","path":"item/the-sultan-of-blinding-sand-Unique_Sword_2H_008_x1"},{"id":"Sword_2H_005","slug":"nodachi","name":"Nodachi","icon":"sword_2h_005_demonhunter_male","path":"item/nodachi-Sword_2H_005"},{"id":"Unique_Sword_2H_001_x1","slug":"the-grandfather","name":"The
+        Grandfather","icon":"unique_sword_2h_001_x1_demonhunter_male","path":"item/the-grandfather-Unique_Sword_2H_001_x1"},{"id":"Unique_Sword_2H_102_x1","slug":"cams-rebuttal","name":"Cam''s
+        Rebuttal","icon":"unique_sword_2h_102_x1_demonhunter_male","path":"item/cams-rebuttal-Unique_Sword_2H_102_x1"},{"id":"Unique_Sword_2H_004_x1","slug":"scourge","name":"Scourge","icon":"unique_sword_2h_004_x1_demonhunter_male","path":"item/scourge-Unique_Sword_2H_004_x1"},{"id":"Sword_2H_204","slug":"colossus-blade","name":"Colossus
+        Blade","icon":"sword_2h_204_demonhunter_male","path":"item/colossus-blade-Sword_2H_204"},{"id":"Unique_Sword_2H_011_x1","slug":"blackguard","name":"Blackguard","icon":"unique_sword_2h_011_x1_demonhunter_male","path":"item/blackguard-Unique_Sword_2H_011_x1"},{"id":"Sword_2H_105","slug":"nagamaki","name":"Nagamaki","icon":"sword_2h_105_demonhunter_male","path":"item/nagamaki-Sword_2H_105"},{"id":"Sword_2H_201","slug":"highland-sword","name":"Highland
+        Sword","icon":"sword_2h_201_demonhunter_male","path":"item/highland-sword-Sword_2H_201"},{"id":"Sword_2H_103","slug":"kilij","name":"Kilij","icon":"sword_2h_103_demonhunter_male","path":"item/kilij-Sword_2H_103"},{"id":"Sword_2H_301","slug":"gothic-blade","name":"Gothic
+        Blade","icon":"sword_2h_301_demonhunter_male","path":"item/gothic-blade-Sword_2H_301"},{"id":"Unique_Sword_2H_103_x1","slug":"blood-brother","name":"Blood
+        Brother","icon":"unique_sword_2h_103_x1_demonhunter_male","path":"item/blood-brother-Unique_Sword_2H_103_x1"},{"id":"Sword_2H_302","slug":"kingslayer","name":"Kingslayer","icon":"sword_2h_302_demonhunter_male","path":"item/kingslayer-Sword_2H_302"},{"id":"Unique_Sword_2H_101_x1","slug":"stalgards-decimator","name":"Stalgard''s
+        Decimator","icon":"unique_sword_2h_101_x1_demonhunter_male","path":"item/stalgards-decimator-Unique_Sword_2H_101_x1"},{"id":"Sword_2H_102","slug":"reaver","name":"Reaver","icon":"sword_2h_102_demonhunter_male","path":"item/reaver-Sword_2H_102"},{"id":"Sword_2H_203","slug":"yatagan","name":"Yatagan","icon":"sword_2h_203_demonhunter_male","path":"item/yatagan-Sword_2H_203"},{"id":"Unique_Sword_2H_010_x1","slug":"maximus","name":"Maximus","icon":"unique_sword_2h_010_x1_demonhunter_male","path":"item/maximus-Unique_Sword_2H_010_x1"},{"id":"Sword_2H_106","slug":"grand-sword","name":"Grand
+        Sword","icon":"sword_2h_106_demonhunter_male","path":"item/grand-sword-Sword_2H_106"},{"id":"Unique_Sword_2H_104_x1","slug":"corrupted-ashbringer","name":"Corrupted
+        Ashbringer","icon":"unique_sword_2h_104_x1_demonhunter_male","path":"item/corrupted-ashbringer-Unique_Sword_2H_104_x1"},{"id":"P61_Unique_Sword_2H_007_x1","slug":"blade-of-prophecy","name":"Blade
+        of Prophecy","icon":"p61_unique_sword_2h_007_x1_demonhunter_male","path":"item/blade-of-prophecy-P61_Unique_Sword_2H_007_x1"},{"id":"Unique_Sword_2H_014","slug":"splintered-oar","name":"Splintered
+        Oar","icon":"unique_sword_2h_014_demonhunter_male","path":"item/splintered-oar-Unique_Sword_2H_014"},{"id":"Sword_2H_104","slug":"mameluke","name":"Mameluke","icon":"sword_2h_104_demonhunter_male","path":"item/mameluke-Sword_2H_104"},{"id":"Sword_2H_202","slug":"brimstone-sword","name":"Brimstone
+        Sword","icon":"sword_2h_202_demonhunter_male","path":"item/brimstone-sword-Sword_2H_202"},{"id":"P61_Unique_Sword_2H_012_x1","slug":"faithful-memory","name":"Faithful
+        Memory","icon":"p61_unique_sword_2h_012_x1_demonhunter_male","path":"item/faithful-memory-P61_Unique_Sword_2H_012_x1"},{"id":"Unique_Sword_2H_014_104","slug":"splintered-oar","name":"Splintered
+        Oar","icon":"unique_sword_2h_014_104_demonhunter_male","path":"item/splintered-oar-Unique_Sword_2H_014_104"},{"id":"Sword_2H_003","slug":"dervish","name":"Dervish","icon":"sword_2h_003_demonhunter_male","path":"item/dervish-Sword_2H_003"},{"id":"Sword_2H_205","slug":"oni-blade","name":"Oni
+        Blade","icon":"sword_2h_205_demonhunter_male","path":"item/oni-blade-Sword_2H_205"},{"id":"Unique_Sword_2H_014_x1","slug":"splintered-oar","name":"Splintered
+        Oar","icon":"unique_sword_2h_014_x1_demonhunter_male","path":"item/splintered-oar-Unique_Sword_2H_014_x1"},{"id":"Sword_2H_002","slug":"flamberge","name":"Flamberge","icon":"sword_2h_002_demonhunter_male","path":"item/flamberge-Sword_2H_002"},{"id":"Unique_Sword_2H_014_1xx","slug":"splintered-oar","name":"Splintered
+        Oar","icon":"unique_sword_2h_014_1xx_demonhunter_male","path":"item/splintered-oar-Unique_Sword_2H_014_1xx"},{"id":"Sword_2H_006","slug":"claymore","name":"Claymore","icon":"sword_2h_006_demonhunter_male","path":"item/claymore-Sword_2H_006"},{"id":"Sword_2H_004","slug":"executioner-sword","name":"Executioner
+        Sword","icon":"sword_2h_004_demonhunter_male","path":"item/executioner-sword-Sword_2H_004"},{"id":"Unique_Sword_2H_003_x1","slug":"warmonger","name":"Warmonger","icon":"unique_sword_2h_003_x1_demonhunter_male","path":"item/warmonger-Unique_Sword_2H_003_x1"}]'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/item-type/sword2h?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:07 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/item-type/axe2h?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:41:06 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=EA1458FBCAB7973942E613A8F23EBCC2.blade05_eu_a_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '3920'
+      x-trace-traceid:
+      - 15c8638a-17a3-54b0-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638a-17a3-5bc0-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638a-17a3-5b90-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"Axe_2H_203","slug":"ripper-axe","name":"Ripper Axe","icon":"axe_2h_203_demonhunter_male","path":"item/ripper-axe-Axe_2H_203"},{"id":"Axe_2H_105","slug":"labrys","name":"Labrys","icon":"axe_2h_105_demonhunter_male","path":"item/labrys-Axe_2H_105"},{"id":"Axe_2H_005","slug":"great-axe","name":"Great
+        Axe","icon":"axe_2h_005_demonhunter_male","path":"item/great-axe-Axe_2H_005"},{"id":"Axe_2H_104","slug":"parashu","name":"Parashu","icon":"axe_2h_104_demonhunter_male","path":"item/parashu-Axe_2H_104"},{"id":"Axe_2H_102","slug":"francisca","name":"Francisca","icon":"axe_2h_102_demonhunter_male","path":"item/francisca-Axe_2H_102"},{"id":"Axe_2H_201","slug":"fell-axe","name":"Fell
+        Axe","icon":"axe_2h_201_demonhunter_male","path":"item/fell-axe-Axe_2H_201"},{"id":"Axe_2H_103","slug":"fang-axe","name":"Fang
+        Axe","icon":"axe_2h_103_demonhunter_male","path":"item/fang-axe-Axe_2H_103"},{"id":"Unique_Axe_2H_001_x1","slug":"butchers-carver","name":"Butcher''s
+        Carver","icon":"unique_axe_2h_001_x1_demonhunter_male","path":"item/butchers-carver-Unique_Axe_2H_001_x1"},{"id":"Axe_2H_302","slug":"flesh-render","name":"Flesh
+        Render","icon":"axe_2h_302_demonhunter_male","path":"item/flesh-render-Axe_2H_302"},{"id":"Axe_2H_001","slug":"lumber-axe","name":"Lumber
+        Axe","icon":"axe_2h_001_demonhunter_male","path":"item/lumber-axe-Axe_2H_001"},{"id":"Axe_2H_202","slug":"valaska","name":"Valaska","icon":"axe_2h_202_demonhunter_male","path":"item/valaska-Axe_2H_202"},{"id":"Axe_2H_002","slug":"war-axe","name":"War
+        Axe","icon":"axe_2h_002_demonhunter_male","path":"item/war-axe-Axe_2H_002"},{"id":"P66_Unique_Axe_2H_011","slug":"messerschmidts-reaver","name":"Messerschmidt''s
+        Reaver","icon":"p66_unique_axe_2h_011_demonhunter_male","path":"item/messerschmidts-reaver-P66_Unique_Axe_2H_011"},{"id":"TransmogAxe_241_004","slug":"sungjaes-fury","name":"Sungjae''s
+        Fury","icon":"transmogaxe_241_004_demonhunter_male","path":"item/sungjaes-fury-TransmogAxe_241_004"},{"id":"Axe_2H_204","slug":"sagaris","name":"Sagaris","icon":"axe_2h_204_demonhunter_male","path":"item/sagaris-Axe_2H_204"},{"id":"Axe_2H_101","slug":"timber-axe","name":"Timber
+        Axe","icon":"axe_2h_101_demonhunter_male","path":"item/timber-axe-Axe_2H_101"},{"id":"Unique_Axe_2H_010_x1","slug":"cinder-switch","name":"Cinder
+        Switch","icon":"unique_axe_2h_010_x1_demonhunter_male","path":"item/cinder-switch-Unique_Axe_2H_010_x1"},{"id":"Unique_Axe_2H_009_x1","slug":"skorn","name":"Skorn","icon":"unique_axe_2h_009_x1_demonhunter_male","path":"item/skorn-Unique_Axe_2H_009_x1"},{"id":"Axe_2H_004","slug":"military-axe","name":"Military
+        Axe","icon":"axe_2h_004_demonhunter_male","path":"item/military-axe-Axe_2H_004"},{"id":"Axe_2H_003","slug":"tabarzin","name":"Tabarzin","icon":"axe_2h_003_demonhunter_male","path":"item/tabarzin-Axe_2H_003"},{"id":"Unique_Axe_2H_010_1xx","slug":"fire-brand","name":"Fire
+        Brand","icon":"unique_axe_2h_010_1xx_demonhunter_male","path":"item/fire-brand-Unique_Axe_2H_010_1xx"},{"id":"TransmogAxe_241_003","slug":"kanais-skorn","name":"Kanai''s
+        Skorn","icon":"transmogaxe_241_003_demonhunter_male","path":"item/kanais-skorn-TransmogAxe_241_003"},{"id":"Axe_2H_205","slug":"decapitator","name":"Decapitator","icon":"axe_2h_205_demonhunter_male","path":"item/decapitator-Axe_2H_205"},{"id":"P66_Unique_Axe_2H_003","slug":"the-executioner","name":"The
+        Executioner","icon":"p66_unique_axe_2h_003_demonhunter_male","path":"item/the-executioner-P66_Unique_Axe_2H_003"},{"id":"Axe_2H_301","slug":"dread-axe","name":"Dread
+        Axe","icon":"axe_2h_301_demonhunter_male","path":"item/dread-axe-Axe_2H_301"},{"id":"Unique_Axe_2H_103_x1","slug":"burst-of-wrath","name":"Burst
+        of Wrath","icon":"unique_axe_2h_103_x1_demonhunter_male","path":"item/burst-of-wrath-Unique_Axe_2H_103_x1"},{"id":"TransmogAxe_241_002","slug":"king-maker","name":"King
+        Maker","icon":"transmogaxe_241_002_demonhunter_male","path":"item/king-maker-TransmogAxe_241_002"}]'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/item-type/axe2h?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:07 GMT
+recorded_with: VCR 2.9.3

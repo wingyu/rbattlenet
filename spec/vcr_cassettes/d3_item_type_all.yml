@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/item-type?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:41:07 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=542E0F5FA807DE0CFDEFEECF7C5A8967.blade06_eu_b_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c864e8-5102-8200-c980-fa165ba0f208
+      x-trace-spanid:
+      - 15c864e8-5102-9f50-c980-fa165ba0f208
+      x-trace-parentspanid:
+      - 15c864e8-5102-9f20-c980-fa165ba0f208
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"ChestArmor_Necromancer","name":"Chest Armor","path":"item-type/chestarmornecromancer"},{"id":"UpgradeableJewel","name":"Gem","path":"item-type/upgradeablejewel"},{"id":"Boots_Monk","name":"Boots","path":"item-type/bootsmonk"},{"id":"ChestArmor_Monk","name":"Chest
+        Armor","path":"item-type/chestarmormonk"},{"id":"Legs_Monk","name":"Pants","path":"item-type/legsmonk"},{"id":"ScrollBuff","name":"Scroll","path":"item-type/scrollbuff"},{"id":"Legs_WitchDoctor","name":"Pants","path":"item-type/legswitchdoctor"},{"id":"Gloves_Monk","name":"Gloves","path":"item-type/glovesmonk"},{"id":"CraftingPlan_MysticTransmog","name":"Transmogrify
+        Plan","path":"item-type/craftingplanmystictransmog"},{"id":"Legs_Crusader","name":"Pants","path":"item-type/legscrusader"},{"id":"Shoulders_Barbarian","name":"Shoulders","path":"item-type/shouldersbarbarian"},{"id":"Gloves_DemonHunter","name":"Gloves","path":"item-type/glovesdemonhunter"},{"id":"Helm_WitchDoctor","name":"Helm","path":"item-type/helmwitchdoctor"},{"id":"GreaterShard","name":"Greater
+        Shard","path":"item-type/greatershard"},{"id":"ChestArmor_Wizard","name":"Chest
+        Armor","path":"item-type/chestarmorwizard"},{"id":"ChestArmor_Crusader","name":"Chest
+        Armor","path":"item-type/chestarmorcrusader"},{"id":"Shoulders","name":"Shoulders","path":"item-type/shoulders"},{"id":"Legs_Necromancer","name":"Pants","path":"item-type/legsnecromancer"},{"id":"PortalDevice","name":"Portal
+        Device","path":"item-type/portaldevice"},{"id":"GenericBelt","name":"Belt","path":"item-type/genericbelt"},{"id":"Boots_DemonHunter","name":"Boots","path":"item-type/bootsdemonhunter"},{"id":"GenericHelm","name":"Helm","path":"item-type/generichelm"},{"id":"ChestArmor","name":"Chest
+        Armor","path":"item-type/chestarmor"},{"id":"Shoulders_Wizard","name":"Shoulders","path":"item-type/shoulderswizard"},{"id":"Shoulders_Monk","name":"Shoulders","path":"item-type/shouldersmonk"},{"id":"ScoundrelSpecial","name":"Scoundrel
+        Token","path":"item-type/scoundrelspecial"},{"id":"FistWeapon","name":"Fist
+        Weapon","path":"item-type/fistweapon"},{"id":"CraftingReagent","name":"Crafting
+        Material","path":"item-type/craftingreagent"},{"id":"Helm_Barbarian","name":"Helm","path":"item-type/helmbarbarian"},{"id":"HealthPotion","name":"Potion","path":"item-type/healthpotion"},{"id":"Boots_Barbarian","name":"Boots","path":"item-type/bootsbarbarian"},{"id":"CombatStaff","name":"Daibo","path":"item-type/combatstaff"},{"id":"Bracers","name":"Bracers","path":"item-type/bracers"},{"id":"Gloves_WitchDoctor","name":"Gloves","path":"item-type/gloveswitchdoctor"},{"id":"Helm_Crusader","name":"Helm","path":"item-type/helmcrusader"},{"id":"Boots_Crusader","name":"Boots","path":"item-type/bootscrusader"},{"id":"CraftingPlanLegendary_Smith","name":"Blacksmith
+        Plan","path":"item-type/craftingplanlegendarysmith"},{"id":"Legs_Wizard","name":"Pants","path":"item-type/legswizard"},{"id":"Boots_Necromancer","name":"Boots","path":"item-type/bootsnecromancer"},{"id":"VoodooMask","name":"Voodoo
+        Mask","path":"item-type/voodoomask"},{"id":"Dagger","name":"Dagger","path":"item-type/dagger"},{"id":"EnchantressSpecial","name":"Enchantress
+        Focus","path":"item-type/enchantressspecial"},{"id":"MysteryWeapon2H","name":"Weapon","path":"item-type/mysteryweapon2h"},{"id":"CeremonialDagger","name":"Ceremonial
+        Knife","path":"item-type/ceremonialdagger"},{"id":"Belt_Barbarian","name":"Mighty
+        Belt","path":"item-type/beltbarbarian"},{"id":"MysteryWeapon1H","name":"Weapon","path":"item-type/mysteryweapon1h"},{"id":"Amulet","name":"Amulet","path":"item-type/amulet"},{"id":"Helm_Necromancer","name":"Helm","path":"item-type/helmnecromancer"},{"id":"Boots_Wizard","name":"Boots","path":"item-type/bootswizard"},{"id":"Sword2H","name":"Two-Handed
+        Sword","path":"item-type/sword2h"},{"id":"MightyWeapon1H","name":"Mighty Weapon","path":"item-type/mightyweapon1h"},{"id":"GeneralUtility","name":"Consumable","path":"item-type/generalutility"},{"id":"WizardHat","name":"Wizard
+        Hat","path":"item-type/wizardhat"},{"id":"MightyWeapon2H","name":"Two-Handed
+        Mighty Weapon","path":"item-type/mightyweapon2h"},{"id":"Crossbow","name":"Crossbow","path":"item-type/crossbow"},{"id":"Flail1H","name":"Flail","path":"item-type/flail1h"},{"id":"Legs_Barbarian","name":"Pants","path":"item-type/legsbarbarian"},{"id":"ChestArmor_Barbarian","name":"Chest
+        Armor","path":"item-type/chestarmorbarbarian"},{"id":"Shoulders_Necromancer","name":"Shoulders","path":"item-type/shouldersnecromancer"},{"id":"Polearm","name":"Polearm","path":"item-type/polearm"},{"id":"ChestArmor_DemonHunter","name":"Chest
+        Armor","path":"item-type/chestarmordemonhunter"},{"id":"Flail2H","name":"Two-Handed
+        Flail","path":"item-type/flail2h"},{"id":"CraftingPlan_Smith","name":"Blacksmith
+        Plan","path":"item-type/craftingplansmith"},{"id":"Gold","name":"Gold","path":"item-type/gold"},{"id":"Gloves","name":"Gloves","path":"item-type/gloves"},{"id":"Helm","name":"Helm","path":"item-type/helm"},{"id":"Mace","name":"Mace","path":"item-type/mace"},{"id":"Bow","name":"Bow","path":"item-type/bow"},{"id":"Gem","name":"Gem","path":"item-type/gem"},{"id":"TrainingTome","name":"Tome
+        of Training","path":"item-type/trainingtome"},{"id":"Boots_WitchDoctor","name":"Boots","path":"item-type/bootswitchdoctor"},{"id":"Orb","name":"Source","path":"item-type/orb"},{"id":"ChestArmor_WitchDoctor","name":"Chest
+        Armor","path":"item-type/chestarmorwitchdoctor"},{"id":"Axe","name":"Axe","path":"item-type/axe"},{"id":"Shoulders_DemonHunter","name":"Shoulders","path":"item-type/shouldersdemonhunter"},{"id":"Legs","name":"Pants","path":"item-type/legs"},{"id":"Dye","name":"Dye","path":"item-type/dye"},{"id":"Wand","name":"Wand","path":"item-type/wand"},{"id":"TemplarSpecial","name":"Templar
+        Relic","path":"item-type/templarspecial"},{"id":"Legs_DemonHunter","name":"Pants","path":"item-type/legsdemonhunter"},{"id":"Ring","name":"Ring","path":"item-type/ring"},{"id":"Axe2H","name":"Two-Handed
+        Axe","path":"item-type/axe2h"},{"id":"Helm_Monk","name":"Helm","path":"item-type/helmmonk"},{"id":"Cloak","name":"Cloak","path":"item-type/cloak"},{"id":"Mojo","name":"Mojo","path":"item-type/mojo"},{"id":"Mace2H","name":"Two-Handed
+        Mace","path":"item-type/mace2h"},{"id":"Boots","name":"Boots","path":"item-type/boots"},{"id":"Quest","name":"Quest","path":"item-type/quest"},{"id":"Shoulders_Crusader","name":"Shoulders","path":"item-type/shoulderscrusader"},{"id":"Scythe2H","name":"Two-Handed
+        Scythe","path":"item-type/scythe2h"},{"id":"Quiver","name":"Quiver","path":"item-type/quiver"},{"id":"Scroll","name":"Scroll","path":"item-type/scroll"},{"id":"Gloves_Wizard","name":"Gloves","path":"item-type/gloveswizard"},{"id":"Scythe1H","name":"Scythe","path":"item-type/scythe1h"},{"id":"Shard","name":"Shard","path":"item-type/shard"},{"id":"NecromancerOffhand","name":"Phylactery","path":"item-type/necromanceroffhand"},{"id":"Sword","name":"Sword","path":"item-type/sword"},{"id":"Spear","name":"Spear","path":"item-type/spear"},{"id":"Gloves_Necromancer","name":"Gloves","path":"item-type/glovesnecromancer"},{"id":"Gloves_Crusader","name":"Gloves","path":"item-type/glovescrusader"},{"id":"Staff","name":"Staff","path":"item-type/staff"},{"id":"GenericChestArmor","name":"Chest
+        Armor","path":"item-type/genericchestarmor"},{"id":"Helm_Wizard","name":"Helm","path":"item-type/helmwizard"},{"id":"CraftingPlan_Jeweler","name":"Jeweler
+        Design","path":"item-type/craftingplanjeweler"},{"id":"HandXbow","name":"Hand
+        Crossbow","path":"item-type/handxbow"},{"id":"SpiritStone_Monk","name":"Spirit
+        Stone","path":"item-type/spiritstonemonk"},{"id":"Shield","name":"Shield","path":"item-type/shield"},{"id":"Helm_DemonHunter","name":"Helm","path":"item-type/helmdemonhunter"},{"id":"Shoulders_WitchDoctor","name":"Shoulders","path":"item-type/shoulderswitchdoctor"},{"id":"CrusaderShield","name":"Crusader
+        Shield","path":"item-type/crusadershield"},{"id":"Gloves_Barbarian","name":"Gloves","path":"item-type/glovesbarbarian"}]'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/item-type?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:07 GMT
+recorded_with: VCR 2.9.3

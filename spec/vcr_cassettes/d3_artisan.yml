@@ -1,0 +1,265 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/artisan/1?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:40:58 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=38996B4AFF0FC42D20D4C05B8318CD87.blade06_eu_b_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c864e8-50fb-ef50-c980-fa165ba0f208
+      x-trace-spanid:
+      - 15c864e8-50fc-0820-c980-fa165ba0f208
+      x-trace-parentspanid:
+      - 15c864e8-50fc-07f0-c980-fa165ba0f208
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"slug":"jeweler","name":"Jeweler","portrait":"pt_jeweler","training":{"tiers":[{"tier":1,"trainedRecipes":[{"id":"x1_Amethyst_02","slug":"flawless-amethyst","name":"Flawless
+        Amethyst","cost":2500,"reagents":[{"quantity":2,"item":{"id":"x1_Amethyst_01","slug":"amethyst","name":"Amethyst","icon":"x1_amethyst_01_demonhunter_male","path":"item/amethyst-x1_Amethyst_01"}}],"itemProduced":{"id":"x1_Amethyst_02","slug":"flawless-amethyst","name":"Flawless
+        Amethyst","icon":"x1_amethyst_02_demonhunter_male","path":"item/flawless-amethyst-x1_Amethyst_02"}}],"taughtRecipes":[]},{"tier":2,"trainedRecipes":[{"id":"x1_Diamond_02","slug":"flawless-diamond","name":"Flawless
+        Diamond","cost":2500,"reagents":[{"quantity":2,"item":{"id":"x1_Diamond_01","slug":"diamond","name":"Diamond","icon":"x1_diamond_01_demonhunter_male","path":"item/diamond-x1_Diamond_01"}}],"itemProduced":{"id":"x1_Diamond_02","slug":"flawless-diamond","name":"Flawless
+        Diamond","icon":"x1_diamond_02_demonhunter_male","path":"item/flawless-diamond-x1_Diamond_02"}}],"taughtRecipes":[]},{"tier":3,"trainedRecipes":[{"id":"x1_Emerald_02","slug":"flawless-emerald","name":"Flawless
+        Emerald","cost":2500,"reagents":[{"quantity":2,"item":{"id":"x1_Emerald_01","slug":"emerald","name":"Emerald","icon":"x1_emerald_01_demonhunter_male","path":"item/emerald-x1_Emerald_01"}}],"itemProduced":{"id":"x1_Emerald_02","slug":"flawless-emerald","name":"Flawless
+        Emerald","icon":"x1_emerald_02_demonhunter_male","path":"item/flawless-emerald-x1_Emerald_02"}},{"id":"x1_Ruby_02","slug":"flawless-ruby","name":"Flawless
+        Ruby","cost":2500,"reagents":[{"quantity":2,"item":{"id":"x1_Ruby_01","slug":"ruby","name":"Ruby","icon":"x1_ruby_01_demonhunter_male","path":"item/ruby-x1_Ruby_01"}}],"itemProduced":{"id":"x1_Ruby_02","slug":"flawless-ruby","name":"Flawless
+        Ruby","icon":"x1_ruby_02_demonhunter_male","path":"item/flawless-ruby-x1_Ruby_02"}},{"id":"x1_Topaz_02","slug":"flawless-topaz","name":"Flawless
+        Topaz","cost":2500,"reagents":[{"quantity":2,"item":{"id":"x1_Topaz_01","slug":"topaz","name":"Topaz","icon":"x1_topaz_01_demonhunter_male","path":"item/topaz-x1_Topaz_01"}}],"itemProduced":{"id":"x1_Topaz_02","slug":"flawless-topaz","name":"Flawless
+        Topaz","icon":"x1_topaz_02_demonhunter_male","path":"item/flawless-topaz-x1_Topaz_02"}}],"taughtRecipes":[]},{"tier":4,"trainedRecipes":[{"id":"x1_Amethyst_03","slug":"square-amethyst","name":"Square
+        Amethyst","cost":5000,"reagents":[{"quantity":2,"item":{"id":"x1_Amethyst_02","slug":"flawless-amethyst","name":"Flawless
+        Amethyst","icon":"x1_amethyst_02_demonhunter_male","path":"item/flawless-amethyst-x1_Amethyst_02"}}],"itemProduced":{"id":"x1_Amethyst_03","slug":"square-amethyst","name":"Square
+        Amethyst","icon":"x1_amethyst_03_demonhunter_male","path":"item/square-amethyst-x1_Amethyst_03"}},{"id":"Ring_11","slug":"master-ring","name":"Master
+        Ring","cost":10000,"reagents":[{"quantity":1,"item":{"id":"x1_Diamond_01","slug":"diamond","name":"Diamond","icon":"x1_diamond_01_demonhunter_male","path":"item/diamond-x1_Diamond_01"}},{"quantity":1,"item":{"id":"x1_Amethyst_01","slug":"amethyst","name":"Amethyst","icon":"x1_amethyst_01_demonhunter_male","path":"item/amethyst-x1_Amethyst_01"}}],"itemProduced":{"id":"Ring_11","slug":"ring","name":"Ring","icon":"ring_11_demonhunter_male","path":"item/ring-Ring_11"}}],"taughtRecipes":[]},{"tier":5,"trainedRecipes":[{"id":"x1_Diamond_03","slug":"square-diamond","name":"Square
+        Diamond","cost":5000,"reagents":[{"quantity":2,"item":{"id":"x1_Diamond_02","slug":"flawless-diamond","name":"Flawless
+        Diamond","icon":"x1_diamond_02_demonhunter_male","path":"item/flawless-diamond-x1_Diamond_02"}}],"itemProduced":{"id":"x1_Diamond_03","slug":"square-diamond","name":"Square
+        Diamond","icon":"x1_diamond_03_demonhunter_male","path":"item/square-diamond-x1_Diamond_03"}},{"id":"Ring_12","slug":"grand-master-ring","name":"Grand
+        Master Ring","cost":11000,"reagents":[{"quantity":1,"item":{"id":"x1_Diamond_02","slug":"flawless-diamond","name":"Flawless
+        Diamond","icon":"x1_diamond_02_demonhunter_male","path":"item/flawless-diamond-x1_Diamond_02"}},{"quantity":1,"item":{"id":"x1_Amethyst_02","slug":"flawless-amethyst","name":"Flawless
+        Amethyst","icon":"x1_amethyst_02_demonhunter_male","path":"item/flawless-amethyst-x1_Amethyst_02"}}],"itemProduced":{"id":"Ring_12","slug":"ring","name":"Ring","icon":"ring_12_demonhunter_male","path":"item/ring-Ring_12"}}],"taughtRecipes":[]},{"tier":6,"trainedRecipes":[{"id":"x1_Emerald_03","slug":"square-emerald","name":"Square
+        Emerald","cost":5000,"reagents":[{"quantity":2,"item":{"id":"x1_Emerald_02","slug":"flawless-emerald","name":"Flawless
+        Emerald","icon":"x1_emerald_02_demonhunter_male","path":"item/flawless-emerald-x1_Emerald_02"}}],"itemProduced":{"id":"x1_Emerald_03","slug":"square-emerald","name":"Square
+        Emerald","icon":"x1_emerald_03_demonhunter_male","path":"item/square-emerald-x1_Emerald_03"}},{"id":"x1_Topaz_03","slug":"square-topaz","name":"Square
+        Topaz","cost":5000,"reagents":[{"quantity":2,"item":{"id":"x1_Topaz_02","slug":"flawless-topaz","name":"Flawless
+        Topaz","icon":"x1_topaz_02_demonhunter_male","path":"item/flawless-topaz-x1_Topaz_02"}}],"itemProduced":{"id":"x1_Topaz_03","slug":"square-topaz","name":"Square
+        Topaz","icon":"x1_topaz_03_demonhunter_male","path":"item/square-topaz-x1_Topaz_03"}},{"id":"x1_Ruby_03","slug":"square-ruby","name":"Square
+        Ruby","cost":5000,"reagents":[{"quantity":2,"item":{"id":"x1_Ruby_02","slug":"flawless-ruby","name":"Flawless
+        Ruby","icon":"x1_ruby_02_demonhunter_male","path":"item/flawless-ruby-x1_Ruby_02"}}],"itemProduced":{"id":"x1_Ruby_03","slug":"square-ruby","name":"Square
+        Ruby","icon":"x1_ruby_03_demonhunter_male","path":"item/square-ruby-x1_Ruby_03"}},{"id":"Ring_14","slug":"illustrious-ring","name":"Illustrious
+        Ring","cost":12000,"reagents":[{"quantity":1,"item":{"id":"x1_Diamond_03","slug":"square-diamond","name":"Square
+        Diamond","icon":"x1_diamond_03_demonhunter_male","path":"item/square-diamond-x1_Diamond_03"}},{"quantity":1,"item":{"id":"x1_Amethyst_03","slug":"square-amethyst","name":"Square
+        Amethyst","icon":"x1_amethyst_03_demonhunter_male","path":"item/square-amethyst-x1_Amethyst_03"}}],"itemProduced":{"id":"Ring_14","slug":"ring","name":"Ring","icon":"ring_14_demonhunter_male","path":"item/ring-Ring_14"}},{"id":"Amulet08","slug":"illustrious-amulet","name":"Illustrious
+        Amulet","cost":12000,"reagents":[{"quantity":1,"item":{"id":"x1_Ruby_02","slug":"flawless-ruby","name":"Flawless
+        Ruby","icon":"x1_ruby_02_demonhunter_male","path":"item/flawless-ruby-x1_Ruby_02"}},{"quantity":1,"item":{"id":"x1_Emerald_02","slug":"flawless-emerald","name":"Flawless
+        Emerald","icon":"x1_emerald_02_demonhunter_male","path":"item/flawless-emerald-x1_Emerald_02"}},{"quantity":1,"item":{"id":"x1_Topaz_02","slug":"flawless-topaz","name":"Flawless
+        Topaz","icon":"x1_topaz_02_demonhunter_male","path":"item/flawless-topaz-x1_Topaz_02"}}],"itemProduced":{"id":"Amulet08","slug":"amulet","name":"Amulet","icon":"amulet08_demonhunter_male","path":"item/amulet-Amulet08"}}],"taughtRecipes":[]},{"tier":7,"trainedRecipes":[{"id":"x1_Diamond_04","slug":"flawless-square-diamond","name":"Flawless
+        Square Diamond","cost":10000,"reagents":[{"quantity":2,"item":{"id":"x1_Diamond_03","slug":"square-diamond","name":"Square
+        Diamond","icon":"x1_diamond_03_demonhunter_male","path":"item/square-diamond-x1_Diamond_03"}}],"itemProduced":{"id":"x1_Diamond_04","slug":"flawless-square-diamond","name":"Flawless
+        Square Diamond","icon":"x1_diamond_04_demonhunter_male","path":"item/flawless-square-diamond-x1_Diamond_04"}},{"id":"x1_Amethyst_04","slug":"flawless-square-amethyst","name":"Flawless
+        Square Amethyst","cost":10000,"reagents":[{"quantity":2,"item":{"id":"x1_Amethyst_03","slug":"square-amethyst","name":"Square
+        Amethyst","icon":"x1_amethyst_03_demonhunter_male","path":"item/square-amethyst-x1_Amethyst_03"}}],"itemProduced":{"id":"x1_Amethyst_04","slug":"flawless-square-amethyst","name":"Flawless
+        Square Amethyst","icon":"x1_amethyst_04_demonhunter_male","path":"item/flawless-square-amethyst-x1_Amethyst_04"}},{"id":"Ring_16","slug":"magnificent-ring","name":"Magnificent
+        Ring","cost":13000,"reagents":[{"quantity":1,"item":{"id":"x1_Diamond_04","slug":"flawless-square-diamond","name":"Flawless
+        Square Diamond","icon":"x1_diamond_04_demonhunter_male","path":"item/flawless-square-diamond-x1_Diamond_04"}},{"quantity":1,"item":{"id":"x1_Amethyst_04","slug":"flawless-square-amethyst","name":"Flawless
+        Square Amethyst","icon":"x1_amethyst_04_demonhunter_male","path":"item/flawless-square-amethyst-x1_Amethyst_04"}}],"itemProduced":{"id":"Ring_16","slug":"ring","name":"Ring","icon":"ring_16_demonhunter_male","path":"item/ring-Ring_16"}},{"id":"Amulet09","slug":"magnificent-amulet","name":"Magnificent
+        Amulet","cost":13000,"reagents":[{"quantity":1,"item":{"id":"x1_Ruby_03","slug":"square-ruby","name":"Square
+        Ruby","icon":"x1_ruby_03_demonhunter_male","path":"item/square-ruby-x1_Ruby_03"}},{"quantity":1,"item":{"id":"x1_Emerald_03","slug":"square-emerald","name":"Square
+        Emerald","icon":"x1_emerald_03_demonhunter_male","path":"item/square-emerald-x1_Emerald_03"}},{"quantity":1,"item":{"id":"x1_Topaz_04","slug":"flawless-square-topaz","name":"Flawless
+        Square Topaz","icon":"x1_topaz_04_demonhunter_male","path":"item/flawless-square-topaz-x1_Topaz_04"}}],"itemProduced":{"id":"Amulet09","slug":"amulet","name":"Amulet","icon":"amulet09_demonhunter_male","path":"item/amulet-Amulet09"}},{"id":"Ring_17","slug":"resplendent-ring","name":"Resplendent
+        Ring","cost":14000,"reagents":[{"quantity":1,"item":{"id":"x1_Diamond_04","slug":"flawless-square-diamond","name":"Flawless
+        Square Diamond","icon":"x1_diamond_04_demonhunter_male","path":"item/flawless-square-diamond-x1_Diamond_04"}},{"quantity":1,"item":{"id":"x1_Amethyst_04","slug":"flawless-square-amethyst","name":"Flawless
+        Square Amethyst","icon":"x1_amethyst_04_demonhunter_male","path":"item/flawless-square-amethyst-x1_Amethyst_04"}}],"itemProduced":{"id":"Ring_17","slug":"ring","name":"Ring","icon":"ring_17_demonhunter_male","path":"item/ring-Ring_17"}}],"taughtRecipes":[]},{"tier":8,"trainedRecipes":[{"id":"x1_Emerald_04","slug":"flawless-square-emerald","name":"Flawless
+        Square Emerald","cost":10000,"reagents":[{"quantity":2,"item":{"id":"x1_Emerald_03","slug":"square-emerald","name":"Square
+        Emerald","icon":"x1_emerald_03_demonhunter_male","path":"item/square-emerald-x1_Emerald_03"}}],"itemProduced":{"id":"x1_Emerald_04","slug":"flawless-square-emerald","name":"Flawless
+        Square Emerald","icon":"x1_emerald_04_demonhunter_male","path":"item/flawless-square-emerald-x1_Emerald_04"}},{"id":"x1_Ruby_04","slug":"flawless-square-ruby","name":"Flawless
+        Square Ruby","cost":10000,"reagents":[{"quantity":2,"item":{"id":"x1_Ruby_03","slug":"square-ruby","name":"Square
+        Ruby","icon":"x1_ruby_03_demonhunter_male","path":"item/square-ruby-x1_Ruby_03"}}],"itemProduced":{"id":"x1_Ruby_04","slug":"flawless-square-ruby","name":"Flawless
+        Square Ruby","icon":"x1_ruby_04_demonhunter_male","path":"item/flawless-square-ruby-x1_Ruby_04"}},{"id":"x1_Topaz_04","slug":"flawless-square-topaz","name":"Flawless
+        Square Topaz","cost":10000,"reagents":[{"quantity":2,"item":{"id":"x1_Topaz_03","slug":"square-topaz","name":"Square
+        Topaz","icon":"x1_topaz_03_demonhunter_male","path":"item/square-topaz-x1_Topaz_03"}}],"itemProduced":{"id":"x1_Topaz_04","slug":"flawless-square-topaz","name":"Flawless
+        Square Topaz","icon":"x1_topaz_04_demonhunter_male","path":"item/flawless-square-topaz-x1_Topaz_04"}},{"id":"Amulet10","slug":"resplendent-amulet","name":"Resplendent
+        Amulet","cost":14000,"reagents":[{"quantity":1,"item":{"id":"x1_Ruby_04","slug":"flawless-square-ruby","name":"Flawless
+        Square Ruby","icon":"x1_ruby_04_demonhunter_male","path":"item/flawless-square-ruby-x1_Ruby_04"}},{"quantity":1,"item":{"id":"x1_Emerald_04","slug":"flawless-square-emerald","name":"Flawless
+        Square Emerald","icon":"x1_emerald_04_demonhunter_male","path":"item/flawless-square-emerald-x1_Emerald_04"}},{"quantity":1,"item":{"id":"x1_Topaz_04","slug":"flawless-square-topaz","name":"Flawless
+        Square Topaz","icon":"x1_topaz_04_demonhunter_male","path":"item/flawless-square-topaz-x1_Topaz_04"}}],"itemProduced":{"id":"Amulet10","slug":"amulet","name":"Amulet","icon":"amulet10_demonhunter_male","path":"item/amulet-Amulet10"}}],"taughtRecipes":[]},{"tier":9,"trainedRecipes":[{"id":"x1_Amethyst_05","slug":"star-amethyst","name":"Star
+        Amethyst","cost":20000,"reagents":[{"quantity":3,"item":{"id":"x1_Amethyst_04","slug":"flawless-square-amethyst","name":"Flawless
+        Square Amethyst","icon":"x1_amethyst_04_demonhunter_male","path":"item/flawless-square-amethyst-x1_Amethyst_04"}}],"itemProduced":{"id":"x1_Amethyst_05","slug":"star-amethyst","name":"Star
+        Amethyst","icon":"x1_amethyst_05_demonhunter_male","path":"item/star-amethyst-x1_Amethyst_05"}},{"id":"x1_Diamond_05","slug":"star-diamond","name":"Star
+        Diamond","cost":20000,"reagents":[{"quantity":3,"item":{"id":"x1_Diamond_04","slug":"flawless-square-diamond","name":"Flawless
+        Square Diamond","icon":"x1_diamond_04_demonhunter_male","path":"item/flawless-square-diamond-x1_Diamond_04"}}],"itemProduced":{"id":"x1_Diamond_05","slug":"star-diamond","name":"Star
+        Diamond","icon":"x1_diamond_05_demonhunter_male","path":"item/star-diamond-x1_Diamond_05"}},{"id":"Ring_19","slug":"glorious-ring","name":"Glorious
+        Ring","cost":15000,"reagents":[{"quantity":1,"item":{"id":"x1_Diamond_05","slug":"star-diamond","name":"Star
+        Diamond","icon":"x1_diamond_05_demonhunter_male","path":"item/star-diamond-x1_Diamond_05"}},{"quantity":1,"item":{"id":"x1_Amethyst_05","slug":"star-amethyst","name":"Star
+        Amethyst","icon":"x1_amethyst_05_demonhunter_male","path":"item/star-amethyst-x1_Amethyst_05"}}],"itemProduced":{"id":"Ring_19","slug":"ring","name":"Ring","icon":"ring_19_demonhunter_male","path":"item/ring-Ring_19"}},{"id":"Amulet11","slug":"glorious-amulet","name":"Glorious
+        Amulet","cost":15000,"reagents":[{"quantity":1,"item":{"id":"x1_Ruby_05","slug":"star-ruby","name":"Star
+        Ruby","icon":"x1_ruby_05_demonhunter_male","path":"item/star-ruby-x1_Ruby_05"}},{"quantity":1,"item":{"id":"x1_Emerald_05","slug":"star-emerald","name":"Star
+        Emerald","icon":"x1_emerald_05_demonhunter_male","path":"item/star-emerald-x1_Emerald_05"}},{"quantity":1,"item":{"id":"x1_Topaz_05","slug":"star-topaz","name":"Star
+        Topaz","icon":"x1_topaz_05_demonhunter_male","path":"item/star-topaz-x1_Topaz_05"}}],"itemProduced":{"id":"Amulet11","slug":"amulet","name":"Amulet","icon":"amulet11_demonhunter_male","path":"item/amulet-Amulet11"}}],"taughtRecipes":[]},{"tier":10,"trainedRecipes":[{"id":"x1_Ruby_05","slug":"star-ruby","name":"Star
+        Ruby","cost":20000,"reagents":[{"quantity":3,"item":{"id":"x1_Ruby_04","slug":"flawless-square-ruby","name":"Flawless
+        Square Ruby","icon":"x1_ruby_04_demonhunter_male","path":"item/flawless-square-ruby-x1_Ruby_04"}}],"itemProduced":{"id":"x1_Ruby_05","slug":"star-ruby","name":"Star
+        Ruby","icon":"x1_ruby_05_demonhunter_male","path":"item/star-ruby-x1_Ruby_05"}},{"id":"x1_Emerald_05","slug":"star-emerald","name":"Star
+        Emerald","cost":10000,"reagents":[{"quantity":3,"item":{"id":"x1_Emerald_04","slug":"flawless-square-emerald","name":"Flawless
+        Square Emerald","icon":"x1_emerald_04_demonhunter_male","path":"item/flawless-square-emerald-x1_Emerald_04"}}],"itemProduced":{"id":"x1_Emerald_05","slug":"star-emerald","name":"Star
+        Emerald","icon":"x1_emerald_05_demonhunter_male","path":"item/star-emerald-x1_Emerald_05"}},{"id":"x1_Topaz_05","slug":"star-topaz","name":"Star
+        Topaz","cost":20000,"reagents":[{"quantity":3,"item":{"id":"x1_Topaz_04","slug":"flawless-square-topaz","name":"Flawless
+        Square Topaz","icon":"x1_topaz_04_demonhunter_male","path":"item/flawless-square-topaz-x1_Topaz_04"}}],"itemProduced":{"id":"x1_Topaz_05","slug":"star-topaz","name":"Star
+        Topaz","icon":"x1_topaz_05_demonhunter_male","path":"item/star-topaz-x1_Topaz_05"}},{"id":"Amulet12","slug":"exalted-amulet","name":"Exalted
+        Amulet","cost":16000,"reagents":[{"quantity":1,"item":{"id":"x1_Ruby_05","slug":"star-ruby","name":"Star
+        Ruby","icon":"x1_ruby_05_demonhunter_male","path":"item/star-ruby-x1_Ruby_05"}},{"quantity":1,"item":{"id":"x1_Emerald_05","slug":"star-emerald","name":"Star
+        Emerald","icon":"x1_emerald_05_demonhunter_male","path":"item/star-emerald-x1_Emerald_05"}},{"quantity":1,"item":{"id":"x1_Topaz_05","slug":"star-topaz","name":"Star
+        Topaz","icon":"x1_topaz_05_demonhunter_male","path":"item/star-topaz-x1_Topaz_05"}}],"itemProduced":{"id":"Amulet12","slug":"amulet","name":"Amulet","icon":"amulet12_demonhunter_male","path":"item/amulet-Amulet12"}},{"id":"Ring_22","slug":"exalted-ring","name":"Exalted
+        Ring","cost":16000,"reagents":[{"quantity":1,"item":{"id":"x1_Diamond_05","slug":"star-diamond","name":"Star
+        Diamond","icon":"x1_diamond_05_demonhunter_male","path":"item/star-diamond-x1_Diamond_05"}},{"quantity":1,"item":{"id":"x1_Amethyst_05","slug":"star-amethyst","name":"Star
+        Amethyst","icon":"x1_amethyst_05_demonhunter_male","path":"item/star-amethyst-x1_Amethyst_05"}}],"itemProduced":{"id":"Ring_22","slug":"ring","name":"Ring","icon":"ring_22_demonhunter_male","path":"item/ring-Ring_22"}}],"taughtRecipes":[{"id":"Unique_Ring_024_104","slug":"hellfire-ring-of-dexterity","name":"Hellfire
+        Ring of Dexterity","cost":50000,"reagents":[],"itemProduced":{"id":"Unique_Ring_024_104","slug":"hellfire-ring","name":"Hellfire
+        Ring","icon":"unique_ring_024_104_demonhunter_male","path":"item/hellfire-ring-Unique_Ring_024_104"}},{"id":"Unique_Ring_024_104","slug":"hellfire-ring-of-vitality","name":"Hellfire
+        Ring of Vitality","cost":50000,"reagents":[],"itemProduced":{"id":"Unique_Ring_024_104","slug":"hellfire-ring","name":"Hellfire
+        Ring","icon":"unique_ring_024_104_demonhunter_male","path":"item/hellfire-ring-Unique_Ring_024_104"}},{"id":"Unique_Ring_024_104","slug":"hellfire-ring-of-intelligence","name":"Hellfire
+        Ring of Intelligence","cost":50000,"reagents":[],"itemProduced":{"id":"Unique_Ring_024_104","slug":"hellfire-ring","name":"Hellfire
+        Ring","icon":"unique_ring_024_104_demonhunter_male","path":"item/hellfire-ring-Unique_Ring_024_104"}},{"id":"Unique_Ring_024_104","slug":"hellfire-ring-of-strength","name":"Hellfire
+        Ring of Strength","cost":50000,"reagents":[],"itemProduced":{"id":"Unique_Ring_024_104","slug":"hellfire-ring","name":"Hellfire
+        Ring","icon":"unique_ring_024_104_demonhunter_male","path":"item/hellfire-ring-Unique_Ring_024_104"}}]},{"tier":11,"trainedRecipes":[{"id":"x1_Ruby_06","slug":"marquise-ruby","name":"Marquise
+        Ruby","cost":25000,"reagents":[{"quantity":3,"item":{"id":"x1_Ruby_05","slug":"star-ruby","name":"Star
+        Ruby","icon":"x1_ruby_05_demonhunter_male","path":"item/star-ruby-x1_Ruby_05"}}],"itemProduced":{"id":"x1_Ruby_06","slug":"marquise-ruby","name":"Marquise
+        Ruby","icon":"x1_ruby_06_demonhunter_male","path":"item/marquise-ruby-x1_Ruby_06"}},{"id":"x1_Topaz_07","slug":"imperial-topaz","name":"Imperial
+        Topaz","cost":200000,"reagents":[{"quantity":3,"item":{"id":"x1_Topaz_06","slug":"marquise-topaz","name":"Marquise
+        Topaz","icon":"x1_topaz_06_demonhunter_male","path":"item/marquise-topaz-x1_Topaz_06"}}],"itemProduced":{"id":"x1_Topaz_07","slug":"imperial-topaz","name":"Imperial
+        Topaz","icon":"x1_topaz_07_demonhunter_male","path":"item/imperial-topaz-x1_Topaz_07"}},{"id":"x1_Ruby_07","slug":"imperial-ruby","name":"Imperial
+        Ruby","cost":200000,"reagents":[{"quantity":3,"item":{"id":"x1_Ruby_06","slug":"marquise-ruby","name":"Marquise
+        Ruby","icon":"x1_ruby_06_demonhunter_male","path":"item/marquise-ruby-x1_Ruby_06"}}],"itemProduced":{"id":"x1_Ruby_07","slug":"imperial-ruby","name":"Imperial
+        Ruby","icon":"x1_ruby_07_demonhunter_male","path":"item/imperial-ruby-x1_Ruby_07"}},{"id":"x1_Emerald_08","slug":"flawless-imperial-emerald","name":"Flawless
+        Imperial Emerald","cost":300000,"reagents":[{"quantity":3,"item":{"id":"x1_Emerald_07","slug":"imperial-emerald","name":"Imperial
+        Emerald","icon":"x1_emerald_07_demonhunter_male","path":"item/imperial-emerald-x1_Emerald_07"}}],"itemProduced":{"id":"x1_Emerald_08","slug":"flawless-imperial-emerald","name":"Flawless
+        Imperial Emerald","icon":"x1_emerald_08_demonhunter_male","path":"item/flawless-imperial-emerald-x1_Emerald_08"}},{"id":"x1_Amethyst_07","slug":"imperial-amethyst","name":"Imperial
+        Amethyst","cost":200000,"reagents":[{"quantity":3,"item":{"id":"x1_Amethyst_06","slug":"marquise-amethyst","name":"Marquise
+        Amethyst","icon":"x1_amethyst_06_demonhunter_male","path":"item/marquise-amethyst-x1_Amethyst_06"}}],"itemProduced":{"id":"x1_Amethyst_07","slug":"imperial-amethyst","name":"Imperial
+        Amethyst","icon":"x1_amethyst_07_demonhunter_male","path":"item/imperial-amethyst-x1_Amethyst_07"}},{"id":"x1_Amethyst_08","slug":"flawless-imperial-amethyst","name":"Flawless
+        Imperial Amethyst","cost":300000,"reagents":[{"quantity":3,"item":{"id":"x1_Amethyst_07","slug":"imperial-amethyst","name":"Imperial
+        Amethyst","icon":"x1_amethyst_07_demonhunter_male","path":"item/imperial-amethyst-x1_Amethyst_07"}}],"itemProduced":{"id":"x1_Amethyst_08","slug":"flawless-imperial-amethyst","name":"Flawless
+        Imperial Amethyst","icon":"x1_amethyst_08_demonhunter_male","path":"item/flawless-imperial-amethyst-x1_Amethyst_08"}},{"id":"x1_Amethyst_06","slug":"marquise-amethyst","name":"Marquise
+        Amethyst","cost":25000,"reagents":[{"quantity":3,"item":{"id":"x1_Amethyst_05","slug":"star-amethyst","name":"Star
+        Amethyst","icon":"x1_amethyst_05_demonhunter_male","path":"item/star-amethyst-x1_Amethyst_05"}}],"itemProduced":{"id":"x1_Amethyst_06","slug":"marquise-amethyst","name":"Marquise
+        Amethyst","icon":"x1_amethyst_06_demonhunter_male","path":"item/marquise-amethyst-x1_Amethyst_06"}},{"id":"x1_Emerald_06","slug":"marquise-emerald","name":"Marquise
+        Emerald","cost":25000,"reagents":[{"quantity":3,"item":{"id":"x1_Emerald_05","slug":"star-emerald","name":"Star
+        Emerald","icon":"x1_emerald_05_demonhunter_male","path":"item/star-emerald-x1_Emerald_05"}}],"itemProduced":{"id":"x1_Emerald_06","slug":"marquise-emerald","name":"Marquise
+        Emerald","icon":"x1_emerald_06_demonhunter_male","path":"item/marquise-emerald-x1_Emerald_06"}},{"id":"x1_Topaz_08","slug":"flawless-imperial-topaz","name":"Flawless
+        Imperial Topaz","cost":300000,"reagents":[{"quantity":3,"item":{"id":"x1_Topaz_07","slug":"imperial-topaz","name":"Imperial
+        Topaz","icon":"x1_topaz_07_demonhunter_male","path":"item/imperial-topaz-x1_Topaz_07"}}],"itemProduced":{"id":"x1_Topaz_08","slug":"flawless-imperial-topaz","name":"Flawless
+        Imperial Topaz","icon":"x1_topaz_08_demonhunter_male","path":"item/flawless-imperial-topaz-x1_Topaz_08"}},{"id":"x1_Diamond_08","slug":"flawless-imperial-diamond","name":"Flawless
+        Imperial Diamond","cost":300000,"reagents":[{"quantity":3,"item":{"id":"x1_Diamond_07","slug":"imperial-diamond","name":"Imperial
+        Diamond","icon":"x1_diamond_07_demonhunter_male","path":"item/imperial-diamond-x1_Diamond_07"}}],"itemProduced":{"id":"x1_Diamond_08","slug":"flawless-imperial-diamond","name":"Flawless
+        Imperial Diamond","icon":"x1_diamond_08_demonhunter_male","path":"item/flawless-imperial-diamond-x1_Diamond_08"}},{"id":"x1_Diamond_07","slug":"imperial-diamond","name":"Imperial
+        Diamond","cost":200000,"reagents":[{"quantity":3,"item":{"id":"x1_Diamond_06","slug":"marquise-diamond","name":"Marquise
+        Diamond","icon":"x1_diamond_06_demonhunter_male","path":"item/marquise-diamond-x1_Diamond_06"}}],"itemProduced":{"id":"x1_Diamond_07","slug":"imperial-diamond","name":"Imperial
+        Diamond","icon":"x1_diamond_07_demonhunter_male","path":"item/imperial-diamond-x1_Diamond_07"}},{"id":"x1_Ruby_08","slug":"flawless-imperial-ruby","name":"Flawless
+        Imperial Ruby","cost":300000,"reagents":[{"quantity":3,"item":{"id":"x1_Ruby_07","slug":"imperial-ruby","name":"Imperial
+        Ruby","icon":"x1_ruby_07_demonhunter_male","path":"item/imperial-ruby-x1_Ruby_07"}}],"itemProduced":{"id":"x1_Ruby_08","slug":"flawless-imperial-ruby","name":"Flawless
+        Imperial Ruby","icon":"x1_ruby_08_demonhunter_male","path":"item/flawless-imperial-ruby-x1_Ruby_08"}},{"id":"x1_Topaz_06","slug":"marquise-topaz","name":"Marquise
+        Topaz","cost":25000,"reagents":[{"quantity":3,"item":{"id":"x1_Topaz_05","slug":"star-topaz","name":"Star
+        Topaz","icon":"x1_topaz_05_demonhunter_male","path":"item/star-topaz-x1_Topaz_05"}}],"itemProduced":{"id":"x1_Topaz_06","slug":"marquise-topaz","name":"Marquise
+        Topaz","icon":"x1_topaz_06_demonhunter_male","path":"item/marquise-topaz-x1_Topaz_06"}},{"id":"x1_Diamond_06","slug":"marquise-diamond","name":"Marquise
+        Diamond","cost":25000,"reagents":[{"quantity":3,"item":{"id":"x1_Diamond_05","slug":"star-diamond","name":"Star
+        Diamond","icon":"x1_diamond_05_demonhunter_male","path":"item/star-diamond-x1_Diamond_05"}}],"itemProduced":{"id":"x1_Diamond_06","slug":"marquise-diamond","name":"Marquise
+        Diamond","icon":"x1_diamond_06_demonhunter_male","path":"item/marquise-diamond-x1_Diamond_06"}},{"id":"x1_Emerald_07","slug":"imperial-emerald","name":"Imperial
+        Emerald","cost":200000,"reagents":[{"quantity":3,"item":{"id":"x1_Emerald_06","slug":"marquise-emerald","name":"Marquise
+        Emerald","icon":"x1_emerald_06_demonhunter_male","path":"item/marquise-emerald-x1_Emerald_06"}}],"itemProduced":{"id":"x1_Emerald_07","slug":"imperial-emerald","name":"Imperial
+        Emerald","icon":"x1_emerald_07_demonhunter_male","path":"item/imperial-emerald-x1_Emerald_07"}},{"id":"Amulet16","slug":"exquisite-amulet","name":"Exquisite
+        Amulet","cost":17000,"reagents":[{"quantity":1,"item":{"id":"x1_Ruby_06","slug":"marquise-ruby","name":"Marquise
+        Ruby","icon":"x1_ruby_06_demonhunter_male","path":"item/marquise-ruby-x1_Ruby_06"}},{"quantity":1,"item":{"id":"x1_Emerald_06","slug":"marquise-emerald","name":"Marquise
+        Emerald","icon":"x1_emerald_06_demonhunter_male","path":"item/marquise-emerald-x1_Emerald_06"}},{"quantity":1,"item":{"id":"x1_Topaz_06","slug":"marquise-topaz","name":"Marquise
+        Topaz","icon":"x1_topaz_06_demonhunter_male","path":"item/marquise-topaz-x1_Topaz_06"}}],"itemProduced":{"id":"Amulet16","slug":"amulet","name":"Amulet","icon":"amulet16_demonhunter_male","path":"item/amulet-Amulet16"}},{"id":"Ring_24","slug":"exquisite-ring","name":"Exquisite
+        Ring","cost":17000,"reagents":[{"quantity":1,"item":{"id":"x1_Diamond_06","slug":"marquise-diamond","name":"Marquise
+        Diamond","icon":"x1_diamond_06_demonhunter_male","path":"item/marquise-diamond-x1_Diamond_06"}},{"quantity":1,"item":{"id":"x1_Amethyst_06","slug":"marquise-amethyst","name":"Marquise
+        Amethyst","icon":"x1_amethyst_06_demonhunter_male","path":"item/marquise-amethyst-x1_Amethyst_06"}}],"itemProduced":{"id":"Ring_24","slug":"ring","name":"Ring","icon":"ring_24_demonhunter_male","path":"item/ring-Ring_24"}}],"taughtRecipes":[]},{"tier":12,"trainedRecipes":[{"id":"Amulet17","slug":"sovereign-amulet","name":"Sovereign
+        Amulet","cost":18000,"reagents":[{"quantity":1,"item":{"id":"x1_Ruby_06","slug":"marquise-ruby","name":"Marquise
+        Ruby","icon":"x1_ruby_06_demonhunter_male","path":"item/marquise-ruby-x1_Ruby_06"}},{"quantity":1,"item":{"id":"x1_Emerald_06","slug":"marquise-emerald","name":"Marquise
+        Emerald","icon":"x1_emerald_06_demonhunter_male","path":"item/marquise-emerald-x1_Emerald_06"}},{"quantity":1,"item":{"id":"x1_Topaz_06","slug":"marquise-topaz","name":"Marquise
+        Topaz","icon":"x1_topaz_06_demonhunter_male","path":"item/marquise-topaz-x1_Topaz_06"}}],"itemProduced":{"id":"Amulet17","slug":"amulet","name":"Amulet","icon":"amulet17_demonhunter_male","path":"item/amulet-Amulet17"}},{"id":"Ring_25","slug":"sovereign-ring","name":"Sovereign
+        Ring","cost":18000,"reagents":[{"quantity":1,"item":{"id":"x1_Diamond_06","slug":"marquise-diamond","name":"Marquise
+        Diamond","icon":"x1_diamond_06_demonhunter_male","path":"item/marquise-diamond-x1_Diamond_06"}},{"quantity":1,"item":{"id":"x1_Amethyst_06","slug":"marquise-amethyst","name":"Marquise
+        Amethyst","icon":"x1_amethyst_06_demonhunter_male","path":"item/marquise-amethyst-x1_Amethyst_06"}}],"itemProduced":{"id":"Ring_25","slug":"ring","name":"Ring","icon":"ring_25_demonhunter_male","path":"item/ring-Ring_25"}}],"taughtRecipes":[{"id":"x1_Topaz_10","slug":"flawless-royal-topaz","name":"Flawless
+        Royal Topaz","cost":500000,"reagents":[{"quantity":3,"item":{"id":"x1_Topaz_09","slug":"royal-topaz","name":"Royal
+        Topaz","icon":"x1_topaz_09_demonhunter_male","path":"item/royal-topaz-x1_Topaz_09"}},{"quantity":1,"item":{"id":"Crafting_Looted_Reagent_01","slug":"deaths-breath","name":"Death''s
+        Breath","icon":"crafting_looted_reagent_01_demonhunter_male","path":"item/deaths-breath-Crafting_Looted_Reagent_01"}}],"itemProduced":{"id":"x1_Topaz_10","slug":"flawless-royal-topaz","name":"Flawless
+        Royal Topaz","icon":"x1_topaz_10_demonhunter_male","path":"item/flawless-royal-topaz-x1_Topaz_10"}},{"id":"x1_Topaz_09","slug":"royal-topaz","name":"Royal
+        Topaz","cost":400000,"reagents":[{"quantity":3,"item":{"id":"x1_Topaz_08","slug":"flawless-imperial-topaz","name":"Flawless
+        Imperial Topaz","icon":"x1_topaz_08_demonhunter_male","path":"item/flawless-imperial-topaz-x1_Topaz_08"}},{"quantity":1,"item":{"id":"Crafting_Looted_Reagent_01","slug":"deaths-breath","name":"Death''s
+        Breath","icon":"crafting_looted_reagent_01_demonhunter_male","path":"item/deaths-breath-Crafting_Looted_Reagent_01"}}],"itemProduced":{"id":"x1_Topaz_09","slug":"royal-topaz","name":"Royal
+        Topaz","icon":"x1_topaz_09_demonhunter_male","path":"item/royal-topaz-x1_Topaz_09"}},{"id":"x1_Emerald_10","slug":"flawless-royal-emerald","name":"Flawless
+        Royal Emerald","cost":500000,"reagents":[{"quantity":3,"item":{"id":"x1_Emerald_09","slug":"royal-emerald","name":"Royal
+        Emerald","icon":"x1_emerald_09_demonhunter_male","path":"item/royal-emerald-x1_Emerald_09"}},{"quantity":1,"item":{"id":"Crafting_Looted_Reagent_01","slug":"deaths-breath","name":"Death''s
+        Breath","icon":"crafting_looted_reagent_01_demonhunter_male","path":"item/deaths-breath-Crafting_Looted_Reagent_01"}}],"itemProduced":{"id":"x1_Emerald_10","slug":"flawless-royal-emerald","name":"Flawless
+        Royal Emerald","icon":"x1_emerald_10_demonhunter_male","path":"item/flawless-royal-emerald-x1_Emerald_10"}},{"id":"x1_Amethyst_10","slug":"flawless-royal-amethyst","name":"Flawless
+        Royal Amethyst","cost":500000,"reagents":[{"quantity":3,"item":{"id":"x1_Amethyst_09","slug":"royal-amethyst","name":"Royal
+        Amethyst","icon":"x1_amethyst_09_demonhunter_male","path":"item/royal-amethyst-x1_Amethyst_09"}},{"quantity":1,"item":{"id":"Crafting_Looted_Reagent_01","slug":"deaths-breath","name":"Death''s
+        Breath","icon":"crafting_looted_reagent_01_demonhunter_male","path":"item/deaths-breath-Crafting_Looted_Reagent_01"}}],"itemProduced":{"id":"x1_Amethyst_10","slug":"flawless-royal-amethyst","name":"Flawless
+        Royal Amethyst","icon":"x1_amethyst_10_demonhunter_male","path":"item/flawless-royal-amethyst-x1_Amethyst_10"}},{"id":"x1_Amethyst_09","slug":"royal-amethyst","name":"Royal
+        Amethyst","cost":400000,"reagents":[{"quantity":3,"item":{"id":"x1_Amethyst_08","slug":"flawless-imperial-amethyst","name":"Flawless
+        Imperial Amethyst","icon":"x1_amethyst_08_demonhunter_male","path":"item/flawless-imperial-amethyst-x1_Amethyst_08"}},{"quantity":1,"item":{"id":"Crafting_Looted_Reagent_01","slug":"deaths-breath","name":"Death''s
+        Breath","icon":"crafting_looted_reagent_01_demonhunter_male","path":"item/deaths-breath-Crafting_Looted_Reagent_01"}}],"itemProduced":{"id":"x1_Amethyst_09","slug":"royal-amethyst","name":"Royal
+        Amethyst","icon":"x1_amethyst_09_demonhunter_male","path":"item/royal-amethyst-x1_Amethyst_09"}},{"id":"x1_Ruby_10","slug":"flawless-royal-ruby","name":"Flawless
+        Royal Ruby","cost":500000,"reagents":[{"quantity":3,"item":{"id":"x1_Ruby_09","slug":"royal-ruby","name":"Royal
+        Ruby","icon":"x1_ruby_09_demonhunter_male","path":"item/royal-ruby-x1_Ruby_09"}},{"quantity":1,"item":{"id":"Crafting_Looted_Reagent_01","slug":"deaths-breath","name":"Death''s
+        Breath","icon":"crafting_looted_reagent_01_demonhunter_male","path":"item/deaths-breath-Crafting_Looted_Reagent_01"}}],"itemProduced":{"id":"x1_Ruby_10","slug":"flawless-royal-ruby","name":"Flawless
+        Royal Ruby","icon":"x1_ruby_10_demonhunter_male","path":"item/flawless-royal-ruby-x1_Ruby_10"}},{"id":"x1_Ruby_09","slug":"royal-ruby","name":"Royal
+        Ruby","cost":400000,"reagents":[{"quantity":3,"item":{"id":"x1_Ruby_08","slug":"flawless-imperial-ruby","name":"Flawless
+        Imperial Ruby","icon":"x1_ruby_08_demonhunter_male","path":"item/flawless-imperial-ruby-x1_Ruby_08"}},{"quantity":1,"item":{"id":"Crafting_Looted_Reagent_01","slug":"deaths-breath","name":"Death''s
+        Breath","icon":"crafting_looted_reagent_01_demonhunter_male","path":"item/deaths-breath-Crafting_Looted_Reagent_01"}}],"itemProduced":{"id":"x1_Ruby_09","slug":"royal-ruby","name":"Royal
+        Ruby","icon":"x1_ruby_09_demonhunter_male","path":"item/royal-ruby-x1_Ruby_09"}},{"id":"x1_Diamond_09","slug":"royal-diamond","name":"Royal
+        Diamond","cost":400000,"reagents":[{"quantity":3,"item":{"id":"x1_Diamond_08","slug":"flawless-imperial-diamond","name":"Flawless
+        Imperial Diamond","icon":"x1_diamond_08_demonhunter_male","path":"item/flawless-imperial-diamond-x1_Diamond_08"}},{"quantity":1,"item":{"id":"Crafting_Looted_Reagent_01","slug":"deaths-breath","name":"Death''s
+        Breath","icon":"crafting_looted_reagent_01_demonhunter_male","path":"item/deaths-breath-Crafting_Looted_Reagent_01"}}],"itemProduced":{"id":"x1_Diamond_09","slug":"royal-diamond","name":"Royal
+        Diamond","icon":"x1_diamond_09_demonhunter_male","path":"item/royal-diamond-x1_Diamond_09"}},{"id":"Unique_Ring_024_x1","slug":"hellfire-ring","name":"Hellfire
+        Ring","cost":50000,"reagents":[],"itemProduced":{"id":"Unique_Ring_024_x1","slug":"hellfire-ring","name":"Hellfire
+        Ring","icon":"unique_ring_024_x1_demonhunter_male","path":"item/hellfire-ring-Unique_Ring_024_x1"}},{"id":"x1_Emerald_09","slug":"royal-emerald","name":"Royal
+        Emerald","cost":400000,"reagents":[{"quantity":3,"item":{"id":"x1_Emerald_08","slug":"flawless-imperial-emerald","name":"Flawless
+        Imperial Emerald","icon":"x1_emerald_08_demonhunter_male","path":"item/flawless-imperial-emerald-x1_Emerald_08"}},{"quantity":1,"item":{"id":"Crafting_Looted_Reagent_01","slug":"deaths-breath","name":"Death''s
+        Breath","icon":"crafting_looted_reagent_01_demonhunter_male","path":"item/deaths-breath-Crafting_Looted_Reagent_01"}}],"itemProduced":{"id":"x1_Emerald_09","slug":"royal-emerald","name":"Royal
+        Emerald","icon":"x1_emerald_09_demonhunter_male","path":"item/royal-emerald-x1_Emerald_09"}},{"id":"x1_Diamond_10","slug":"flawless-royal-diamond","name":"Flawless
+        Royal Diamond","cost":500000,"reagents":[{"quantity":3,"item":{"id":"x1_Diamond_09","slug":"royal-diamond","name":"Royal
+        Diamond","icon":"x1_diamond_09_demonhunter_male","path":"item/royal-diamond-x1_Diamond_09"}},{"quantity":1,"item":{"id":"Crafting_Looted_Reagent_01","slug":"deaths-breath","name":"Death''s
+        Breath","icon":"crafting_looted_reagent_01_demonhunter_male","path":"item/deaths-breath-Crafting_Looted_Reagent_01"}}],"itemProduced":{"id":"x1_Diamond_10","slug":"flawless-royal-diamond","name":"Flawless
+        Royal Diamond","icon":"x1_diamond_10_demonhunter_male","path":"item/flawless-royal-diamond-x1_Diamond_10"}},{"id":"x1_Amulet_norm_unique_25","slug":"hellfire-amulet-of-dexterity","name":"Hellfire
+        Amulet of Dexterity","cost":50000,"reagents":[{"quantity":10,"item":{"id":"Crafting_Legendary_01","slug":"forgotten-soul","name":"Forgotten
+        Soul","icon":"crafting_legendary_01_demonhunter_male","path":"item/forgotten-soul-Crafting_Legendary_01"}}],"itemProduced":{"id":"x1_Amulet_norm_unique_25","slug":"hellfire-amulet","name":"Hellfire
+        Amulet","icon":"x1_amulet_norm_unique_25_demonhunter_male","path":"item/hellfire-amulet-x1_Amulet_norm_unique_25"}},{"id":"x1_Amulet_norm_unique_25","slug":"hellfire-amulet-of-strength","name":"Hellfire
+        Amulet of Strength","cost":50000,"reagents":[{"quantity":10,"item":{"id":"Crafting_Legendary_01","slug":"forgotten-soul","name":"Forgotten
+        Soul","icon":"crafting_legendary_01_demonhunter_male","path":"item/forgotten-soul-Crafting_Legendary_01"}}],"itemProduced":{"id":"x1_Amulet_norm_unique_25","slug":"hellfire-amulet","name":"Hellfire
+        Amulet","icon":"x1_amulet_norm_unique_25_demonhunter_male","path":"item/hellfire-amulet-x1_Amulet_norm_unique_25"}},{"id":"x1_Amulet_norm_unique_25","slug":"hellfire-amulet-of-intelligence","name":"Hellfire
+        Amulet of Intelligence","cost":50000,"reagents":[{"quantity":10,"item":{"id":"Crafting_Legendary_01","slug":"forgotten-soul","name":"Forgotten
+        Soul","icon":"crafting_legendary_01_demonhunter_male","path":"item/forgotten-soul-Crafting_Legendary_01"}}],"itemProduced":{"id":"x1_Amulet_norm_unique_25","slug":"hellfire-amulet","name":"Hellfire
+        Amulet","icon":"x1_amulet_norm_unique_25_demonhunter_male","path":"item/hellfire-amulet-x1_Amulet_norm_unique_25"}}]}]}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/artisan/1?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:40:58 GMT
+recorded_with: VCR 2.9.3

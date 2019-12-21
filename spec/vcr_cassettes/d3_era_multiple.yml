@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/d3/era/1?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sat, 21 Dec 2019 15:41:03 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sat, 21 Dec 2019 15:41:00 GMT
+      Battlenet-Namespace:
+      - 2-6-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - era
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c8638a-17a0-5ea0-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638a-17a0-62f0-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638a-17a0-62c0-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/d3/era/1?namespace=2-6-eu"}},"leaderboard":[{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-hardcore-barbarian?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"barbarian"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-barbarian?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"barbarian"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-hardcore-crusader?namespace=2-6-EU"},"hero_class_string":"crusader"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-crusader?namespace=2-6-EU"},"hero_class_string":"crusader"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-hardcore-dh?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"dh"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-dh?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"dh"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-hardcore-monk?namespace=2-6-EU"},"hero_class_string":"monk"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-monk?namespace=2-6-EU"},"hero_class_string":"monk"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-hardcore-wd?namespace=2-6-EU"},"hero_class_string":"wd"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-wd?namespace=2-6-EU"},"hero_class_string":"wd"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-hardcore-wizard?namespace=2-6-EU"},"hero_class_string":"wizard"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-wizard?namespace=2-6-EU"},"hero_class_string":"wizard"},{"team_size":2,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-hardcore-team-2?namespace=2-6-EU"}},{"team_size":2,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-team-2?namespace=2-6-EU"}},{"team_size":3,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-hardcore-team-3?namespace=2-6-EU"}},{"team_size":3,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-team-3?namespace=2-6-EU"}},{"team_size":4,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-hardcore-team-4?namespace=2-6-EU"}},{"team_size":4,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/1/leaderboard/rift-team-4?namespace=2-6-EU"}}],"era_id":1,"era_start_date":1409011200,"last_update_time":"Sat,
+        21 Dec 2019 15:41:00 UTC","generated_by":"AMS1A-D3-PURPLE-JOB001-01 2.6.7
+        branches/2_6_7-branches/2_6_7"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/d3/era/1?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:03 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/d3/era/2?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sat, 21 Dec 2019 15:41:02 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sat, 21 Dec 2019 15:41:00 GMT
+      Battlenet-Namespace:
+      - 2-6-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - era
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86552-5315-b010-f981-fa165bcda32d
+      x-trace-spanid:
+      - 15c86552-5315-b4e0-f981-fa165bcda32d
+      x-trace-parentspanid:
+      - 15c86552-5315-b480-f981-fa165bcda32d
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/d3/era/2?namespace=2-6-eu"}},"leaderboard":[{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-hardcore-barbarian?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"barbarian"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-barbarian?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"barbarian"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-hardcore-crusader?namespace=2-6-EU"},"hero_class_string":"crusader"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-crusader?namespace=2-6-EU"},"hero_class_string":"crusader"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-hardcore-dh?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"dh"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-dh?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"dh"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-hardcore-monk?namespace=2-6-EU"},"hero_class_string":"monk"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-monk?namespace=2-6-EU"},"hero_class_string":"monk"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-hardcore-wd?namespace=2-6-EU"},"hero_class_string":"wd"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-wd?namespace=2-6-EU"},"hero_class_string":"wd"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-hardcore-wizard?namespace=2-6-EU"},"hero_class_string":"wizard"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-wizard?namespace=2-6-EU"},"hero_class_string":"wizard"},{"team_size":2,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-hardcore-team-2?namespace=2-6-EU"}},{"team_size":2,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-team-2?namespace=2-6-EU"}},{"team_size":3,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-hardcore-team-3?namespace=2-6-EU"}},{"team_size":3,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-team-3?namespace=2-6-EU"}},{"team_size":4,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-hardcore-team-4?namespace=2-6-EU"}},{"team_size":4,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/era/2/leaderboard/rift-team-4?namespace=2-6-EU"}}],"era_id":2,"era_start_date":1423062000,"last_update_time":"Sat,
+        21 Dec 2019 15:41:00 UTC","generated_by":"AMS1A-D3-PURPLE-JOB001-01 2.6.7
+        branches/2_6_7-branches/2_6_7"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/d3/era/2?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:03 GMT
+recorded_with: VCR 2.9.3
