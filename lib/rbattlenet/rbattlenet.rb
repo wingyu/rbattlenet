@@ -35,9 +35,13 @@ module RBattlenet
           request = Typhoeus::Request.new(uri, headers: headers)
 
           request.on_complete do |response|
-            store.add(subject, field, response)
-            if data = store.complete(subject, uris.size)
-              yield subject, data
+            if @@raw
+              store << response
+            else
+              store.add(subject, field, response)
+              if data = store.complete(subject, uris.size)
+                yield subject, data
+              end
             end
           end
 

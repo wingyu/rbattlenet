@@ -21,7 +21,7 @@ describe RBattlenet::Wow::Classic::ItemSubclass do
           { class_id: 0, id: 0 },
           { class_id: 1, id: 0 },
         ])
-        expect(collection.results.map(&:display_name)).to eq ["Consumable", "Bag"]
+        expect(collection.results.map(&:display_name).sort).to eq ["Bag", "Consumable"]
       end
     end
   end

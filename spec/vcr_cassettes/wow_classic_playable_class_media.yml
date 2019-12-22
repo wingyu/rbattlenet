@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-classic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 11:18:14 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Mon, 9 Dec 2019 02:11:33 GMT
+      Battlenet-Namespace:
+      - static-1.13.2_31446-classic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - media
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '131'
+      x-trace-traceid:
+      - 15c86603-7b08-f440-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86603-7b08-fc60-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86603-7b08-fc30-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-1.13.2_31446-classic-eu"}}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-classic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 11:18:15 GMT
+recorded_with: VCR 2.9.3

@@ -31,12 +31,52 @@ Your region and locale defaults to EU and en_GB respectively. However, these can
 RBattlenet.set_options(region: "us", locale: "en_US")
 ```
 
+Singular requests will be returned as a `RBattlenet::Result` object. Requests with an array passed in will
+be returned as a `RBattlenet::ResultCollection` object. If you want to simply receive the raw HTTP response you can
+set that like so:
+
+```ruby
+RBattlenet.set_options(raw_response: true)
+```
+
 #### Step 3. Call the API methods to request data
 
 ```ruby
 item = RBattlenet::Wow::Item.find(18803)
 
 item.name # => "Finkle's Lava Dredger"
+```
+
+You can pass in an Array to every endpoint. Requests will be made in parallel automatically:
+
+```ruby
+collection = RBattlenet::Wow::Item.find([18803, 18804])
+
+collection.results.map(&:name) # => ["Finkle's Lava Dredger", "Lord Grayson's Satchel"]
+```
+
+For some endpoints you can pass in fields to automatically (in parallel) retrieve resources that belong to them:
+
+```ruby
+character = RBattlenet::Wow::Character.find(realm: "stormrage", name: "sheday", fields: [:mounts, :titles])
+
+character.name # => "Sheday"
+character.titles.first.name # => "the Patient"
+character.mounts.first.name # => "Black War Bear"
+```
+
+#### Step 4. Error handling
+
+Each `RBattlenet::Result` object has a `status_code` property. When the code is not 200, the raw HTTP response is
+included (`response` property) and it'll be a `RBattlenet::EmptyResult` object instead. `RBattlenet::ResultCollection`
+objects can contain both `Result` and `EmptyResult` objects simultaneously. Exceptions are not raised for non-200 responses.
+
+Client side exceptions will be raised if there are issues, for example:
+
+```ruby
+characters = RBattlenet::Wow::Character.all
+
+# => RBattlenet::Errors::IndexNotSupported (Retrieving all entities of this endpoint is not supported)
 ```
 
 ## Testing

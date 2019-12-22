@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/creature-family/index?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 10:57:24 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:19:56 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - creature-family
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c8638a-f016-a100-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638a-f016-a550-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638a-f016-a520-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/?namespace=static-8.2.5_31884-eu"}},"creature_families":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/1?namespace=static-8.2.5_31884-eu"},"name":"Wolf","id":1},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/2?namespace=static-8.2.5_31884-eu"},"name":"Cat","id":2},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/3?namespace=static-8.2.5_31884-eu"},"name":"Spider","id":3},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/4?namespace=static-8.2.5_31884-eu"},"name":"Bear","id":4},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/5?namespace=static-8.2.5_31884-eu"},"name":"Boar","id":5},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/6?namespace=static-8.2.5_31884-eu"},"name":"Crocolisk","id":6},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/7?namespace=static-8.2.5_31884-eu"},"name":"Carrion
+        Bird","id":7},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/8?namespace=static-8.2.5_31884-eu"},"name":"Crab","id":8},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/9?namespace=static-8.2.5_31884-eu"},"name":"Gorilla","id":9},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/11?namespace=static-8.2.5_31884-eu"},"name":"Raptor","id":11},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/12?namespace=static-8.2.5_31884-eu"},"name":"Tallstrider","id":12},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/15?namespace=static-8.2.5_31884-eu"},"name":"Felhunter","id":15},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/16?namespace=static-8.2.5_31884-eu"},"name":"Voidwalker","id":16},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/17?namespace=static-8.2.5_31884-eu"},"name":"Succubus","id":17},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/19?namespace=static-8.2.5_31884-eu"},"name":"Doomguard","id":19},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/20?namespace=static-8.2.5_31884-eu"},"name":"Scorpid","id":20},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/21?namespace=static-8.2.5_31884-eu"},"name":"Turtle","id":21},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/23?namespace=static-8.2.5_31884-eu"},"name":"Imp","id":23},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/24?namespace=static-8.2.5_31884-eu"},"name":"Bat","id":24},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/25?namespace=static-8.2.5_31884-eu"},"name":"Hyena","id":25},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/26?namespace=static-8.2.5_31884-eu"},"name":"Bird
+        of Prey","id":26},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/27?namespace=static-8.2.5_31884-eu"},"name":"Wind
+        Serpent","id":27},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/28?namespace=static-8.2.5_31884-eu"},"name":"Remote
+        Control","id":28},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/29?namespace=static-8.2.5_31884-eu"},"name":"Felguard","id":29},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/30?namespace=static-8.2.5_31884-eu"},"name":"Dragonhawk","id":30},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/31?namespace=static-8.2.5_31884-eu"},"name":"Ravager","id":31},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/32?namespace=static-8.2.5_31884-eu"},"name":"Warp
+        Stalker","id":32},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/33?namespace=static-8.2.5_31884-eu"},"name":"Sporebat","id":33},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/34?namespace=static-8.2.5_31884-eu"},"name":"Ray","id":34},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/35?namespace=static-8.2.5_31884-eu"},"name":"Serpent","id":35},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/37?namespace=static-8.2.5_31884-eu"},"name":"Moth","id":37},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/38?namespace=static-8.2.5_31884-eu"},"name":"Chimaera","id":38},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/39?namespace=static-8.2.5_31884-eu"},"name":"Devilsaur","id":39},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/40?namespace=static-8.2.5_31884-eu"},"name":"Ghoul","id":40},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/41?namespace=static-8.2.5_31884-eu"},"name":"Silithid","id":41},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/42?namespace=static-8.2.5_31884-eu"},"name":"Worm","id":42},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/43?namespace=static-8.2.5_31884-eu"},"name":"Clefthoof","id":43},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/44?namespace=static-8.2.5_31884-eu"},"name":"Wasp","id":44},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/45?namespace=static-8.2.5_31884-eu"},"name":"Core
+        Hound","id":45},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/46?namespace=static-8.2.5_31884-eu"},"name":"Spirit
+        Beast","id":46},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/49?namespace=static-8.2.5_31884-eu"},"name":"Water
+        Elemental","id":49},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/50?namespace=static-8.2.5_31884-eu"},"name":"Fox","id":50},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/51?namespace=static-8.2.5_31884-eu"},"name":"Monkey","id":51},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/52?namespace=static-8.2.5_31884-eu"},"name":"Dog","id":52},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/53?namespace=static-8.2.5_31884-eu"},"name":"Beetle","id":53},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/55?namespace=static-8.2.5_31884-eu"},"name":"Shale
+        Spider","id":55},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/56?namespace=static-8.2.5_31884-eu"},"name":"Zombie","id":56},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/68?namespace=static-8.2.5_31884-eu"},"name":"Hydra","id":68},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/100?namespace=static-8.2.5_31884-eu"},"name":"Fel
+        Imp","id":100},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/101?namespace=static-8.2.5_31884-eu"},"name":"Voidlord","id":101},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/102?namespace=static-8.2.5_31884-eu"},"name":"Shivarra","id":102},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/103?namespace=static-8.2.5_31884-eu"},"name":"Observer","id":103},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/104?namespace=static-8.2.5_31884-eu"},"name":"Wrathguard","id":104},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/108?namespace=static-8.2.5_31884-eu"},"name":"Infernal","id":108},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/116?namespace=static-8.2.5_31884-eu"},"name":"Fire
+        Elemental","id":116},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/117?namespace=static-8.2.5_31884-eu"},"name":"Earth
+        Elemental","id":117},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/125?namespace=static-8.2.5_31884-eu"},"name":"Crane","id":125},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/126?namespace=static-8.2.5_31884-eu"},"name":"Water
+        Strider","id":126},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/127?namespace=static-8.2.5_31884-eu"},"name":"Rodent","id":127},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/128?namespace=static-8.2.5_31884-eu"},"name":"Quilen","id":128},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/129?namespace=static-8.2.5_31884-eu"},"name":"Goat","id":129},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/130?namespace=static-8.2.5_31884-eu"},"name":"Basilisk","id":130},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/138?namespace=static-8.2.5_31884-eu"},"name":"Direhorn","id":138},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/145?namespace=static-8.2.5_31884-eu"},"name":"Storm
+        Elemental","id":145},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/147?namespace=static-8.2.5_31884-eu"},"name":"Terrorguard","id":147},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/148?namespace=static-8.2.5_31884-eu"},"name":"Abyssal","id":148},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/150?namespace=static-8.2.5_31884-eu"},"name":"Riverbeast","id":150},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/151?namespace=static-8.2.5_31884-eu"},"name":"Stag","id":151},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/154?namespace=static-8.2.5_31884-eu"},"name":"Mechanical","id":154},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/155?namespace=static-8.2.5_31884-eu"},"name":"Abomination","id":155},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/156?namespace=static-8.2.5_31884-eu"},"name":"Scalehide","id":156},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/157?namespace=static-8.2.5_31884-eu"},"name":"Oxen","id":157},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/160?namespace=static-8.2.5_31884-eu"},"name":"Feathermane","id":160},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/288?namespace=static-8.2.5_31884-eu"},"name":"Lizard","id":288},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/290?namespace=static-8.2.5_31884-eu"},"name":"Pterrordax","id":290},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/291?namespace=static-8.2.5_31884-eu"},"name":"Toad","id":291},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/292?namespace=static-8.2.5_31884-eu"},"name":"Krolusk","id":292},{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature-family/296?namespace=static-8.2.5_31884-eu"},"name":"Blood
+        Beast","id":296}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/creature-family/index?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 10:57:25 GMT
+recorded_with: VCR 2.9.3
