@@ -1,0 +1,152 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/playable-specialization/62?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Sun, 22 Dec 2019 15:54:42 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:20:12 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - playable-specialization
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c864f9-c3fe-aad0-fdd2-fa165ba06406
+      x-trace-spanid:
+      - 15c864f9-c3fe-acd0-fdd2-fa165ba06406
+      x-trace-parentspanid:
+      - 15c864f9-c3fe-aca0-fdd2-fa165ba06406
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/62?namespace=static-8.2.5_31884-eu"}},"id":62,"playable_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-class/8?namespace=static-8.2.5_31884-eu"},"name":"Mage","id":8},"name":"Arcane","gender_description":{"male":"Manipulates
+        raw Arcane magic, destroying enemies with overwhelming power.\r\n\r\nPreferred
+        Weapon: Staff, Wand, Dagger, Sword","female":"Manipulates raw Arcane magic,
+        destroying enemies with overwhelming power.\r\n\r\nPreferred Weapon: Staff,
+        Wand, Dagger, Sword"},"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/playable-specialization/62?namespace=static-8.2.5_31884-eu"},"id":62},"role":{"type":"DAMAGE","name":"Damage"},"talent_tiers":[{"level":15,"talents":[{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22458?namespace=static-8.2.5_31884-eu"},"name":"Amplification","id":22458},"spell_tooltip":{"description":"When
+        Clearcast, Arcane Missiles fires 1 additional missile.","cast_time":"Passive"},"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22461?namespace=static-8.2.5_31884-eu"},"name":"Rule
+        of Threes","id":22461},"spell_tooltip":{"description":"When you gain your
+        third Arcane Charge, the cost of your next Arcane Blast or Arcane Missiles
+        is reduced by 100%.","cast_time":"Passive"},"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22464?namespace=static-8.2.5_31884-eu"},"name":"Arcane
+        Familiar","id":22464},"spell_tooltip":{"description":"Summon a Familiar that
+        attacks your enemies and increases your maximum mana by 10% for 1 hour.","cast_time":"Instant","cooldown":"10
+        sec cooldown"},"column_index":2}],"tier_index":0},{"level":30,"talents":[{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/23072?namespace=static-8.2.5_31884-eu"},"name":"Mana
+        Shield","id":23072},"spell_tooltip":{"description":"Prismatic Barrier has
+        no cooldown, but your mana is drained by 50% of the damage it absorbs.","cast_time":"Passive"},"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22443?namespace=static-8.2.5_31884-eu"},"name":"Shimmer","id":22443},"spell_tooltip":{"description":"Teleports
+        you 20 yards forward, unless something is in the way. Unaffected by the global
+        cooldown and castable while casting.","cast_time":"Instant","power_cost":"2,000
+        Mana","cooldown":"0.5 sec cooldown"},"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/16025?namespace=static-8.2.5_31884-eu"},"name":"Slipstream","id":16025},"spell_tooltip":{"description":"Clearcasting
+        allows Arcane Missiles to be channeled while moving.\r\n\r\nEvocation can
+        be channeled while moving.","cast_time":"Passive"},"column_index":2}],"tier_index":1},{"level":45,"talents":[{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22444?namespace=static-8.2.5_31884-eu"},"name":"Incanter''s
+        Flow","id":22444},"spell_tooltip":{"description":"Magical energy flows through
+        you while in combat, building up to 20% increased damage and then diminishing
+        down to 4% increased damage, cycling every 10 sec.","cast_time":"Passive"},"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22445?namespace=static-8.2.5_31884-eu"},"name":"Mirror
+        Image","id":22445},"spell_tooltip":{"description":"Creates 3 copies of you
+        nearby for 40 sec, which cast spells and attack your enemies.","cast_time":"Instant","power_cost":"2,000
+        Mana","cooldown":"2 min cooldown"},"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22447?namespace=static-8.2.5_31884-eu"},"name":"Rune
+        of Power","id":22447},"spell_tooltip":{"description":"Places a Rune of Power
+        on the ground for 10 sec which increases your spell damage by 40% while you
+        stand within 8 yds.","cast_time":"1.5 sec cast","range":"30 yd range","cooldown":"10
+        sec cooldown"},"column_index":2}],"tier_index":2},{"level":60,"talents":[{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22453?namespace=static-8.2.5_31884-eu"},"name":"Resonance","id":22453},"spell_tooltip":{"description":"Arcane
+        Barrage deals 10% increased damage per target it hits.","cast_time":"Passive"},"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22467?namespace=static-8.2.5_31884-eu"},"name":"Charged
+        Up","id":22467},"spell_tooltip":{"description":"Immediately grants 4 Arcane
+        Charges.","cast_time":"Instant","cooldown":"40 sec cooldown"},"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22470?namespace=static-8.2.5_31884-eu"},"name":"Supernova","id":22470},"spell_tooltip":{"description":"Pulses
+        arcane energy around the target enemy or ally, dealing 1,837 Arcane damage
+        to all enemies within 8 yards, and knocking them upward. A primary enemy target
+        will take 100% increased damage.","cast_time":"Instant","range":"40 yd range","cooldown":"25
+        sec cooldown"},"column_index":2}],"tier_index":3},{"level":75,"talents":[{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22907?namespace=static-8.2.5_31884-eu"},"name":"Chrono
+        Shift","id":22907},"spell_tooltip":{"description":"Arcane Barrage slows enemies
+        by 50% and increases your movement speed by 50% for 5 sec.","cast_time":"Passive"},"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22448?namespace=static-8.2.5_31884-eu"},"name":"Ice
+        Ward","id":22448},"spell_tooltip":{"description":"Frost Nova now has 2 charges.","cast_time":"Passive"},"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22471?namespace=static-8.2.5_31884-eu"},"name":"Ring
+        of Frost","id":22471},"spell_tooltip":{"description":"Summons a Ring of Frost
+        for 10 sec at the target location. Enemies entering the ring are incapacitated
+        for 10 sec. Limit 10 targets.","cast_time":"2 sec cast","power_cost":"8,000
+        Mana","range":"30 yd range","cooldown":"45 sec cooldown"},"column_index":2}],"tier_index":4},{"level":90,"talents":[{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22455?namespace=static-8.2.5_31884-eu"},"name":"Reverberate","id":22455},"spell_tooltip":{"description":"If
+        Arcane Explosion hits at least 3 targets, it has a 40% chance to generate
+        an extra Arcane Charge.","cast_time":"Passive"},"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22449?namespace=static-8.2.5_31884-eu"},"name":"Touch
+        of the Magi","id":22449},"spell_tooltip":{"description":"Arcane Blast has
+        a 10% chance to apply Touch of the Magi, accumulating 15% of the damage you
+        deal to the target for 8 sec, and then exploding for that amount of Arcane
+        damage to the target and all nearby enemies.","cast_time":"Passive"},"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22474?namespace=static-8.2.5_31884-eu"},"name":"Nether
+        Tempest","id":22474},"spell_tooltip":{"description":"Places a Nether Tempest
+        on the target which deals 1,173 Arcane damage over 12 sec to the target and
+        930 to all enemies within 10 yards. Limit 1 target.\r\n\r\nDamage increased
+        by 69% per Arcane Charge.","cast_time":"Instant","power_cost":"1,500 Mana","range":"40
+        yd range"},"column_index":2}],"tier_index":5},{"level":100,"talents":[{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/21630?namespace=static-8.2.5_31884-eu"},"name":"Overpowered","id":21630},"spell_tooltip":{"description":"Arcane
+        Power now increases damage by 60% and reduces mana costs by 60%.","cast_time":"Passive"},"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/21144?namespace=static-8.2.5_31884-eu"},"name":"Time
+        Anomaly","id":21144},"spell_tooltip":{"description":"At any moment, you have
+        a chance to gain Arcane Power for 8 sec, gain Evocation for 1 sec, or gain
+        4 Arcane Charges.","cast_time":"Passive"},"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/21145?namespace=static-8.2.5_31884-eu"},"name":"Arcane
+        Orb","id":21145},"spell_tooltip":{"description":"Launches an Arcane Orb forward
+        from your position, traveling up to 40 yards, dealing 7,346 Arcane damage
+        to enemies it passes through.\r\n\r\nGrants 1 Arcane Charge when cast and
+        every time it deals damage.","cast_time":"Instant","power_cost":"1,000 Mana","range":"40
+        yd range","cooldown":"20 sec cooldown"},"column_index":2}],"tier_index":6}],"pvp_talents":[{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/61?namespace=static-8.2.5_31884-eu"},"name":"Arcane
+        Empowerment","id":61},"spell_tooltip":{"description":"Clearcasting can now
+        stack 2 additional times, and increases the damage of Arcane Missiles by 5%
+        per stack.\r\n\r\nClearcasting no longer reduces the mana cost of Arcane Explosion.","cast_time":"Passive"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/62?namespace=static-8.2.5_31884-eu"},"name":"Torment
+        the Weak","id":62},"spell_tooltip":{"description":"Increases the range of
+        Slow by 15 yards, and affects up to 2 additional nearby targets.","cast_time":"Passive"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/635?namespace=static-8.2.5_31884-eu"},"name":"Master
+        of Escape","id":635},"spell_tooltip":{"description":"Reduces the cooldown
+        of Greater Invisibility by 45 sec.","cast_time":"Passive"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/636?namespace=static-8.2.5_31884-eu"},"name":"Rewind
+        Time","id":636},"spell_tooltip":{"description":"Increases the duration of
+        Displacement by 14 sec.","cast_time":"Passive","cooldown":"30 sec cooldown"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/637?namespace=static-8.2.5_31884-eu"},"name":"Mass
+        Invisibility","id":637},"spell_tooltip":{"description":"You and your allies
+        within 40 yards instantly become invisible for 5 sec. Dealing damage will
+        cancel the effect.","cast_time":"Instant","cooldown":"1 min cooldown"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3442?namespace=static-8.2.5_31884-eu"},"name":"Netherwind
+        Armor","id":3442},"spell_tooltip":{"description":"Reduces the chance you will
+        suffer a critical strike by 15%.","cast_time":"Passive"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3517?namespace=static-8.2.5_31884-eu"},"name":"Temporal
+        Shield","id":3517},"spell_tooltip":{"description":"Envelops you in a temporal
+        shield for 4 sec. 100% of all damage taken while shielded will be instantly
+        restored when the shield ends.","cast_time":"Instant","power_cost":"3,000
+        Mana","cooldown":"45 sec cooldown"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3523?namespace=static-8.2.5_31884-eu"},"name":"Dampened
+        Magic","id":3523},"spell_tooltip":{"description":"Magical damage over time
+        effects deal 20% less damage to you.","cast_time":"Passive"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3529?namespace=static-8.2.5_31884-eu"},"name":"Kleptomania","id":3529},"spell_tooltip":{"description":"Spellsteal
+        now has a 30 sec cooldown, but steals all spells from the target.","cast_time":"Passive"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3531?namespace=static-8.2.5_31884-eu"},"name":"Prismatic
+        Cloak","id":3531},"spell_tooltip":{"description":"After you Blink, you take
+        50% less magical damage for 2 sec.","cast_time":"Passive"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3578?namespace=static-8.2.5_31884-eu"},"name":"Adaptation","id":3578},"spell_tooltip":{"description":"Removes
+        any loss of control effect with a duration of 5 seconds or more. This effect
+        can only occur once every 1 min.","cast_time":"Passive"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3579?namespace=static-8.2.5_31884-eu"},"name":"Relentless","id":3579},"spell_tooltip":{"description":"Duration
+        of incoming crowd control effects reduced by 20%.  Does not stack with similar
+        effects.","cast_time":"Passive"}},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3580?namespace=static-8.2.5_31884-eu"},"name":"Gladiator''s
+        Medallion","id":3580},"spell_tooltip":{"description":"Removes all movement
+        impairing effects and all effects which cause loss of control of your character
+        while in PvP combat.","cast_time":"Instant","cooldown":"2 min cooldown"}}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/playable-specialization/62?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:42 GMT
+recorded_with: VCR 2.9.3

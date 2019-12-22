@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/playable-specialization/index?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Sun, 22 Dec 2019 15:54:43 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:19:56 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - playable-specialization
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c865d4-e904-d930-59a1-fa165a07058b
+      x-trace-spanid:
+      - 15c865d4-e904-e240-59a1-fa165a07058b
+      x-trace-parentspanid:
+      - 15c865d4-e904-e210-59a1-fa165a07058b
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/?namespace=static-8.2.5_31884-eu"}},"character_specializations":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/62?namespace=static-8.2.5_31884-eu"},"name":"Arcane","id":62},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/63?namespace=static-8.2.5_31884-eu"},"name":"Fire","id":63},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/64?namespace=static-8.2.5_31884-eu"},"name":"Frost","id":64},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/65?namespace=static-8.2.5_31884-eu"},"name":"Holy","id":65},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/66?namespace=static-8.2.5_31884-eu"},"name":"Protection","id":66},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/70?namespace=static-8.2.5_31884-eu"},"name":"Retribution","id":70},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/71?namespace=static-8.2.5_31884-eu"},"name":"Arms","id":71},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-8.2.5_31884-eu"},"name":"Fury","id":72},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/73?namespace=static-8.2.5_31884-eu"},"name":"Protection","id":73},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/102?namespace=static-8.2.5_31884-eu"},"name":"Balance","id":102},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/103?namespace=static-8.2.5_31884-eu"},"name":"Feral","id":103},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/104?namespace=static-8.2.5_31884-eu"},"name":"Guardian","id":104},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/105?namespace=static-8.2.5_31884-eu"},"name":"Restoration","id":105},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/250?namespace=static-8.2.5_31884-eu"},"name":"Blood","id":250},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/251?namespace=static-8.2.5_31884-eu"},"name":"Frost","id":251},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/252?namespace=static-8.2.5_31884-eu"},"name":"Unholy","id":252},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/253?namespace=static-8.2.5_31884-eu"},"name":"Beast
+        Mastery","id":253},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/254?namespace=static-8.2.5_31884-eu"},"name":"Marksmanship","id":254},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/255?namespace=static-8.2.5_31884-eu"},"name":"Survival","id":255},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/256?namespace=static-8.2.5_31884-eu"},"name":"Discipline","id":256},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/257?namespace=static-8.2.5_31884-eu"},"name":"Holy","id":257},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/258?namespace=static-8.2.5_31884-eu"},"name":"Shadow","id":258},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/259?namespace=static-8.2.5_31884-eu"},"name":"Assassination","id":259},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/260?namespace=static-8.2.5_31884-eu"},"name":"Outlaw","id":260},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/261?namespace=static-8.2.5_31884-eu"},"name":"Subtlety","id":261},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-8.2.5_31884-eu"},"name":"Elemental","id":262},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/263?namespace=static-8.2.5_31884-eu"},"name":"Enhancement","id":263},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/264?namespace=static-8.2.5_31884-eu"},"name":"Restoration","id":264},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-8.2.5_31884-eu"},"name":"Affliction","id":265},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/266?namespace=static-8.2.5_31884-eu"},"name":"Demonology","id":266},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/267?namespace=static-8.2.5_31884-eu"},"name":"Destruction","id":267},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/268?namespace=static-8.2.5_31884-eu"},"name":"Brewmaster","id":268},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/269?namespace=static-8.2.5_31884-eu"},"name":"Windwalker","id":269},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/270?namespace=static-8.2.5_31884-eu"},"name":"Mistweaver","id":270},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/577?namespace=static-8.2.5_31884-eu"},"name":"Havoc","id":577},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/581?namespace=static-8.2.5_31884-eu"},"name":"Vengeance","id":581}],"pet_specializations":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/74?namespace=static-8.2.5_31884-eu"},"name":"Ferocity","id":74},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/79?namespace=static-8.2.5_31884-eu"},"name":"Cunning","id":79},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/81?namespace=static-8.2.5_31884-eu"},"name":"Tenacity","id":81}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/playable-specialization/index?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:43 GMT
+recorded_with: VCR 2.9.3

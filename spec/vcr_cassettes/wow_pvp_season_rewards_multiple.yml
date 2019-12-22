@@ -1,0 +1,125 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/pvp-season/28/pvp-reward/index?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '3'
+      Date:
+      - Sun, 22 Dec 2019 15:54:47 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sun, 22 Dec 2019 02:14:17 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - pvp-reward
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c8638b-2caa-5ae0-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638b-2caa-5c00-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638b-2caa-5bd0-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/pvp-season/28/pvp-reward/?namespace=dynamic-eu"}},"season":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-season/28?namespace=dynamic-eu"},"id":28},"rewards":[{"bracket":{"id":3,"type":"BATTLEGROUNDS"},"achievement":{"key":{"href":"https://eu.api.blizzard.com/data/wow/achievement/13644?namespace=static-8.2.5_31884-eu"},"name":"Hero
+        of the Horde: Notorious","id":13644},"rating_cutoff":2499,"faction":{"type":"HORDE","name":"Horde"}},{"bracket":{"id":3,"type":"BATTLEGROUNDS"},"achievement":{"key":{"href":"https://eu.api.blizzard.com/data/wow/achievement/13643?namespace=static-8.2.5_31884-eu"},"name":"Hero
+        of the Alliance: Notorious","id":13643},"rating_cutoff":2377,"faction":{"type":"ALLIANCE","name":"Alliance"}},{"bracket":{"id":1,"type":"ARENA_3v3"},"achievement":{"key":{"href":"https://eu.api.blizzard.com/data/wow/achievement/13630?namespace=static-8.2.5_31884-eu"},"name":"Notorious
+        Gladiator: Battle for Azeroth Season 3","id":13630},"rating_cutoff":2809,"faction":{"type":"HORDE","name":"Horde"}},{"bracket":{"id":1,"type":"ARENA_3v3"},"achievement":{"key":{"href":"https://eu.api.blizzard.com/data/wow/achievement/13630?namespace=static-8.2.5_31884-eu"},"name":"Notorious
+        Gladiator: Battle for Azeroth Season 3","id":13630},"rating_cutoff":2870,"faction":{"type":"ALLIANCE","name":"Alliance"}}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/pvp-season/28/pvp-reward/index?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:47 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/pvp-season/27/pvp-reward/index?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Sun, 22 Dec 2019 15:54:47 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Tue, 9 Jul 2019 01:08:43 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - pvp-reward
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c865c2-0054-d9e0-85af-fa165b14433f
+      x-trace-spanid:
+      - 15c865c2-0054-db60-85af-fa165b14433f
+      x-trace-parentspanid:
+      - 15c865c2-0054-db30-85af-fa165b14433f
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/pvp-season/27/pvp-reward/?namespace=dynamic-eu"}},"season":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-eu"},"id":27},"rewards":[{"bracket":{"id":3,"type":"BATTLEGROUNDS"},"achievement":{"key":{"href":"https://eu.api.blizzard.com/data/wow/achievement/13211?namespace=static-8.2.0_30827-eu"},"name":"Hero
+        of the Horde: Sinister","id":13211},"rating_cutoff":2538,"faction":{"type":"HORDE","name":"Horde"}},{"bracket":{"id":3,"type":"BATTLEGROUNDS"},"achievement":{"key":{"href":"https://eu.api.blizzard.com/data/wow/achievement/13210?namespace=static-8.2.0_30827-eu"},"name":"Hero
+        of the Alliance: Sinister","id":13210},"rating_cutoff":2445,"faction":{"type":"ALLIANCE","name":"Alliance"}},{"bracket":{"id":1,"type":"ARENA_3v3"},"achievement":{"key":{"href":"https://eu.api.blizzard.com/data/wow/achievement/13200?namespace=static-8.2.0_30827-eu"},"name":"Sinister
+        Gladiator: Battle for Azeroth Season 2","id":13200},"rating_cutoff":2945,"faction":{"type":"HORDE","name":"Horde"}},{"bracket":{"id":1,"type":"ARENA_3v3"},"achievement":{"key":{"href":"https://eu.api.blizzard.com/data/wow/achievement/13200?namespace=static-8.2.0_30827-eu"},"name":"Sinister
+        Gladiator: Battle for Azeroth Season 2","id":13200},"rating_cutoff":3020,"faction":{"type":"ALLIANCE","name":"Alliance"}}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/pvp-season/27/pvp-reward/index?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:47 GMT
+recorded_with: VCR 2.9.3

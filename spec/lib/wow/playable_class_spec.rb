@@ -31,4 +31,14 @@ describe RBattlenet::Wow::PlayableClass do
       end
     end
   end
+
+  describe "#find_playable_class_multiple_fields" do
+    it "fetches guild data" do
+      with_connection("wow_playable_class_fields") do
+        result = RBattlenet::Wow::PlayableClass.find(1, fields: [:talent_slots])
+        expect(result.name).to eq "Warrior"
+        expect(result.talent_slots.first.unlock_player_level).to eq 20
+      end
+    end
+  end
 end

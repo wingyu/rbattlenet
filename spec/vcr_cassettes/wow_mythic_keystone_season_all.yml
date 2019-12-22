@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/mythic-keystone/season/index?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Sun, 22 Dec 2019 15:54:40 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 07:00:05 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=1800
+      Battlenet-Schema:
+      - mythic-keystone-season
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '686'
+      x-trace-traceid:
+      - 15c8638b-2ca3-9b50-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638b-2ca3-a520-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638b-2ca3-a4f0-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/season/?namespace=dynamic-eu"}},"seasons":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/season/0?namespace=dynamic-eu"},"id":0},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/season/1?namespace=dynamic-eu"},"id":1},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/season/2?namespace=dynamic-eu"},"id":2},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/season/3?namespace=dynamic-eu"},"id":3}],"current_season":{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/season/3?namespace=dynamic-eu"},"id":3}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/mythic-keystone/season/index?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:40 GMT
+recorded_with: VCR 2.9.3

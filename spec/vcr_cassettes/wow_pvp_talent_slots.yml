@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/playable-class/1/pvp-talent-slots?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:41 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:20:02 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - pvp-talent-slots
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c865d4-e903-e5c0-59a1-fa165a07058b
+      x-trace-spanid:
+      - 15c865d4-e903-e920-59a1-fa165a07058b
+      x-trace-parentspanid:
+      - 15c865d4-e903-e8f0-59a1-fa165a07058b
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/playable-class/1/pvp-talent-slots?namespace=static-8.2.5_31884-eu"}},"talent_slots":[{"slot_number":1,"unlock_player_level":20},{"slot_number":2,"unlock_player_level":40},{"slot_number":3,"unlock_player_level":70},{"slot_number":4,"unlock_player_level":110}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/playable-class/1/pvp-talent-slots?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:42 GMT
+recorded_with: VCR 2.9.3
