@@ -15,7 +15,7 @@ module RBattlenet
   end
 
   def self.set_options(region: @@region, locale: @@locale, raw_response: @@raw)
-    @@region, @@locale, @@raw = locale, namespace, raw_response
+    @@region, @@locale, @@raw = region, locale, raw_response
     true
   end
 
