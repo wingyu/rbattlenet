@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/marks/hunter-pets?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Sun, 22 Dec 2019 22:30:33 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Thu, 19 Dec 2019 07:55:59 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - character-hunter-pets
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c8638b-7eb7-5bd0-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638b-7eb7-6fd0-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638b-7eb7-6fa0-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/marks/hunter-pets?namespace=profile-eu"}},"character":{"key":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/marks?namespace=profile-eu"},"name":"Marks","id":121099247,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"}},"hunter_pets":[{"name":"stats","level":100,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/29452?namespace=static-8.2.5_31884-eu"},"name":"Vargul
+        Blighthound","id":29452},"slot":6,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/25785?namespace=static-8.2.5_31884-eu"}}},{"name":"versatility","level":100,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/78275?namespace=static-8.2.5_31884-eu"},"name":"Silverpelt
+        Doe","id":78275},"slot":12,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/53764?namespace=static-8.2.5_31884-eu"}}},{"name":"mstery","level":100,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/37091?namespace=static-8.2.5_31884-eu"},"name":"Deviate
+        Plainstrider","id":37091},"slot":11,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/31000?namespace=static-8.2.5_31884-eu"}}},{"name":"Multistrike","level":100,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/20038?namespace=static-8.2.5_31884-eu"},"name":"Phoenix-Hawk
+        Hatchling","id":20038},"slot":47,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/19298?namespace=static-8.2.5_31884-eu"}}},{"name":"Critical","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/74748?namespace=static-8.2.5_31884-eu"},"name":"Frost
+        Wolf","id":74748},"slot":9,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/52598?namespace=static-8.2.5_31884-eu"}}},{"name":"Burst","level":120,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/46910?namespace=static-8.2.5_31884-eu"},"name":"Core
+        Hound","id":46910},"slot":4,"is_active":true,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/11997?namespace=static-8.2.5_31884-eu"}}},{"name":"Gara","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/88708?namespace=static-8.2.5_31884-eu"},"name":"Gara","id":88708},"slot":13,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/55831?namespace=static-8.2.5_31884-eu"}}},{"name":"Monkey","level":100,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/51052?namespace=static-8.2.5_31884-eu"},"name":"Gib
+        the Banana-Hoarder","id":51052},"slot":15,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/46574?namespace=static-8.2.5_31884-eu"}}},{"name":"SpellPower","level":100,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/28358?namespace=static-8.2.5_31884-eu"},"name":"Venomtip","id":28358},"slot":10,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/25330?namespace=static-8.2.5_31884-eu"}}},{"name":"haste","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/18129?namespace=static-8.2.5_31884-eu"},"name":"Greater
+        Sporebat","id":18129},"slot":7,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/17752?namespace=static-8.2.5_31884-eu"}}},{"name":"BurstHaste","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/18131?namespace=static-8.2.5_31884-eu"},"name":"Marshfang
+        Slicer","id":18131},"slot":39,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/19401?namespace=static-8.2.5_31884-eu"}}},{"name":"StatsCrit","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/44425?namespace=static-8.2.5_31884-eu"},"name":"Crimson
+        Shale Spider","id":44425},"slot":20,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/34163?namespace=static-8.2.5_31884-eu"}}},{"name":"SpellStamina","level":100,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/6553?namespace=static-8.2.5_31884-eu"},"name":"Gorishi
+        Reaver","id":6553},"slot":17,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/11087?namespace=static-8.2.5_31884-eu"}}},{"name":"MultiVers","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/76711?namespace=static-8.2.5_31884-eu"},"name":"Ashmane
+        Bull","id":76711},"slot":21,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/52378?namespace=static-8.2.5_31884-eu"}}},{"name":"StaminaHaste","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/84002?namespace=static-8.2.5_31884-eu"},"name":"Darkwing
+        Matron","id":84002},"slot":22,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/61207?namespace=static-8.2.5_31884-eu"}}},{"name":"Spirit
+        Beast","level":100,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/69943?namespace=static-8.2.5_31884-eu"},"name":"Gumi","id":69943},"slot":19,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/47776?namespace=static-8.2.5_31884-eu"}}},{"name":"Arcturis","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/38453?namespace=static-8.2.5_31884-eu"},"name":"Arcturis","id":38453},"slot":8,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/31094?namespace=static-8.2.5_31884-eu"}}},{"name":"Lucky","level":120,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/32517?namespace=static-8.2.5_31884-eu"},"name":"Loque''nahak","id":32517},"slot":5,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/28010?namespace=static-8.2.5_31884-eu"}}},{"name":"Spirit
+        Beast","level":100,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/54320?namespace=static-8.2.5_31884-eu"},"name":"Ban''thalos","id":54320},"slot":23,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/38634?namespace=static-8.2.5_31884-eu"}}},{"name":"Thok","level":120,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/71529?namespace=static-8.2.5_31884-eu"},"name":"Thok
+        the Bloodthirsty","id":71529},"slot":46,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/51144?namespace=static-8.2.5_31884-eu"}}},{"name":"Core
+        Hound","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/17447?namespace=static-8.2.5_31884-eu"},"name":"The
+        Kurken","id":17447},"slot":50,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/17028?namespace=static-8.2.5_31884-eu"}}},{"name":"Spider","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/20682?namespace=static-8.2.5_31884-eu"},"name":"Terokkarantula","id":20682},"slot":14,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/75391?namespace=static-8.2.5_31884-eu"}}},{"name":"Quilen","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/60051?namespace=static-8.2.5_31884-eu"},"name":"Cobalt
+        Guardian","id":60051},"slot":51,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/41893?namespace=static-8.2.5_31884-eu"}}},{"name":"Crane","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/72762?namespace=static-8.2.5_31884-eu"},"name":"Brilliant
+        Windfeather","id":72762},"slot":33,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/51262?namespace=static-8.2.5_31884-eu"}}},{"name":"Core
+        Hound","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/41166?namespace=static-8.2.5_31884-eu"},"name":"Gomegaz","id":41166},"slot":26,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/73332?namespace=static-8.2.5_31884-eu"}}},{"name":"Turtle","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/111273?namespace=static-8.2.5_31884-eu"},"name":"Lowland
+        Manashell","id":111273},"slot":18,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/72656?namespace=static-8.2.5_31884-eu"}}},{"name":"Spirit
+        Beast","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/111463?namespace=static-8.2.5_31884-eu"},"name":"Bulvinkel","id":111463},"slot":30,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/70876?namespace=static-8.2.5_31884-eu"}}},{"name":"Potato","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/21102?namespace=static-8.2.5_31884-eu"},"name":"Uvuros","id":21102},"slot":25,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/20522?namespace=static-8.2.5_31884-eu"}}},{"name":"Wolf","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/119990?namespace=static-8.2.5_31884-eu"},"name":"Fenryr","id":119990},"slot":24,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/64466?namespace=static-8.2.5_31884-eu"}}},{"name":"Spirit
+        Beast","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/121567?namespace=static-8.2.5_31884-eu"},"name":"Lost
+        Spectral Gryphon","id":121567},"slot":27,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/76408?namespace=static-8.2.5_31884-eu"}}},{"name":"Spirit
+        Beast","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/121571?namespace=static-8.2.5_31884-eu"},"name":"Gon","id":121571},"slot":28,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/76409?namespace=static-8.2.5_31884-eu"}}},{"name":"Feathermane","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/121623?namespace=static-8.2.5_31884-eu"},"name":"Varoudnir","id":121623},"slot":36,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/76531?namespace=static-8.2.5_31884-eu"}}},{"name":"Feathermane","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/121624?namespace=static-8.2.5_31884-eu"},"name":"Mavarnir","id":121624},"slot":35,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/76530?namespace=static-8.2.5_31884-eu"}}},{"name":"Feathermane","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/121625?namespace=static-8.2.5_31884-eu"},"name":"Kveldulfnir","id":121625},"slot":41,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/76529?namespace=static-8.2.5_31884-eu"}}},{"name":"Feathermane","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/121502?namespace=static-8.2.5_31884-eu"},"name":"Very
+        Lost Feathermane Kitten","id":121502},"slot":38,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/76366?namespace=static-8.2.5_31884-eu"}}},{"name":"Feathermane","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/16874?namespace=static-8.2.5_31884-eu"},"name":"Snowblind","id":16874},"slot":37,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/76365?namespace=static-8.2.5_31884-eu"}}},{"name":"Diva","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/110253?namespace=static-8.2.5_31884-eu"},"name":"Moonfeather
+        Prowler","id":110253},"slot":29,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/67551?namespace=static-8.2.5_31884-eu"}}},{"name":"Feathermane","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/103497?namespace=static-8.2.5_31884-eu"},"name":"Feathermane
+        Hunter","id":103497},"slot":40,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/67550?namespace=static-8.2.5_31884-eu"}}},{"name":"Feathermane","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/16875?namespace=static-8.2.5_31884-eu"},"name":"Netherbeak","id":16875},"slot":43,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/63623?namespace=static-8.2.5_31884-eu"}}},{"name":"Scorpid","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/123636?namespace=static-8.2.5_31884-eu"},"name":"Lost
+        Emberspit Scorpion","id":123636},"slot":31,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/38123?namespace=static-8.2.5_31884-eu"}}},{"name":"Spider","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/54321?namespace=static-8.2.5_31884-eu"},"name":"Solix","id":54321},"slot":34,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/38780?namespace=static-8.2.5_31884-eu"}}},{"name":"Feathermane","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/105547?namespace=static-8.2.5_31884-eu"},"name":"Rauren","id":105547},"slot":42,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/69191?namespace=static-8.2.5_31884-eu"}}},{"name":"Silithid","level":120,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/131892?namespace=static-8.2.5_31884-eu"},"name":"Silithid
+        Sentinel","id":131892},"slot":49,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/82231?namespace=static-8.2.5_31884-eu"}}},{"name":"Clefthoof","level":120,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/86000?namespace=static-8.2.5_31884-eu"},"name":"Gentle
+        Clefthoof","id":86000},"slot":2,"is_active":true,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/52374?namespace=static-8.2.5_31884-eu"}}},{"name":"Raptor","level":120,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/115675?namespace=static-8.2.5_31884-eu"},"name":"Young
+        Bloodgazer","id":115675},"slot":3,"is_active":true,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/73921?namespace=static-8.2.5_31884-eu"}}},{"name":"Spider","level":110,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/54322?namespace=static-8.2.5_31884-eu"},"name":"Deth''tilac","id":54322},"slot":44,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/38424?namespace=static-8.2.5_31884-eu"}}},{"name":"Bat","level":120,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/87085?namespace=static-8.2.5_31884-eu"},"name":"Rakkiri","id":87085},"slot":1,"is_active":true,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/55604?namespace=static-8.2.5_31884-eu"}}},{"name":"Hati","level":120,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/151144?namespace=static-8.2.5_31884-eu"},"name":"Hati","id":151144},"slot":0,"is_active":true,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/68899?namespace=static-8.2.5_31884-eu"}}},{"name":"Blood
+        Beast","level":120,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/128066?namespace=static-8.2.5_31884-eu"},"name":"Engorged
+        Crawg","id":128066},"slot":52,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/78650?namespace=static-8.2.5_31884-eu"}}},{"name":"Paul","level":120,"creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/31263?namespace=static-8.2.5_31884-eu"},"name":"Carrion
+        Hunter","id":31263},"slot":32,"creature_display":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/creature-display/27543?namespace=static-8.2.5_31884-eu"}}}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/marks/hunter-pets?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 22:30:33 GMT
+recorded_with: VCR 2.9.3

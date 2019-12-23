@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/pvp-summary?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '9'
+      Date:
+      - Sun, 22 Dec 2019 22:30:34 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sun, 22 Dec 2019 09:05:19 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - pvp-summary
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '2288'
+      x-trace-traceid:
+      - 15c86604-0502-fe30-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86604-0503-1340-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86604-0503-1310-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/pvp-summary?namespace=profile-eu"}},"brackets":[{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/pvp-bracket/2v2?namespace=profile-eu"}],"honor_level":41,"pvp_map_statistics":[{"world_map":{"name":"Alterac
+        Valley","id":30},"match_statistics":{"played":186,"won":108,"lost":78}},{"world_map":{"name":"Classic
+        Warsong Gulch","id":489},"match_statistics":{"played":268,"won":164,"lost":104}},{"world_map":{"name":"Classic
+        Arathi Basin","id":529},"match_statistics":{"played":228,"won":124,"lost":104}},{"world_map":{"name":"Eye
+        of the Storm","id":566},"match_statistics":{"played":177,"won":102,"lost":75}},{"world_map":{"name":"Strand
+        of the Ancients","id":607},"match_statistics":{"played":204,"won":101,"lost":103}},{"world_map":{"name":"Isle
+        of Conquest","id":628},"match_statistics":{"played":142,"won":102,"lost":40}},{"world_map":{"name":"Twin
+        Peaks","id":726},"match_statistics":{"played":148,"won":101,"lost":47}},{"world_map":{"name":"Silvershard
+        Mines","id":727},"match_statistics":{"played":143,"won":104,"lost":39}},{"world_map":{"name":"The
+        Battle for Gilneas","id":761},"match_statistics":{"played":139,"won":105,"lost":34}},{"world_map":{"name":"Temple
+        of Kotmogu","id":998},"match_statistics":{"played":124,"won":109,"lost":15}},{"world_map":{"name":"Deepwind
+        Gorge","id":1105},"match_statistics":{"played":161,"won":104,"lost":57}},{"world_map":{"name":"Seething
+        Shore","id":1803},"match_statistics":{"played":3,"won":16,"lost":0}},{"world_map":{"name":"Warsong
+        Gulch","id":2106},"match_statistics":{"played":1,"won":0,"lost":1}},{"world_map":{"name":"Arathi
+        Basin","id":2107},"match_statistics":{"played":5,"won":3,"lost":2}},{"world_map":{"name":"Battle
+        for Wintergrasp","id":2118},"match_statistics":{"played":4,"won":1,"lost":3}},{"world_map":{"name":"Korrak''s
+        Revenge","id":2197},"match_statistics":{"played":1,"won":0,"lost":1}}],"honorable_kills":71484,"character":{"key":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday?namespace=profile-eu"},"name":"Sheday","id":142650023,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"}}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/pvp-summary?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 22:30:35 GMT
+recorded_with: VCR 2.9.3

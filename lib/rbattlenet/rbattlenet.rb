@@ -32,7 +32,7 @@ module RBattlenet
       hydra = Typhoeus::Hydra.new(max_concurrency: 50)
       subjects.each do |uris, subject|
         uris.each do |field, uri|
-          request = Typhoeus::Request.new(uri, headers: headers)
+          request = Typhoeus::Request.new(URI.encode(uri), headers: headers)
 
           request.on_complete do |response|
             if @@raw
@@ -44,6 +44,7 @@ module RBattlenet
               end
             end
           end
+
 
           hydra.queue request
         end

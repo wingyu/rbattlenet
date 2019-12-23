@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/whowouldeverusethisforacharactername?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 22 Dec 2019 16:36:51 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '60'
+      x-trace-traceid:
+      - 15c864e9-33ed-41a0-c980-fa165ba0f208
+      x-trace-spanid:
+      - 15c864e9-33ed-4c40-c980-fa165ba0f208
+      x-trace-parentspanid:
+      - 15c864e9-33ed-4c10-c980-fa165ba0f208
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"code":404,"type":"BLZWEBAPI00000404","detail":"Not Found"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/whowouldeverusethisforacharactername?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 16:36:51 GMT
+recorded_with: VCR 2.9.3
