@@ -81,12 +81,12 @@ characters = RBattlenet::Wow::Character.all
 
 ## Testing
 ```ruby
-bundle exec rspec
+CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
 ```
 
 If you wish to test with real API connections:
 ```ruby
-CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> REAL_CONNECTIONS=1 bundle exec rspec
+REAL_CONNECTIONS=1 CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
 ```
 
 ## Documentation
