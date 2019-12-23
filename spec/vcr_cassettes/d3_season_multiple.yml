@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/d3/season/1?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sat, 21 Dec 2019 15:41:10 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sat, 21 Dec 2019 15:41:00 GMT
+      Battlenet-Namespace:
+      - 2-6-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - season
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c8638a-17a6-7520-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638a-17a6-76b0-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638a-17a6-7680-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/d3/season/1?namespace=2-6-eu"}},"leaderboard":[{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/achievement-points?namespace=2-6-EU"}},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-hardcore-barbarian?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"barbarian"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-barbarian?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"barbarian"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-hardcore-crusader?namespace=2-6-EU"},"hero_class_string":"crusader"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-crusader?namespace=2-6-EU"},"hero_class_string":"crusader"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-hardcore-dh?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"dh"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-dh?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"dh"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-hardcore-monk?namespace=2-6-EU"},"hero_class_string":"monk"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-monk?namespace=2-6-EU"},"hero_class_string":"monk"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-hardcore-wd?namespace=2-6-EU"},"hero_class_string":"wd"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-wd?namespace=2-6-EU"},"hero_class_string":"wd"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-hardcore-wizard?namespace=2-6-EU"},"hero_class_string":"wizard"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-wizard?namespace=2-6-EU"},"hero_class_string":"wizard"},{"team_size":2,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-hardcore-team-2?namespace=2-6-EU"}},{"team_size":2,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-team-2?namespace=2-6-EU"}},{"team_size":3,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-hardcore-team-3?namespace=2-6-EU"}},{"team_size":3,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-team-3?namespace=2-6-EU"}},{"team_size":4,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-hardcore-team-4?namespace=2-6-EU"}},{"team_size":4,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/rift-team-4?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/74987244086883?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/74987244591442?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/74987244621930?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/74987245615154?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/74987247614578?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/74987248572516?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/74987250309038?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/74987253109310?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/74987259282080?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/1/leaderboard/74987259617458?namespace=2-6-EU"}}],"season_id":1,"last_update_time":"Sat,
+        21 Dec 2019 15:41:00 UTC","generated_by":"AMS1A-D3-PURPLE-JOB001-01 2.6.7
+        branches/2_6_7-branches/2_6_7"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/d3/season/1?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:10 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/d3/season/2?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sat, 21 Dec 2019 15:41:10 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sat, 21 Dec 2019 15:41:00 GMT
+      Battlenet-Namespace:
+      - 2-6-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - season
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86602-9bf8-1a50-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86602-9bf8-1cc0-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86602-9bf8-1c90-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/d3/season/2?namespace=2-6-eu"}},"leaderboard":[{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/achievement-points?namespace=2-6-EU"}},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-hardcore-barbarian?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"barbarian"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-barbarian?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"barbarian"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-hardcore-crusader?namespace=2-6-EU"},"hero_class_string":"crusader"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-crusader?namespace=2-6-EU"},"hero_class_string":"crusader"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-hardcore-dh?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"dh"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-dh?namespace=2-6-EU"},"hardcore":true,"hero_class_string":"dh"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-hardcore-monk?namespace=2-6-EU"},"hero_class_string":"monk"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-monk?namespace=2-6-EU"},"hero_class_string":"monk"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-hardcore-wd?namespace=2-6-EU"},"hero_class_string":"wd"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-wd?namespace=2-6-EU"},"hero_class_string":"wd"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-hardcore-wizard?namespace=2-6-EU"},"hero_class_string":"wizard"},{"team_size":1,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-wizard?namespace=2-6-EU"},"hero_class_string":"wizard"},{"team_size":2,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-hardcore-team-2?namespace=2-6-EU"}},{"team_size":2,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-team-2?namespace=2-6-EU"}},{"team_size":3,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-hardcore-team-3?namespace=2-6-EU"}},{"team_size":3,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-team-3?namespace=2-6-EU"}},{"team_size":4,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-hardcore-team-4?namespace=2-6-EU"}},{"team_size":4,"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/rift-team-4?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/74987245062739?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/74987245255517?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/74987245453208?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/74987248250467?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/74987251251687?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/74987252216380?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/74987254761466?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/74987256183338?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/74987258201285?namespace=2-6-EU"}},{"ladder":{"href":"https://eu.api.blizzard.com/data/d3/season/2/leaderboard/74987259125685?namespace=2-6-EU"}}],"season_id":2,"last_update_time":"Sat,
+        21 Dec 2019 15:41:00 UTC","generated_by":"AMS1A-D3-PURPLE-JOB001-01 2.6.7
+        branches/2_6_7-branches/2_6_7"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/d3/season/2?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:10 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/azerite-essence/index?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:31 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:19:56 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - azerite-essence
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c864f9-c3f8-af40-fdd2-fa165ba06406
+      x-trace-spanid:
+      - 15c864f9-c3f8-b140-fdd2-fa165ba06406
+      x-trace-parentspanid:
+      - 15c864f9-c3f8-b110-fdd2-fa165ba06406
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/?namespace=static-8.2.5_31884-eu"}},"azerite_essences":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/2?namespace=static-8.2.5_31884-eu"},"name":"Azeroth''s
+        Undying Gift","id":2},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/3?namespace=static-8.2.5_31884-eu"},"name":"Sphere
+        of Suppression","id":3},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/4?namespace=static-8.2.5_31884-eu"},"name":"Worldvein
+        Resonance","id":4},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/5?namespace=static-8.2.5_31884-eu"},"name":"Essence
+        of the Focusing Iris","id":5},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/6?namespace=static-8.2.5_31884-eu"},"name":"Purification
+        Protocol","id":6},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/7?namespace=static-8.2.5_31884-eu"},"name":"Anima
+        of Life and Death","id":7},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/12?namespace=static-8.2.5_31884-eu"},"name":"The
+        Crucible of Flame","id":12},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/13?namespace=static-8.2.5_31884-eu"},"name":"Nullification
+        Dynamo","id":13},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/14?namespace=static-8.2.5_31884-eu"},"name":"Condensed
+        Life-Force","id":14},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/15?namespace=static-8.2.5_31884-eu"},"name":"Ripple
+        in Space","id":15},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/17?namespace=static-8.2.5_31884-eu"},"name":"The
+        Ever-Rising Tide","id":17},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/18?namespace=static-8.2.5_31884-eu"},"name":"Artifice
+        of Time","id":18},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/19?namespace=static-8.2.5_31884-eu"},"name":"The
+        Well of Existence","id":19},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/20?namespace=static-8.2.5_31884-eu"},"name":"Life-Binder''s
+        Invocation","id":20},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/21?namespace=static-8.2.5_31884-eu"},"name":"Vitality
+        Conduit","id":21},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/22?namespace=static-8.2.5_31884-eu"},"name":"Vision
+        of Perfection","id":22},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/23?namespace=static-8.2.5_31884-eu"},"name":"Blood
+        of the Enemy","id":23},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/25?namespace=static-8.2.5_31884-eu"},"name":"Aegis
+        of the Deep","id":25},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/27?namespace=static-8.2.5_31884-eu"},"name":"Memory
+        of Lucid Dreams","id":27},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/28?namespace=static-8.2.5_31884-eu"},"name":"The
+        Unbound Force","id":28},{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/32?namespace=static-8.2.5_31884-eu"},"name":"Conflict
+        and Strife","id":32}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/azerite-essence/index?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:32 GMT
+recorded_with: VCR 2.9.3

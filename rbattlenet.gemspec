@@ -6,11 +6,11 @@ require 'rbattlenet/version'
 Gem::Specification.new do |spec|
   spec.name          = "rbattlenet"
   spec.version       = RBattlenet::VERSION
-  spec.authors       = ["Vincent Wong", "Ryan Fox"]
-  spec.email         = ["wingyu64@gmail.com", "rfox75@gmail.com"]
-  spec.summary       = %q{A wrapper for the Blizzard's Battle.net API}
-  spec.description   = %q{My attempt at creating a Ruby wrapper for the Blizzard's Battle.net Community Platform API.}
-  spec.homepage      = "https://github.com/ausomator/rbattlenet"
+  spec.authors       = ["Vincent Wong", "Ryan Fox", "Emiel van Lankveld"]
+  spec.email         = ["wingyu64@gmail.com", "rfox75@gmail.com", "emiel@vanlankveld.me"]
+  spec.summary       = %q{Access Blizzard's APIs with Ruby.}
+  spec.description   = %q{A Ruby wrapper around Blizzard's Game Data and Profile APIs.}
+  spec.homepage      = "https://github.com/wingyu/rbattlenet"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -26,5 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock"
 
   spec.add_runtime_dependency "typhoeus", "~> 1.1"
-  spec.add_runtime_dependency 'httparty', '~> 0.16.1'
+  spec.add_runtime_dependency "require_all" # convenience
 end

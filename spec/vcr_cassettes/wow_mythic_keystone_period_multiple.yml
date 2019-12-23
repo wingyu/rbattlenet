@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/mythic-keystone/period/682?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:39 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 07:00:05 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=1800
+      Battlenet-Schema:
+      - mythic-keystone-period
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86553-2469-08e0-f981-fa165bcda32d
+      x-trace-spanid:
+      - 15c86553-2469-0b00-f981-fa165bcda32d
+      x-trace-parentspanid:
+      - 15c86553-2469-0ad0-f981-fa165bcda32d
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/682?namespace=dynamic-eu"}},"id":682,"start_timestamp":1548226800000,"end_timestamp":1548831599000}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/mythic-keystone/period/682?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:40 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/mythic-keystone/period/683?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:39 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 07:00:05 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=1800
+      Battlenet-Schema:
+      - mythic-keystone-period
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '186'
+      x-trace-traceid:
+      - 15c8638b-2ca2-dcf0-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638b-2ca2-e0e0-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638b-2ca2-e0b0-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/683?namespace=dynamic-eu"}},"id":683,"start_timestamp":1548831600000,"end_timestamp":1549436399000}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/mythic-keystone/period/683?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:40 GMT
+recorded_with: VCR 2.9.3

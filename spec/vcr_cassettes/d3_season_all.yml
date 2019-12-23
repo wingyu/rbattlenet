@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/d3/season/?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sat, 21 Dec 2019 15:41:10 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sat, 21 Dec 2019 15:41:00 GMT
+      Battlenet-Namespace:
+      - 2-6-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - season
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c864e8-5105-3e80-c980-fa165ba0f208
+      x-trace-spanid:
+      - 15c864e8-5105-3fa0-c980-fa165ba0f208
+      x-trace-parentspanid:
+      - 15c864e8-5105-3f70-c980-fa165ba0f208
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/d3/season/?namespace=2-6-eu"}},"season":[{"href":"https://eu.api.blizzard.com/data/d3/season/1?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/2?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/3?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/4?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/5?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/6?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/7?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/8?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/9?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/10?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/11?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/12?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/13?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/14?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/15?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/16?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/17?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/18?namespace=2-6-EU"},{"href":"https://eu.api.blizzard.com/data/d3/season/19?namespace=2-6-EU"}],"current_season":19,"service_current_season":19,"service_season_state":"active","last_update_time":"Sat,
+        21 Dec 2019 15:41:00 UTC","generated_by":"AMS1A-D3-PURPLE-JOB001-01 2.6.7
+        branches/2_6_7-branches/2_6_7"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/d3/season/?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:11 GMT
+recorded_with: VCR 2.9.3

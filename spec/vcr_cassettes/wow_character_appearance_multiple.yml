@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/appearance?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '10'
+      Date:
+      - Sun, 22 Dec 2019 22:30:32 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sun, 22 Dec 2019 09:05:19 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - character-appearance
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86604-0500-df70-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86604-0500-e560-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86604-0500-e530-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/appearance?namespace=profile-eu"}},"character":{"key":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday?namespace=profile-eu"},"name":"Sheday","id":142650023,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"}},"playable_race":{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-race/1?namespace=static-8.2.5_31884-eu"},"name":"Human","id":1},"playable_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-class/2?namespace=static-8.2.5_31884-eu"},"name":"Paladin","id":2},"active_spec":{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/70?namespace=static-8.2.5_31884-eu"},"name":"Retribution","id":70},"gender":{"type":"MALE","name":"Male"},"faction":{"type":"ALLIANCE","name":"Alliance"},"guild_crest":{"emblem":{"id":12,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/guild-crest/emblem/12?namespace=static-8.2.5_31884-eu"}},"color":{"id":16,"rgba":{"r":223,"g":165,"b":90,"a":1.0}}},"border":{"id":4,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/guild-crest/border/4?namespace=static-8.2.5_31884-eu"}},"color":{"id":16,"rgba":{"r":249,"g":204,"b":48,"a":1.0}}},"background":{"color":{"id":31,"rgba":{"r":44,"g":106,"b":174,"a":1.0}}}},"appearance":{"face_variation":11,"skin_color":6,"hair_variation":1,"hair_color":2,"feature_variation":8,"custom_display_options":[0,0,0]},"items":[{"id":161600,"slot":{"type":"HEAD","name":"Head"},"enchant":0,"item_appearance_modifier_id":3,"internal_slot_id":0,"subclass":4},{"id":161621,"slot":{"type":"SHOULDER","name":"Shoulders"},"enchant":0,"item_appearance_modifier_id":3,"internal_slot_id":2,"subclass":4},{"id":4335,"slot":{"type":"SHIRT","name":"Shirt"},"enchant":0,"item_appearance_modifier_id":0,"internal_slot_id":3,"subclass":0},{"id":161602,"slot":{"type":"CHEST","name":"Chest"},"enchant":0,"item_appearance_modifier_id":3,"internal_slot_id":4,"subclass":4},{"id":161624,"slot":{"type":"WAIST","name":"Waist"},"enchant":0,"item_appearance_modifier_id":3,"internal_slot_id":5,"subclass":4},{"id":161616,"slot":{"type":"LEGS","name":"Legs"},"enchant":0,"item_appearance_modifier_id":3,"internal_slot_id":6,"subclass":4},{"id":161605,"slot":{"type":"FEET","name":"Feet"},"enchant":0,"item_appearance_modifier_id":3,"internal_slot_id":7,"subclass":4},{"id":168387,"slot":{"type":"WRIST","name":"Wrist"},"enchant":0,"item_appearance_modifier_id":3,"internal_slot_id":8,"subclass":4},{"id":161610,"slot":{"type":"HANDS","name":"Hands"},"enchant":0,"item_appearance_modifier_id":3,"internal_slot_id":9,"subclass":4},{"id":134111,"slot":{"type":"BACK","name":"Back"},"enchant":0,"item_appearance_modifier_id":0,"internal_slot_id":14,"subclass":5},{"id":161703,"slot":{"type":"MAIN_HAND","name":"Main
+        Hand"},"enchant":0,"item_appearance_modifier_id":0,"internal_slot_id":15,"subclass":5},{"id":142504,"slot":{"type":"TABARD","name":"Tabard"},"enchant":0,"item_appearance_modifier_id":0,"internal_slot_id":18,"subclass":5}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/appearance?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 22:30:32 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/howling-fjord/%D0%B0%D0%BB%D1%8C%D0%B2%D0%B5%D0%BE%D0%BD%D1%8F%D1%88%D0%B0/appearance?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '10'
+      Date:
+      - Sun, 22 Dec 2019 22:30:32 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sun, 22 Dec 2019 16:36:29 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - character-appearance
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c864f9-faf5-5070-fdd2-fa165ba06406
+      x-trace-spanid:
+      - 15c864f9-faf5-5b60-fdd2-fa165ba06406
+      x-trace-parentspanid:
+      - 15c864f9-faf5-5b30-fdd2-fa165ba06406
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJfbGlua3MiOnsic2VsZiI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL3Byb2ZpbGUvd293L2NoYXJhY3Rlci9ob3dsaW5nLWZqb3JkLyVEMCVCMCVEMCVCQiVEMSU4QyVEMCVCMiVEMCVCNSVEMCVCRSVEMCVCRCVEMSU4RiVEMSU4OCVEMCVCMC9hcHBlYXJhbmNlP25hbWVzcGFjZT1wcm9maWxlLWV1In19LCJjaGFyYWN0ZXIiOnsia2V5Ijp7ImhyZWYiOiJodHRwczovL2V1LmFwaS5ibGl6emFyZC5jb20vcHJvZmlsZS93b3cvY2hhcmFjdGVyL2hvd2xpbmctZmpvcmQvJUQwJUIwJUQwJUJCJUQxJThDJUQwJUIyJUQwJUI1JUQwJUJFJUQwJUJEJUQxJThGJUQxJTg4JUQwJUIwP25hbWVzcGFjZT1wcm9maWxlLWV1In0sIm5hbWUiOiLQkNC70YzQstC10L7QvdGP0YjQsCIsImlkIjoxMDQ2MTIwMjQsInJlYWxtIjp7ImtleSI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL2RhdGEvd293L3JlYWxtLzE2MTU/bmFtZXNwYWNlPWR5bmFtaWMtZXUifSwibmFtZSI6Ikhvd2xpbmcgRmpvcmQiLCJpZCI6MTYxNSwic2x1ZyI6Imhvd2xpbmctZmpvcmQifX0sInBsYXlhYmxlX3JhY2UiOnsia2V5Ijp7ImhyZWYiOiJodHRwczovL2V1LmFwaS5ibGl6emFyZC5jb20vZGF0YS93b3cvcGxheWFibGUtcmFjZS8xMD9uYW1lc3BhY2U9c3RhdGljLTguMi41XzMxODg0LWV1In0sIm5hbWUiOiJCbG9vZCBFbGYiLCJpZCI6MTB9LCJwbGF5YWJsZV9jbGFzcyI6eyJrZXkiOnsiaHJlZiI6Imh0dHBzOi8vZXUuYXBpLmJsaXp6YXJkLmNvbS9kYXRhL3dvdy9wbGF5YWJsZS1jbGFzcy8xMD9uYW1lc3BhY2U9c3RhdGljLTguMi41XzMxODg0LWV1In0sIm5hbWUiOiJNb25rIiwiaWQiOjEwfSwiYWN0aXZlX3NwZWMiOnsia2V5Ijp7ImhyZWYiOiJodHRwczovL2V1LmFwaS5ibGl6emFyZC5jb20vZGF0YS93b3cvcGxheWFibGUtc3BlY2lhbGl6YXRpb24vMjY4P25hbWVzcGFjZT1zdGF0aWMtOC4yLjVfMzE4ODQtZXUifSwibmFtZSI6IkJyZXdtYXN0ZXIiLCJpZCI6MjY4fSwiZ2VuZGVyIjp7InR5cGUiOiJGRU1BTEUiLCJuYW1lIjoiRmVtYWxlIn0sImZhY3Rpb24iOnsidHlwZSI6IkhPUkRFIiwibmFtZSI6IkhvcmRlIn0sImd1aWxkX2NyZXN0Ijp7ImVtYmxlbSI6eyJpZCI6NjksIm1lZGlhIjp7ImtleSI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL2RhdGEvd293L21lZGlhL2d1aWxkLWNyZXN0L2VtYmxlbS82OT9uYW1lc3BhY2U9c3RhdGljLTguMi41XzMxODg0LWV1In19LCJjb2xvciI6eyJpZCI6MTQsInJnYmEiOnsiciI6MTc3LCJnIjoxODQsImIiOjE3NywiYSI6MS4wfX19LCJib3JkZXIiOnsiaWQiOjMsIm1lZGlhIjp7ImtleSI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL2RhdGEvd293L21lZGlhL2d1aWxkLWNyZXN0L2JvcmRlci8zP25hbWVzcGFjZT1zdGF0aWMtOC4yLjVfMzE4ODQtZXUifX0sImNvbG9yIjp7ImlkIjoxNCwicmdiYSI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhIjoxLjB9fX0sImJhY2tncm91bmQiOnsiY29sb3IiOnsiaWQiOjMzLCJyZ2JhIjp7InIiOjIxMSwiZyI6NzQsImIiOjIwMCwiYSI6MS4wfX19fSwiYXBwZWFyYW5jZSI6eyJmYWNlX3ZhcmlhdGlvbiI6Miwic2tpbl9jb2xvciI6OSwiaGFpcl92YXJpYXRpb24iOjAsImhhaXJfY29sb3IiOjIsImZlYXR1cmVfdmFyaWF0aW9uIjo5LCJjdXN0b21fZGlzcGxheV9vcHRpb25zIjpbMCwwLDBdfSwiaXRlbXMiOlt7ImlkIjoxMDE4Nywic2xvdCI6eyJ0eXBlIjoiSEVBRCIsIm5hbWUiOiJIZWFkIn0sImVuY2hhbnQiOjAsIml0ZW1fYXBwZWFyYW5jZV9tb2RpZmllcl9pZCI6MCwiaW50ZXJuYWxfc2xvdF9pZCI6MCwic3ViY2xhc3MiOjJ9LHsiaWQiOjE0MTAwNiwic2xvdCI6eyJ0eXBlIjoiU0hPVUxERVIiLCJuYW1lIjoiU2hvdWxkZXJzIn0sImVuY2hhbnQiOjAsIml0ZW1fYXBwZWFyYW5jZV9tb2RpZmllcl9pZCI6MSwiaW50ZXJuYWxfc2xvdF9pZCI6Miwic3ViY2xhc3MiOjJ9LHsiaWQiOjE0MjkzNiwic2xvdCI6eyJ0eXBlIjoiQ0hFU1QiLCJuYW1lIjoiQ2hlc3QifSwiZW5jaGFudCI6MCwiaXRlbV9hcHBlYXJhbmNlX21vZGlmaWVyX2lkIjowLCJpbnRlcm5hbF9zbG90X2lkIjo0LCJzdWJjbGFzcyI6Mn0seyJpZCI6MTYxNjU5LCJzbG90Ijp7InR5cGUiOiJXQUlTVCIsIm5hbWUiOiJXYWlzdCJ9LCJlbmNoYW50IjowLCJpdGVtX2FwcGVhcmFuY2VfbW9kaWZpZXJfaWQiOjMsImludGVybmFsX3Nsb3RfaWQiOjUsInN1YmNsYXNzIjoyfSx7ImlkIjoxNjE2NTEsInNsb3QiOnsidHlwZSI6IkxFR1MiLCJuYW1lIjoiTGVncyJ9LCJlbmNoYW50IjowLCJpdGVtX2FwcGVhcmFuY2VfbW9kaWZpZXJfaWQiOjMsImludGVybmFsX3Nsb3RfaWQiOjYsInN1YmNsYXNzIjoyfSx7ImlkIjoxNjE2NDAsInNsb3QiOnsidHlwZSI6IkZFRVQiLCJuYW1lIjoiRmVldCJ9LCJlbmNoYW50IjowLCJpdGVtX2FwcGVhcmFuY2VfbW9kaWZpZXJfaWQiOjMsImludGVybmFsX3Nsb3RfaWQiOjcsInN1YmNsYXNzIjoyfSx7ImlkIjoxMzkyMDksInNsb3QiOnsidHlwZSI6IldSSVNUIiwibmFtZSI6IldyaXN0In0sImVuY2hhbnQiOjAsIml0ZW1fYXBwZWFyYW5jZV9tb2RpZmllcl9pZCI6MSwiaW50ZXJuYWxfc2xvdF9pZCI6OCwic3ViY2xhc3MiOjJ9LHsiaWQiOjE2MTY0MSwic2xvdCI6eyJ0eXBlIjoiSEFORFMiLCJuYW1lIjoiSGFuZHMifSwiZW5jaGFudCI6MCwiaXRlbV9hcHBlYXJhbmNlX21vZGlmaWVyX2lkIjozLCJpbnRlcm5hbF9zbG90X2lkIjo5LCJzdWJjbGFzcyI6Mn0seyJpZCI6MTM0MTExLCJzbG90Ijp7InR5cGUiOiJCQUNLIiwibmFtZSI6IkJhY2sifSwiZW5jaGFudCI6MCwiaXRlbV9hcHBlYXJhbmNlX21vZGlmaWVyX2lkIjowLCJpbnRlcm5hbF9zbG90X2lkIjoxNCwic3ViY2xhc3MiOjV9LHsiaWQiOjE1NTg4MCwic2xvdCI6eyJ0eXBlIjoiTUFJTl9IQU5EIiwibmFtZSI6Ik1haW4gSGFuZCJ9LCJlbmNoYW50IjoyODYsIml0ZW1fYXBwZWFyYW5jZV9tb2RpZmllcl9pZCI6MCwiaW50ZXJuYWxfc2xvdF9pZCI6MTUsInN1YmNsYXNzIjo2fV19
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/howling-fjord/%D0%B0%D0%BB%D1%8C%D0%B2%D0%B5%D0%BE%D0%BD%D1%8F%D1%88%D0%B0/appearance?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 22:30:32 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,118 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/connected-realm/509?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '5'
+      Date:
+      - Sun, 22 Dec 2019 15:54:33 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sun, 22 Dec 2019 15:54:26 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=30
+      Battlenet-Schema:
+      - connected-realm
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86553-2465-1ac0-f981-fa165bcda32d
+      x-trace-spanid:
+      - 15c86553-2465-1c50-f981-fa165bcda32d
+      x-trace-parentspanid:
+      - 15c86553-2465-1c20-f981-fa165bcda32d
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/connected-realm/509?namespace=dynamic-eu"}},"id":509,"has_queue":false,"status":{"type":"UP","name":"Up"},"population":{"type":"MEDIUM","name":"Medium"},"realms":[{"id":509,"region":{"key":{"href":"https://eu.api.blizzard.com/data/wow/region/3?namespace=dynamic-eu"},"name":"Europe","id":3},"connected_realm":{"href":"https://eu.api.blizzard.com/data/wow/connected-realm/509?namespace=dynamic-eu"},"name":"Garona","category":"French","locale":"frFR","timezone":"Europe/Paris","type":{"type":"NORMAL","name":"Normal"},"is_tournament":false,"slug":"garona"},{"id":544,"region":{"key":{"href":"https://eu.api.blizzard.com/data/wow/region/3?namespace=dynamic-eu"},"name":"Europe","id":3},"connected_realm":{"href":"https://eu.api.blizzard.com/data/wow/connected-realm/509?namespace=dynamic-eu"},"name":"Ner''zhul","category":"French","locale":"frFR","timezone":"Europe/Paris","type":{"type":"NORMAL","name":"Normal"},"is_tournament":false,"slug":"nerzhul"},{"id":546,"region":{"key":{"href":"https://eu.api.blizzard.com/data/wow/region/3?namespace=dynamic-eu"},"name":"Europe","id":3},"connected_realm":{"href":"https://eu.api.blizzard.com/data/wow/connected-realm/509?namespace=dynamic-eu"},"name":"Sargeras","category":"French","locale":"frFR","timezone":"Europe/Paris","type":{"type":"NORMAL","name":"Normal"},"is_tournament":false,"slug":"sargeras"}],"mythic_leaderboards":{"href":"https://eu.api.blizzard.com/data/wow/connected-realm/509/mythic-leaderboard/?namespace=dynamic-eu"}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/connected-realm/509?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:33 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/connected-realm/510?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '5'
+      Date:
+      - Sun, 22 Dec 2019 15:54:33 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sun, 22 Dec 2019 15:54:18 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=30
+      Battlenet-Schema:
+      - connected-realm
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c865c2-004c-5f70-85af-fa165b14433f
+      x-trace-spanid:
+      - 15c865c2-004c-6170-85af-fa165b14433f
+      x-trace-parentspanid:
+      - 15c865c2-004c-6140-85af-fa165b14433f
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJfbGlua3MiOnsic2VsZiI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL2RhdGEvd293L2Nvbm5lY3RlZC1yZWFsbS81MTA/bmFtZXNwYWNlPWR5bmFtaWMtZXUifX0sImlkIjo1MTAsImhhc19xdWV1ZSI6ZmFsc2UsInN0YXR1cyI6eyJ0eXBlIjoiVVAiLCJuYW1lIjoiVXAifSwicG9wdWxhdGlvbiI6eyJ0eXBlIjoiTUVESVVNIiwibmFtZSI6Ik1lZGl1bSJ9LCJyZWFsbXMiOlt7ImlkIjo1MTAsInJlZ2lvbiI6eyJrZXkiOnsiaHJlZiI6Imh0dHBzOi8vZXUuYXBpLmJsaXp6YXJkLmNvbS9kYXRhL3dvdy9yZWdpb24vMz9uYW1lc3BhY2U9ZHluYW1pYy1ldSJ9LCJuYW1lIjoiRXVyb3BlIiwiaWQiOjN9LCJjb25uZWN0ZWRfcmVhbG0iOnsiaHJlZiI6Imh0dHBzOi8vZXUuYXBpLmJsaXp6YXJkLmNvbS9kYXRhL3dvdy9jb25uZWN0ZWQtcmVhbG0vNTEwP25hbWVzcGFjZT1keW5hbWljLWV1In0sIm5hbWUiOiJWb2wnamluIiwiY2F0ZWdvcnkiOiJGcmVuY2giLCJsb2NhbGUiOiJmckZSIiwidGltZXpvbmUiOiJFdXJvcGUvUGFyaXMiLCJ0eXBlIjp7InR5cGUiOiJOT1JNQUwiLCJuYW1lIjoiTm9ybWFsIn0sImlzX3RvdXJuYW1lbnQiOmZhbHNlLCJzbHVnIjoidm9samluIn0seyJpZCI6MTYyMCwicmVnaW9uIjp7ImtleSI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL2RhdGEvd293L3JlZ2lvbi8zP25hbWVzcGFjZT1keW5hbWljLWV1In0sIm5hbWUiOiJFdXJvcGUiLCJpZCI6M30sImNvbm5lY3RlZF9yZWFsbSI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL2RhdGEvd293L2Nvbm5lY3RlZC1yZWFsbS81MTA/bmFtZXNwYWNlPWR5bmFtaWMtZXUifSwibmFtZSI6IkNoYW50cyDDqXRlcm5lbHMiLCJjYXRlZ29yeSI6IkZyZW5jaCIsImxvY2FsZSI6ImZyRlIiLCJ0aW1lem9uZSI6IkV1cm9wZS9QYXJpcyIsInR5cGUiOnsidHlwZSI6Ik5PUk1BTCIsIm5hbWUiOiJOb3JtYWwifSwiaXNfdG91cm5hbWVudCI6ZmFsc2UsInNsdWciOiJjaGFudHMtw6l0ZXJuZWxzIn1dLCJteXRoaWNfbGVhZGVyYm9hcmRzIjp7ImhyZWYiOiJodHRwczovL2V1LmFwaS5ibGl6emFyZC5jb20vZGF0YS93b3cvY29ubmVjdGVkLXJlYWxtLzUxMC9teXRoaWMtbGVhZGVyYm9hcmQvP25hbWVzcGFjZT1keW5hbWljLWV1In19
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/connected-realm/510?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:33 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,315 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/title/index?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:51 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:19:56 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - title
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c8638b-2cad-6e70-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638b-2cad-7070-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638b-2cad-7040-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/title/?namespace=static-8.2.5_31884-eu"}},"titles":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/1?namespace=static-8.2.5_31884-eu"},"name":"Private","id":1},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/2?namespace=static-8.2.5_31884-eu"},"name":"Corporal","id":2},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/3?namespace=static-8.2.5_31884-eu"},"name":"Sergeant","id":3},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/4?namespace=static-8.2.5_31884-eu"},"name":"Master
+        Sergeant","id":4},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/5?namespace=static-8.2.5_31884-eu"},"name":"Sergeant
+        Major","id":5},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/6?namespace=static-8.2.5_31884-eu"},"name":"Knight","id":6},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/7?namespace=static-8.2.5_31884-eu"},"name":"Knight-Lieutenant","id":7},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/8?namespace=static-8.2.5_31884-eu"},"name":"Knight-Captain","id":8},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/9?namespace=static-8.2.5_31884-eu"},"name":"Knight-Champion","id":9},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/10?namespace=static-8.2.5_31884-eu"},"name":"Lieutenant
+        Commander","id":10},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/11?namespace=static-8.2.5_31884-eu"},"name":"Commander","id":11},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/12?namespace=static-8.2.5_31884-eu"},"name":"Marshal","id":12},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/13?namespace=static-8.2.5_31884-eu"},"name":"Field
+        Marshal","id":13},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/14?namespace=static-8.2.5_31884-eu"},"name":"Grand
+        Marshal","id":14},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/15?namespace=static-8.2.5_31884-eu"},"name":"Scout","id":15},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/16?namespace=static-8.2.5_31884-eu"},"name":"Grunt","id":16},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/17?namespace=static-8.2.5_31884-eu"},"name":"Sergeant","id":17},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/18?namespace=static-8.2.5_31884-eu"},"name":"Senior
+        Sergeant","id":18},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/19?namespace=static-8.2.5_31884-eu"},"name":"First
+        Sergeant","id":19},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/20?namespace=static-8.2.5_31884-eu"},"name":"Stone
+        Guard","id":20},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/21?namespace=static-8.2.5_31884-eu"},"name":"Blood
+        Guard","id":21},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/22?namespace=static-8.2.5_31884-eu"},"name":"Legionnaire","id":22},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/23?namespace=static-8.2.5_31884-eu"},"name":"Centurion","id":23},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/24?namespace=static-8.2.5_31884-eu"},"name":"Champion","id":24},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/25?namespace=static-8.2.5_31884-eu"},"name":"Lieutenant
+        General","id":25},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/26?namespace=static-8.2.5_31884-eu"},"name":"General","id":26},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/27?namespace=static-8.2.5_31884-eu"},"name":"Warlord","id":27},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/28?namespace=static-8.2.5_31884-eu"},"name":"High
+        Warlord","id":28},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/29?namespace=static-8.2.5_31884-eu"},"name":"Gladiator","id":29},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/30?namespace=static-8.2.5_31884-eu"},"name":"Duelist","id":30},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/31?namespace=static-8.2.5_31884-eu"},"name":"Rival","id":31},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/32?namespace=static-8.2.5_31884-eu"},"name":"Challenger","id":32},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/33?namespace=static-8.2.5_31884-eu"},"name":"Scarab
+        Lord","id":33},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/34?namespace=static-8.2.5_31884-eu"},"name":"Conqueror","id":34},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/35?namespace=static-8.2.5_31884-eu"},"name":"Justicar","id":35},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/36?namespace=static-8.2.5_31884-eu"},"name":"Champion
+        of the Naaru","id":36},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/37?namespace=static-8.2.5_31884-eu"},"name":"Merciless
+        Gladiator","id":37},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/38?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Shattered Sun","id":38},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/39?namespace=static-8.2.5_31884-eu"},"name":"Hand
+        of A''dal","id":39},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/40?namespace=static-8.2.5_31884-eu"},"name":"Vengeful
+        Gladiator","id":40},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/41?namespace=static-8.2.5_31884-eu"},"name":"Battlemaster","id":41},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/43?namespace=static-8.2.5_31884-eu"},"name":"Elder","id":43},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/44?namespace=static-8.2.5_31884-eu"},"name":"Flame
+        Warden","id":44},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/45?namespace=static-8.2.5_31884-eu"},"name":"Flame
+        Keeper","id":45},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/46?namespace=static-8.2.5_31884-eu"},"name":"the
+        Exalted","id":46},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/47?namespace=static-8.2.5_31884-eu"},"name":"the
+        Explorer","id":47},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/48?namespace=static-8.2.5_31884-eu"},"name":"the
+        Diplomat","id":48},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/49?namespace=static-8.2.5_31884-eu"},"name":"Brutal
+        Gladiator","id":49},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/42?namespace=static-8.2.5_31884-eu"},"name":"the
+        Seeker","id":42},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/50?namespace=static-8.2.5_31884-eu"},"name":"Arena
+        Master","id":50},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/51?namespace=static-8.2.5_31884-eu"},"name":"Salty","id":51},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/52?namespace=static-8.2.5_31884-eu"},"name":"Chef","id":52},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/53?namespace=static-8.2.5_31884-eu"},"name":"Crashin''
+        Thrashin''","id":53},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/59?namespace=static-8.2.5_31884-eu"},"name":"Predator","id":59},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/61?namespace=static-8.2.5_31884-eu"},"name":"Archmage","id":61},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/62?namespace=static-8.2.5_31884-eu"},"name":"Battlelord","id":62},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/78?namespace=static-8.2.5_31884-eu"},"name":"Combatant","id":78},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/79?namespace=static-8.2.5_31884-eu"},"name":"Dread
+        Gladiator","id":79},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/80?namespace=static-8.2.5_31884-eu"},"name":"Sinister
+        Gladiator","id":80},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/81?namespace=static-8.2.5_31884-eu"},"name":"of
+        Gnomeregan","id":81},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/88?namespace=static-8.2.5_31884-eu"},"name":"the
+        Magic Seeker","id":88},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/89?namespace=static-8.2.5_31884-eu"},"name":"Twilight
+        Vanquisher","id":89},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/90?namespace=static-8.2.5_31884-eu"},"name":"Conqueror
+        of Naxxramas","id":90},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/91?namespace=static-8.2.5_31884-eu"},"name":"Hero
+        of Northrend","id":91},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/92?namespace=static-8.2.5_31884-eu"},"name":"the
+        Hallowed","id":92},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/93?namespace=static-8.2.5_31884-eu"},"name":"Loremaster","id":93},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/94?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Alliance","id":94},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/95?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Horde","id":95},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/97?namespace=static-8.2.5_31884-eu"},"name":"Champion
+        of the Frozen Wastes","id":97},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/98?namespace=static-8.2.5_31884-eu"},"name":"Ambassador","id":98},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/99?namespace=static-8.2.5_31884-eu"},"name":"the
+        Argent Champion","id":99},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/100?namespace=static-8.2.5_31884-eu"},"name":"Guardian
+        of Cenarius","id":100},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/101?namespace=static-8.2.5_31884-eu"},"name":"Brewmaster","id":101},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/102?namespace=static-8.2.5_31884-eu"},"name":"Merrymaker","id":102},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/103?namespace=static-8.2.5_31884-eu"},"name":"the
+        Love Fool","id":103},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/104?namespace=static-8.2.5_31884-eu"},"name":"Matron","id":104},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/105?namespace=static-8.2.5_31884-eu"},"name":"Patron","id":105},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/106?namespace=static-8.2.5_31884-eu"},"name":"Obsidian
+        Slayer","id":106},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/107?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Nightfall","id":107},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/108?namespace=static-8.2.5_31884-eu"},"name":"the
+        Immortal","id":108},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/109?namespace=static-8.2.5_31884-eu"},"name":"the
+        Undying","id":109},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/110?namespace=static-8.2.5_31884-eu"},"name":"Jenkins","id":110},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/111?namespace=static-8.2.5_31884-eu"},"name":"Bloodsail
+        Admiral","id":111},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/112?namespace=static-8.2.5_31884-eu"},"name":"the
+        Insane","id":112},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/113?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Exodar","id":113},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/114?namespace=static-8.2.5_31884-eu"},"name":"of
+        Darnassus","id":114},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/115?namespace=static-8.2.5_31884-eu"},"name":"of
+        Ironforge","id":115},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/116?namespace=static-8.2.5_31884-eu"},"name":"of
+        Stormwind","id":116},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/117?namespace=static-8.2.5_31884-eu"},"name":"of
+        Orgrimmar","id":117},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/118?namespace=static-8.2.5_31884-eu"},"name":"of
+        Sen''jin","id":118},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/119?namespace=static-8.2.5_31884-eu"},"name":"of
+        Silvermoon","id":119},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/120?namespace=static-8.2.5_31884-eu"},"name":"of
+        Thunder Bluff","id":120},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/121?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Undercity","id":121},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/122?namespace=static-8.2.5_31884-eu"},"name":"the
+        Noble","id":122},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/123?namespace=static-8.2.5_31884-eu"},"name":"Crusader","id":123},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/56?namespace=static-8.2.5_31884-eu"},"name":"Deadly
+        Gladiator","id":56},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/124?namespace=static-8.2.5_31884-eu"},"name":"Death''s
+        Demise","id":124},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/125?namespace=static-8.2.5_31884-eu"},"name":"the
+        Celestial Defender","id":125},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/126?namespace=static-8.2.5_31884-eu"},"name":"Conqueror
+        of Ulduar","id":126},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/127?namespace=static-8.2.5_31884-eu"},"name":"Champion
+        of Ulduar","id":127},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/128?namespace=static-8.2.5_31884-eu"},"name":"Vanquisher","id":128},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/129?namespace=static-8.2.5_31884-eu"},"name":"Starcaller","id":129},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/130?namespace=static-8.2.5_31884-eu"},"name":"the
+        Astral Walker","id":130},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/131?namespace=static-8.2.5_31884-eu"},"name":"Herald
+        of the Titans","id":131},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/132?namespace=static-8.2.5_31884-eu"},"name":"Furious
+        Gladiator","id":132},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/133?namespace=static-8.2.5_31884-eu"},"name":"the
+        Pilgrim","id":133},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/134?namespace=static-8.2.5_31884-eu"},"name":"Relentless
+        Gladiator","id":134},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/135?namespace=static-8.2.5_31884-eu"},"name":"Grand
+        Crusader","id":135},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/136?namespace=static-8.2.5_31884-eu"},"name":"the
+        Argent Defender","id":136},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/137?namespace=static-8.2.5_31884-eu"},"name":"the
+        Patient","id":137},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/138?namespace=static-8.2.5_31884-eu"},"name":"the
+        Light of Dawn","id":138},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/139?namespace=static-8.2.5_31884-eu"},"name":"Bane
+        of the Fallen King","id":139},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/140?namespace=static-8.2.5_31884-eu"},"name":"the
+        Kingslayer","id":140},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/141?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Ashen Verdict","id":141},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/142?namespace=static-8.2.5_31884-eu"},"name":"Wrathful
+        Gladiator","id":142},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/147?namespace=static-8.2.5_31884-eu"},"name":"Slayer
+        of Stupid, Incompetent and Disappointing Minions","id":147},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/148?namespace=static-8.2.5_31884-eu"},"name":"Assistant
+        Professor","id":148},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/149?namespace=static-8.2.5_31884-eu"},"name":"Associate
+        Professor","id":149},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/150?namespace=static-8.2.5_31884-eu"},"name":"Professor","id":150},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/152?namespace=static-8.2.5_31884-eu"},"name":"Veteran
+        of the Alliance","id":152},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/153?namespace=static-8.2.5_31884-eu"},"name":"Veteran
+        of the Horde","id":153},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/154?namespace=static-8.2.5_31884-eu"},"name":"Private","id":154},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/155?namespace=static-8.2.5_31884-eu"},"name":"Corporal","id":155},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/156?namespace=static-8.2.5_31884-eu"},"name":"Sergeant","id":156},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/157?namespace=static-8.2.5_31884-eu"},"name":"Master
+        Sergeant","id":157},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/158?namespace=static-8.2.5_31884-eu"},"name":"Sergeant
+        Major","id":158},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/159?namespace=static-8.2.5_31884-eu"},"name":"Knight","id":159},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/160?namespace=static-8.2.5_31884-eu"},"name":"Knight-Lieutenant","id":160},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/161?namespace=static-8.2.5_31884-eu"},"name":"Knight-Captain","id":161},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/162?namespace=static-8.2.5_31884-eu"},"name":"Knight-Champion","id":162},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/163?namespace=static-8.2.5_31884-eu"},"name":"Lieutenant
+        Commander","id":163},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/164?namespace=static-8.2.5_31884-eu"},"name":"Commander","id":164},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/165?namespace=static-8.2.5_31884-eu"},"name":"Marshal","id":165},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/166?namespace=static-8.2.5_31884-eu"},"name":"Field
+        Marshal","id":166},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/167?namespace=static-8.2.5_31884-eu"},"name":"Grand
+        Marshal","id":167},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/168?namespace=static-8.2.5_31884-eu"},"name":"Scout","id":168},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/169?namespace=static-8.2.5_31884-eu"},"name":"Grunt","id":169},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/170?namespace=static-8.2.5_31884-eu"},"name":"Sergeant","id":170},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/171?namespace=static-8.2.5_31884-eu"},"name":"Senior
+        Sergeant","id":171},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/172?namespace=static-8.2.5_31884-eu"},"name":"First
+        Sergeant","id":172},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/173?namespace=static-8.2.5_31884-eu"},"name":"Stone
+        Guard","id":173},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/174?namespace=static-8.2.5_31884-eu"},"name":"Blood
+        Guard","id":174},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/175?namespace=static-8.2.5_31884-eu"},"name":"Legionnaire","id":175},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/176?namespace=static-8.2.5_31884-eu"},"name":"Centurion","id":176},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/177?namespace=static-8.2.5_31884-eu"},"name":"Champion","id":177},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/178?namespace=static-8.2.5_31884-eu"},"name":"Lieutenant
+        General","id":178},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/179?namespace=static-8.2.5_31884-eu"},"name":"General","id":179},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/180?namespace=static-8.2.5_31884-eu"},"name":"Warlord","id":180},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/181?namespace=static-8.2.5_31884-eu"},"name":"High
+        Warlord","id":181},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/182?namespace=static-8.2.5_31884-eu"},"name":"Hero
+        of the Alliance","id":182},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/183?namespace=static-8.2.5_31884-eu"},"name":"Hero
+        of the Horde","id":183},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/184?namespace=static-8.2.5_31884-eu"},"name":"the
+        Bloodthirsty","id":184},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/151?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Four Winds","id":151},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/185?namespace=static-8.2.5_31884-eu"},"name":"Defender
+        of a Shattered World","id":185},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/186?namespace=static-8.2.5_31884-eu"},"name":"Dragonslayer","id":186},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/187?namespace=static-8.2.5_31884-eu"},"name":"Blackwing''s
+        Bane","id":187},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/143?namespace=static-8.2.5_31884-eu"},"name":"the
+        Camel-Hoarder","id":143},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/144?namespace=static-8.2.5_31884-eu"},"name":"Warbringer","id":144},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/145?namespace=static-8.2.5_31884-eu"},"name":"Warbound","id":145},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/146?namespace=static-8.2.5_31884-eu"},"name":"Blessed
+        Defender of Nordrassil","id":146},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/188?namespace=static-8.2.5_31884-eu"},"name":"Avenger
+        of Hyjal","id":188},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/189?namespace=static-8.2.5_31884-eu"},"name":"the
+        Flamebreaker","id":189},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/190?namespace=static-8.2.5_31884-eu"},"name":"Firelord","id":190},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/191?namespace=static-8.2.5_31884-eu"},"name":"Vicious
+        Gladiator","id":191},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/192?namespace=static-8.2.5_31884-eu"},"name":"Ruthless
+        Gladiator","id":192},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/193?namespace=static-8.2.5_31884-eu"},"name":"Cataclysmic
+        Gladiator","id":193},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/194?namespace=static-8.2.5_31884-eu"},"name":"Savior
+        of Azeroth","id":194},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/196?namespace=static-8.2.5_31884-eu"},"name":"Destroyer''s
+        End","id":196},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/195?namespace=static-8.2.5_31884-eu"},"name":"Farmer","id":195},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/197?namespace=static-8.2.5_31884-eu"},"name":"the
+        Beloved","id":197},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/198?namespace=static-8.2.5_31884-eu"},"name":"the
+        Fearless","id":198},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/199?namespace=static-8.2.5_31884-eu"},"name":"Zookeeper","id":199},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/200?namespace=static-8.2.5_31884-eu"},"name":"the
+        Relic Hunter","id":200},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/201?namespace=static-8.2.5_31884-eu"},"name":"the
+        Undaunted","id":201},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/202?namespace=static-8.2.5_31884-eu"},"name":"Master
+        of the Ways","id":202},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/203?namespace=static-8.2.5_31884-eu"},"name":"the
+        Tranquil Master","id":203},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/204?namespace=static-8.2.5_31884-eu"},"name":"Delver
+        of the Vaults","id":204},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/205?namespace=static-8.2.5_31884-eu"},"name":"Shado-Master","id":205},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/206?namespace=static-8.2.5_31884-eu"},"name":"the
+        Scenaturdist","id":206},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/207?namespace=static-8.2.5_31884-eu"},"name":"Tamer","id":207},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/208?namespace=static-8.2.5_31884-eu"},"name":"Seeker
+        of Knowledge","id":208},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/209?namespace=static-8.2.5_31884-eu"},"name":"Brawler","id":209},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/218?namespace=static-8.2.5_31884-eu"},"name":"the
+        Wakener","id":218},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/220?namespace=static-8.2.5_31884-eu"},"name":"Khan","id":220},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/221?namespace=static-8.2.5_31884-eu"},"name":"the
+        Stormbreaker","id":221},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/222?namespace=static-8.2.5_31884-eu"},"name":"Storm''s
+        End","id":222},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/223?namespace=static-8.2.5_31884-eu"},"name":"Malevolent
+        Gladiator","id":223},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/224?namespace=static-8.2.5_31884-eu"},"name":"Gob
+        Squad Recruit","id":224},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/226?namespace=static-8.2.5_31884-eu"},"name":"Gob
+        Squad Commando","id":226},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/227?namespace=static-8.2.5_31884-eu"},"name":"Trainer","id":227},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/228?namespace=static-8.2.5_31884-eu"},"name":"Darkspear
+        Revolutionary","id":228},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/229?namespace=static-8.2.5_31884-eu"},"name":"Gorgeous","id":229},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/230?namespace=static-8.2.5_31884-eu"},"name":"the
+        Hordebreaker","id":230},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/231?namespace=static-8.2.5_31884-eu"},"name":"the
+        Poisoned Mind","id":231},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/232?namespace=static-8.2.5_31884-eu"},"name":"the
+        Bloodseeker","id":232},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/233?namespace=static-8.2.5_31884-eu"},"name":"the
+        Locust","id":233},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/234?namespace=static-8.2.5_31884-eu"},"name":"the
+        Swarmkeeper","id":234},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/235?namespace=static-8.2.5_31884-eu"},"name":"the
+        Prime","id":235},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/236?namespace=static-8.2.5_31884-eu"},"name":"the
+        Manipulator","id":236},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/237?namespace=static-8.2.5_31884-eu"},"name":"the
+        Dissector","id":237},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/238?namespace=static-8.2.5_31884-eu"},"name":"the
+        Lucid","id":238},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/239?namespace=static-8.2.5_31884-eu"},"name":"the
+        Wind-Reaver","id":239},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/240?namespace=static-8.2.5_31884-eu"},"name":"the
+        Crazy Cat Lady","id":240},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/241?namespace=static-8.2.5_31884-eu"},"name":"Defender
+        of the Wall","id":241},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/242?namespace=static-8.2.5_31884-eu"},"name":"Mogu-Slayer","id":242},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/243?namespace=static-8.2.5_31884-eu"},"name":"Flameweaver","id":243},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/244?namespace=static-8.2.5_31884-eu"},"name":"Scarlet
+        Commander","id":244},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/245?namespace=static-8.2.5_31884-eu"},"name":"Darkmaster","id":245},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/246?namespace=static-8.2.5_31884-eu"},"name":"Purified
+        Defender","id":246},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/247?namespace=static-8.2.5_31884-eu"},"name":"Siegebreaker","id":247},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/248?namespace=static-8.2.5_31884-eu"},"name":"Stormbrewer","id":248},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/249?namespace=static-8.2.5_31884-eu"},"name":"Jade
+        Protector","id":249},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/252?namespace=static-8.2.5_31884-eu"},"name":"the
+        Crazy Cat Man","id":252},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/253?namespace=static-8.2.5_31884-eu"},"name":"Grievous
+        Gladiator","id":253},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/254?namespace=static-8.2.5_31884-eu"},"name":"Prideful
+        Gladiator","id":254},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/211?namespace=static-8.2.5_31884-eu"},"name":"Conqueror
+        of Orgrimmar","id":211},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/212?namespace=static-8.2.5_31884-eu"},"name":"Liberator
+        of Orgrimmar","id":212},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/214?namespace=static-8.2.5_31884-eu"},"name":"Hellscream''s
+        Downfall","id":214},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/215?namespace=static-8.2.5_31884-eu"},"name":"the
+        Proven Assailant","id":215},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/216?namespace=static-8.2.5_31884-eu"},"name":"the
+        Proven Defender","id":216},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/219?namespace=static-8.2.5_31884-eu"},"name":"the
+        Proven Healer","id":219},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/225?namespace=static-8.2.5_31884-eu"},"name":"Tyrannical
+        Gladiator","id":225},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/251?namespace=static-8.2.5_31884-eu"},"name":"Fire-Watcher","id":251},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/255?namespace=static-8.2.5_31884-eu"},"name":"Mistwalker","id":255},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/256?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Black Harvest","id":256},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/257?namespace=static-8.2.5_31884-eu"},"name":"Lumberjack","id":257},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/258?namespace=static-8.2.5_31884-eu"},"name":"Timber
+        Lord","id":258},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/259?namespace=static-8.2.5_31884-eu"},"name":"the
+        Commandojack","id":259},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/260?namespace=static-8.2.5_31884-eu"},"name":"Architect","id":260},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/261?namespace=static-8.2.5_31884-eu"},"name":"Blood
+        Champion","id":261},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/262?namespace=static-8.2.5_31884-eu"},"name":"the
+        Manslayer","id":262},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/263?namespace=static-8.2.5_31884-eu"},"name":"Gnomebane","id":263},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/264?namespace=static-8.2.5_31884-eu"},"name":"the
+        Dwarfstalker","id":264},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/265?namespace=static-8.2.5_31884-eu"},"name":"Worgen
+        Hunter","id":265},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/266?namespace=static-8.2.5_31884-eu"},"name":"Scourge
+        of the Kaldorei","id":266},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/267?namespace=static-8.2.5_31884-eu"},"name":"Draenei
+        Destroyer","id":267},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/268?namespace=static-8.2.5_31884-eu"},"name":"Terror
+        of the Tushui","id":268},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/269?namespace=static-8.2.5_31884-eu"},"name":"Warlord
+        of Draenor","id":269},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/270?namespace=static-8.2.5_31884-eu"},"name":"the
+        Butcher","id":270},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/271?namespace=static-8.2.5_31884-eu"},"name":"Orcslayer","id":271},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/272?namespace=static-8.2.5_31884-eu"},"name":"the
+        Death Stalker","id":272},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/273?namespace=static-8.2.5_31884-eu"},"name":"Killer
+        of Kezan","id":273},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/274?namespace=static-8.2.5_31884-eu"},"name":"Troll
+        Hunter","id":274},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/275?namespace=static-8.2.5_31884-eu"},"name":"Slayer
+        of Sin''dorei","id":275},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/276?namespace=static-8.2.5_31884-eu"},"name":"Huojin''s
+        Fall","id":276},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/277?namespace=static-8.2.5_31884-eu"},"name":"Stable
+        Master","id":277},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/278?namespace=static-8.2.5_31884-eu"},"name":"Talon
+        King","id":278},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/279?namespace=static-8.2.5_31884-eu"},"name":"Talon
+        Queen","id":279},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/280?namespace=static-8.2.5_31884-eu"},"name":"Tarren
+        Mill Terror","id":280},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/281?namespace=static-8.2.5_31884-eu"},"name":"Southshore
+        Slayer","id":281},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/282?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Frostwolves","id":282},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/283?namespace=static-8.2.5_31884-eu"},"name":"Prelate","id":283},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/284?namespace=static-8.2.5_31884-eu"},"name":"\"Conservationist\"","id":284},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/285?namespace=static-8.2.5_31884-eu"},"name":"Spear
+        of Vol''jin","id":285},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/286?namespace=static-8.2.5_31884-eu"},"name":"Sword
+        of Wrynn","id":286},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/287?namespace=static-8.2.5_31884-eu"},"name":"Masked
+        Chuckler","id":287},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/288?namespace=static-8.2.5_31884-eu"},"name":"Peacekeeper","id":288},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/289?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Iron Vanguard","id":289},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/290?namespace=static-8.2.5_31884-eu"},"name":"the
+        Indomitable","id":290},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/291?namespace=static-8.2.5_31884-eu"},"name":"the
+        Mine Master","id":291},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/292?namespace=static-8.2.5_31884-eu"},"name":"Dockmaster","id":292},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/293?namespace=static-8.2.5_31884-eu"},"name":"the
+        Soul Preserver","id":293},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/294?namespace=static-8.2.5_31884-eu"},"name":"Scion
+        of Rukhmar","id":294},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/295?namespace=static-8.2.5_31884-eu"},"name":"Spiritwalker","id":295},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/296?namespace=static-8.2.5_31884-eu"},"name":"Lord
+        of Blackrock","id":296},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/297?namespace=static-8.2.5_31884-eu"},"name":"Lady
+        of Blackrock","id":297},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/298?namespace=static-8.2.5_31884-eu"},"name":"the
+        Violet Guardian","id":298},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/299?namespace=static-8.2.5_31884-eu"},"name":"the
+        Grimrail Suplexer","id":299},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/300?namespace=static-8.2.5_31884-eu"},"name":"the
+        Savage Hero","id":300},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/301?namespace=static-8.2.5_31884-eu"},"name":"Ironbane","id":301},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/302?namespace=static-8.2.5_31884-eu"},"name":"Lord
+        of War","id":302},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/303?namespace=static-8.2.5_31884-eu"},"name":"Lady
+        of War","id":303},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/304?namespace=static-8.2.5_31884-eu"},"name":"Empire''s
+        Twilight","id":304},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/305?namespace=static-8.2.5_31884-eu"},"name":"Artisan","id":305},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/306?namespace=static-8.2.5_31884-eu"},"name":"Legend
+        of Pandaria","id":306},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/307?namespace=static-8.2.5_31884-eu"},"name":"Field
+        Photographer","id":307},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/308?namespace=static-8.2.5_31884-eu"},"name":"Primal
+        Gladiator","id":308},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/315?namespace=static-8.2.5_31884-eu"},"name":"Wild
+        Gladiator","id":315},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/316?namespace=static-8.2.5_31884-eu"},"name":"Warmongering
+        Gladiator","id":316},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/317?namespace=static-8.2.5_31884-eu"},"name":"Captain","id":317},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/318?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Jungle","id":318},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/319?namespace=static-8.2.5_31884-eu"},"name":"Defiler''s
+        End","id":319},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/344?namespace=static-8.2.5_31884-eu"},"name":"Illidari","id":344},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/345?namespace=static-8.2.5_31884-eu"},"name":"Highlord","id":345},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/320?namespace=static-8.2.5_31884-eu"},"name":"Slayer","id":320},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/321?namespace=static-8.2.5_31884-eu"},"name":"The
+        Honorable","id":321},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/322?namespace=static-8.2.5_31884-eu"},"name":"The
+        Prestigious","id":322},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/323?namespace=static-8.2.5_31884-eu"},"name":"The
+        Unrelenting","id":323},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/325?namespace=static-8.2.5_31884-eu"},"name":"Bound
+        by Honor","id":325},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/326?namespace=static-8.2.5_31884-eu"},"name":"Patron
+        of War","id":326},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/327?namespace=static-8.2.5_31884-eu"},"name":"Archdruid","id":327},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/328?namespace=static-8.2.5_31884-eu"},"name":"Deathlord","id":328},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/329?namespace=static-8.2.5_31884-eu"},"name":"Grandmaster","id":329},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/330?namespace=static-8.2.5_31884-eu"},"name":"Master
+        Assassin","id":330},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/331?namespace=static-8.2.5_31884-eu"},"name":"Lord
+        of the Reins","id":331},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/332?namespace=static-8.2.5_31884-eu"},"name":"Guardian
+        of G''Hanir","id":332},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/333?namespace=static-8.2.5_31884-eu"},"name":"the
+        Groundbreaker","id":333},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/334?namespace=static-8.2.5_31884-eu"},"name":"the
+        Fabulous","id":334},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/335?namespace=static-8.2.5_31884-eu"},"name":"Huntmaster","id":335},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/336?namespace=static-8.2.5_31884-eu"},"name":"Farseer","id":336},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/337?namespace=static-8.2.5_31884-eu"},"name":"Netherlord","id":337},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/338?namespace=static-8.2.5_31884-eu"},"name":"Shadowblade","id":338},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/339?namespace=static-8.2.5_31884-eu"},"name":"High
+        Priest","id":339},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/340?namespace=static-8.2.5_31884-eu"},"name":"Field
+        Medic","id":340},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/341?namespace=static-8.2.5_31884-eu"},"name":"the
+        Dreamer","id":341},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/342?namespace=static-8.2.5_31884-eu"},"name":"Vengeance
+        Incarnate","id":342},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/343?namespace=static-8.2.5_31884-eu"},"name":"the
+        Gullible","id":343},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/346?namespace=static-8.2.5_31884-eu"},"name":"Talon''s
+        Vengeance","id":346},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/347?namespace=static-8.2.5_31884-eu"},"name":"the
+        Chosen","id":347},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/348?namespace=static-8.2.5_31884-eu"},"name":"Headmaster","id":348},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/353?namespace=static-8.2.5_31884-eu"},"name":"Vindictive
+        Gladiator","id":353},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/354?namespace=static-8.2.5_31884-eu"},"name":"the
+        Unstoppable Force","id":354},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/355?namespace=static-8.2.5_31884-eu"},"name":"Fearless
+        Gladiator","id":355},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/356?namespace=static-8.2.5_31884-eu"},"name":"Stylist","id":356},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/357?namespace=static-8.2.5_31884-eu"},"name":"the
+        Darkener","id":357},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/358?namespace=static-8.2.5_31884-eu"},"name":"Adventuring
+        Instructor","id":358},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/359?namespace=static-8.2.5_31884-eu"},"name":"Cruel
+        Gladiator","id":359},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/360?namespace=static-8.2.5_31884-eu"},"name":"Ferocious
+        Gladiator","id":360},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/361?namespace=static-8.2.5_31884-eu"},"name":"Timelord","id":361},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/362?namespace=static-8.2.5_31884-eu"},"name":"the
+        Tomb Raider","id":362},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/363?namespace=static-8.2.5_31884-eu"},"name":"Fierce
+        Gladiator","id":363},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/364?namespace=static-8.2.5_31884-eu"},"name":"Titanslayer","id":364},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/365?namespace=static-8.2.5_31884-eu"},"name":"the
+        Collector","id":365},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/366?namespace=static-8.2.5_31884-eu"},"name":"the
+        Lightbringer","id":366},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/367?namespace=static-8.2.5_31884-eu"},"name":"Demonslayer","id":367},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/368?namespace=static-8.2.5_31884-eu"},"name":"Dominant
+        Gladiator","id":368},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/369?namespace=static-8.2.5_31884-eu"},"name":"the
+        Tactician","id":369},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/370?namespace=static-8.2.5_31884-eu"},"name":"Demonic
+        Gladiator","id":370},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/371?namespace=static-8.2.5_31884-eu"},"name":"No
+        Good, Dirty, Rotten, Candy Stealer!","id":371},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/372?namespace=static-8.2.5_31884-eu"},"name":"Postmaster","id":372},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/373?namespace=static-8.2.5_31884-eu"},"name":"Prospector","id":373},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/374?namespace=static-8.2.5_31884-eu"},"name":"Famed
+        Slayer of G''huun","id":374},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/375?namespace=static-8.2.5_31884-eu"},"name":"the
+        Horde Slayer","id":375},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/376?namespace=static-8.2.5_31884-eu"},"name":"the
+        Alliance Slayer","id":376},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/377?namespace=static-8.2.5_31884-eu"},"name":"Conqueror
+        of Azeroth","id":377},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/378?namespace=static-8.2.5_31884-eu"},"name":"Inquisitor","id":378},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/379?namespace=static-8.2.5_31884-eu"},"name":"Esteemed","id":379},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/380?namespace=static-8.2.5_31884-eu"},"name":"the
+        Admired","id":380},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/381?namespace=static-8.2.5_31884-eu"},"name":"the
+        Purifier","id":381},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/382?namespace=static-8.2.5_31884-eu"},"name":"Expedition
+        Leader","id":382},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/383?namespace=static-8.2.5_31884-eu"},"name":"Contender","id":383},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/384?namespace=static-8.2.5_31884-eu"},"name":"Famed
+        Conqueror of Dazar''alor","id":384},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/385?namespace=static-8.2.5_31884-eu"},"name":"Famed
+        Defender of Dazar''alor","id":385},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/386?namespace=static-8.2.5_31884-eu"},"name":"Hero
+        of Dazar''alor","id":386},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/387?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Death Knight","id":387},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/388?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Demon Hunter","id":388},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/389?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Druid","id":389},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/390?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Hunter","id":390},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/391?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Mage","id":391},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/392?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Monk","id":392},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/393?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Paladin","id":393},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/394?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Priest","id":394},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/395?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Rogue","id":395},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/396?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Shaman","id":396},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/397?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Warlock","id":397},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/398?namespace=static-8.2.5_31884-eu"},"name":"the
+        Elite Warrior","id":398},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/399?namespace=static-8.2.5_31884-eu"},"name":"the
+        T-Shirt Enthusiast","id":399},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/324?namespace=static-8.2.5_31884-eu"},"name":"Trashmaster","id":324},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/400?namespace=static-8.2.5_31884-eu"},"name":"Famed
+        Slayer of the Harbinger","id":400},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/402?namespace=static-8.2.5_31884-eu"},"name":"Notorious
+        Gladiator","id":402},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/403?namespace=static-8.2.5_31884-eu"},"name":"Junkyard","id":403},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/404?namespace=static-8.2.5_31884-eu"},"name":"the
+        Eternal","id":404},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/405?namespace=static-8.2.5_31884-eu"},"name":"of
+        the Deeps","id":405},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/406?namespace=static-8.2.5_31884-eu"},"name":"Sparking","id":406},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/407?namespace=static-8.2.5_31884-eu"},"name":"Azeroth''s
+        Champion","id":407},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/409?namespace=static-8.2.5_31884-eu"},"name":"Famed
+        Slayer of Azshara","id":409},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/410?namespace=static-8.2.5_31884-eu"},"name":"Renowned
+        Explorer","id":410},{"key":{"href":"https://eu.api.blizzard.com/data/wow/title/412?namespace=static-8.2.5_31884-eu"},"name":"Veteran
+        of the Fourth War","id":412}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/title/index?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:51 GMT
+recorded_with: VCR 2.9.3

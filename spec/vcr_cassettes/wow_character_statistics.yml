@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/statistics?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '4'
+      Date:
+      - Sun, 22 Dec 2019 22:30:37 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sun, 22 Dec 2019 09:05:20 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - character-statistics
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86604-0503-f370-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86604-0503-f650-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86604-0503-f620-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/statistics?namespace=profile-eu"}},"health":356980,"power":20000,"power_type":{"key":{"href":"https://eu.api.blizzard.com/data/wow/power-type/0?namespace=static-8.2.5_31884-eu"},"name":"Mana","id":0},"speed":{"rating":0,"rating_bonus":0.0},"strength":{"base":1467,"effective":9707},"agility":{"base":513,"effective":513},"intellect":{"base":1467,"effective":1467},"stamina":{"base":1001,"effective":17849},"melee_crit":{"rating":1598,"rating_bonus":22.194445,"value":27.194443},"melee_haste":{"rating":1180,"rating_bonus":17.352942,"value":17.352936},"mastery":{"rating":819,"rating_bonus":18.2,"value":31.0},"bonus_armor":0,"lifesteal":{"rating":181,"rating_bonus":4.525,"value":4.525},"versatility":623.0,"versatility_damage_done_bonus":7.329412,"versatility_healing_done_bonus":7.329412,"versatility_damage_taken_bonus":3.664706,"avoidance":{"rating":174,"rating_bonus":6.214286},"attack_power":9707,"main_hand_damage_min":7337.2534,"main_hand_damage_max":8507.144,"main_hand_speed":3.068,"main_hand_dps":2582.2026,"off_hand_damage_min":1736.9476,"off_hand_damage_max":1736.9476,"off_hand_speed":1.704,"off_hand_dps":1019.33545,"spell_power":11810,"spell_penetration":0,"spell_crit":{"rating":1598,"rating_bonus":22.194445,"value":27.194443},"mana_regen":3200.0,"mana_regen_combat":3200.0,"armor":{"base":0,"effective":6379},"dodge":{"rating":0,"rating_bonus":0.0,"value":3.0},"parry":{"rating":0,"rating_bonus":0.0,"value":20.856363},"block":{"rating":0,"rating_bonus":0.0,"value":10.0},"ranged_crit":{"rating":1598,"rating_bonus":22.194445,"value":27.194443},"ranged_haste":{"rating":1180,"rating_bonus":17.352942,"value":17.352936},"spell_haste":{"rating":1180,"rating_bonus":17.352942,"value":17.352936},"character":{"key":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday?namespace=profile-eu"},"name":"Sheday","id":142650023,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"}}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/statistics?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 22:30:37 GMT
+recorded_with: VCR 2.9.3

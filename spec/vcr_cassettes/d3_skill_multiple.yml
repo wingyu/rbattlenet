@@ -1,0 +1,158 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/hero/barbarian/skill/bash?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:41:11 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=8841CC42CBCFE2AE89EE4C6B2511AA3B.blade10_eu_b_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '2387'
+      x-trace-traceid:
+      - 15c864f8-ff70-f800-fdd2-fa165ba06406
+      x-trace-spanid:
+      - 15c864f8-ff70-faf0-fdd2-fa165ba06406
+      x-trace-parentspanid:
+      - 15c864f8-ff70-fac0-fdd2-fa165ba06406
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"skill":{"slug":"bash","name":"Bash","icon":"barbarian_bash","level":1,"tooltipUrl":"/class/barbarian/active/bash","description":"Generate:
+        6 Fury per attack\n\nBrutally smash an enemy for 320% weapon damage.","descriptionHtml":"<p><span
+        class=\"d3-color-gold\">Generate:</span> <span class=\"d3-color-green\">6</span>
+        Fury per attack</p>\n\n<p>Brutally smash an enemy for <span class=\"d3-color-green\">320%</span>
+        weapon damage.</p>"},"runes":[{"slug":"frostbite","type":"c","name":"Frostbite","level":6,"description":"Each
+        hit Freezes the enemy for 1.5 seconds.\n\nEnemies can be frozen by Bash once
+        every 5 seconds.","descriptionHtml":"<p>Each hit <span class=\"d3-color-green\">Freezes</span>
+        the enemy for <span class=\"d3-color-green\">1.5</span> seconds.</p>\n\n<p>Enemies
+        can be frozen by Bash once every <span class=\"d3-color-green\">5</span> seconds.</p>"},{"slug":"onslaught","type":"a","name":"Onslaught","level":13,"description":"The
+        enemy has a 10% increased chance to be Critically Hit for 3 seconds.\n\nBash''s
+        damage turns into Lightning.","descriptionHtml":"<p>The enemy has a <span
+        class=\"d3-color-green\">10%</span> increased chance to be Critically Hit
+        for <span class=\"d3-color-green\">3</span> seconds.</p>\n\n<p>Bash''s damage
+        turns into Lightning.</p>"},{"slug":"punish","type":"b","name":"Punish","level":26,"description":"Increase
+        your damage by 4% for 5 seconds after using Bash. This effect stacks up to
+        3 times.","descriptionHtml":"<p>Increase your damage by <span class=\"d3-color-green\">4%</span>
+        for <span class=\"d3-color-green\">5</span> seconds after using Bash. This
+        effect stacks up to <span class=\"d3-color-green\">3</span> times.</p>"},{"slug":"instigation","type":"d","name":"Instigation","level":44,"description":"Increase
+        Fury generated to 9.\n\nBash''s damage turns into Fire.","descriptionHtml":"<p>Increase
+        Fury generated to <span class=\"d3-color-green\">9</span>.</p>\n\n<p>Bash''s
+        damage turns into Fire.</p>"},{"slug":"pulverize","type":"e","name":"Pulverize","level":52,"description":"Each
+        hit causes a shockwave that deals 100% weapon damage as Fire to enemies in
+        a 26 yard line behind the primary enemy.","descriptionHtml":"<p>Each hit causes
+        a shockwave that deals <span class=\"d3-color-green\">100%</span> weapon damage
+        as Fire to enemies in a <span class=\"d3-color-green\">26</span> yard line
+        behind the primary enemy.</p>"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/hero/barbarian/skill/bash?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:11 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/hero/necromancer/skill/bone-spear?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:41:10 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=98151B0F4E90D9B554BE926D4A507F9F.blade05_eu_a_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '2742'
+      x-trace-traceid:
+      - 15c86602-9bf8-9360-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86602-9bf8-9820-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86602-9bf8-97f0-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"skill":{"slug":"bone-spear","name":"Bone Spear","icon":"p6_necro_bonespear","level":2,"tooltipUrl":"/class/necromancer/active/bone-spear","description":"Cost:
+        20 Essence\n\nSummon a piercing projectile that causes 500% weapon damage
+        as Physical to all enemies it passes through.","descriptionHtml":"<p><span
+        class=\"d3-color-gold\">Cost:</span> <span class=\"d3-color-green\">20</span>
+        Essence</p>\n\n<p>Summon a piercing projectile that causes <span class=\"d3-color-green\">500%</span>
+        weapon damage as Physical to all enemies it passes through.</p>"},"runes":[{"slug":"blighted
+        marrow","type":"c","name":"Blighted Marrow","level":7,"description":"Damage
+        is increased by 15% for each enemy Bone Spear passes through.\n\nBone Spear''s
+        damage turns into Poison.","descriptionHtml":"<p>Damage is increased by <span
+        class=\"d3-color-green\">15%</span> for each enemy Bone Spear passes through.</p>\n\n<p>Bone
+        Spear''s damage turns into Poison.</p>"},{"slug":"teeth","type":"e","name":"Teeth","level":17,"description":"Launch
+        razor sharp teeth that deal 300% weapon damage as Physical to enemies in front
+        of you.","descriptionHtml":"<p>Launch razor sharp teeth that deal <span class=\"d3-color-green\">300%</span>
+        weapon damage as Physical to enemies in front of you.</p>"},{"slug":"crystallization","type":"a","name":"Crystallization","level":25,"description":"Each
+        enemy hit has their attack speed reduced by 20% and your attack speed is increased
+        by 3% for 3 seconds stacking up to 10 times.\n\nBone Spear''s damage turns
+        into Cold.","descriptionHtml":"<p>Each enemy hit has their attack speed reduced
+        by <span class=\"d3-color-green\">20%</span> and your attack speed is increased
+        by <span class=\"d3-color-green\">3%</span> for <span class=\"d3-color-green\">3</span>
+        seconds stacking up to <span class=\"d3-color-green\">10</span> times.</p>\n\n<p>Bone
+        Spear''s damage turns into Cold.</p>"},{"slug":"shatter","type":"b","name":"Shatter","level":28,"description":"Instead
+        of piercing now detonates on the first enemy hit dealing 500% weapon damage
+        as Physical to all enemies within 15 yards.","descriptionHtml":"<p>Instead
+        of piercing now detonates on the first enemy hit dealing <span class=\"d3-color-green\">500%</span>
+        weapon damage as Physical to all enemies within <span class=\"d3-color-green\">15</span>
+        yards.</p>"},{"slug":"blood spear","type":"d","name":"Blood Spear","level":53,"description":"Bone
+        Spear turns into Blood Spear. Damage is increased to 650% weapon damage as
+        Physical at the cost of 10% Health.","descriptionHtml":"<p>Bone Spear turns
+        into Blood Spear. Damage is increased to <span class=\"d3-color-green\">650%</span>
+        weapon damage as Physical at the cost of <span class=\"d3-color-red\">10%</span>
+        Health.</p>"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/hero/necromancer/skill/bone-spear?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:11 GMT
+recorded_with: VCR 2.9.3

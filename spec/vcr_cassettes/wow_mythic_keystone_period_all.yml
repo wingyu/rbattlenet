@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/mythic-keystone/period/index?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:39 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 07:00:05 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=1800
+      Battlenet-Schema:
+      - mythic-keystone-period
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c865d4-e902-4c60-59a1-fa165a07058b
+      x-trace-spanid:
+      - 15c865d4-e902-4d80-59a1-fa165a07058b
+      x-trace-parentspanid:
+      - 15c865d4-e902-4d50-59a1-fa165a07058b
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/?namespace=dynamic-eu"}},"periods":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/641?namespace=dynamic-eu"},"id":641},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/642?namespace=dynamic-eu"},"id":642},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/643?namespace=dynamic-eu"},"id":643},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/644?namespace=dynamic-eu"},"id":644},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/645?namespace=dynamic-eu"},"id":645},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/646?namespace=dynamic-eu"},"id":646},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/647?namespace=dynamic-eu"},"id":647},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/648?namespace=dynamic-eu"},"id":648},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/649?namespace=dynamic-eu"},"id":649},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/650?namespace=dynamic-eu"},"id":650},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/651?namespace=dynamic-eu"},"id":651},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/652?namespace=dynamic-eu"},"id":652},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/653?namespace=dynamic-eu"},"id":653},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/654?namespace=dynamic-eu"},"id":654},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/655?namespace=dynamic-eu"},"id":655},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/656?namespace=dynamic-eu"},"id":656},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/657?namespace=dynamic-eu"},"id":657},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/658?namespace=dynamic-eu"},"id":658},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/659?namespace=dynamic-eu"},"id":659},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/660?namespace=dynamic-eu"},"id":660},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/661?namespace=dynamic-eu"},"id":661},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/662?namespace=dynamic-eu"},"id":662},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/663?namespace=dynamic-eu"},"id":663},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/664?namespace=dynamic-eu"},"id":664},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/665?namespace=dynamic-eu"},"id":665},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/666?namespace=dynamic-eu"},"id":666},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/667?namespace=dynamic-eu"},"id":667},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/668?namespace=dynamic-eu"},"id":668},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/669?namespace=dynamic-eu"},"id":669},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/670?namespace=dynamic-eu"},"id":670},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/671?namespace=dynamic-eu"},"id":671},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/672?namespace=dynamic-eu"},"id":672},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/673?namespace=dynamic-eu"},"id":673},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/674?namespace=dynamic-eu"},"id":674},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/675?namespace=dynamic-eu"},"id":675},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/676?namespace=dynamic-eu"},"id":676},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/677?namespace=dynamic-eu"},"id":677},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/678?namespace=dynamic-eu"},"id":678},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/679?namespace=dynamic-eu"},"id":679},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/680?namespace=dynamic-eu"},"id":680},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/681?namespace=dynamic-eu"},"id":681},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/682?namespace=dynamic-eu"},"id":682},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/683?namespace=dynamic-eu"},"id":683},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/684?namespace=dynamic-eu"},"id":684},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/685?namespace=dynamic-eu"},"id":685},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/686?namespace=dynamic-eu"},"id":686},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/687?namespace=dynamic-eu"},"id":687},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/688?namespace=dynamic-eu"},"id":688},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/689?namespace=dynamic-eu"},"id":689},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/690?namespace=dynamic-eu"},"id":690},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/691?namespace=dynamic-eu"},"id":691},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/692?namespace=dynamic-eu"},"id":692},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/693?namespace=dynamic-eu"},"id":693},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/694?namespace=dynamic-eu"},"id":694},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/695?namespace=dynamic-eu"},"id":695},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/696?namespace=dynamic-eu"},"id":696},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/697?namespace=dynamic-eu"},"id":697},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/698?namespace=dynamic-eu"},"id":698},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/699?namespace=dynamic-eu"},"id":699},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/700?namespace=dynamic-eu"},"id":700},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/701?namespace=dynamic-eu"},"id":701},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/702?namespace=dynamic-eu"},"id":702},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/703?namespace=dynamic-eu"},"id":703},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/704?namespace=dynamic-eu"},"id":704},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/705?namespace=dynamic-eu"},"id":705},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/706?namespace=dynamic-eu"},"id":706},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/707?namespace=dynamic-eu"},"id":707},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/708?namespace=dynamic-eu"},"id":708},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/709?namespace=dynamic-eu"},"id":709},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/710?namespace=dynamic-eu"},"id":710},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/711?namespace=dynamic-eu"},"id":711},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/712?namespace=dynamic-eu"},"id":712},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/713?namespace=dynamic-eu"},"id":713},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/714?namespace=dynamic-eu"},"id":714},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/715?namespace=dynamic-eu"},"id":715},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/716?namespace=dynamic-eu"},"id":716},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/717?namespace=dynamic-eu"},"id":717},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/718?namespace=dynamic-eu"},"id":718},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/719?namespace=dynamic-eu"},"id":719},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/720?namespace=dynamic-eu"},"id":720},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/721?namespace=dynamic-eu"},"id":721},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/722?namespace=dynamic-eu"},"id":722},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/723?namespace=dynamic-eu"},"id":723},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/724?namespace=dynamic-eu"},"id":724},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/725?namespace=dynamic-eu"},"id":725},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/726?namespace=dynamic-eu"},"id":726},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/727?namespace=dynamic-eu"},"id":727},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/728?namespace=dynamic-eu"},"id":728},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/729?namespace=dynamic-eu"},"id":729}],"current_period":{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/period/729?namespace=dynamic-eu"},"id":729}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/mythic-keystone/period/index?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:40 GMT
+recorded_with: VCR 2.9.3

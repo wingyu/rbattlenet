@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/reputation-tiers/index?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:50 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:19:56 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - reputation-tiers
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c864f9-c403-8270-fdd2-fa165ba06406
+      x-trace-spanid:
+      - 15c864f9-c403-8500-fdd2-fa165ba06406
+      x-trace-parentspanid:
+      - 15c864f9-c403-84d0-fdd2-fa165ba06406
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/?namespace=static-8.2.5_31884-eu"}},"reputation_tiers":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/0?namespace=static-8.2.5_31884-eu"},"id":0},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/2?namespace=static-8.2.5_31884-eu"},"name":"Farmer
+        Fung","id":2},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/16?namespace=static-8.2.5_31884-eu"},"name":"Chee
+        Chee","id":16},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/17?namespace=static-8.2.5_31884-eu"},"name":"Ella","id":17},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/18?namespace=static-8.2.5_31884-eu"},"name":"Fish
+        Fellreed","id":18},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/19?namespace=static-8.2.5_31884-eu"},"name":"Gina
+        Mudclaw","id":19},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/20?namespace=static-8.2.5_31884-eu"},"name":"Haohan
+        Mudclaw","id":20},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/21?namespace=static-8.2.5_31884-eu"},"name":"Jogu
+        the Drunk","id":21},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/22?namespace=static-8.2.5_31884-eu"},"name":"Old
+        Hillpaw","id":22},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/23?namespace=static-8.2.5_31884-eu"},"name":"Sho","id":23},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/24?namespace=static-8.2.5_31884-eu"},"name":"Tina
+        Mudclaw","id":24},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/26?namespace=static-8.2.5_31884-eu"},"name":"Nat
+        Pagle","id":26},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/28?namespace=static-8.2.5_31884-eu"},"name":"Brawl''gar
+        Arena","id":28},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/43?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub","id":43},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/72?namespace=static-8.2.5_31884-eu"},"name":"Darkspear
+        Rebellion","id":72},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/160?namespace=static-8.2.5_31884-eu"},"name":"Tormmok","id":160},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/162?namespace=static-8.2.5_31884-eu"},"name":"Defender
+        Illona","id":162},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/163?namespace=static-8.2.5_31884-eu"},"name":"Aeda
+        Brightdawn","id":163},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/164?namespace=static-8.2.5_31884-eu"},"name":"Delvar
+        Ironfist","id":164},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/165?namespace=static-8.2.5_31884-eu"},"name":"Vivianne","id":165},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/166?namespace=static-8.2.5_31884-eu"},"name":"Talonpriest
+        Ishaal","id":166},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/167?namespace=static-8.2.5_31884-eu"},"name":"Leorajh","id":167},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/171?namespace=static-8.2.5_31884-eu"},"name":"Brawl''gar
+        Arena (Season 1)","id":171},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/172?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub (Season 1)","id":172},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/193?namespace=static-8.2.5_31884-eu"},"name":"Conjurer
+        Margoss","id":193},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/195?namespace=static-8.2.5_31884-eu"},"name":"The
+        First Responders","id":195},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/199?namespace=static-8.2.5_31884-eu"},"name":"Ilyssia
+        of the Waters","id":199},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/200?namespace=static-8.2.5_31884-eu"},"name":"Akule
+        Riverhorn","id":200},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/202?namespace=static-8.2.5_31884-eu"},"name":"Impus","id":202},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/204?namespace=static-8.2.5_31884-eu"},"name":"Keeper
+        Raynae","id":204},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/206?namespace=static-8.2.5_31884-eu"},"name":"Sha''leth","id":206},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/208?namespace=static-8.2.5_31884-eu"},"name":"Corbyn","id":208},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/209?namespace=static-8.2.5_31884-eu"},"name":"Chromie","id":209},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/210?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub (Season 2)","id":210},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/212?namespace=static-8.2.5_31884-eu"},"name":"Brawl''gar
+        Arena (Season 2)","id":212},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/339?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub (Season 3)","id":339},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/340?namespace=static-8.2.5_31884-eu"},"name":"Brawl''gar
+        Arena (Season 3)","id":340}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/reputation-tiers/index?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:51 GMT
+recorded_with: VCR 2.9.3

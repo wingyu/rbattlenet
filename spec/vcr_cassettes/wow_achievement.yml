@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.blizzard.com/wow/achievement/2144?
+    uri: https://eu.api.blizzard.com/data/wow/achievement/6?namespace=static-eu&locale=en_gb
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Typhoeus - https://github.com/typhoeus/typhoeus
       Authorization:
-      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
       Expect:
       - ''
   response:
@@ -18,22 +18,32 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Battlenet-Schema-Revision:
+      - '1'
       Date:
-      - Thu, 08 Aug 2019 06:11:22 GMT
+      - Sun, 22 Dec 2019 15:54:29 GMT
       Server:
       - Apache-Coyote/1.1
-      Content-Language:
-      - en-US
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:21:01 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - achievement
       content-type:
       - application/json;charset=UTF-8
-      content-length:
-      - '1240'
+      transfer-encoding:
+      - chunked
       x-trace-traceid:
-      - 15b200b3-73ec-e650-0be5-fa164df98e5c
+      - 15c865d4-e8fa-54b0-59a1-fa165a07058b
       x-trace-spanid:
-      - 15b200b3-73ec-e9a0-0be5-fa164df98e5c
+      - 15c865d4-e8fa-56b0-59a1-fa165a07058b
       x-trace-parentspanid:
-      - 15b200b3-73ec-e970-0be5-fa164df98e5c
+      - 15c865d4-e8fa-5680-59a1-fa165a07058b
       x-frame-options:
       - SAMEORIGIN
       X-Content-Type-Options:
@@ -42,15 +52,12 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":2144,"title":"What a Long, Strange Trip It''s Been","points":50,"description":"Complete
-        the world events achievements listed below.","reward":"Rewards: Violet Proto-Drake","rewardItems":[{"id":44177,"name":"Reins
-        of the Violet Proto-Drake","icon":"ability_mount_drake_proto","quality":4,"itemLevel":70,"tooltipParams":{"timewalkerLevel":0,"azeritePower0":0,"azeritePower1":0,"azeritePower2":0,"azeritePower3":0,"azeritePowerLevel":0,"azeritePower4":0},"stats":[],"armor":0,"context":"","bonusLists":[],"artifactId":0,"displayInfoId":0,"artifactAppearanceId":0,"artifactTraits":[],"relics":[],"appearance":{}}],"icon":"achievement_bg_masterofallbgs","criteria":[{"id":7553,"description":"To
-        Honor One''s Elders","orderIndex":0,"max":1},{"id":7561,"description":"Fool
-        For Love","orderIndex":1,"max":1},{"id":9880,"description":"Noble Gardener","orderIndex":2,"max":1},{"id":7555,"description":"For
-        The Children","orderIndex":3,"max":1},{"id":0,"description":"The Flame Warden/Keeper","orderIndex":4,"max":1},{"id":7564,"description":"Brewmaster","orderIndex":5,"max":1},{"id":7558,"description":"Hallowed
-        Be Thy Name","orderIndex":6,"max":1},{"id":7566,"description":"Merrymaker","orderIndex":7,"max":1}],"accountWide":true,"factionId":2}'
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/achievement/6?namespace=static-8.2.5_31884-eu"}},"id":6,"category":{"key":{"href":"https://eu.api.blizzard.com/data/wow/achievement-category/92?namespace=static-8.2.5_31884-eu"},"name":"Character","id":92},"name":"Level
+        10","description":"Reach level 10.","points":10,"is_account_wide":false,"criteria":{"id":2050,"description":"Reach
+        level 10.","amount":0},"next_achievement":{"key":{"href":"https://eu.api.blizzard.com/data/wow/achievement/7?namespace=static-8.2.5_31884-eu"},"name":"Level
+        20","id":7},"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/achievement/6?namespace=static-8.2.5_31884-eu"},"id":6},"display_order":1}'
     http_version: '1.1'
     adapter_metadata:
-      effective_url: https://us.api.blizzard.com/wow/achievement/2144?
-  recorded_at: Thu, 08 Aug 2019 06:11:20 GMT
+      effective_url: https://eu.api.blizzard.com/data/wow/achievement/6?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:30 GMT
 recorded_with: VCR 2.9.3

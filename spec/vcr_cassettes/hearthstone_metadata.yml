@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/hearthstone/metadata/sets?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Fri, 20 Dec 2019 21:29:38 GMT
+      Server:
+      - nginx/1.16.1
+      Content-Security-Policy:
+      - block-all-mixed-content
+      ETag:
+      - W/"1088-ZHTLKTtTS9lLEajD8ha6CQaFg9M"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '4232'
+      x-trace-traceid:
+      - 15c86601-d7d0-c5c0-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86601-d7d0-d7f0-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86601-d7d0-d7c0-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":1347,"slug":"descent-of-dragons","releaseDate":"2019-12-01T00:00:00","name":"Descent
+        of Dragons","collectibleCount":140,"collectibleRevealedCount":140,"nonCollectibleCount":104,"nonCollectibleRevealedCount":55},{"id":1158,"slug":"saviors-of-uldum","releaseDate":"2019-08-06T00:00:00","name":"Saviors
+        of Uldum","collectibleCount":135,"collectibleRevealedCount":135,"nonCollectibleCount":74,"nonCollectibleRevealedCount":35},{"id":1130,"slug":"rise-of-shadows","releaseDate":"2019-04-01T00:00:00","name":"Rise
+        of Shadows","collectibleCount":136,"collectibleRevealedCount":136,"nonCollectibleCount":73,"nonCollectibleRevealedCount":36},{"id":1129,"slug":"rastakhans-rumble","releaseDate":"2018-12-01T00:00:00","name":"Rastakhan''s
+        Rumble","collectibleCount":135,"collectibleRevealedCount":135,"nonCollectibleCount":71,"nonCollectibleRevealedCount":29},{"id":1127,"slug":"the-boomsday-project","releaseDate":"2018-08-01T00:00:00","name":"The
+        Boomsday Project","collectibleCount":136,"collectibleRevealedCount":136,"nonCollectibleCount":81,"nonCollectibleRevealedCount":20},{"id":1125,"slug":"the-witchwood","releaseDate":"2018-04-01T00:00:00","name":"The
+        Witchwood","collectibleCount":135,"collectibleRevealedCount":135,"nonCollectibleCount":69,"nonCollectibleRevealedCount":24},{"id":1004,"slug":"kobolds-and-catacombs","releaseDate":"2017-12-01T00:00:00","name":"Kobolds
+        and Catacombs","collectibleCount":135,"collectibleRevealedCount":135,"nonCollectibleCount":111,"nonCollectibleRevealedCount":72},{"id":1001,"slug":"knights-of-the-frozen-throne","releaseDate":"2017-08-01T00:00:00","name":"Knights
+        of the Frozen Throne","collectibleCount":135,"collectibleRevealedCount":135,"nonCollectibleCount":98,"nonCollectibleRevealedCount":48},{"id":27,"slug":"journey-to-ungoro","releaseDate":"2017-04-01T00:00:00","name":"Journey
+        to Un''Goro","collectibleCount":135,"collectibleRevealedCount":135,"nonCollectibleCount":93,"nonCollectibleRevealedCount":52},{"id":25,"slug":"mean-streets-of-gadgetzan","releaseDate":"2016-12-01T00:00:00","name":"Mean
+        Streets of Gadgetzan","collectibleCount":132,"collectibleRevealedCount":132,"nonCollectibleCount":125,"nonCollectibleRevealedCount":82},{"id":23,"slug":"one-night-in-karazhan","releaseDate":"2016-08-01T00:00:00","name":"One
+        Night in Karazhan","type":"adventure","collectibleCount":45,"collectibleRevealedCount":45,"nonCollectibleCount":70,"nonCollectibleRevealedCount":53},{"id":21,"slug":"whispers-of-the-old-gods","releaseDate":"2016-04-01T00:00:00","name":"Whispers
+        of the Old Gods","collectibleCount":134,"collectibleRevealedCount":134,"nonCollectibleCount":84,"nonCollectibleRevealedCount":31},{"id":20,"slug":"league-of-explorers","releaseDate":"2015-11-01T00:00:00","name":"League
+        of Explorers","type":"adventure","collectibleCount":45,"collectibleRevealedCount":45,"nonCollectibleCount":27,"nonCollectibleRevealedCount":15},{"id":15,"slug":"the-grand-tournament","releaseDate":"2015-08-01T00:00:00","name":"The
+        Grand Tournament","collectibleCount":132,"collectibleRevealedCount":132,"nonCollectibleCount":79,"nonCollectibleRevealedCount":27},{"id":14,"slug":"blackrock-mountain","releaseDate":"2015-04-01T00:00:00","name":"Blackrock
+        Mountain","type":"adventure","collectibleCount":31,"collectibleRevealedCount":31,"nonCollectibleCount":23,"nonCollectibleRevealedCount":12},{"id":13,"slug":"goblins-vs-gnomes","releaseDate":"2014-12-01T00:00:00","name":"Goblins
+        vs Gnomes","collectibleCount":123,"collectibleRevealedCount":123,"nonCollectibleCount":59,"nonCollectibleRevealedCount":20},{"id":12,"slug":"naxxramas","releaseDate":"2014-06-01T00:00:00","name":"Curse
+        of Naxxramas","type":"adventure","collectibleCount":30,"collectibleRevealedCount":30,"nonCollectibleCount":134,"nonCollectibleRevealedCount":114},{"id":2,"slug":"basic","name":"Basic","collectibleCount":142,"collectibleRevealedCount":142,"nonCollectibleCount":96,"nonCollectibleRevealedCount":43},{"id":3,"slug":"classic","name":"Classic","collectibleCount":245,"collectibleRevealedCount":245,"nonCollectibleCount":153,"nonCollectibleRevealedCount":63},{"id":4,"slug":"hall-of-fame","name":"Hall
+        of Fame","collectibleCount":18,"collectibleRevealedCount":18,"nonCollectibleCount":16,"nonCollectibleRevealedCount":9}]'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/hearthstone/metadata/sets?eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 21:29:38 GMT
+recorded_with: VCR 2.9.3

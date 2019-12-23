@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/region/index?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Sun, 22 Dec 2019 15:54:49 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:19:56 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - region
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86553-2470-0ab0-f981-fa165bcda32d
+      x-trace-spanid:
+      - 15c86553-2470-0bd0-f981-fa165bcda32d
+      x-trace-parentspanid:
+      - 15c86553-2470-0ba0-f981-fa165bcda32d
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/region/?namespace=dynamic-eu"}},"regions":[{"href":"https://eu.api.blizzard.com/data/wow/region/3?namespace=dynamic-eu"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/region/index?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:50 GMT
+recorded_with: VCR 2.9.3

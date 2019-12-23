@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/follower/templar?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:41:03 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=400575ED1C663CB49934DC28FB5B4C54.blade05_eu_a_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '4238'
+      x-trace-traceid:
+      - 15c8638a-17a0-a3d0-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638a-17a0-b100-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638a-17a0-b0d0-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"slug":"templar","name":"Templar","realName":"Kormac","portrait":"templar","skills":[{"slug":"intervene","name":"Intervene","icon":"templar_intervene","level":5,"tooltipUrl":"/follower/templar/skill/intervene","description":"Cooldown:
+        10 seconds\n\nTaunt enemies within 10 yards of you for 3 seconds when you
+        are hit.","descriptionHtml":"<p><span class=\"d3-color-gold\">Cooldown:</span>
+        <span class=\"d3-color-green\">10</span> seconds</p>\n\n<p>Taunt enemies within
+        <span class=\"d3-color-green\">10</span> yards of you for <span class=\"d3-color-green\">3</span>
+        seconds when you are hit.</p>"},{"slug":"heal","name":"Heal","icon":"templar_heal_110","level":5,"tooltipUrl":"/follower/templar/skill/heal","description":"Cooldown:
+        30 seconds\n\nHeals you and the Templar for 193,112 Life.","descriptionHtml":"<p><span
+        class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">30</span>
+        seconds</p>\n\n<p>Heals you and the Templar for <span class=\"d3-color-green\">193,112</span>
+        Life.</p>"},{"slug":"loyalty","name":"Loyalty","icon":"templar_loyalty","level":10,"tooltipUrl":"/follower/templar/skill/loyalty","description":"Regenerates
+        6437 Life per second for you and the Templar.","descriptionHtml":"<p>Regenerates
+        <span class=\"d3-color-green\">6437</span> Life per second for you and the
+        Templar.</p>"},{"slug":"intimidate","name":"Intimidate","icon":"templar_intimidate","level":10,"tooltipUrl":"/follower/templar/skill/intimidate","description":"Enemies
+        that hit or are hit by the Templar are slowed by 80% for 3 seconds.","descriptionHtml":"<p>Enemies
+        that hit or are hit by the Templar are slowed by <span class=\"d3-color-green\">80%</span>
+        for <span class=\"d3-color-green\">3</span> seconds.</p>"},{"slug":"onslaught","name":"Onslaught","icon":"templar_onslaught","level":15,"tooltipUrl":"/follower/templar/skill/onslaught","description":"Cooldown:
+        10 seconds\n\nDelivers a massive blow to an enemy for 800% weapon damage.","descriptionHtml":"<p><span
+        class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">10</span>
+        seconds</p>\n\n<p>Delivers a massive blow to an enemy for <span class=\"d3-color-green\">800%</span>
+        weapon damage.</p>"},{"slug":"charge","name":"Charge","icon":"templar_shieldcharge","level":15,"tooltipUrl":"/follower/templar/skill/charge","description":"Cooldown:
+        10 seconds\n\nCharges a target, dealing 280% weapon damage and stunning all
+        enemies within 8 yards for 3 seconds.","descriptionHtml":"<p><span class=\"d3-color-gold\">Cooldown:</span>
+        <span class=\"d3-color-green\">10</span> seconds</p>\n\n<p>Charges a target,
+        dealing <span class=\"d3-color-green\">280%</span> weapon damage and stunning
+        all enemies within <span class=\"d3-color-green\">8</span> yards for <span
+        class=\"d3-color-green\">3</span> seconds.</p>"},{"slug":"inspire","name":"Inspire","icon":"templar_inspire","level":20,"tooltipUrl":"/follower/templar/skill/inspire","description":"Increases
+        your resource generation.\n\nMana: 7 per second.\nHatred: 1 per second.\nWrath:
+        1.1 per second.\nArcane Power: 1.4 per second.\nFury: 10% generated.\nSpirit:
+        10% generated.\nEssence: 10% generated.","descriptionHtml":"<p>Increases your
+        resource generation.</p>\n\n<p>Mana: <span class=\"d3-color-green\">7</span>
+        per second.</p>\n<p>Hatred: <span class=\"d3-color-green\">1</span> per second.</p>\n<p>Wrath:
+        <span class=\"d3-color-green\">1.1</span> per second.</p>\n<p>Arcane Power:
+        <span class=\"d3-color-green\">1.4</span> per second.</p>\n<p>Fury: <span
+        class=\"d3-color-green\">10%</span> generated.</p>\n<p>Spirit: <span class=\"d3-color-green\">10%</span>
+        generated.</p>\n<p>Essence: <span class=\"d3-color-green\">10%</span> generated.</p>"},{"slug":"guardian","name":"Guardian","icon":"templar_guardian","level":20,"tooltipUrl":"/follower/templar/skill/guardian","description":"Cooldown:
+        30 seconds\n\nRush to your aid, knocking back enemies within 15 yards and
+        healing you for 182,383 Life.","descriptionHtml":"<p><span class=\"d3-color-gold\">Cooldown:</span>
+        <span class=\"d3-color-green\">30</span> seconds</p>\n\n<p>Rush to your aid,
+        knocking back enemies within <span class=\"d3-color-green\">15</span> yards
+        and healing you for <span class=\"d3-color-green\">182,383</span> Life.</p>"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/follower/templar?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:41:03 GMT
+recorded_with: VCR 2.9.3
