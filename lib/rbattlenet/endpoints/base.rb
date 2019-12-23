@@ -5,7 +5,9 @@ module RBattlenet
 
       def self.all
         raise RBattlenet::Errors::IndexNotSupported.new unless defined?(index_path)
-        RBattlenet.get [[[[:itself, index_path]], :index]] {}
+        RBattlenet.get [[[[:itself, index_path]], :index]] do
+          yield if block_given?
+        end
       end
 
       def self.find(subjects, fields: [:itself])
