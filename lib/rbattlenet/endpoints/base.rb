@@ -5,7 +5,7 @@ module RBattlenet
 
       def self.all
         raise RBattlenet::Errors::IndexNotSupported.new unless defined?(index_path)
-        RBattlenet.get [[[[:itself, index_path]], :index]] do
+        RBattlenet.get [[[[:itself, index_path]], :index]] do |subject, data|
           yield if block_given?
         end
       end
@@ -22,7 +22,7 @@ module RBattlenet
           [subject_fields.uniq.map{ |field| [field, send(field).path(subject)] }, subject]
         end
 
-        RBattlenet.get payload do
+        RBattlenet.get payload do |subject, data|
           yield if block_given?
         end
       end
