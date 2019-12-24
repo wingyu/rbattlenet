@@ -6,7 +6,7 @@ module RBattlenet
       def self.all
         raise RBattlenet::Errors::IndexNotSupported.new unless defined?(index_path)
         RBattlenet.get [[[[:itself, index_path]], :index]] do |subject, data|
-          yield if block_given?
+          yield(subject, data) if block_given?
         end
       end
 
@@ -23,7 +23,7 @@ module RBattlenet
         end
 
         RBattlenet.get payload do |subject, data|
-          yield if block_given?
+          yield(subject, data) if block_given?
         end
       end
     end
