@@ -2,27 +2,33 @@ require 'spec_helper'
 
 describe RBattlenet::Hearthstone::Metadata do
   before do
-    RBattlenet.authenticate(client_id: ENV['CLIENT_ID'], client_secret: ENV['CLIENT_SECRET'])
-    RBattlenet.set_region(region: 'us', locale: 'en_US')
+    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
   end
 
-  describe '#find_all_metadata' do
-    it 'fetches all metadata' do
-      VCR.use_cassette('hearthstone_metadata_data') do
-        data = RBattlenet::Hearthstone::Metadata.all_metadata
-
-        expect(data.keys).to include("sets")
+  describe "#find_metadata" do
+    it "fetches metadata" do
+      with_connection("hearthstone_metadata") do
+        result = RBattlenet::Hearthstone::Metadata.find(:sets)
+        expect(result.data.size).to be >= 20
       end
     end
   end
 
-  describe '#find_metadata' do
-    it 'finds metadata by type' do
-      VCR.use_cassette('hearthstone_metadata_type_data') do
-        metadata = RBattlenet::Hearthstone::Metadata.find_metadata(type: 'sets')
-        set_data = metadata.detect{|k,v| k["id"] == 1158}
+  describe "#find_multiple_metadata" do
+    it "fetches metadata" do
+      with_connection("hearthstone_metadata_multiple") do
+        collection = RBattlenet::Hearthstone::Metadata.find([:sets, :keywords])
+        expect(collection.results.map(&:data).map(&:size).sort).to eq [20, 31]
+      end
+    end
+  end
 
-        expect(set_data['name']).to eq 'Saviors of Uldum'
+  describe "#find_all_metadata" do
+    it "fetches all metadata" do
+      with_connection("hearthstone_metadata_all") do
+        result = RBattlenet::Hearthstone::Metadata.all
+        expect(result.sets.size).to be >= 20
+        expect(result.keywords.size).to be >= 31
       end
     end
   end

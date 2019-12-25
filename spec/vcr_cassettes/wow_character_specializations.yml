@@ -1,0 +1,178 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/specializations?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '6'
+      Date:
+      - Sun, 22 Dec 2019 22:30:36 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sun, 22 Dec 2019 09:05:20 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - character-specializations
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86553-5f44-be40-f981-fa165bcda32d
+      x-trace-spanid:
+      - 15c86553-5f44-c370-f981-fa165bcda32d
+      x-trace-parentspanid:
+      - 15c86553-5f44-c300-f981-fa165bcda32d
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/specializations?namespace=profile-eu"}},"specializations":[{"specialization":{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/70?namespace=static-8.2.5_31884-eu"},"name":"Retribution","id":70},"talents":[{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22175?namespace=static-8.2.5_31884-eu"},"name":"Execution
+        Sentence","id":22175},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/267798?namespace=static-8.2.5_31884-eu"},"name":"Execution
+        Sentence","id":267798},"description":"Calls down the Light''s punishment upon
+        an enemy target, dealing 25,253 Holy damage and increasing the target''s Holy
+        damage taken from your attacks by 20% for 12 sec.","cast_time":"Instant","power_cost":"3
+        Holy Power","range":"20 yd range","cooldown":"30 sec cooldown"},"tier_index":0,"column_index":2},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22593?namespace=static-8.2.5_31884-eu"},"name":"Hammer
+        of Wrath","id":22593},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/24275?namespace=static-8.2.5_31884-eu"},"name":"Hammer
+        of Wrath","id":24275},"description":"Hurls a divine hammer that strikes an
+        enemy for 11,617 Holy damage. Only usable on enemies that have less than 20%
+        health, or while you are empowered by Avenging Wrath.\r\n\r\nGenerates 1 Holy
+        Power.","cast_time":"Instant","range":"30 yd range","cooldown":"7.5 sec cooldown"},"tier_index":1,"column_index":2},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22896?namespace=static-8.2.5_31884-eu"},"name":"Fist
+        of Justice","id":22896},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/234299?namespace=static-8.2.5_31884-eu"},"name":"Fist
+        of Justice","id":234299},"description":"Each Holy Power spent reduces the
+        remaining cooldown on Hammer of Justice by 2 sec.","cast_time":"Passive"},"tier_index":2,"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22183?namespace=static-8.2.5_31884-eu"},"name":"Wake
+        of Ashes","id":22183},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/255937?namespace=static-8.2.5_31884-eu"},"name":"Wake
+        of Ashes","id":255937},"description":"Lash out at your enemies, dealing 26,516
+        Radiant damage to all enemies within 12 yd in front of you and reducing their
+        movement speed by 50% for 5 sec.\r\n\r\nDemon and Undead enemies are also
+        stunned for 5 sec.\r\n\r\nGenerates 5 Holy Power.","cast_time":"Instant","cooldown":"45
+        sec cooldown"},"tier_index":3,"column_index":2},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22185?namespace=static-8.2.5_31884-eu"},"name":"Cavalier","id":22185},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/230332?namespace=static-8.2.5_31884-eu"},"name":"Cavalier","id":230332},"description":"Divine
+        Steed now has 2 charges.","cast_time":"Passive"},"tier_index":4,"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/23086?namespace=static-8.2.5_31884-eu"},"name":"Word
+        of Glory","id":23086},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/210191?namespace=static-8.2.5_31884-eu"},"name":"Word
+        of Glory","id":210191},"description":"Heals a friendly target and the 2 most
+        injured targets within 30 yards for 70,983.","cast_time":"Instant","power_cost":"3
+        Holy Power","range":"40 yd range"},"tier_index":5,"column_index":2},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22634?namespace=static-8.2.5_31884-eu"},"name":"Inquisition","id":22634},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/84963?namespace=static-8.2.5_31884-eu"},"name":"Inquisition","id":84963},"description":"Consumes
+        up to 3 Holy Power to increase your damage done and Haste by 7%.\r\n\r\nLasts
+        15 sec per Holy Power consumed.","cast_time":"Instant","power_cost":"1 to
+        2 Holy Power"},"tier_index":6,"column_index":2}],"pvp_talent_slots":[{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3444?namespace=static-8.2.5_31884-eu"},"name":"Gladiator''s
+        Medallion","id":3444},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/208683?namespace=static-8.2.5_31884-eu"},"name":"Gladiator''s
+        Medallion","id":208683},"description":"Removes all movement impairing effects
+        and all effects which cause loss of control of your character while in PvP
+        combat.","cast_time":"Instant","cooldown":"2 min cooldown"}},"slot_number":1},{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/858?namespace=static-8.2.5_31884-eu"},"name":"Law
+        and Order","id":858},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/204934?namespace=static-8.2.5_31884-eu"},"name":"Law
+        and Order","id":204934},"description":"When your Hand of Hindrance is dispelled
+        or otherwise removed early, the cooldown is reduced by 15 sec.\r\n\r\nYour
+        Blade of Justice applies Hand of Hindrance to the target for 3 sec.","cast_time":"Passive"}},"slot_number":2},{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/754?namespace=static-8.2.5_31884-eu"},"name":"Lawbringer","id":754},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/246806?namespace=static-8.2.5_31884-eu"},"name":"Lawbringer","id":246806},"description":"Judgment
+        now applies Lawbringer to initial targets hit for 45 sec. Casting Judgment
+        causes all enemies with your Lawbringer effect to suffer up to 5% of their
+        maximum health in Holy damage.","cast_time":"Passive"}},"slot_number":3},{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/751?namespace=static-8.2.5_31884-eu"},"name":"Vengeance
+        Aura","id":751},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/210323?namespace=static-8.2.5_31884-eu"},"name":"Vengeance
+        Aura","id":210323},"description":"Whenever you or nearby allies with your
+        Greater Blessings within 40 yards become victim to a full loss of control
+        effect, your Holy damage and critical strike chance is increased by 3% for
+        8 sec. Stacks up to 4 times.","cast_time":"Passive"}},"slot_number":4}]},{"specialization":{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/65?namespace=static-8.2.5_31884-eu"},"name":"Holy","id":65},"talents":[{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/17565?namespace=static-8.2.5_31884-eu"},"name":"Crusader''s
+        Might","id":17565},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/196926?namespace=static-8.2.5_31884-eu"},"name":"Crusader''s
+        Might","id":196926},"description":"Crusader Strike reduces the cooldown of
+        Holy Shock and Light of Dawn by 1.5 sec.","cast_time":"Passive"},"tier_index":0,"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/17577?namespace=static-8.2.5_31884-eu"},"name":"Rule
+        of Law","id":17577},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/214202?namespace=static-8.2.5_31884-eu"},"name":"Rule
+        of Law","id":214202},"description":"Increase the range of your heals by 50%
+        for 10 sec.","cast_time":"Instant","cooldown":"1.5 sec cooldown"},"tier_index":1,"column_index":2},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22179?namespace=static-8.2.5_31884-eu"},"name":"Fist
+        of Justice","id":22179},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/198054?namespace=static-8.2.5_31884-eu"},"name":"Fist
+        of Justice","id":198054},"description":"Judgment reduces the remaining cooldown
+        on Hammer of Justice by 6 sec.","cast_time":"Passive"},"tier_index":2,"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22181?namespace=static-8.2.5_31884-eu"},"name":"Devotion
+        Aura","id":22181},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/183425?namespace=static-8.2.5_31884-eu"},"name":"Devotion
+        Aura","id":183425},"description":"Damage dealt to allies within 10 yards is
+        reduced by up to 10%, diminishing as more allies enter the aura.\r\n\r\nWhile
+        Aura Mastery is active, all affected allies gain 20% damage reduction.","cast_time":"Passive"},"tier_index":3,"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22164?namespace=static-8.2.5_31884-eu"},"name":"Holy
+        Avenger","id":22164},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/105809?namespace=static-8.2.5_31884-eu"},"name":"Holy
+        Avenger","id":105809},"description":"Increases your haste by 30% and your
+        Holy Shock healing by 30% for 20 sec.","cast_time":"Instant","cooldown":"1.5
+        min cooldown"},"tier_index":4,"column_index":2},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/23191?namespace=static-8.2.5_31884-eu"},"name":"Sanctified
+        Wrath","id":23191},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/53376?namespace=static-8.2.5_31884-eu"},"name":"Sanctified
+        Wrath","id":53376},"description":"Avenging Wrath lasts 25% longer and also
+        reduces Holy Shock''s cooldown by 50% for its duration.","cast_time":"Passive"},"tier_index":5,"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/21668?namespace=static-8.2.5_31884-eu"},"name":"Divine
+        Purpose","id":21668},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/197646?namespace=static-8.2.5_31884-eu"},"name":"Divine
+        Purpose","id":197646},"description":"Casting Light of Dawn or Holy Shock has
+        a 20% chance to not trigger that spell''s cooldown, and to make the next cast
+        free.","cast_time":"Passive"},"tier_index":6,"column_index":0}],"pvp_talent_slots":[{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3547?namespace=static-8.2.5_31884-eu"},"name":"Gladiator''s
+        Medallion","id":3547},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/208683?namespace=static-8.2.5_31884-eu"},"name":"Gladiator''s
+        Medallion","id":208683},"description":"Removes all movement impairing effects
+        and all effects which cause loss of control of your character while in PvP
+        combat.","cast_time":"Instant","cooldown":"2 min cooldown"}},"slot_number":1},{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/642?namespace=static-8.2.5_31884-eu"},"name":"Cleanse
+        the Weak","id":642},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/199330?namespace=static-8.2.5_31884-eu"},"name":"Cleanse
+        the Weak","id":199330},"description":"When you dispel an ally within your
+        aura, all allies within your aura are dispelled of the same effect.\r\n\r\nHealing
+        allies with your Holy Light will cleanse all Diseases and Poisons from the
+        target.","cast_time":"Passive"}},"slot_number":2},{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/859?namespace=static-8.2.5_31884-eu"},"name":"Light''s
+        Grace","id":859},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/216327?namespace=static-8.2.5_31884-eu"},"name":"Light''s
+        Grace","id":216327},"description":"Increases the healing done by your Holy
+        Light by 50%, and your Holy Light reduces all damage the target receives by
+        5% for 8 sec. Stacks up to 3 times.","cast_time":"Passive"}},"slot_number":3},{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/82?namespace=static-8.2.5_31884-eu"},"name":"Avenging
+        Light","id":82},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/199441?namespace=static-8.2.5_31884-eu"},"name":"Avenging
+        Light","id":199441},"description":"When you heal with Holy Light, all enemies
+        within 10 yards of the target take Holy damage equal to 30% of the amount
+        healed.","cast_time":"Passive"}},"slot_number":4}]},{"specialization":{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/66?namespace=static-8.2.5_31884-eu"},"name":"Protection","id":66},"talents":[{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22430?namespace=static-8.2.5_31884-eu"},"name":"Blessed
+        Hammer","id":22430},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/204019?namespace=static-8.2.5_31884-eu"},"name":"Blessed
+        Hammer","id":204019},"description":"Throws a Blessed Hammer that spirals outward,
+        dealing 964 Holy damage to enemies and weakening them, reducing the damage
+        you take from their next auto attack by 12%.","cast_time":"Instant"},"tier_index":0,"column_index":2},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22604?namespace=static-8.2.5_31884-eu"},"name":"Crusader''s
+        Judgment","id":22604},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/204023?namespace=static-8.2.5_31884-eu"},"name":"Crusader''s
+        Judgment","id":204023},"description":"Judgment now has 2 charges, and Grand
+        Crusader now also grants a charge of Judgment.","cast_time":"Passive"},"tier_index":1,"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22179?namespace=static-8.2.5_31884-eu"},"name":"Fist
+        of Justice","id":22179},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/198054?namespace=static-8.2.5_31884-eu"},"name":"Fist
+        of Justice","id":198054},"description":"Judgment reduces the remaining cooldown
+        on Hammer of Justice by 6 sec.","cast_time":"Passive"},"tier_index":2,"column_index":0},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22434?namespace=static-8.2.5_31884-eu"},"name":"Cavalier","id":22434},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/230332?namespace=static-8.2.5_31884-eu"},"name":"Cavalier","id":230332},"description":"Divine
+        Steed now has 2 charges.","cast_time":"Passive"},"tier_index":3,"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/21795?namespace=static-8.2.5_31884-eu"},"name":"Final
+        Stand","id":21795},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/204077?namespace=static-8.2.5_31884-eu"},"name":"Final
+        Stand","id":204077},"description":"When you use Divine Shield, you also taunt
+        all targets within 15 yards for 8 sec.","cast_time":"Passive"},"tier_index":4,"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/22438?namespace=static-8.2.5_31884-eu"},"name":"Consecrated
+        Ground","id":22438},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/204054?namespace=static-8.2.5_31884-eu"},"name":"Consecrated
+        Ground","id":204054},"description":"Your Consecration is 15% larger, and enemies
+        within it have 50% reduced movement speed.","cast_time":"Passive"},"tier_index":5,"column_index":1},{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/talent/21201?namespace=static-8.2.5_31884-eu"},"name":"Last
+        Defender","id":21201},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/203791?namespace=static-8.2.5_31884-eu"},"name":"Last
+        Defender","id":203791},"description":"Each enemy within 8 yards reduces the
+        damage that you take and increases the damage that you deal by up to 3%.","cast_time":"Passive"},"tier_index":6,"column_index":0}],"pvp_talent_slots":[{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3469?namespace=static-8.2.5_31884-eu"},"name":"Gladiator''s
+        Medallion","id":3469},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/208683?namespace=static-8.2.5_31884-eu"},"name":"Gladiator''s
+        Medallion","id":208683},"description":"Removes all movement impairing effects
+        and all effects which cause loss of control of your character while in PvP
+        combat.","cast_time":"Instant","cooldown":"2 min cooldown"}},"slot_number":1},{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/3475?namespace=static-8.2.5_31884-eu"},"name":"Unbound
+        Freedom","id":3475},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/305394?namespace=static-8.2.5_31884-eu"},"name":"Unbound
+        Freedom","id":305394},"description":"Blessing of Freedom increases movement
+        speed by 30%, and you gain Blessing of Freedom when cast on a friendly target.\r\n\r\nUnbound
+        Freedom also causes any Blessing of Freedom applied to yourself to be undispellable.","cast_time":"Passive"}},"slot_number":2},{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/90?namespace=static-8.2.5_31884-eu"},"name":"Hallowed
+        Ground","id":90},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/216868?namespace=static-8.2.5_31884-eu"},"name":"Hallowed
+        Ground","id":216868},"description":"Your Consecration clears and suppresses
+        all snare effects on allies within its area of effect.","cast_time":"Passive"}},"slot_number":3},{"selected":{"talent":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-talent/94?namespace=static-8.2.5_31884-eu"},"name":"Guardian
+        of the Forgotten Queen","id":94},"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/228049?namespace=static-8.2.5_31884-eu"},"name":"Guardian
+        of the Forgotten Queen","id":228049},"description":"Empowers the friendly
+        target with the spirit of the forgotten queen, causing the target to be immune
+        to all damage for 10 sec.","cast_time":"Instant","range":"40 yd range","cooldown":"3
+        min cooldown"}},"slot_number":4}]}],"active_specialization":{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/70?namespace=static-8.2.5_31884-eu"},"name":"Retribution","id":70},"character":{"key":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday?namespace=profile-eu"},"name":"Sheday","id":142650023,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"}}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/specializations?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 22:30:36 GMT
+recorded_with: VCR 2.9.3

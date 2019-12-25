@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/244?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '3'
+      Date:
+      - Sun, 22 Dec 2019 15:54:37 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:20:01 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - mythic-keystone-dungeon
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c8638b-2ca0-9b50-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638b-2ca0-9ea0-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638b-2ca0-9e50-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/244?namespace=dynamic-eu"}},"id":244,"name":"Atal''Dazar","map":{"name":"Atal''Dazar","id":1763},"zone":{"slug":"ataldazar"},"keystone_upgrades":[{"upgrade_level":1,"qualifying_duration":1800000},{"upgrade_level":2,"qualifying_duration":1440000},{"upgrade_level":3,"qualifying_duration":1080000}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/244?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:37 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/245?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '3'
+      Date:
+      - Sun, 22 Dec 2019 15:54:37 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:20:01 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - mythic-keystone-dungeon
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c865d4-e900-1d90-59a1-fa165a07058b
+      x-trace-spanid:
+      - 15c865d4-e900-1eb0-59a1-fa165a07058b
+      x-trace-parentspanid:
+      - 15c865d4-e900-1e80-59a1-fa165a07058b
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/245?namespace=dynamic-eu"}},"id":245,"name":"Freehold","map":{"name":"Freehold","id":1754},"zone":{"slug":"freehold"},"keystone_upgrades":[{"upgrade_level":1,"qualifying_duration":1980000},{"upgrade_level":2,"qualifying_duration":1584000},{"upgrade_level":3,"qualifying_duration":1188000}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/245?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:37 GMT
+recorded_with: VCR 2.9.3

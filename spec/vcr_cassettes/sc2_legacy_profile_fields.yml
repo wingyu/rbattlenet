@@ -1,0 +1,169 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/legacy/profile/2/1/2137104?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Sat, 21 Dec 2019 13:30:47 GMT
+      Server:
+      - nginx/1.13.12
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      ETag:
+      - W/"b5f-w1LOROHsgt5bNuVrnPvlGoK4vkg"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '2911'
+      x-trace-traceid:
+      - 15c865c1-20f3-31a0-85af-fa165b14433f
+      x-trace-spanid:
+      - 15c865c1-20f3-3500-85af-fa165b14433f
+      x-trace-parentspanid:
+      - 15c865c1-20f3-34d0-85af-fa165b14433f
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":"2137104","realm":1,"displayName":"katarn","clanName":"","clanTag":"","profilePath":"/profile/2/1/2137104","portrait":{"x":0,"y":0,"w":152,"h":152,"offset":0,"url":"https://static.starcraft2.com/starport/d0e7c831-18ab-4cd6-adc7-9d4a28f49ec7/portraits/0-152-grid.jpg"},"career":{"primaryRace":"TERRAN","terranWins":0,"protossWins":0,"zergWins":0,"highest1v1Rank":null,"highestTeamRank":null,"seasonTotalGames":0,"careerTotalGames":1},"swarmLevels":{"level":2,"terran":{"level":2,"totalLevelXP":65000,"currentLevelXP":47479},"zerg":{"level":0,"totalLevelXP":5000,"currentLevelXP":0},"protoss":{"level":0,"totalLevelXP":5000,"currentLevelXP":0}},"campaign":{},"season":{"seasonId":42,"seasonNumber":4,"seasonYear":2019,"totalGamesThisSeason":0,"stats":[{"type":"1v1","wins":0,"games":0},{"type":"2v2","wins":0,"games":0},{"type":"3v3","wins":0,"games":0},{"type":"4v4","wins":0,"games":0},{"type":"Archon","wins":0,"games":0}]},"rewards":{"selected":["18730036","2009110693","2359737029","2951153716"],"earned":["15768155","18730036","24676187","58624234","92851551","170345607","175118693","268555963","301758540","306523769","334383271","415049813","442861206","522060623","535063834","535257061","569055983","570858554","574205234","595469804","648212375","656055948","695505991","800865563","861201319","879683935","918219367","923590681","957728898","985481741","1103653240","1159285604","1185292261","1187203361","1211360877","1244367155","1422135942","1434315354","1465828875","1500394717","1625603542","1628057977","1664806146","1697980591","1701027258","1751841167","1804753350","1819379161","1856740790","1873318506","1896734762","1919498533","1932524020","1970675092","2009110693","2065745403","2104220742","2112492252","2200440608","2211791455","2261818887","2265163032","2269615009","2359737029","2418337610","2428064812","2440135473","2442224836","2484810407","2546882099","2560554373","2569643939","2575161619","2588696470","2615206337","2636101654","2743830879","2798322801","2816041570","2820704051","2908506816","2926081466","2951153716","3065782512","3168567118","3200889017","3216466912","3281192906","3297635990","3297901810","3312681754","3321648143","3334748015","3335041079","3356965872","3441709157","3484380374","3535385893","3558592749","3573408684","3659500125","3662634844","3663192486","3673336716","3710533283","3717180683","3719319749","3721089590","3733267237","3774144990","3776162522","3788149940","3844201106","3851663319","3862455791","3881125246","3927507442","3961822947","3979921667","4037382619","4067220888","4144653506","4166020264","4172710431","4179780094"]},"achievements":{"points":{"totalPoints":20,"categoryPoints":{"4325377":20,"4325379":0,"4325382":0,"4325408":0,"4325410":0,"4330138":0,"4364473":0,"4386911":0}},"achievements":[{"achievementId":"91475320768509","completionDate":1368973017},{"achievementId":"91475035553838","completionDate":1368971723}]}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/legacy/profile/2/1/2137104?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 13:30:47 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/legacy/profile/2/1/2137104/matches?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Sat, 21 Dec 2019 13:30:47 GMT
+      Server:
+      - nginx/1.13.12
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      ETag:
+      - W/"172-KzguATtsSHWJp/ps7sfTItF91/I"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '370'
+      x-trace-traceid:
+      - 15c86389-fc69-8850-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c86389-fc69-93c0-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c86389-fc69-9390-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"matches":[{"map":"Bel''Shir Vestige LE","type":"Co-Op","decision":"Win","speed":"Faster","date":1368973017},{"map":"Ulaan
+        Deeps","type":"Co-Op","decision":"Loss","speed":"Faster","date":1305856218},{"map":"Monsoon","type":"3v3","decision":"Loss","speed":"Faster","date":1305854720},{"map":"Monsoon","type":"Co-Op","decision":"Loss","speed":"Faster","date":1305853807}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/legacy/profile/2/1/2137104/matches?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 13:30:47 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/sc2/legacy/profile/2/1/2137104/ladders?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Sat, 21 Dec 2019 13:30:47 GMT
+      Server:
+      - nginx/1.13.12
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      ETag:
+      - W/"3f-VWIXFQ/97RiigAUvY3NoA/2tDiQ"
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '63'
+      x-trace-traceid:
+      - 15c865c1-20f3-3600-85af-fa165b14433f
+      x-trace-spanid:
+      - 15c865c1-20f3-3c60-85af-fa165b14433f
+      x-trace-parentspanid:
+      - 15c865c1-20f3-3c30-85af-fa165b14433f
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"currentSeason":[],"previousSeason":[],"showcasePlacement":[]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/sc2/legacy/profile/2/1/2137104/ladders?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 13:30:47 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/guild/stormrage/avalerion?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '8'
+      Date:
+      - Fri, 20 Dec 2019 17:37:19 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Fri, 20 Dec 2019 15:41:37 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=10800
+      Battlenet-Schema:
+      - guild
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86389-225c-f370-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c86389-225c-f5c0-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c86389-225c-f590-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/guild/stormrage/avalerion?namespace=profile-eu"}},"id":36886834,"name":"Avalerion","faction":{"type":"ALLIANCE","name":"Alliance"},"achievement_points":2895,"member_count":418,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"},"crest":{"emblem":{"id":12,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/guild-crest/emblem/12?namespace=static-8.2.5_31884-eu"}},"color":{"id":16,"rgba":{"r":223,"g":165,"b":90,"a":1.0}}},"border":{"id":4,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/guild-crest/border/4?namespace=static-8.2.5_31884-eu"}},"color":{"id":16,"rgba":{"r":249,"g":204,"b":48,"a":1.0}}},"background":{"color":{"id":31,"rgba":{"r":44,"g":106,"b":174,"a":1.0}}}},"roster":{"href":"https://eu.api.blizzard.com/data/wow/guild/stormrage/avalerion/roster?namespace=profile-eu"},"achievements":{"href":"https://eu.api.blizzard.com/data/wow/guild/stormrage/avalerion/achievements?namespace=profile-eu"},"created_timestamp":1226346041000}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/guild/stormrage/avalerion?namespace=profile-eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 17:37:19 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/guild/azuremyst/imperium?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '8'
+      Date:
+      - Fri, 20 Dec 2019 17:37:19 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Fri, 20 Dec 2019 14:44:27 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=10800
+      Battlenet-Schema:
+      - guild
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c865d2-d208-0410-59a1-fa165a07058b
+      x-trace-spanid:
+      - 15c865d2-d208-0530-59a1-fa165a07058b
+      x-trace-parentspanid:
+      - 15c865d2-d208-0500-59a1-fa165a07058b
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/guild/azuremyst/imperium?namespace=profile-eu"}},"id":39129408,"name":"Imperium","faction":{"type":"ALLIANCE","name":"Alliance"},"achievement_points":1815,"member_count":536,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/1417?namespace=dynamic-eu"},"name":"Azuremyst","id":1417,"slug":"azuremyst"},"crest":{"emblem":{"id":128,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/guild-crest/emblem/128?namespace=static-8.2.5_31884-eu"}},"color":{"id":14,"rgba":{"r":177,"g":184,"b":177,"a":1.0}}},"border":{"id":3,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/guild-crest/border/3?namespace=static-8.2.5_31884-eu"}},"color":{"id":14,"rgba":{"r":255,"g":255,"b":255,"a":1.0}}},"background":{"color":{"id":23,"rgba":{"r":0,"g":130,"b":15,"a":1.0}}}},"roster":{"href":"https://eu.api.blizzard.com/data/wow/guild/azuremyst/imperium/roster?namespace=profile-eu"},"achievements":{"href":"https://eu.api.blizzard.com/data/wow/guild/azuremyst/imperium/achievements?namespace=profile-eu"},"created_timestamp":1425412701000}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/guild/azuremyst/imperium?namespace=profile-eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 17:37:19 GMT
+recorded_with: VCR 2.9.3

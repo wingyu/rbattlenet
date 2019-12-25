@@ -1,0 +1,170 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/reputations?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '3'
+      Date:
+      - Sun, 22 Dec 2019 22:30:35 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sun, 22 Dec 2019 09:05:19 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - character-reputations
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86553-5f44-54c0-f981-fa165bcda32d
+      x-trace-spanid:
+      - 15c86553-5f44-67b0-f981-fa165bcda32d
+      x-trace-parentspanid:
+      - 15c86553-5f44-6770-f981-fa165bcda32d
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/reputations?namespace=profile-eu"}},"character":{"key":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday?namespace=profile-eu"},"name":"Sheday","id":142650023,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"}},"reputations":[{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/21?namespace=static-8.2.5_31884-eu"},"name":"Booty
+        Bay","id":21},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/47?namespace=static-8.2.5_31884-eu"},"name":"Ironforge","id":47},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/54?namespace=static-8.2.5_31884-eu"},"name":"Gnomeregan","id":54},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/59?namespace=static-8.2.5_31884-eu"},"name":"Thorium
+        Brotherhood","id":59},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/69?namespace=static-8.2.5_31884-eu"},"name":"Darnassus","id":69},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/70?namespace=static-8.2.5_31884-eu"},"name":"Syndicate","id":70},"standing":{"raw":-42000,"value":0,"max":36000,"tier":0,"name":"Hated"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/72?namespace=static-8.2.5_31884-eu"},"name":"Stormwind","id":72},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/87?namespace=static-8.2.5_31884-eu"},"name":"Bloodsail
+        Buccaneers","id":87},"standing":{"raw":-42000,"value":0,"max":36000,"tier":0,"name":"Hated"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/92?namespace=static-8.2.5_31884-eu"},"name":"Gelkis
+        Clan Centaur","id":92},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/93?namespace=static-8.2.5_31884-eu"},"name":"Magram
+        Clan Centaur","id":93},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/270?namespace=static-8.2.5_31884-eu"},"name":"Zandalar
+        Tribe","id":270},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/349?namespace=static-8.2.5_31884-eu"},"name":"Ravenholdt","id":349},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/369?namespace=static-8.2.5_31884-eu"},"name":"Gadgetzan","id":369},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/470?namespace=static-8.2.5_31884-eu"},"name":"Ratchet","id":470},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/509?namespace=static-8.2.5_31884-eu"},"name":"The
+        League of Arathor","id":509},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/529?namespace=static-8.2.5_31884-eu"},"name":"Argent
+        Dawn","id":529},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/576?namespace=static-8.2.5_31884-eu"},"name":"Timbermaw
+        Hold","id":576},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/577?namespace=static-8.2.5_31884-eu"},"name":"Everlook","id":577},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/589?namespace=static-8.2.5_31884-eu"},"name":"Wintersaber
+        Trainers","id":589},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/609?namespace=static-8.2.5_31884-eu"},"name":"Cenarion
+        Circle","id":609},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/730?namespace=static-8.2.5_31884-eu"},"name":"Stormpike
+        Guard","id":730},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/749?namespace=static-8.2.5_31884-eu"},"name":"Hydraxian
+        Waterlords","id":749},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/809?namespace=static-8.2.5_31884-eu"},"name":"Shen''dralar","id":809},"standing":{"raw":0,"value":0,"max":3000,"tier":3,"name":"Neutral"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/890?namespace=static-8.2.5_31884-eu"},"name":"Silverwing
+        Sentinels","id":890},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/909?namespace=static-8.2.5_31884-eu"},"name":"Darkmoon
+        Faire","id":909},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/910?namespace=static-8.2.5_31884-eu"},"name":"Brood
+        of Nozdormu","id":910},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/930?namespace=static-8.2.5_31884-eu"},"name":"Exodar","id":930},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/932?namespace=static-8.2.5_31884-eu"},"name":"The
+        Aldor","id":932},"standing":{"raw":-42000,"value":0,"max":36000,"tier":0,"name":"Hated"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/933?namespace=static-8.2.5_31884-eu"},"name":"The
+        Consortium","id":933},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/934?namespace=static-8.2.5_31884-eu"},"name":"The
+        Scryers","id":934},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/935?namespace=static-8.2.5_31884-eu"},"name":"The
+        Sha''tar","id":935},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/942?namespace=static-8.2.5_31884-eu"},"name":"Cenarion
+        Expedition","id":942},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/946?namespace=static-8.2.5_31884-eu"},"name":"Honor
+        Hold","id":946},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/967?namespace=static-8.2.5_31884-eu"},"name":"The
+        Violet Eye","id":967},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/970?namespace=static-8.2.5_31884-eu"},"name":"Sporeggar","id":970},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/978?namespace=static-8.2.5_31884-eu"},"name":"Kurenai","id":978},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/989?namespace=static-8.2.5_31884-eu"},"name":"Keepers
+        of Time","id":989},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/990?namespace=static-8.2.5_31884-eu"},"name":"The
+        Scale of the Sands","id":990},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1011?namespace=static-8.2.5_31884-eu"},"name":"Lower
+        City","id":1011},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1012?namespace=static-8.2.5_31884-eu"},"name":"Ashtongue
+        Deathsworn","id":1012},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1015?namespace=static-8.2.5_31884-eu"},"name":"Netherwing","id":1015},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1031?namespace=static-8.2.5_31884-eu"},"name":"Sha''tari
+        Skyguard","id":1031},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1037?namespace=static-8.2.5_31884-eu"},"name":"Alliance
+        Vanguard","id":1037},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1038?namespace=static-8.2.5_31884-eu"},"name":"Ogri''la","id":1038},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1050?namespace=static-8.2.5_31884-eu"},"name":"Valiance
+        Expedition","id":1050},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1068?namespace=static-8.2.5_31884-eu"},"name":"Explorers''
+        League","id":1068},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1073?namespace=static-8.2.5_31884-eu"},"name":"The
+        Kalu''ak","id":1073},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1077?namespace=static-8.2.5_31884-eu"},"name":"Shattered
+        Sun Offensive","id":1077},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1090?namespace=static-8.2.5_31884-eu"},"name":"Kirin
+        Tor","id":1090},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1091?namespace=static-8.2.5_31884-eu"},"name":"The
+        Wyrmrest Accord","id":1091},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1094?namespace=static-8.2.5_31884-eu"},"name":"The
+        Silver Covenant","id":1094},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1098?namespace=static-8.2.5_31884-eu"},"name":"Knights
+        of the Ebon Blade","id":1098},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1104?namespace=static-8.2.5_31884-eu"},"name":"Frenzyheart
+        Tribe","id":1104},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1105?namespace=static-8.2.5_31884-eu"},"name":"The
+        Oracles","id":1105},"standing":{"raw":-42000,"value":0,"max":36000,"tier":0,"name":"Hated"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1106?namespace=static-8.2.5_31884-eu"},"name":"Argent
+        Crusade","id":1106},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1119?namespace=static-8.2.5_31884-eu"},"name":"The
+        Sons of Hodir","id":1119},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1126?namespace=static-8.2.5_31884-eu"},"name":"The
+        Frostborn","id":1126},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1134?namespace=static-8.2.5_31884-eu"},"name":"Gilneas","id":1134},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1135?namespace=static-8.2.5_31884-eu"},"name":"The
+        Earthen Ring","id":1135},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1156?namespace=static-8.2.5_31884-eu"},"name":"The
+        Ashen Verdict","id":1156},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1158?namespace=static-8.2.5_31884-eu"},"name":"Guardians
+        of Hyjal","id":1158},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1168?namespace=static-8.2.5_31884-eu"},"name":"Guild","id":1168},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1171?namespace=static-8.2.5_31884-eu"},"name":"Therazane","id":1171},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1173?namespace=static-8.2.5_31884-eu"},"name":"Ramkahen","id":1173},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1174?namespace=static-8.2.5_31884-eu"},"name":"Wildhammer
+        Clan","id":1174},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1177?namespace=static-8.2.5_31884-eu"},"name":"Baradin''s
+        Wardens","id":1177},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1204?namespace=static-8.2.5_31884-eu"},"name":"Avengers
+        of Hyjal","id":1204},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1269?namespace=static-8.2.5_31884-eu"},"name":"Golden
+        Lotus","id":1269},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1270?namespace=static-8.2.5_31884-eu"},"name":"Shado-Pan","id":1270},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1271?namespace=static-8.2.5_31884-eu"},"name":"Order
+        of the Cloud Serpent","id":1271},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1272?namespace=static-8.2.5_31884-eu"},"name":"The
+        Tillers","id":1272},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1273?namespace=static-8.2.5_31884-eu"},"name":"Jogu
+        the Drunk","id":1273},"standing":{"raw":6480,"value":6480,"max":8400,"tier":0,"name":"Stranger"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1275?namespace=static-8.2.5_31884-eu"},"name":"Ella","id":1275},"standing":{"raw":4080,"value":4080,"max":8400,"tier":0,"name":"Stranger"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1276?namespace=static-8.2.5_31884-eu"},"name":"Old
+        Hillpaw","id":1276},"standing":{"raw":8880,"value":480,"max":8400,"tier":1,"name":"Acquaintance"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1277?namespace=static-8.2.5_31884-eu"},"name":"Chee
+        Chee","id":1277},"standing":{"raw":2400,"value":2400,"max":8400,"tier":0,"name":"Stranger"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1279?namespace=static-8.2.5_31884-eu"},"name":"Haohan
+        Mudclaw","id":1279},"standing":{"raw":9120,"value":720,"max":8400,"tier":1,"name":"Acquaintance"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1280?namespace=static-8.2.5_31884-eu"},"name":"Tina
+        Mudclaw","id":1280},"standing":{"raw":17880,"value":1080,"max":8400,"tier":2,"name":"Buddy"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1281?namespace=static-8.2.5_31884-eu"},"name":"Gina
+        Mudclaw","id":1281},"standing":{"raw":15600,"value":7200,"max":8400,"tier":1,"name":"Acquaintance"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1282?namespace=static-8.2.5_31884-eu"},"name":"Fish
+        Fellreed","id":1282},"standing":{"raw":0,"value":0,"max":8400,"tier":0,"name":"Stranger"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1283?namespace=static-8.2.5_31884-eu"},"name":"Farmer
+        Fung","id":1283},"standing":{"raw":18000,"value":1200,"max":8400,"tier":2,"name":"Buddy"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1302?namespace=static-8.2.5_31884-eu"},"name":"The
+        Anglers","id":1302},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1337?namespace=static-8.2.5_31884-eu"},"name":"The
+        Klaxxi","id":1337},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1341?namespace=static-8.2.5_31884-eu"},"name":"The
+        August Celestials","id":1341},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1345?namespace=static-8.2.5_31884-eu"},"name":"The
+        Lorewalkers","id":1345},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1353?namespace=static-8.2.5_31884-eu"},"name":"Tushui
+        Pandaren","id":1353},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1359?namespace=static-8.2.5_31884-eu"},"name":"The
+        Black Prince","id":1359},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1376?namespace=static-8.2.5_31884-eu"},"name":"Operation:
+        Shieldwall","id":1376},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1387?namespace=static-8.2.5_31884-eu"},"name":"Kirin
+        Tor Offensive","id":1387},"standing":{"raw":17160,"value":8160,"max":12000,"tier":5,"name":"Honored"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1419?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub (Season 1)","id":1419},"standing":{"raw":0,"value":0,"max":1000,"tier":0,"name":"Rank
+        1"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1435?namespace=static-8.2.5_31884-eu"},"name":"Shado-Pan
+        Assault","id":1435},"standing":{"raw":24466,"value":3466,"max":21000,"tier":6,"name":"Revered"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1492?namespace=static-8.2.5_31884-eu"},"name":"Emperor
+        Shaohao","id":1492},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1515?namespace=static-8.2.5_31884-eu"},"name":"Arakkoa
+        Outcasts","id":1515},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1682?namespace=static-8.2.5_31884-eu"},"name":"Wrynn''s
+        Vanguard","id":1682},"standing":{"raw":10257,"value":1257,"max":12000,"tier":5,"name":"Honored"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1691?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub (Season 2)","id":1691},"standing":{"raw":999,"value":999,"max":1000,"tier":0,"name":"Rank
+        1"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1710?namespace=static-8.2.5_31884-eu"},"name":"Sha''tari
+        Defense","id":1710},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1711?namespace=static-8.2.5_31884-eu"},"name":"Steamwheedle
+        Preservation Society","id":1711},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1731?namespace=static-8.2.5_31884-eu"},"name":"Council
+        of Exarchs","id":1731},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1828?namespace=static-8.2.5_31884-eu"},"name":"Highmountain
+        Tribe","id":1828},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":105130,"value":5130,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1847?namespace=static-8.2.5_31884-eu"},"name":"Hand
+        of the Prophet","id":1847},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1849?namespace=static-8.2.5_31884-eu"},"name":"Order
+        of the Awakened","id":1849},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1850?namespace=static-8.2.5_31884-eu"},"name":"The
+        Saberstalkers","id":1850},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1859?namespace=static-8.2.5_31884-eu"},"name":"The
+        Nightfallen","id":1859},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":104985,"value":4985,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1883?namespace=static-8.2.5_31884-eu"},"name":"Dreamweavers","id":1883},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":102167,"value":2167,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1894?namespace=static-8.2.5_31884-eu"},"name":"The
+        Wardens","id":1894},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":118440,"value":8440,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1900?namespace=static-8.2.5_31884-eu"},"name":"Court
+        of Farondis","id":1900},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":92242,"value":2242,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1948?namespace=static-8.2.5_31884-eu"},"name":"Valarjar","id":1948},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":123955,"value":3955,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1975?namespace=static-8.2.5_31884-eu"},"name":"Conjurer
+        Margoss","id":1975},"standing":{"raw":42000,"value":0,"max":0,"tier":5,"name":"Best
+        Friend"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2011?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub (Season 3)","id":2011},"standing":{"raw":7000,"value":0,"max":1000,"tier":7,"name":"Rank
+        8"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2018?namespace=static-8.2.5_31884-eu"},"name":"Talon''s
+        Vengeance","id":2018},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2045?namespace=static-8.2.5_31884-eu"},"name":"Armies
+        of Legionfall","id":2045},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":114080,"value":4080,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2097?namespace=static-8.2.5_31884-eu"},"name":"Ilyssia
+        of the Waters","id":2097},"standing":{"raw":42000,"value":0,"max":0,"tier":5,"name":"Best
+        Friend"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2098?namespace=static-8.2.5_31884-eu"},"name":"Keeper
+        Raynae","id":2098},"standing":{"raw":42000,"value":0,"max":0,"tier":5,"name":"Best
+        Friend"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2099?namespace=static-8.2.5_31884-eu"},"name":"Akule
+        Riverhorn","id":2099},"standing":{"raw":42000,"value":0,"max":0,"tier":5,"name":"Best
+        Friend"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2100?namespace=static-8.2.5_31884-eu"},"name":"Corbyn","id":2100},"standing":{"raw":42000,"value":0,"max":0,"tier":5,"name":"Best
+        Friend"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2101?namespace=static-8.2.5_31884-eu"},"name":"Sha''leth","id":2101},"standing":{"raw":42000,"value":0,"max":0,"tier":5,"name":"Best
+        Friend"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2102?namespace=static-8.2.5_31884-eu"},"name":"Impus","id":2102},"standing":{"raw":42000,"value":0,"max":0,"tier":5,"name":"Best
+        Friend"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2135?namespace=static-8.2.5_31884-eu"},"name":"Chromie","id":2135},"standing":{"raw":15100,"value":100,"max":0,"tier":6,"name":"Timelord"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2159?namespace=static-8.2.5_31884-eu"},"name":"7th
+        Legion","id":2159},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":151933,"value":1933,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2160?namespace=static-8.2.5_31884-eu"},"name":"Proudmoore
+        Admiralty","id":2160},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":42207,"value":10000,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2161?namespace=static-8.2.5_31884-eu"},"name":"Order
+        of Embers","id":2161},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":27692,"value":7692,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2162?namespace=static-8.2.5_31884-eu"},"name":"Storm''s
+        Wake","id":2162},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":39376,"value":9376,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2163?namespace=static-8.2.5_31884-eu"},"name":"Tortollan
+        Seekers","id":2163},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":28717,"value":8717,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2164?namespace=static-8.2.5_31884-eu"},"name":"Champions
+        of Azeroth","id":2164},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":67462,"value":10000,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2165?namespace=static-8.2.5_31884-eu"},"name":"Army
+        of the Light","id":2165},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":42230,"value":2230,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2170?namespace=static-8.2.5_31884-eu"},"name":"Argussian
+        Reach","id":2170},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":15172,"value":5172,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2371?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub","id":2371},"standing":{"raw":7000,"value":0,"max":0,"tier":7,"name":"Max
+        Rank"}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2391?namespace=static-8.2.5_31884-eu"},"name":"Rustbolt
+        Resistance","id":2391},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":94739,"value":4739,"max":10000}},{"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2400?namespace=static-8.2.5_31884-eu"},"name":"Waveblade
+        Ankoan","id":2400},"standing":{"raw":42000,"value":0,"max":0,"tier":7,"name":"Exalted"},"paragon":{"raw":68007,"value":8007,"max":10000}}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/reputations?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 22:30:36 GMT
+recorded_with: VCR 2.9.3

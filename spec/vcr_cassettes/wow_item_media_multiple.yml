@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/media/item/19019?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 10:57:28 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:28:22 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - media
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '216'
+      x-trace-traceid:
+      - 15c86603-76d7-6960-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86603-76d7-6ed0-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86603-76d7-6ea0-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.2.5_31884-eu"}},"assets":[{"key":"icon","value":"https://render-eu.worldofwarcraft.com/icons/56/inv_sword_39.jpg"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/media/item/19019?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 10:57:29 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/media/item/19020?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 10:57:28 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:28:22 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - media
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c8638a-f01a-1410-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638a-f01a-1840-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638a-f01a-1810-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/media/item/19020?namespace=static-8.2.5_31884-eu"}},"assets":[{"key":"icon","value":"https://render-eu.worldofwarcraft.com/icons/56/inv_scroll_03.jpg"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/media/item/19020?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 10:57:29 GMT
+recorded_with: VCR 2.9.3

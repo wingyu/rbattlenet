@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/act/1?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:40:57 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=C96D19CF66F4E366822C88F61FAD3170.blade05_eu_a_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86602-9bef-03b0-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86602-9bef-05c0-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86602-9bef-0590-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"slug":"act-i","number":1,"name":"Act I","quests":[{"id":87700,"name":"The
+        Fallen Star","slug":"the-fallen-star"},{"id":72095,"name":"The Legacy of Cain","slug":"the-legacy-of-cain"},{"id":72221,"name":"A
+        Shattered Crown","slug":"a-shattered-crown"},{"id":72061,"name":"Reign of
+        the Black King","slug":"reign-of-the-black-king"},{"id":117779,"name":"Sword
+        of the Stranger","slug":"sword-of-the-stranger"},{"id":72738,"name":"The Broken
+        Blade","slug":"the-broken-blade"},{"id":73236,"name":"The Doom in Wortham","slug":"the-doom-in-wortham"},{"id":72546,"name":"Trailing
+        the Coven","slug":"trailing-the-coven"},{"id":72801,"name":"The Imprisoned
+        Angel","slug":"the-imprisoned-angel"},{"id":136656,"name":"Return to New Tristram","slug":"return-to-new-tristram"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/act/1?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:40:58 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/d3/data/act/2?eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 15:40:57 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=09CEA10E9C2A4E5DB0AC7C3F64BF8C50.blade10_eu_b_api_d3_data; Path=/api/d3-data/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '744'
+      x-trace-traceid:
+      - 15c865d3-cd2a-0950-59a1-fa165a07058b
+      x-trace-spanid:
+      - 15c865d3-cd2a-1010-59a1-fa165a07058b
+      x-trace-parentspanid:
+      - 15c865d3-cd2a-0fe0-59a1-fa165a07058b
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"slug":"act-ii","number":2,"name":"Act II","quests":[{"id":80322,"name":"Shadows
+        in the Desert","slug":"shadows-in-the-desert"},{"id":93396,"name":"The Road
+        to Alcarnus","slug":"the-road-to-alcarnus"},{"id":74128,"name":"City of Blood","slug":"city-of-blood"},{"id":57331,"name":"A
+        Royal Audience","slug":"a-royal-audience"},{"id":78264,"name":"Unexpected
+        Allies","slug":"unexpected-allies"},{"id":78266,"name":"Betrayer of the Horadrim","slug":"betrayer-of-the-horadrim"},{"id":57335,"name":"Blood
+        and Sand","slug":"blood-and-sand"},{"id":57337,"name":"The Black Soulstone","slug":"the-black-soulstone"},{"id":121792,"name":"The
+        Scouring of Caldeum","slug":"the-scouring-of-caldeum"},{"id":57339,"name":"Lord
+        of Lies","slug":"lord-of-lies"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/d3/data/act/2?eu&locale=en_gb
+  recorded_at: Sat, 21 Dec 2019 15:40:58 GMT
+recorded_with: VCR 2.9.3

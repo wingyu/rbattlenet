@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-classic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Fri, 20 Dec 2019 20:26:36 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Mon, 9 Dec 2019 02:11:33 GMT
+      Battlenet-Namespace:
+      - static-1.13.2_31446-classic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - playable-class
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '622'
+      x-trace-traceid:
+      - 15c865d2-f639-b0b0-59a1-fa165a07058b
+      x-trace-spanid:
+      - 15c865d2-f639-b530-59a1-fa165a07058b
+      x-trace-parentspanid:
+      - 15c865d2-f639-b500-59a1-fa165a07058b
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-1.13.2_31446-classic-eu"}},"id":1,"name":"Warrior","gender_name":{"male":"Warrior","female":"Warrior"},"power_type":{"key":{"href":"https://eu.api.blizzard.com/data/wow/power-type/1?namespace=static-1.13.2_31446-classic-eu"},"name":"Rage","id":1},"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/playable-class/1?namespace=static-1.13.2_31446-classic-eu"},"id":1},"pvp_talent_slots":{"href":"https://eu.api.blizzard.com/data/wow/playable-class/1/pvp-talent-slots?namespace=static-1.13.2_31446-classic-eu"}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-classic-eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 20:26:36 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/playable-class/2?namespace=static-classic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Fri, 20 Dec 2019 20:26:35 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Mon, 9 Dec 2019 02:11:33 GMT
+      Battlenet-Namespace:
+      - static-1.13.2_31446-classic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - playable-class
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86389-46b5-9450-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c86389-46b5-9a40-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c86389-46b5-9a10-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/playable-class/2?namespace=static-1.13.2_31446-classic-eu"}},"id":2,"name":"Paladin","gender_name":{"male":"Paladin","female":"Paladin"},"power_type":{"key":{"href":"https://eu.api.blizzard.com/data/wow/power-type/0?namespace=static-1.13.2_31446-classic-eu"},"name":"Mana","id":0},"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/playable-class/2?namespace=static-1.13.2_31446-classic-eu"},"id":2},"pvp_talent_slots":{"href":"https://eu.api.blizzard.com/data/wow/playable-class/2/pvp-talent-slots?namespace=static-1.13.2_31446-classic-eu"}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/playable-class/2?namespace=static-classic-eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 20:26:36 GMT
+recorded_with: VCR 2.9.3

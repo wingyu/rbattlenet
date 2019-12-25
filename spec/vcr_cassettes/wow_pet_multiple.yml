@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/pet/40?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Sun, 22 Dec 2019 15:54:41 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:20:36 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - pet
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c865c2-0050-fda0-85af-fa165b14433f
+      x-trace-spanid:
+      - 15c865c2-0051-0220-85af-fa165b14433f
+      x-trace-parentspanid:
+      - 15c865c2-0051-01f0-85af-fa165b14433f
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/pet/40?namespace=static-8.2.5_31884-eu"}},"id":40,"name":"Bombay
+        Cat","battle_pet_type":{"type":"BEAST","name":"Beast"},"description":"Donni
+        Anthania plans to have a bombay buried with her when she dies. A wise adventurer
+        can put its talents to much better use.","is_capturable":false,"is_tradable":true,"is_battlepet":true,"is_alliance_only":false,"is_horde_only":false,"abilities":[{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/429?namespace=static-8.2.5_31884-eu"},"name":"Claw","id":429},"slot":0,"required_level":1},{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/492?namespace=static-8.2.5_31884-eu"},"name":"Rake","id":492},"slot":1,"required_level":2},{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/538?namespace=static-8.2.5_31884-eu"},"name":"Devour","id":538},"slot":2,"required_level":4},{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/535?namespace=static-8.2.5_31884-eu"},"name":"Pounce","id":535},"slot":0,"required_level":10},{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/357?namespace=static-8.2.5_31884-eu"},"name":"Screech","id":357},"slot":1,"required_level":15},{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/536?namespace=static-8.2.5_31884-eu"},"name":"Prowl","id":536},"slot":2,"required_level":20}],"source":{"type":"VENDOR","name":"Vendor"},"icon":"https://render-eu.worldofwarcraft.com/icons/56/inv_pet_cats_bombaycat.jpg","creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/7385?namespace=static-8.2.5_31884-eu"},"name":"Bombay
+        Cat","id":7385},"is_random_creature_display":false}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/pet/40?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:41 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/pet/39?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Sun, 22 Dec 2019 15:54:41 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:20:36 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - pet
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86553-246a-1e80-f981-fa165bcda32d
+      x-trace-spanid:
+      - 15c86553-246a-2120-f981-fa165bcda32d
+      x-trace-parentspanid:
+      - 15c86553-246a-20f0-f981-fa165bcda32d
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/pet/39?namespace=static-8.2.5_31884-eu"}},"id":39,"name":"Mechanical
+        Squirrel","battle_pet_type":{"type":"MECHANICAL","name":"Mechanical"},"description":"A
+        mechanical squirrel''s logic center tells it to collect and store both nuts
+        and bolts for the winter.","is_capturable":false,"is_tradable":true,"is_battlepet":true,"is_alliance_only":false,"is_horde_only":false,"abilities":[{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/384?namespace=static-8.2.5_31884-eu"},"name":"Metal
+        Fist","id":384},"slot":0,"required_level":1},{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/389?namespace=static-8.2.5_31884-eu"},"name":"Overtune","id":389},"slot":1,"required_level":2},{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/459?namespace=static-8.2.5_31884-eu"},"name":"Wind-Up","id":459},"slot":2,"required_level":4},{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/202?namespace=static-8.2.5_31884-eu"},"name":"Thrash","id":202},"slot":0,"required_level":10},{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/392?namespace=static-8.2.5_31884-eu"},"name":"Extra
+        Plating","id":392},"slot":1,"required_level":15},{"ability":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pet-ability/278?namespace=static-8.2.5_31884-eu"},"name":"Repair","id":278},"slot":2,"required_level":20}],"source":{"type":"PROFESSION","name":"Profession"},"icon":"https://render-eu.worldofwarcraft.com/icons/56/inv_pet_mechanicalsquirrel.jpg","creature":{"key":{"href":"https://eu.api.blizzard.com/data/wow/creature/2671?namespace=static-8.2.5_31884-eu"},"name":"Mechanical
+        Squirrel","id":2671},"is_random_creature_display":false}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/pet/39?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:41 GMT
+recorded_with: VCR 2.9.3

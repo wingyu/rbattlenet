@@ -1,0 +1,220 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/reputation-faction/index?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:50 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:19:56 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - reputation-faction
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86603-b38b-21d0-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86603-b38b-24d0-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86603-b38b-24a0-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/?namespace=static-8.2.5_31884-eu"}},"factions":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/21?namespace=static-8.2.5_31884-eu"},"name":"Booty
+        Bay","id":21},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/47?namespace=static-8.2.5_31884-eu"},"name":"Ironforge","id":47},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/54?namespace=static-8.2.5_31884-eu"},"name":"Gnomeregan","id":54},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/59?namespace=static-8.2.5_31884-eu"},"name":"Thorium
+        Brotherhood","id":59},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/67?namespace=static-8.2.5_31884-eu"},"name":"Horde","id":67},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/68?namespace=static-8.2.5_31884-eu"},"name":"Undercity","id":68},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/69?namespace=static-8.2.5_31884-eu"},"name":"Darnassus","id":69},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/70?namespace=static-8.2.5_31884-eu"},"name":"Syndicate","id":70},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/72?namespace=static-8.2.5_31884-eu"},"name":"Stormwind","id":72},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/76?namespace=static-8.2.5_31884-eu"},"name":"Orgrimmar","id":76},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/81?namespace=static-8.2.5_31884-eu"},"name":"Thunder
+        Bluff","id":81},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/87?namespace=static-8.2.5_31884-eu"},"name":"Bloodsail
+        Buccaneers","id":87},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/92?namespace=static-8.2.5_31884-eu"},"name":"Gelkis
+        Clan Centaur","id":92},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/93?namespace=static-8.2.5_31884-eu"},"name":"Magram
+        Clan Centaur","id":93},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/169?namespace=static-8.2.5_31884-eu"},"name":"Steamwheedle
+        Cartel","id":169},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/270?namespace=static-8.2.5_31884-eu"},"name":"Zandalar
+        Tribe","id":270},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/349?namespace=static-8.2.5_31884-eu"},"name":"Ravenholdt","id":349},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/369?namespace=static-8.2.5_31884-eu"},"name":"Gadgetzan","id":369},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/469?namespace=static-8.2.5_31884-eu"},"name":"Alliance","id":469},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/470?namespace=static-8.2.5_31884-eu"},"name":"Ratchet","id":470},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/509?namespace=static-8.2.5_31884-eu"},"name":"The
+        League of Arathor","id":509},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/510?namespace=static-8.2.5_31884-eu"},"name":"The
+        Defilers","id":510},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/529?namespace=static-8.2.5_31884-eu"},"name":"Argent
+        Dawn","id":529},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/530?namespace=static-8.2.5_31884-eu"},"name":"Darkspear
+        Trolls","id":530},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/576?namespace=static-8.2.5_31884-eu"},"name":"Timbermaw
+        Hold","id":576},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/577?namespace=static-8.2.5_31884-eu"},"name":"Everlook","id":577},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/589?namespace=static-8.2.5_31884-eu"},"name":"Wintersaber
+        Trainers","id":589},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/609?namespace=static-8.2.5_31884-eu"},"name":"Cenarion
+        Circle","id":609},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/729?namespace=static-8.2.5_31884-eu"},"name":"Frostwolf
+        Clan","id":729},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/730?namespace=static-8.2.5_31884-eu"},"name":"Stormpike
+        Guard","id":730},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/749?namespace=static-8.2.5_31884-eu"},"name":"Hydraxian
+        Waterlords","id":749},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/809?namespace=static-8.2.5_31884-eu"},"name":"Shen''dralar","id":809},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/889?namespace=static-8.2.5_31884-eu"},"name":"Warsong
+        Outriders","id":889},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/890?namespace=static-8.2.5_31884-eu"},"name":"Silverwing
+        Sentinels","id":890},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/891?namespace=static-8.2.5_31884-eu"},"name":"Alliance
+        Forces","id":891},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/892?namespace=static-8.2.5_31884-eu"},"name":"Horde
+        Forces","id":892},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/909?namespace=static-8.2.5_31884-eu"},"name":"Darkmoon
+        Faire","id":909},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/910?namespace=static-8.2.5_31884-eu"},"name":"Brood
+        of Nozdormu","id":910},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/911?namespace=static-8.2.5_31884-eu"},"name":"Silvermoon
+        City","id":911},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/922?namespace=static-8.2.5_31884-eu"},"name":"Tranquillien","id":922},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/930?namespace=static-8.2.5_31884-eu"},"name":"Exodar","id":930},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/932?namespace=static-8.2.5_31884-eu"},"name":"The
+        Aldor","id":932},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/933?namespace=static-8.2.5_31884-eu"},"name":"The
+        Consortium","id":933},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/934?namespace=static-8.2.5_31884-eu"},"name":"The
+        Scryers","id":934},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/935?namespace=static-8.2.5_31884-eu"},"name":"The
+        Sha''tar","id":935},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/936?namespace=static-8.2.5_31884-eu"},"name":"Shattrath
+        City","id":936},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/941?namespace=static-8.2.5_31884-eu"},"name":"The
+        Mag''har","id":941},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/942?namespace=static-8.2.5_31884-eu"},"name":"Cenarion
+        Expedition","id":942},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/946?namespace=static-8.2.5_31884-eu"},"name":"Honor
+        Hold","id":946},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/947?namespace=static-8.2.5_31884-eu"},"name":"Thrallmar","id":947},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/967?namespace=static-8.2.5_31884-eu"},"name":"The
+        Violet Eye","id":967},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/970?namespace=static-8.2.5_31884-eu"},"name":"Sporeggar","id":970},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/978?namespace=static-8.2.5_31884-eu"},"name":"Kurenai","id":978},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/980?namespace=static-8.2.5_31884-eu"},"name":"The
+        Burning Crusade","id":980},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/989?namespace=static-8.2.5_31884-eu"},"name":"Keepers
+        of Time","id":989},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/990?namespace=static-8.2.5_31884-eu"},"name":"The
+        Scale of the Sands","id":990},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1011?namespace=static-8.2.5_31884-eu"},"name":"Lower
+        City","id":1011},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1012?namespace=static-8.2.5_31884-eu"},"name":"Ashtongue
+        Deathsworn","id":1012},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1015?namespace=static-8.2.5_31884-eu"},"name":"Netherwing","id":1015},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1031?namespace=static-8.2.5_31884-eu"},"name":"Sha''tari
+        Skyguard","id":1031},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1037?namespace=static-8.2.5_31884-eu"},"name":"Alliance
+        Vanguard","id":1037},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1038?namespace=static-8.2.5_31884-eu"},"name":"Ogri''la","id":1038},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1050?namespace=static-8.2.5_31884-eu"},"name":"Valiance
+        Expedition","id":1050},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1052?namespace=static-8.2.5_31884-eu"},"name":"Horde
+        Expedition","id":1052},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1064?namespace=static-8.2.5_31884-eu"},"name":"The
+        Taunka","id":1064},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1067?namespace=static-8.2.5_31884-eu"},"name":"The
+        Hand of Vengeance","id":1067},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1068?namespace=static-8.2.5_31884-eu"},"name":"Explorers''
+        League","id":1068},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1073?namespace=static-8.2.5_31884-eu"},"name":"The
+        Kalu''ak","id":1073},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1077?namespace=static-8.2.5_31884-eu"},"name":"Shattered
+        Sun Offensive","id":1077},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1085?namespace=static-8.2.5_31884-eu"},"name":"Warsong
+        Offensive","id":1085},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1090?namespace=static-8.2.5_31884-eu"},"name":"Kirin
+        Tor","id":1090},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1091?namespace=static-8.2.5_31884-eu"},"name":"The
+        Wyrmrest Accord","id":1091},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1094?namespace=static-8.2.5_31884-eu"},"name":"The
+        Silver Covenant","id":1094},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1097?namespace=static-8.2.5_31884-eu"},"name":"Wrath
+        of the Lich King","id":1097},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1098?namespace=static-8.2.5_31884-eu"},"name":"Knights
+        of the Ebon Blade","id":1098},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1104?namespace=static-8.2.5_31884-eu"},"name":"Frenzyheart
+        Tribe","id":1104},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1105?namespace=static-8.2.5_31884-eu"},"name":"The
+        Oracles","id":1105},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1106?namespace=static-8.2.5_31884-eu"},"name":"Argent
+        Crusade","id":1106},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1117?namespace=static-8.2.5_31884-eu"},"name":"Sholazar
+        Basin","id":1117},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1118?namespace=static-8.2.5_31884-eu"},"name":"Classic","id":1118},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1119?namespace=static-8.2.5_31884-eu"},"name":"The
+        Sons of Hodir","id":1119},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1124?namespace=static-8.2.5_31884-eu"},"name":"The
+        Sunreavers","id":1124},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1126?namespace=static-8.2.5_31884-eu"},"name":"The
+        Frostborn","id":1126},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1133?namespace=static-8.2.5_31884-eu"},"name":"Bilgewater
+        Cartel","id":1133},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1134?namespace=static-8.2.5_31884-eu"},"name":"Gilneas","id":1134},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1135?namespace=static-8.2.5_31884-eu"},"name":"The
+        Earthen Ring","id":1135},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1156?namespace=static-8.2.5_31884-eu"},"name":"The
+        Ashen Verdict","id":1156},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1158?namespace=static-8.2.5_31884-eu"},"name":"Guardians
+        of Hyjal","id":1158},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1162?namespace=static-8.2.5_31884-eu"},"name":"Cataclysm","id":1162},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1168?namespace=static-8.2.5_31884-eu"},"name":"Guild","id":1168},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1169?namespace=static-8.2.5_31884-eu"},"name":"Guild","id":1169},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1171?namespace=static-8.2.5_31884-eu"},"name":"Therazane","id":1171},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1172?namespace=static-8.2.5_31884-eu"},"name":"Dragonmaw
+        Clan","id":1172},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1173?namespace=static-8.2.5_31884-eu"},"name":"Ramkahen","id":1173},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1174?namespace=static-8.2.5_31884-eu"},"name":"Wildhammer
+        Clan","id":1174},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1177?namespace=static-8.2.5_31884-eu"},"name":"Baradin''s
+        Wardens","id":1177},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1178?namespace=static-8.2.5_31884-eu"},"name":"Hellscream''s
+        Reach","id":1178},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1204?namespace=static-8.2.5_31884-eu"},"name":"Avengers
+        of Hyjal","id":1204},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1216?namespace=static-8.2.5_31884-eu"},"name":"Shang
+        Xi''s Academy","id":1216},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1228?namespace=static-8.2.5_31884-eu"},"name":"Forest
+        Hozen","id":1228},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1242?namespace=static-8.2.5_31884-eu"},"name":"Pearlfin
+        Jinyu","id":1242},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1245?namespace=static-8.2.5_31884-eu"},"name":"Mists
+        of Pandaria","id":1245},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1269?namespace=static-8.2.5_31884-eu"},"name":"Golden
+        Lotus","id":1269},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1270?namespace=static-8.2.5_31884-eu"},"name":"Shado-Pan","id":1270},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1271?namespace=static-8.2.5_31884-eu"},"name":"Order
+        of the Cloud Serpent","id":1271},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1272?namespace=static-8.2.5_31884-eu"},"name":"The
+        Tillers","id":1272},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1273?namespace=static-8.2.5_31884-eu"},"name":"Jogu
+        the Drunk","id":1273},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1275?namespace=static-8.2.5_31884-eu"},"name":"Ella","id":1275},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1276?namespace=static-8.2.5_31884-eu"},"name":"Old
+        Hillpaw","id":1276},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1277?namespace=static-8.2.5_31884-eu"},"name":"Chee
+        Chee","id":1277},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1278?namespace=static-8.2.5_31884-eu"},"name":"Sho","id":1278},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1279?namespace=static-8.2.5_31884-eu"},"name":"Haohan
+        Mudclaw","id":1279},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1280?namespace=static-8.2.5_31884-eu"},"name":"Tina
+        Mudclaw","id":1280},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1281?namespace=static-8.2.5_31884-eu"},"name":"Gina
+        Mudclaw","id":1281},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1282?namespace=static-8.2.5_31884-eu"},"name":"Fish
+        Fellreed","id":1282},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1283?namespace=static-8.2.5_31884-eu"},"name":"Farmer
+        Fung","id":1283},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1302?namespace=static-8.2.5_31884-eu"},"name":"The
+        Anglers","id":1302},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1337?namespace=static-8.2.5_31884-eu"},"name":"The
+        Klaxxi","id":1337},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1341?namespace=static-8.2.5_31884-eu"},"name":"The
+        August Celestials","id":1341},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1345?namespace=static-8.2.5_31884-eu"},"name":"The
+        Lorewalkers","id":1345},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1352?namespace=static-8.2.5_31884-eu"},"name":"Huojin
+        Pandaren","id":1352},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1353?namespace=static-8.2.5_31884-eu"},"name":"Tushui
+        Pandaren","id":1353},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1358?namespace=static-8.2.5_31884-eu"},"name":"Nat
+        Pagle","id":1358},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1359?namespace=static-8.2.5_31884-eu"},"name":"The
+        Black Prince","id":1359},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1374?namespace=static-8.2.5_31884-eu"},"name":"Brawl''gar
+        Arena (Season 1)","id":1374},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1375?namespace=static-8.2.5_31884-eu"},"name":"Dominance
+        Offensive","id":1375},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1376?namespace=static-8.2.5_31884-eu"},"name":"Operation:
+        Shieldwall","id":1376},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1387?namespace=static-8.2.5_31884-eu"},"name":"Kirin
+        Tor Offensive","id":1387},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1388?namespace=static-8.2.5_31884-eu"},"name":"Sunreaver
+        Onslaught","id":1388},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1416?namespace=static-8.2.5_31884-eu"},"name":"Akama''s
+        Trust","id":1416},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1419?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub (Season 1)","id":1419},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1435?namespace=static-8.2.5_31884-eu"},"name":"Shado-Pan
+        Assault","id":1435},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1440?namespace=static-8.2.5_31884-eu"},"name":"Darkspear
+        Rebellion","id":1440},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1444?namespace=static-8.2.5_31884-eu"},"name":"Warlords
+        of Draenor","id":1444},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1445?namespace=static-8.2.5_31884-eu"},"name":"Frostwolf
+        Orcs","id":1445},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1492?namespace=static-8.2.5_31884-eu"},"name":"Emperor
+        Shaohao","id":1492},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1515?namespace=static-8.2.5_31884-eu"},"name":"Arakkoa
+        Outcasts","id":1515},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1681?namespace=static-8.2.5_31884-eu"},"name":"Vol''jin''s
+        Spear","id":1681},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1682?namespace=static-8.2.5_31884-eu"},"name":"Wrynn''s
+        Vanguard","id":1682},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1690?namespace=static-8.2.5_31884-eu"},"name":"Brawl''gar
+        Arena (Season 2)","id":1690},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1691?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub (Season 2)","id":1691},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1708?namespace=static-8.2.5_31884-eu"},"name":"Laughing
+        Skull Orcs","id":1708},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1710?namespace=static-8.2.5_31884-eu"},"name":"Sha''tari
+        Defense","id":1710},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1711?namespace=static-8.2.5_31884-eu"},"name":"Steamwheedle
+        Preservation Society","id":1711},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1731?namespace=static-8.2.5_31884-eu"},"name":"Council
+        of Exarchs","id":1731},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1733?namespace=static-8.2.5_31884-eu"},"name":"Delvar
+        Ironfist","id":1733},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1735?namespace=static-8.2.5_31884-eu"},"name":"Barracks
+        Bodyguards","id":1735},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1736?namespace=static-8.2.5_31884-eu"},"name":"Tormmok","id":1736},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1737?namespace=static-8.2.5_31884-eu"},"name":"Talonpriest
+        Ishaal","id":1737},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1738?namespace=static-8.2.5_31884-eu"},"name":"Defender
+        Illona","id":1738},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1739?namespace=static-8.2.5_31884-eu"},"name":"Vivianne","id":1739},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1740?namespace=static-8.2.5_31884-eu"},"name":"Aeda
+        Brightdawn","id":1740},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1741?namespace=static-8.2.5_31884-eu"},"name":"Leorajh","id":1741},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1828?namespace=static-8.2.5_31884-eu"},"name":"Highmountain
+        Tribe","id":1828},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1834?namespace=static-8.2.5_31884-eu"},"name":"Legion","id":1834},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1847?namespace=static-8.2.5_31884-eu"},"name":"Hand
+        of the Prophet","id":1847},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1848?namespace=static-8.2.5_31884-eu"},"name":"Vol''jin''s
+        Headhunters","id":1848},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1849?namespace=static-8.2.5_31884-eu"},"name":"Order
+        of the Awakened","id":1849},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1850?namespace=static-8.2.5_31884-eu"},"name":"The
+        Saberstalkers","id":1850},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1859?namespace=static-8.2.5_31884-eu"},"name":"The
+        Nightfallen","id":1859},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1883?namespace=static-8.2.5_31884-eu"},"name":"Dreamweavers","id":1883},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1894?namespace=static-8.2.5_31884-eu"},"name":"The
+        Wardens","id":1894},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1900?namespace=static-8.2.5_31884-eu"},"name":"Court
+        of Farondis","id":1900},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1948?namespace=static-8.2.5_31884-eu"},"name":"Valarjar","id":1948},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1975?namespace=static-8.2.5_31884-eu"},"name":"Conjurer
+        Margoss","id":1975},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1984?namespace=static-8.2.5_31884-eu"},"name":"The
+        First Responders","id":1984},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2010?namespace=static-8.2.5_31884-eu"},"name":"Brawl''gar
+        Arena (Season 3)","id":2010},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2011?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub (Season 3)","id":2011},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2018?namespace=static-8.2.5_31884-eu"},"name":"Talon''s
+        Vengeance","id":2018},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2045?namespace=static-8.2.5_31884-eu"},"name":"Armies
+        of Legionfall","id":2045},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2097?namespace=static-8.2.5_31884-eu"},"name":"Ilyssia
+        of the Waters","id":2097},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2098?namespace=static-8.2.5_31884-eu"},"name":"Keeper
+        Raynae","id":2098},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2099?namespace=static-8.2.5_31884-eu"},"name":"Akule
+        Riverhorn","id":2099},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2100?namespace=static-8.2.5_31884-eu"},"name":"Corbyn","id":2100},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2101?namespace=static-8.2.5_31884-eu"},"name":"Sha''leth","id":2101},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2102?namespace=static-8.2.5_31884-eu"},"name":"Impus","id":2102},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2103?namespace=static-8.2.5_31884-eu"},"name":"Zandalari
+        Empire","id":2103},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2104?namespace=static-8.2.5_31884-eu"},"name":"Battle
+        for Azeroth","id":2104},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2135?namespace=static-8.2.5_31884-eu"},"name":"Chromie","id":2135},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2156?namespace=static-8.2.5_31884-eu"},"name":"Talanji''s
+        Expedition","id":2156},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2157?namespace=static-8.2.5_31884-eu"},"name":"The
+        Honorbound","id":2157},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2158?namespace=static-8.2.5_31884-eu"},"name":"Voldunai","id":2158},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2159?namespace=static-8.2.5_31884-eu"},"name":"7th
+        Legion","id":2159},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2160?namespace=static-8.2.5_31884-eu"},"name":"Proudmoore
+        Admiralty","id":2160},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2161?namespace=static-8.2.5_31884-eu"},"name":"Order
+        of Embers","id":2161},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2162?namespace=static-8.2.5_31884-eu"},"name":"Storm''s
+        Wake","id":2162},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2163?namespace=static-8.2.5_31884-eu"},"name":"Tortollan
+        Seekers","id":2163},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2164?namespace=static-8.2.5_31884-eu"},"name":"Champions
+        of Azeroth","id":2164},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2165?namespace=static-8.2.5_31884-eu"},"name":"Army
+        of the Light","id":2165},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2170?namespace=static-8.2.5_31884-eu"},"name":"Argussian
+        Reach","id":2170},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2371?namespace=static-8.2.5_31884-eu"},"name":"Bizmo''s
+        Brawlpub","id":2371},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2372?namespace=static-8.2.5_31884-eu"},"name":"Brawl''gar
+        Arena","id":2372},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2373?namespace=static-8.2.5_31884-eu"},"name":"The
+        Unshackled","id":2373},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2391?namespace=static-8.2.5_31884-eu"},"name":"Rustbolt
+        Resistance","id":2391},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2395?namespace=static-8.2.5_31884-eu"},"name":"Honeyback
+        Hive","id":2395},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2400?namespace=static-8.2.5_31884-eu"},"name":"Waveblade
+        Ankoan","id":2400}],"root_factions":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1169?namespace=static-8.2.5_31884-eu"},"name":"Guild","id":1169},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/2104?namespace=static-8.2.5_31884-eu"},"name":"Battle
+        for Azeroth","id":2104},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1834?namespace=static-8.2.5_31884-eu"},"name":"Legion","id":1834},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1444?namespace=static-8.2.5_31884-eu"},"name":"Warlords
+        of Draenor","id":1444},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1245?namespace=static-8.2.5_31884-eu"},"name":"Mists
+        of Pandaria","id":1245},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1162?namespace=static-8.2.5_31884-eu"},"name":"Cataclysm","id":1162},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1097?namespace=static-8.2.5_31884-eu"},"name":"Wrath
+        of the Lich King","id":1097},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/980?namespace=static-8.2.5_31884-eu"},"name":"The
+        Burning Crusade","id":980},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1118?namespace=static-8.2.5_31884-eu"},"name":"Classic","id":1118},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/70?namespace=static-8.2.5_31884-eu"},"name":"Syndicate","id":70},{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/589?namespace=static-8.2.5_31884-eu"},"name":"Wintersaber
+        Trainers","id":589}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/reputation-faction/index?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:50 GMT
+recorded_with: VCR 2.9.3

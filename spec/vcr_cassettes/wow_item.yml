@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://us.api.blizzard.com/wow/item/18803
+    uri: https://eu.api.blizzard.com/data/wow/item/18803?namespace=static-eu&locale=en_gb
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Typhoeus - https://github.com/typhoeus/typhoeus
       Authorization:
-      - Bearer USgXv9RzFgNs8jNGt6Si6A4I7ef3VJkkdX
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
       Expect:
       - ''
   response:
@@ -18,22 +18,32 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Battlenet-Schema-Revision:
+      - '1'
       Date:
-      - Thu, 08 Aug 2019 06:11:54 GMT
+      - Fri, 20 Dec 2019 20:19:01 GMT
       Server:
       - Apache-Coyote/1.1
-      Content-Language:
-      - en-US
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:28:21 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - item
       content-type:
       - application/json;charset=UTF-8
-      content-length:
-      - '1069'
+      transfer-encoding:
+      - chunked
       x-trace-traceid:
-      - 15b200b3-73f0-cef0-0be5-fa164df98e5c
+      - 15c864f8-66ec-77b0-fdd2-fa165ba06406
       x-trace-spanid:
-      - 15b200b3-73f0-d020-0be5-fa164df98e5c
+      - 15c864f8-66ec-7940-fdd2-fa165ba06406
       x-trace-parentspanid:
-      - 15b200b3-73f0-cff0-0be5-fa164df98e5c
+      - 15c864f8-66ec-7910-fdd2-fa165ba06406
       x-frame-options:
       - SAMEORIGIN
       X-Content-Type-Options:
@@ -42,10 +52,11 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":18803,"disenchantingSkillRank":0,"description":"Property of Finkle
-        Einhorn, Grandmaster Adventurer","name":"Finkle''s Lava Dredger","icon":"inv_gizmo_02","stackable":1,"itemBind":1,"bonusStats":[{"stat":40,"amount":13},{"stat":5,"amount":68},{"stat":7,"amount":23}],"itemSpells":[],"buyPrice":579383,"itemClass":2,"itemSubClass":5,"containerSlots":0,"weaponInfo":{"damage":{"min":18,"max":23,"exactMin":18.0,"exactMax":23.0},"weaponSpeed":3.6,"dps":5.6944447},"inventoryType":17,"equippable":true,"itemLevel":58,"maxCount":0,"maxDurability":120,"minFactionId":0,"minReputation":0,"quality":4,"sellPrice":115876,"requiredSkill":0,"requiredLevel":60,"requiredSkillRank":0,"itemSource":{"sourceId":179703,"sourceType":"GAME_OBJECT_DROP"},"baseArmor":0,"hasSockets":false,"isAuctionable":false,"armor":0,"displayInfoId":31265,"nameDescription":"","nameDescriptionColor":"000000","upgradable":true,"heroicTooltip":false,"context":"","bonusLists":[],"availableContexts":[""],"bonusSummary":{"defaultBonusLists":[],"chanceBonusLists":[],"bonusChances":[]},"artifactId":0}'
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/item/18803?namespace=static-8.2.5_31884-eu"}},"id":18803,"name":"Finkle''s
+        Lava Dredger","quality":{"type":"EPIC","name":"Epic"},"level":58,"required_level":60,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/18803?namespace=static-8.2.5_31884-eu"},"id":18803},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/2?namespace=static-8.2.5_31884-eu"},"name":"Weapon","id":2},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/2/item-subclass/5?namespace=static-8.2.5_31884-eu"},"name":"Mace","id":5},"inventory_type":{"type":"TWOHWEAPON","name":"Two-Hand"},"purchase_price":579383,"sell_price":115876,"max_count":0,"is_equippable":true,"is_stackable":false,"description":"Property
+        of Finkle Einhorn, Grandmaster Adventurer"}'
     http_version: '1.1'
     adapter_metadata:
-      effective_url: https://us.api.blizzard.com/wow/item/18803
-  recorded_at: Thu, 08 Aug 2019 06:11:52 GMT
+      effective_url: https://eu.api.blizzard.com/data/wow/item/18803?namespace=static-eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 20:19:02 GMT
 recorded_with: VCR 2.9.3

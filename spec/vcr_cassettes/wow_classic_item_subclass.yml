@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-classic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Fri, 20 Dec 2019 20:19:00 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Mon, 9 Dec 2019 02:11:32 GMT
+      Battlenet-Namespace:
+      - static-1.13.2_31446-classic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - item-subclass
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c864e7-b09b-a8f0-c980-fa165ba0f208
+      x-trace-spanid:
+      - 15c864e7-b09b-aa10-c980-fa165ba0f208
+      x-trace-parentspanid:
+      - 15c864e7-b09b-a9e0-c980-fa165ba0f208
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-1.13.2_31446-classic-eu"}},"class_id":0,"subclass_id":0,"display_name":"Consumable","hide_subclass_in_tooltips":true}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-classic-eu&locale=en_gb
+  recorded_at: Fri, 20 Dec 2019 20:19:00 GMT
+recorded_with: VCR 2.9.3

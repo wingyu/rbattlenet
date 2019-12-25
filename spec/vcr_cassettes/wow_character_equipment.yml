@@ -1,0 +1,335 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/equipment?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '4'
+      Date:
+      - Sun, 22 Dec 2019 22:30:32 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sun, 22 Dec 2019 09:05:20 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - character-equipment
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c865d5-3998-1050-59a1-fa165a07058b
+      x-trace-spanid:
+      - 15c865d5-3998-2370-59a1-fa165a07058b
+      x-trace-parentspanid:
+      - 15c865d5-3998-2340-59a1-fa165a07058b
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/equipment?namespace=profile-eu"}},"character":{"key":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday?namespace=profile-eu"},"name":"Sheday","id":142650023,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"}},"equipped_items":[{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/155866?namespace=static-8.2.5_31884-eu"},"id":155866},"slot":{"type":"HEAD","name":"Head"},"quantity":1,"context":35,"bonus_list":[5448,1617,4786,6270],"quality":{"type":"EPIC","name":"Epic"},"name":"Soulspun
+        Casque","modified_appearance_id":95621,"azerite_details":{"selected_powers":[{"id":13,"tier":0,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/263978?namespace=static-8.2.5_31884-eu"},"name":"Azerite
+        Empowered","id":263978},"description":"Increases Item Level by 5 and increases
+        the potency of all Azerite powers granted by this item.","cast_time":"Passive"},"is_display_hidden":true},{"id":85,"tier":1,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/268596?namespace=static-8.2.5_31884-eu"},"name":"Gemhide","id":268596},"description":"When
+        dealt damage greater than 10% of your maximum health, gain 185 Avoidance and
+        552 Armor for 10 sec.","cast_time":"Passive"}},{"id":30,"tier":2,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/266180?namespace=static-8.2.5_31884-eu"},"name":"Overwhelming
+        Power","id":266180},"description":"Your damaging abilities have a chance to
+        grant you 25 applications of Overwhelming Power. Each stack of Overwhelming
+        Power grants 33 Haste. An application of Overwhelming Power is removed every
+        1 sec or whenever you take damage.","cast_time":"Passive"}},{"id":187,"tier":3,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/273473?namespace=static-8.2.5_31884-eu"},"name":"Expurgation","id":273473},"description":"Your
+        Blade of Justice critical hits cause the target to burn for an additional
+        6,244 Holy damage every 2 sec over 6 sec.","cast_time":"Passive"}},{"id":396,"tier":4,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/286229?namespace=static-8.2.5_31884-eu"},"name":"Light''s
+        Decree","id":286229},"description":"Spending Holy Power during Avenging Wrath
+        causes you to explode with Holy light for 1,796 damage per Holy Power spent
+        to nearby enemies. Avenging Wrath''s duration is increased by 5 sec.","cast_time":"Passive"}}],"selected_powers_string":"Fully
+        Upgraded"},"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/155866?namespace=static-8.2.5_31884-eu"},"id":155866},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/4?namespace=static-8.2.5_31884-eu"},"name":"Plate","id":4},"inventory_type":{"type":"HEAD","name":"Head"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"armor":{"value":893,"display_string":"893 Armor"},"stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":1145,"display_string":"+1,145
+        Strength"},{"type":{"type":"INTELLECT","name":"Intellect"},"value":1145,"display_string":"+1,145
+        Intellect","is_negated":true},{"type":{"type":"STAMINA","name":"Stamina"},"value":2720,"display_string":"+2,720
+        Stamina"}],"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":450,"display_string":"Item Level 450"},"transmog":{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/161600?namespace=static-8.2.5_31884-eu"},"name":"Dread
+        Gladiator''s Plate Helm","id":161600},"display_string":"Transmogrified to:\nDread
+        Gladiator''s Plate Helm","item_modified_appearance_id":99711},"durability":{"value":58,"display_string":"Durability
+        58 / 100"},"name_description":{"display_string":"Mythic 10","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/158075?namespace=static-8.2.5_31884-eu"},"id":158075},"slot":{"type":"NECK","name":"Neck"},"quantity":1,"context":11,"bonus_list":[6316,4932,4933],"quality":{"type":"ARTIFACT","name":"Artifact"},"name":"Heart
+        of Azeroth","azerite_details":{"percentage_to_next_level":0.0,"selected_essences":[{"slot":0,"rank":4,"main_spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/299358?namespace=static-8.2.5_31884-eu"},"name":"Guardian
+        of Azeroth","id":299358},"description":"Call upon Azeroth to summon a Guardian
+        of Azeroth for 30 sec who impales your target with spikes of Azerite every
+        2 sec that deal 17,197 Fire damage. Every 8 sec, the Guardian launches a volley
+        of Azerite Spikes at its target, dealing 10,415 Fire damage to all nearby
+        enemies.\r\n\r\nEach time the Guardian of Azeroth casts a spell, you gain
+        2% Haste, stacking up to 5 times. This effect ends when the Guardian of Azeroth
+        despawns.","cast_time":"Instant","cooldown":"3 min cooldown"},"passive_spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/299357?namespace=static-8.2.5_31884-eu"},"name":"Condensed
+        Life-Force","id":299357},"description":"Your spells and abilities have a high
+        chance to impale your target with a spike of Azerite, causing 13,758 Fire
+        damage.\r\n\r\nWhen an Azerite spike deals damage, all damage you deal against
+        that target is increased by 5% for 6 sec.","cast_time":"Passive"},"essence":{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/14?namespace=static-8.2.5_31884-eu"},"name":"Condensed
+        Life-Force","id":14},"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/azerite-essence/14?namespace=static-8.2.5_31884-eu"},"id":14}},{"slot":1,"rank":3,"passive_spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/304123?namespace=static-8.2.5_31884-eu"},"name":"Strife","id":304123},"description":"Your
+        spells and abilities have a chance to increase your Versatility by 14 for
+        20 sec, stacking up to 11 times. Being the vicitim of a loss of control or
+        movement impairing effect also grants a stack of Strife.","cast_time":"Passive"},"essence":{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/32?namespace=static-8.2.5_31884-eu"},"name":"Conflict
+        and Strife","id":32},"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/azerite-essence/32?namespace=static-8.2.5_31884-eu"},"id":32}},{"slot":2,"rank":4,"passive_spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/299369?namespace=static-8.2.5_31884-eu"},"name":"Strive
+        for Perfection","id":299369},"description":"Reduces the cooldown of Avenging
+        Wrath by 11.0%, and increases your Versatility by 75.\r\n\r\nWhen you activate
+        Avenging Wrath, immediately heal for 5% of maximum health.","cast_time":"Passive"},"essence":{"key":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/22?namespace=static-8.2.5_31884-eu"},"name":"Vision
+        of Perfection","id":22},"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/azerite-essence/22?namespace=static-8.2.5_31884-eu"},"id":22}}],"level":{"value":70,"display_string":"Azerite
+        Power Level 70"}},"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/158075?namespace=static-8.2.5_31884-eu"},"id":158075},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/0?namespace=static-8.2.5_31884-eu"},"name":"Miscellaneous","id":0},"inventory_type":{"type":"NECK","name":"Neck"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"unique_equipped":"Unique","stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":420,"display_string":"+420
+        Strength"},{"type":{"type":"AGILITY","name":"Agility"},"value":420,"display_string":"+420
+        Agility","is_negated":true},{"type":{"type":"INTELLECT","name":"Intellect"},"value":420,"display_string":"+420
+        Intellect","is_negated":true},{"type":{"type":"STAMINA","name":"Stamina"},"value":800,"display_string":"+800
+        Stamina"},{"type":{"type":"CRIT_RATING","name":"Critical Strike"},"value":336,"display_string":"+336
+        Critical Strike","is_equip_bonus":true},{"type":{"type":"HASTE_RATING","name":"Haste"},"value":336,"display_string":"+336
+        Haste","is_equip_bonus":true},{"type":{"type":"MASTERY_RATING","name":"Mastery"},"value":336,"display_string":"+336
+        Mastery","is_equip_bonus":true}],"spells":[{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/277253?namespace=static-8.2.5_31884-eu"},"name":"Heart
+        of Azeroth","id":277253},"description":"Equip: Harnesses the energy of raw
+        Azerite, awakening exceptional pieces of armor that possess latent powers."}],"requirements":{"level":{"value":110,"display_string":"Requires
+        Level 110"}},"description":"A living symbol of hope, borne by the champions
+        of a dying planet. The fate of Azeroth will be shared by all her children.","level":{"value":473,"display_string":"Item
+        Level 473"},"is_subclass_hidden":true},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168362?namespace=static-8.2.5_31884-eu"},"id":168362},"slot":{"type":"SHOULDER","name":"Shoulders"},"quantity":1,"context":6,"bonus_list":[4824,1517,4786,6271],"quality":{"type":"EPIC","name":"Epic"},"name":"Trench
+        Tyrant''s Shoulderplates","modified_appearance_id":104472,"azerite_details":{"selected_powers":[{"id":13,"tier":0,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/263978?namespace=static-8.2.5_31884-eu"},"name":"Azerite
+        Empowered","id":263978},"description":"Increases Item Level by 5 and increases
+        the potency of all Azerite powers granted by this item.","cast_time":"Passive"},"is_display_hidden":true},{"id":84,"tier":1,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/268595?namespace=static-8.2.5_31884-eu"},"name":"Bulwark
+        of the Masses","id":268595},"description":"When you are surrounded by 4 or
+        more enemies, gain a shield that absorbs 31,860 damage. Cannot occur more
+        than once every 20 sec.","cast_time":"Passive"}},{"id":30,"tier":2,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/266180?namespace=static-8.2.5_31884-eu"},"name":"Overwhelming
+        Power","id":266180},"description":"Your damaging abilities have a chance to
+        grant you 25 applications of Overwhelming Power. Each stack of Overwhelming
+        Power grants 33 Haste. An application of Overwhelming Power is removed every
+        1 sec or whenever you take damage.","cast_time":"Passive"}},{"id":396,"tier":3,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/286229?namespace=static-8.2.5_31884-eu"},"name":"Light''s
+        Decree","id":286229},"description":"Spending Holy Power during Avenging Wrath
+        causes you to explode with Holy light for 1,796 damage per Holy Power spent
+        to nearby enemies. Avenging Wrath''s duration is increased by 5 sec.","cast_time":"Passive"}},{"id":187,"tier":4,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/273473?namespace=static-8.2.5_31884-eu"},"name":"Expurgation","id":273473},"description":"Your
+        Blade of Justice critical hits cause the target to burn for an additional
+        6,244 Holy damage every 2 sec over 6 sec.","cast_time":"Passive"}}],"selected_powers_string":"Fully
+        Upgraded"},"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168362?namespace=static-8.2.5_31884-eu"},"id":168362},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/4?namespace=static-8.2.5_31884-eu"},"name":"Plate","id":4},"inventory_type":{"type":"SHOULDER","name":"Shoulder"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"armor":{"value":824,"display_string":"824 Armor"},"stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":859,"display_string":"+859
+        Strength"},{"type":{"type":"INTELLECT","name":"Intellect"},"value":859,"display_string":"+859
+        Intellect","is_negated":true},{"type":{"type":"STAMINA","name":"Stamina"},"value":2041,"display_string":"+2,041
+        Stamina"}],"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":450,"display_string":"Item Level 450"},"transmog":{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/161621?namespace=static-8.2.5_31884-eu"},"name":"Dread
+        Gladiator''s Plate Pauldrons","id":161621},"display_string":"Transmogrified
+        to:\nDread Gladiator''s Plate Pauldrons","item_modified_appearance_id":99721},"durability":{"value":59,"display_string":"Durability
+        59 / 100"},"name_description":{"display_string":"Mythic","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/52019?namespace=static-8.2.5_31884-eu"},"id":52019},"slot":{"type":"SHIRT","name":"Shirt"},"quantity":1,"quality":{"type":"UNCOMMON","name":"Uncommon"},"name":"Precious''
+        Ribbon","media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/52019?namespace=static-8.2.5_31884-eu"},"id":52019},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/0?namespace=static-8.2.5_31884-eu"},"name":"Miscellaneous","id":0},"inventory_type":{"type":"BODY","name":"Shirt"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"spells":[{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/72968?namespace=static-8.2.5_31884-eu"},"name":"Precious''s
+        Ribbon","id":72968},"description":"Equip: A ribbon of affection."}],"sell_price":{"value":6250,"display_strings":{"header":"Sell
+        Price:","gold":"0","silver":"62","copper":"50"}},"level":{"value":1,"display_string":"Item
+        Level 1"},"transmog":{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/4335?namespace=static-8.2.5_31884-eu"},"name":"Rich
+        Purple Silk Shirt","id":4335},"display_string":"Transmogrified to:\nRich Purple
+        Silk Shirt","item_modified_appearance_id":1706},"is_subclass_hidden":true},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/159416?namespace=static-8.2.5_31884-eu"},"id":159416},"slot":{"type":"CHEST","name":"Chest"},"quantity":1,"context":35,"bonus_list":[5448,1617,4786,6269],"quality":{"type":"EPIC","name":"Epic"},"name":"Harpooner''s
+        Plate Cuirass","modified_appearance_id":95667,"azerite_details":{"selected_powers":[{"id":13,"tier":0,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/263978?namespace=static-8.2.5_31884-eu"},"name":"Azerite
+        Empowered","id":263978},"description":"Increases Item Level by 5 and increases
+        the potency of all Azerite powers granted by this item.","cast_time":"Passive"},"is_display_hidden":true},{"id":14,"tier":1,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/268594?namespace=static-8.2.5_31884-eu"},"name":"Longstrider","id":268594},"description":"Increases
+        your movement speed by 27% of your highest secondary rating, up to 8%.","cast_time":"Passive"}},{"id":21,"tier":2,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/263984?namespace=static-8.2.5_31884-eu"},"name":"Elemental
+        Whirl","id":263984},"description":"Your damaging abilities have a chance to
+        grant you Elemental Whirl, increasing your Critical Strike, Haste, Mastery,
+        or Versatility by 351 for 10 sec.","cast_time":"Passive"}},{"id":453,"tier":3,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/286390?namespace=static-8.2.5_31884-eu"},"name":"Empyrean
+        Power","id":286390},"description":"Your attacks have a chance to make your
+        next Divine Storm free and deal 5,558 additional damage.","cast_time":"Passive"}},{"id":396,"tier":4,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/286229?namespace=static-8.2.5_31884-eu"},"name":"Light''s
+        Decree","id":286229},"description":"Spending Holy Power during Avenging Wrath
+        causes you to explode with Holy light for 1,796 damage per Holy Power spent
+        to nearby enemies. Avenging Wrath''s duration is increased by 5 sec.","cast_time":"Passive"}}],"selected_powers_string":"Fully
+        Upgraded"},"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/159416?namespace=static-8.2.5_31884-eu"},"id":159416},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/4?namespace=static-8.2.5_31884-eu"},"name":"Plate","id":4},"inventory_type":{"type":"CHEST","name":"Chest"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"armor":{"value":1099,"display_string":"1,099 Armor"},"stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":1145,"display_string":"+1,145
+        Strength"},{"type":{"type":"INTELLECT","name":"Intellect"},"value":1145,"display_string":"+1,145
+        Intellect","is_negated":true},{"type":{"type":"STAMINA","name":"Stamina"},"value":2720,"display_string":"+2,720
+        Stamina"}],"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":450,"display_string":"Item Level 450"},"transmog":{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/161602?namespace=static-8.2.5_31884-eu"},"name":"Dread
+        Gladiator''s Plate Chestpiece","id":161602},"display_string":"Transmogrified
+        to:\nDread Gladiator''s Plate Chestpiece","item_modified_appearance_id":99713},"durability":{"value":95,"display_string":"Durability
+        95 / 165"},"name_description":{"display_string":"Mythic 10","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168869?namespace=static-8.2.5_31884-eu"},"id":168869},"enchantments":[{"display_string":"Nitro
+        Boosts","source_item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/41118?namespace=static-8.2.5_31884-eu"},"name":"Nitro
+        Boosts","id":41118},"enchantment_id":4223,"enchantment_slot":{"id":7,"type":"ON_USE_SPELL"},"spell":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/55004?namespace=static-8.2.5_31884-eu"},"name":"Nitro
+        Boosts","id":55004},"description":"Use: Increase your speed for a few seconds.
+        (2 Min Cooldown)"}}],"slot":{"type":"WAIST","name":"Waist"},"quantity":1,"context":6,"bonus_list":[4800,1517,4786],"quality":{"type":"EPIC","name":"Epic"},"name":"Eternity
+        Keeper''s Greatbelt","modified_appearance_id":104685,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168869?namespace=static-8.2.5_31884-eu"},"id":168869},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/4?namespace=static-8.2.5_31884-eu"},"name":"Plate","id":4},"inventory_type":{"type":"WAIST","name":"Waist"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"armor":{"value":595,"display_string":"595 Armor"},"stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":431,"display_string":"+431
+        Strength"},{"type":{"type":"INTELLECT","name":"Intellect"},"value":431,"display_string":"+431
+        Intellect","is_negated":true},{"type":{"type":"STAMINA","name":"Stamina"},"value":789,"display_string":"+789
+        Stamina"},{"type":{"type":"CRIT_RATING","name":"Critical Strike"},"value":147,"display_string":"+147
+        Critical Strike","is_equip_bonus":true},{"type":{"type":"MASTERY_RATING","name":"Mastery"},"value":82,"display_string":"+82
+        Mastery","is_equip_bonus":true}],"spells":[{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/303733?namespace=static-8.2.5_31884-eu"},"name":"Storm
+        of the Eternal","id":303733},"description":"Equip: Storm of the Eternal rises
+        for 10 sec every 2 min, dealing 27,240 Arcane damage 3 times to a random enemy
+        within 60 yds.\r\n\r\nAll Storm of the Eternal effects occur simultaneously."}],"sell_price":{"value":389643,"display_strings":{"header":"Sell
+        Price:","gold":"38","silver":"96","copper":"43"}},"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":445,"display_string":"Item Level 445"},"transmog":{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/161624?namespace=static-8.2.5_31884-eu"},"name":"Dread
+        Gladiator''s Plate Girdle","id":161624},"display_string":"Transmogrified to:\nDread
+        Gladiator''s Plate Girdle","item_modified_appearance_id":99723},"durability":{"value":30,"display_string":"Durability
+        30 / 55"},"name_description":{"display_string":"Mythic","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168389?namespace=static-8.2.5_31884-eu"},"id":168389},"sockets":[{"socket_type":{"type":"PRISMATIC","name":"Prismatic
+        Socket"},"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168639?namespace=static-8.2.5_31884-eu"},"name":"Deadly
+        Lava Lazuli","id":168639},"display_string":"+50 Critical Strike","media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168639?namespace=static-8.2.5_31884-eu"},"id":168639}}],"slot":{"type":"LEGS","name":"Legs"},"quantity":1,"context":6,"bonus_list":[4800,1808,1517,4786],"quality":{"type":"EPIC","name":"Epic"},"name":"Fleetwrecker''s
+        Greaves","modified_appearance_id":104568,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168389?namespace=static-8.2.5_31884-eu"},"id":168389},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/4?namespace=static-8.2.5_31884-eu"},"name":"Plate","id":4},"inventory_type":{"type":"LEGS","name":"Legs"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"armor":{"value":925,"display_string":"925 Armor"},"stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":575,"display_string":"+575
+        Strength"},{"type":{"type":"INTELLECT","name":"Intellect"},"value":575,"display_string":"+575
+        Intellect","is_negated":true},{"type":{"type":"STAMINA","name":"Stamina"},"value":1053,"display_string":"+1,053
+        Stamina"},{"type":{"type":"CRIT_RATING","name":"Critical Strike"},"value":188,"display_string":"+188
+        Critical Strike","is_equip_bonus":true},{"type":{"type":"VERSATILITY","name":"Versatility"},"value":118,"display_string":"+118
+        Versatility","is_equip_bonus":true}],"sell_price":{"value":809418,"display_strings":{"header":"Sell
+        Price:","gold":"80","silver":"94","copper":"18"}},"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":445,"display_string":"Item Level 445"},"transmog":{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/161616?namespace=static-8.2.5_31884-eu"},"name":"Dread
+        Gladiator''s Plate Legguards","id":161616},"display_string":"Transmogrified
+        to:\nDread Gladiator''s Plate Legguards","item_modified_appearance_id":99719},"durability":{"value":69,"display_string":"Durability
+        69 / 120"},"name_description":{"display_string":"Mythic","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168390?namespace=static-8.2.5_31884-eu"},"id":168390},"sockets":[{"socket_type":{"type":"PRISMATIC","name":"Prismatic
+        Socket"},"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168639?namespace=static-8.2.5_31884-eu"},"name":"Deadly
+        Lava Lazuli","id":168639},"display_string":"+50 Critical Strike","media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168639?namespace=static-8.2.5_31884-eu"},"id":168639}}],"slot":{"type":"FEET","name":"Feet"},"quantity":1,"context":6,"bonus_list":[4800,1808,1517,5850,4783],"quality":{"type":"EPIC","name":"Epic"},"name":"Sabatons
+        of the Stalwart","modified_appearance_id":104573,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168390?namespace=static-8.2.5_31884-eu"},"id":168390},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/4?namespace=static-8.2.5_31884-eu"},"name":"Plate","id":4},"inventory_type":{"type":"FEET","name":"Feet"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"armor":{"value":756,"display_string":"756 Armor"},"stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":452,"display_string":"+452
+        Strength"},{"type":{"type":"INTELLECT","name":"Intellect"},"value":452,"display_string":"+452
+        Intellect","is_negated":true},{"type":{"type":"STAMINA","name":"Stamina"},"value":834,"display_string":"+834
+        Stamina"},{"type":{"type":"HASTE_RATING","name":"Haste"},"value":83,"display_string":"+83
+        Haste","is_equip_bonus":true},{"type":{"type":"VERSATILITY","name":"Versatility"},"value":150,"display_string":"+150
+        Versatility","is_equip_bonus":true}],"sell_price":{"value":610581,"display_strings":{"header":"Sell
+        Price:","gold":"61","silver":"5","copper":"81"}},"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":450,"display_string":"Item Level 450"},"transmog":{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/161605?namespace=static-8.2.5_31884-eu"},"name":"Dread
+        Gladiator''s Plate Warboots","id":161605},"display_string":"Transmogrified
+        to:\nDread Gladiator''s Plate Warboots","item_modified_appearance_id":99715},"durability":{"value":46,"display_string":"Durability
+        46 / 80"},"name_description":{"display_string":"Mythic Warforged","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168387?namespace=static-8.2.5_31884-eu"},"id":168387},"slot":{"type":"WRIST","name":"Wrist"},"quantity":1,"context":6,"bonus_list":[4800,40,1517,4786],"quality":{"type":"EPIC","name":"Epic"},"name":"Palace
+        Sentinel Vambraces","modified_appearance_id":104560,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168387?namespace=static-8.2.5_31884-eu"},"id":168387},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/4?namespace=static-8.2.5_31884-eu"},"name":"Plate","id":4},"inventory_type":{"type":"WRIST","name":"Wrist"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"armor":{"value":463,"display_string":"463 Armor"},"stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":323,"display_string":"+323
+        Strength"},{"type":{"type":"INTELLECT","name":"Intellect"},"value":323,"display_string":"+323
+        Intellect","is_negated":true},{"type":{"type":"STAMINA","name":"Stamina"},"value":592,"display_string":"+592
+        Stamina"},{"type":{"type":"CRIT_RATING","name":"Critical Strike"},"value":115,"display_string":"+115
+        Critical Strike","is_equip_bonus":true},{"type":{"type":"HASTE_RATING","name":"Haste"},"value":56,"display_string":"+56
+        Haste","is_equip_bonus":true},{"type":{"type":"COMBAT_RATING_AVOIDANCE","name":"Avoidance"},"value":74,"display_string":"+74
+        Avoidance","is_equip_bonus":true}],"sell_price":{"value":404125,"display_strings":{"header":"Sell
+        Price:","gold":"40","silver":"41","copper":"25"}},"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":445,"display_string":"Item Level 445"},"durability":{"value":32,"display_string":"Durability
+        32 / 55"},"name_description":{"display_string":"Mythic","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168885?namespace=static-8.2.5_31884-eu"},"id":168885},"slot":{"type":"HANDS","name":"Hands"},"quantity":1,"context":6,"bonus_list":[4800,40,1517,5850,4783],"quality":{"type":"EPIC","name":"Epic"},"name":"Undercove
+        Crushers","modified_appearance_id":104748,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168885?namespace=static-8.2.5_31884-eu"},"id":168885},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/4?namespace=static-8.2.5_31884-eu"},"name":"Plate","id":4},"inventory_type":{"type":"HAND","name":"Hands"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"armor":{"value":687,"display_string":"687 Armor"},"stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":452,"display_string":"+452
+        Strength"},{"type":{"type":"INTELLECT","name":"Intellect"},"value":452,"display_string":"+452
+        Intellect","is_negated":true},{"type":{"type":"STAMINA","name":"Stamina"},"value":834,"display_string":"+834
+        Stamina"},{"type":{"type":"VERSATILITY","name":"Versatility"},"value":156,"display_string":"+156
+        Versatility","is_equip_bonus":true},{"type":{"type":"MASTERY_RATING","name":"Mastery"},"value":76,"display_string":"+76
+        Mastery","is_equip_bonus":true},{"type":{"type":"COMBAT_RATING_AVOIDANCE","name":"Avoidance"},"value":100,"display_string":"+100
+        Avoidance","is_equip_bonus":true}],"sell_price":{"value":385477,"display_strings":{"header":"Sell
+        Price:","gold":"38","silver":"54","copper":"77"}},"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":450,"display_string":"Item Level 450"},"transmog":{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/161610?namespace=static-8.2.5_31884-eu"},"name":"Dread
+        Gladiator''s Plate Gauntlets","id":161610},"display_string":"Transmogrified
+        to:\nDread Gladiator''s Plate Gauntlets","item_modified_appearance_id":99717},"durability":{"value":33,"display_string":"Durability
+        33 / 55"},"name_description":{"display_string":"Mythic Warforged","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/169157?namespace=static-8.2.5_31884-eu"},"id":169157},"enchantments":[{"display_string":"Enchanted:
+        +60 Critical Strike","source_item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168446?namespace=static-8.2.5_31884-eu"},"name":"Enchant
+        Ring - Accord of Critical Strike","id":168446},"enchantment_id":6108,"enchantment_slot":{"id":0,"type":"PERMANENT"}}],"sockets":[{"socket_type":{"type":"PRISMATIC","name":"Prismatic
+        Socket"},"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168639?namespace=static-8.2.5_31884-eu"},"name":"Deadly
+        Lava Lazuli","id":168639},"display_string":"+50 Critical Strike","media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168639?namespace=static-8.2.5_31884-eu"},"id":168639}}],"slot":{"type":"FINGER_1","name":"Ring
+        1"},"quantity":1,"context":23,"bonus_list":[4779,4802,41,1472,4786],"quality":{"type":"EPIC","name":"Epic"},"name":"Logic
+        Loop of Division","modified_appearance_id":0,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/169157?namespace=static-8.2.5_31884-eu"},"id":169157},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/0?namespace=static-8.2.5_31884-eu"},"name":"Miscellaneous","id":0},"inventory_type":{"type":"FINGER","name":"Finger"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"unique_equipped":"Unique-Equipped","stats":[{"type":{"type":"STAMINA","name":"Stamina"},"value":430,"display_string":"+430
+        Stamina"},{"type":{"type":"CRIT_RATING","name":"Critical Strike"},"value":361,"display_string":"+361
+        Critical Strike","is_equip_bonus":true},{"type":{"type":"HASTE_RATING","name":"Haste"},"value":124,"display_string":"+124
+        Haste","is_equip_bonus":true},{"type":{"type":"COMBAT_RATING_LIFESTEAL","name":"Leech"},"value":83,"display_string":"+83
+        Leech","is_equip_bonus":true}],"spells":[{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/300124?namespace=static-8.2.5_31884-eu"},"name":"Logic
+        Loop of Division","id":300124},"description":"Equip: If you damage an enemy
+        while you are behind them..."}],"sell_price":{"value":490642,"display_strings":{"header":"Sell
+        Price:","gold":"49","silver":"6","copper":"42"}},"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":415,"display_string":"Item Level 415"},"is_subclass_hidden":true,"name_description":{"display_string":"Mythic","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/169159?namespace=static-8.2.5_31884-eu"},"id":169159},"enchantments":[{"display_string":"Enchanted:
+        +60 Critical Strike","source_item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168446?namespace=static-8.2.5_31884-eu"},"name":"Enchant
+        Ring - Accord of Critical Strike","id":168446},"enchantment_id":6108,"enchantment_slot":{"id":0,"type":"PERMANENT"}}],"sockets":[{"socket_type":{"type":"PRISMATIC","name":"Prismatic
+        Socket"},"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168639?namespace=static-8.2.5_31884-eu"},"name":"Deadly
+        Lava Lazuli","id":168639},"display_string":"+50 Critical Strike","media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168639?namespace=static-8.2.5_31884-eu"},"id":168639}}],"slot":{"type":"FINGER_2","name":"Ring
+        2"},"quantity":1,"context":23,"bonus_list":[4779,4802,1472,4786],"quality":{"type":"EPIC","name":"Epic"},"name":"Overclocking
+        Bit Band","modified_appearance_id":0,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/169159?namespace=static-8.2.5_31884-eu"},"id":169159},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/0?namespace=static-8.2.5_31884-eu"},"name":"Miscellaneous","id":0},"inventory_type":{"type":"FINGER","name":"Finger"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"unique_equipped":"Unique-Equipped","stats":[{"type":{"type":"STAMINA","name":"Stamina"},"value":430,"display_string":"+430
+        Stamina"},{"type":{"type":"HASTE_RATING","name":"Haste"},"value":388,"display_string":"+388
+        Haste","is_equip_bonus":true},{"type":{"type":"MASTERY_RATING","name":"Mastery"},"value":97,"display_string":"+97
+        Mastery","is_equip_bonus":true}],"spells":[{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/300126?namespace=static-8.2.5_31884-eu"},"name":"Overclocking
+        Bit Band","id":300126},"description":"Equip: ...then you gain 155 Haste for
+        15 sec."}],"sell_price":{"value":494123,"display_strings":{"header":"Sell
+        Price:","gold":"49","silver":"41","copper":"23"}},"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":415,"display_string":"Item Level 415"},"is_subclass_hidden":true,"name_description":{"display_string":"Mythic","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/169311?namespace=static-8.2.5_31884-eu"},"id":169311},"slot":{"type":"TRINKET_1","name":"Trinket
+        1"},"quantity":1,"context":6,"bonus_list":[4800,41,1517,4786],"quality":{"type":"EPIC","name":"Epic"},"name":"Ashvane''s
+        Razor Coral","modified_appearance_id":0,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/169311?namespace=static-8.2.5_31884-eu"},"id":169311},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/0?namespace=static-8.2.5_31884-eu"},"name":"Miscellaneous","id":0},"inventory_type":{"type":"TRINKET","name":"Trinket"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"unique_equipped":"Unique-Equipped","stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":546,"display_string":"+546
+        Strength"},{"type":{"type":"AGILITY","name":"Agility"},"value":546,"display_string":"+546
+        Agility","is_negated":true},{"type":{"type":"COMBAT_RATING_LIFESTEAL","name":"Leech"},"value":98,"display_string":"+98
+        Leech","is_equip_bonus":true}],"spells":[{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/303564?namespace=static-8.2.5_31884-eu"},"name":"Razor
+        Coral","id":303564},"description":"Use: Deal 17,471 Physical damage and apply
+        Razor Coral to your target, giving your damaging abilities against the target
+        a high chance to deal 17,471 Physical damage and add a stack of Razor Coral.\r\n\r\nReactivating
+        this ability will remove Razor Coral from your target, granting you 127 Critical
+        Strike per stack for 20 sec. (20 Sec Cooldown)"}],"sell_price":{"value":639679,"display_strings":{"header":"Sell
+        Price:","gold":"63","silver":"96","copper":"79"}},"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":445,"display_string":"Item Level 445"},"is_subclass_hidden":true,"name_description":{"display_string":"Mythic","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/169319?namespace=static-8.2.5_31884-eu"},"id":169319},"sockets":[{"socket_type":{"type":"PRISMATIC","name":"Prismatic
+        Socket"},"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168639?namespace=static-8.2.5_31884-eu"},"name":"Deadly
+        Lava Lazuli","id":168639},"display_string":"+50 Critical Strike","media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168639?namespace=static-8.2.5_31884-eu"},"id":168639}}],"slot":{"type":"TRINKET_2","name":"Trinket
+        2"},"quantity":1,"context":6,"bonus_list":[4800,1808,1517,4786],"quality":{"type":"EPIC","name":"Epic"},"name":"Dribbling
+        Inkpod","modified_appearance_id":0,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/169319?namespace=static-8.2.5_31884-eu"},"id":169319},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/0?namespace=static-8.2.5_31884-eu"},"name":"Miscellaneous","id":0},"inventory_type":{"type":"TRINKET","name":"Trinket"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"unique_equipped":"Unique-Equipped","stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":546,"display_string":"+546
+        Strength"},{"type":{"type":"AGILITY","name":"Agility"},"value":546,"display_string":"+546
+        Agility","is_negated":true}],"spells":[{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/296963?namespace=static-8.2.5_31884-eu"},"name":"Conductive
+        Ink","id":296963},"description":"Equip: Your damaging abilities against enemies
+        above 30% health have a very high chance to apply Conductive Ink. When an
+        enemy falls below 30% health, Conductive Ink inflicts 10,921 Nature damage
+        per stack."}],"sell_price":{"value":659294,"display_strings":{"header":"Sell
+        Price:","gold":"65","silver":"92","copper":"94"}},"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":445,"display_string":"Item Level 445"},"is_subclass_hidden":true,"name_description":{"display_string":"Mythic","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/159288?namespace=static-8.2.5_31884-eu"},"id":159288},"enchantments":[{"display_string":"Goblin
+        Glider","enchantment_id":4897,"enchantment_slot":{"id":7,"type":"ON_USE_SPELL"},"spell":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/126389?namespace=static-8.2.5_31884-eu"},"name":"Goblin
+        Glider","id":126389},"description":"Use: Reduces your falling speed for 2
+        min. (3 Min Cooldown)"}}],"sockets":[{"socket_type":{"type":"PRISMATIC","name":"Prismatic
+        Socket"},"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168639?namespace=static-8.2.5_31884-eu"},"name":"Deadly
+        Lava Lazuli","id":168639},"display_string":"+50 Critical Strike","media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168639?namespace=static-8.2.5_31884-eu"},"id":168639}}],"slot":{"type":"BACK","name":"Back"},"quantity":1,"context":35,"bonus_list":[5010,4802,1612,4783],"quality":{"type":"EPIC","name":"Epic"},"name":"Cloak
+        of the Restless Tribes","modified_appearance_id":97058,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/159288?namespace=static-8.2.5_31884-eu"},"id":159288},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/1?namespace=static-8.2.5_31884-eu"},"name":"Cloth","id":1},"inventory_type":{"type":"CLOAK","name":"Back"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"armor":{"value":137,"display_string":"137 Armor"},"stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":309,"display_string":"+309
+        Strength"},{"type":{"type":"AGILITY","name":"Agility"},"value":309,"display_string":"+309
+        Agility","is_negated":true},{"type":{"type":"INTELLECT","name":"Intellect"},"value":309,"display_string":"+309
+        Intellect","is_negated":true},{"type":{"type":"STAMINA","name":"Stamina"},"value":562,"display_string":"+562
+        Stamina"},{"type":{"type":"VERSATILITY","name":"Versatility"},"value":92,"display_string":"+92
+        Versatility","is_equip_bonus":true},{"type":{"type":"MASTERY_RATING","name":"Mastery"},"value":77,"display_string":"+77
+        Mastery","is_equip_bonus":true}],"spells":[{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/281735?namespace=static-8.2.5_31884-eu"},"name":"Restlessness","id":281735},"description":"Equip:
+        Standing still for 4 sec increases your Speed by 333. Lasts for 4 sec once
+        you start moving."}],"sell_price":{"value":555357,"display_strings":{"header":"Sell
+        Price:","gold":"55","silver":"53","copper":"57"}},"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":440,"display_string":"Item Level 440"},"transmog":{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/134111?namespace=static-8.2.5_31884-eu"},"name":"Hidden
+        Cloak","id":134111},"display_string":"Transmogrified to:\nHidden Cloak","item_modified_appearance_id":77345},"is_subclass_hidden":true,"name_description":{"display_string":"Mythic
+        10 Warforged","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/168897?namespace=static-8.2.5_31884-eu"},"id":168897},"enchantments":[{"display_string":"Enchanted:
+        Deadly Navigation","source_item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/159785?namespace=static-8.2.5_31884-eu"},"name":"Enchant
+        Weapon - Deadly Navigation","id":159785},"enchantment_id":5965,"enchantment_slot":{"id":0,"type":"PERMANENT"}}],"slot":{"type":"MAIN_HAND","name":"Main
+        Hand"},"quantity":1,"context":6,"bonus_list":[4800,1517,4786],"quality":{"type":"EPIC","name":"Epic"},"name":"Tentacle
+        Crusher","modified_appearance_id":105072,"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/168897?namespace=static-8.2.5_31884-eu"},"id":168897},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/2?namespace=static-8.2.5_31884-eu"},"name":"Weapon","id":2},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/2/item-subclass/5?namespace=static-8.2.5_31884-eu"},"name":"Mace","id":5},"inventory_type":{"type":"TWOHWEAPON","name":"Two-Hand"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"weapon":{"damage":{"min_value":1012,"max_value":2103,"display_string":"1,012
+        - 2,103 Damage","damage_class":{"type":"PHYSICAL","name":"Physical"}},"attack_speed":{"value":3600,"display_string":"Speed
+        3.60"},"dps":{"value":432.49997,"display_string":"(432.5 damage per second)"}},"stats":[{"type":{"type":"STRENGTH","name":"Strength"},"value":575,"display_string":"+575
+        Strength"},{"type":{"type":"STAMINA","name":"Stamina"},"value":1053,"display_string":"+1,053
+        Stamina"},{"type":{"type":"HASTE_RATING","name":"Haste"},"value":170,"display_string":"+170
+        Haste","is_equip_bonus":true},{"type":{"type":"MASTERY_RATING","name":"Mastery"},"value":135,"display_string":"+135
+        Mastery","is_equip_bonus":true}],"sell_price":{"value":1322102,"display_strings":{"header":"Sell
+        Price:","gold":"132","silver":"21","copper":"2"}},"requirements":{"level":{"value":120,"display_string":"Requires
+        Level 120"}},"level":{"value":445,"display_string":"Item Level 445"},"transmog":{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/161703?namespace=static-8.2.5_31884-eu"},"name":"Dread
+        Gladiator''s Bonegrinder","id":161703},"display_string":"Transmogrified to:\nDread
+        Gladiator''s Bonegrinder","item_modified_appearance_id":97780},"durability":{"value":67,"display_string":"Durability
+        67 / 120"},"name_description":{"display_string":"Mythic","color":{"r":0,"g":255,"b":0,"a":1.0}}},{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/164573?namespace=static-8.2.5_31884-eu"},"id":164573},"slot":{"type":"TABARD","name":"Tabard"},"quantity":1,"quality":{"type":"EPIC","name":"Epic"},"name":"Dread
+        Gladiator''s Tabard","media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/item/164573?namespace=static-8.2.5_31884-eu"},"id":164573},"item_class":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4?namespace=static-8.2.5_31884-eu"},"name":"Armor","id":4},"item_subclass":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item-class/4/item-subclass/0?namespace=static-8.2.5_31884-eu"},"name":"Miscellaneous","id":0},"inventory_type":{"type":"TABARD","name":"Tabard"},"binding":{"type":"ON_ACQUIRE","name":"Binds
+        when picked up"},"sell_price":{"value":20000,"display_strings":{"header":"Sell
+        Price:","gold":"2","silver":"0","copper":"0"}},"requirements":{"faction":{"value":{"type":"ALLIANCE","name":"Alliance"},"display_string":"Alliance
+        Only"}},"level":{"value":120,"display_string":"Item Level 120"},"transmog":{"item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/142504?namespace=static-8.2.5_31884-eu"},"name":"Hidden
+        Tabard","id":142504},"display_string":"Transmogrified to:\nHidden Tabard","item_modified_appearance_id":83203},"is_subclass_hidden":true,"name_description":{"display_string":"Battle
+        for Azeroth Season 1","color":{"r":0,"g":255,"b":0,"a":1.0}}}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/equipment?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 22:30:33 GMT
+recorded_with: VCR 2.9.3

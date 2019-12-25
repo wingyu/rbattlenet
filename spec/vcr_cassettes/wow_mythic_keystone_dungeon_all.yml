@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/index?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '3'
+      Date:
+      - Sun, 22 Dec 2019 15:54:37 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:19:56 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - mythic-keystone-dungeon
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86553-2467-9480-f981-fa165bcda32d
+      x-trace-spanid:
+      - 15c86553-2467-96f0-f981-fa165bcda32d
+      x-trace-parentspanid:
+      - 15c86553-2467-96c0-f981-fa165bcda32d
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/?namespace=dynamic-eu"}},"dungeons":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/244?namespace=dynamic-eu"},"name":"Atal''Dazar","id":244},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/245?namespace=dynamic-eu"},"name":"Freehold","id":245},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/246?namespace=dynamic-eu"},"name":"Tol
+        Dagor","id":246},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/247?namespace=dynamic-eu"},"name":"The
+        MOTHERLODE!!","id":247},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/248?namespace=dynamic-eu"},"name":"Waycrest
+        Manor","id":248},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/249?namespace=dynamic-eu"},"name":"Kings''
+        Rest","id":249},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/250?namespace=dynamic-eu"},"name":"Temple
+        of Sethraliss","id":250},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/251?namespace=dynamic-eu"},"name":"The
+        Underrot","id":251},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/252?namespace=dynamic-eu"},"name":"Shrine
+        of the Storm","id":252},{"key":{"href":"https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/353?namespace=dynamic-eu"},"name":"Siege
+        of Boralus","id":353}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/mythic-keystone/dungeon/index?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:37 GMT
+recorded_with: VCR 2.9.3

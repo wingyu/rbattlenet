@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/azerite-essence/2?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:31 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:20:22 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - azerite-essence
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c86603-b37c-9e60-8521-fa165a196292
+      x-trace-spanid:
+      - 15c86603-b37c-a0d0-8521-fa165a196292
+      x-trace-parentspanid:
+      - 15c86603-b37c-a0a0-8521-fa165a196292
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/2?namespace=static-8.2.5_31884-eu"}},"id":2,"name":"Azeroth''s
+        Undying Gift","allowed_specializations":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/66?namespace=static-8.2.5_31884-eu"},"name":"Protection","id":66},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/73?namespace=static-8.2.5_31884-eu"},"name":"Protection","id":73},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/104?namespace=static-8.2.5_31884-eu"},"name":"Guardian","id":104},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/581?namespace=static-8.2.5_31884-eu"},"name":"Vengeance","id":581},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/268?namespace=static-8.2.5_31884-eu"},"name":"Brewmaster","id":268},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/250?namespace=static-8.2.5_31884-eu"},"name":"Blood","id":250}],"powers":[{"id":5,"rank":1,"main_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/293019?namespace=static-8.2.5_31884-eu"},"name":"Azeroth''s
+        Undying Gift","id":293019},"passive_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/294668?namespace=static-8.2.5_31884-eu"},"name":"Hardened
+        Azerite","id":294668}},{"id":6,"rank":2,"main_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/298080?namespace=static-8.2.5_31884-eu"},"name":"Azeroth''s
+        Undying Gift","id":298080},"passive_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/298082?namespace=static-8.2.5_31884-eu"},"name":"Hardened
+        Azerite","id":298082}},{"id":7,"rank":3,"main_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/298081?namespace=static-8.2.5_31884-eu"},"name":"Azeroth''s
+        Undying Gift","id":298081},"passive_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/298083?namespace=static-8.2.5_31884-eu"},"name":"Hardened
+        Azerite","id":298083}},{"id":8,"rank":4,"main_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/298081?namespace=static-8.2.5_31884-eu"},"name":"Azeroth''s
+        Undying Gift","id":298081},"passive_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/298083?namespace=static-8.2.5_31884-eu"},"name":"Hardened
+        Azerite","id":298083}}],"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/azerite-essence/2?namespace=static-8.2.5_31884-eu"},"id":2}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/azerite-essence/2?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:32 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/azerite-essence/3?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:31 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:20:22 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - azerite-essence
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c864e9-2c29-4220-c980-fa165ba0f208
+      x-trace-spanid:
+      - 15c864e9-2c29-4340-c980-fa165ba0f208
+      x-trace-parentspanid:
+      - 15c864e9-2c29-4310-c980-fa165ba0f208
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/azerite-essence/3?namespace=static-8.2.5_31884-eu"}},"id":3,"name":"Sphere
+        of Suppression","allowed_specializations":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/66?namespace=static-8.2.5_31884-eu"},"name":"Protection","id":66},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/73?namespace=static-8.2.5_31884-eu"},"name":"Protection","id":73},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/104?namespace=static-8.2.5_31884-eu"},"name":"Guardian","id":104},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/581?namespace=static-8.2.5_31884-eu"},"name":"Vengeance","id":581},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/268?namespace=static-8.2.5_31884-eu"},"name":"Brewmaster","id":268},{"key":{"href":"https://eu.api.blizzard.com/data/wow/playable-specialization/250?namespace=static-8.2.5_31884-eu"},"name":"Blood","id":250}],"powers":[{"id":9,"rank":1,"main_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/293031?namespace=static-8.2.5_31884-eu"},"name":"Suppressing
+        Pulse","id":293031},"passive_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/294910?namespace=static-8.2.5_31884-eu"},"name":"Sphere
+        of Suppression","id":294910}},{"id":10,"rank":2,"main_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/300009?namespace=static-8.2.5_31884-eu"},"name":"Suppressing
+        Pulse","id":300009},"passive_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/300012?namespace=static-8.2.5_31884-eu"},"name":"Sphere
+        of Suppression","id":300012}},{"id":11,"rank":3,"main_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/300010?namespace=static-8.2.5_31884-eu"},"name":"Suppressing
+        Pulse","id":300010},"passive_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/300013?namespace=static-8.2.5_31884-eu"},"name":"Sphere
+        of Suppression","id":300013}},{"id":12,"rank":4,"main_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/300010?namespace=static-8.2.5_31884-eu"},"name":"Suppressing
+        Pulse","id":300010},"passive_power_spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/300013?namespace=static-8.2.5_31884-eu"},"name":"Sphere
+        of Suppression","id":300013}}],"media":{"key":{"href":"https://eu.api.blizzard.com/data/wow/media/azerite-essence/3?namespace=static-8.2.5_31884-eu"},"id":3}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/azerite-essence/3?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:32 GMT
+recorded_with: VCR 2.9.3

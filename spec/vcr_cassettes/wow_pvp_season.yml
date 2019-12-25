@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '3'
+      Date:
+      - Sun, 22 Dec 2019 15:54:47 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 10 Jul 2019 04:10:52 GMT
+      Battlenet-Namespace:
+      - dynamic-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - pvp-season
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '406'
+      x-trace-traceid:
+      - 15c8638b-2caa-8010-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638b-2caa-8130-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638b-2caa-8100-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-eu"}},"id":27,"leaderboards":{"href":"https://eu.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/?namespace=dynamic-eu"},"rewards":{"href":"https://eu.api.blizzard.com/data/wow/pvp-season/27/pvp-reward/?namespace=dynamic-eu"},"season_start_timestamp":1548226800000,"season_end_timestamp":1561510800000}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:47 GMT
+recorded_with: VCR 2.9.3

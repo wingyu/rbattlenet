@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/reputation-tiers/2?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:50 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:20:03 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - reputation-tiers
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15c8638b-2cac-cfb0-6753-fa165ab86060
+      x-trace-spanid:
+      - 15c8638b-2cac-d1d0-6753-fa165ab86060
+      x-trace-parentspanid:
+      - 15c8638b-2cac-d1a0-6753-fa165ab86060
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/2?namespace=static-8.2.5_31884-eu"}},"id":2,"tiers":[{"name":"Stranger","min_value":0,"max_value":8400,"id":0},{"name":"Acquaintance","min_value":8400,"max_value":16800,"id":1},{"name":"Buddy","min_value":16800,"max_value":25200,"id":2},{"name":"Friend","min_value":25200,"max_value":33600,"id":3},{"name":"Good
+        Friend","min_value":33600,"max_value":42000,"id":4},{"name":"Best Friend","min_value":42000,"max_value":42000,"id":5}],"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1283?namespace=static-8.2.5_31884-eu"},"name":"Farmer
+        Fung","id":1283}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/reputation-tiers/2?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:51 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/reputation-tiers/22?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sun, 22 Dec 2019 15:54:50 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 18 Dec 2019 02:20:03 GMT
+      Battlenet-Namespace:
+      - static-8.2.5_31884-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - reputation-tiers
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '667'
+      x-trace-traceid:
+      - 15c864e9-2c38-3aa0-c980-fa165ba0f208
+      x-trace-spanid:
+      - 15c864e9-2c38-3ec0-c980-fa165ba0f208
+      x-trace-parentspanid:
+      - 15c864e9-2c38-3e90-c980-fa165ba0f208
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/reputation-tiers/22?namespace=static-8.2.5_31884-eu"}},"id":22,"tiers":[{"name":"Stranger","min_value":0,"max_value":8400,"id":0},{"name":"Acquaintance","min_value":8400,"max_value":16800,"id":1},{"name":"Buddy","min_value":16800,"max_value":25200,"id":2},{"name":"Friend","min_value":25200,"max_value":33600,"id":3},{"name":"Good
+        Friend","min_value":33600,"max_value":42000,"id":4},{"name":"Best Friend","min_value":42000,"max_value":42000,"id":5}],"faction":{"key":{"href":"https://eu.api.blizzard.com/data/wow/reputation-faction/1276?namespace=static-8.2.5_31884-eu"},"name":"Old
+        Hillpaw","id":1276}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/reputation-tiers/22?namespace=static-eu&locale=en_gb
+  recorded_at: Sun, 22 Dec 2019 15:54:51 GMT
+recorded_with: VCR 2.9.3
