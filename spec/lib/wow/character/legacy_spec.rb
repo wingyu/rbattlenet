@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::Legacy::Character do
+describe RBattlenet::Wow::Character::Legacy do
   before do
     RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
   end
@@ -8,10 +8,9 @@ describe RBattlenet::Wow::Legacy::Character do
   describe "#find_legacy_characters" do
     it "fetches legacy character data" do
       with_connection("wow_legacy_characters") do
-        result = RBattlenet::Wow::Legacy::Character.find(
-          realm: "Stormrage",
-          name: "Sheday",
-          endpoints: [:statistics, :titles],
+        result = RBattlenet::Wow::Character::Legacy.find(
+          realm: "stormrage",
+          name: "sheday",
         )
         expect(result.name).to eq "Sheday"
       end
@@ -21,16 +20,14 @@ describe RBattlenet::Wow::Legacy::Character do
   describe "#find_multiple_legacy_characterss" do
     it "fetches legacy character data" do
       with_connection("wow_legacy_characters_multiple") do
-        collection = RBattlenet::Wow::Legacy::Character.find([
+        collection = RBattlenet::Wow::Character::Legacy.find([
           {
-            realm: "Stormrage",
-            name: "Sheday",
-            endpoints: [:statistics, :titles],
+            realm: "stormrage",
+            name: "sheday",
           },
           {
-            realm: "Stormrage",
-            name: "Marks",
-            endpoints: [:statistics, :titles],
+            realm: "stormrage",
+            name: "marks",
           }
         ])
         expect(collection.results.map(&:name).sort).to eq ["Marks", "Sheday"]
