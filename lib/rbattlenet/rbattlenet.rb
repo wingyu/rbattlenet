@@ -2,6 +2,7 @@ module RBattlenet
   @@region = "eu"
   @@locale = "en_gb"
   @@raw = false
+  @@concurrency = 20
 
   #Set Access Token for requests. Required
   def self.authenticate(client_id:, client_secret:)
@@ -14,8 +15,8 @@ module RBattlenet
     true
   end
 
-  def self.set_options(region: @@region, locale: @@locale, raw_response: @@raw)
-    @@region, @@locale, @@raw = region, locale, raw_response
+  def self.set_options(region: @@region, locale: @@locale, raw_response: @@raw, concurrency: @@concurrency)
+    @@region, @@locale, @@raw, @@concurrency = region, locale, raw_response, concurrency
     true
   end
 
@@ -29,7 +30,7 @@ module RBattlenet
       headers['Authorization'] = "Bearer #{@@token}" if @@token
 
       # Limit concurrency to prevent hitting the API request per-second cap.
-      hydra = Typhoeus::Hydra.new(max_concurrency: 50)
+      hydra = Typhoeus::Hydra.new(max_concurrency: @@concurrency)
       subjects.each do |uris, subject|
         uris.each do |field, uri|
           request = Typhoeus::Request.new(URI.encode(uri), headers: headers)
