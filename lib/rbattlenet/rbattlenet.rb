@@ -52,8 +52,6 @@ module RBattlenet
 
       hydra.run
       store.size == 1 ? store.first : store
-    rescue => err
-      raise RBattlenet::Errors::ConnectionError.new
     end
 
     def uri(path)
