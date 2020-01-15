@@ -12,11 +12,9 @@ module RBattlenet
 
     def add(subject, field, response)
       data = if response.code == 200
-        result = JSON.parse(response.body, object_class: Result)
-        result.is_a?(Array) ? Result.new(data: result.size == 1 ? result.first : result) : result
-      else
-        EmptyResult.new(status_code: response.code, response: response)
-      end
+        result = JSON.parse(response.body, object_class: Result) rescue nil
+        result && (result.is_a?(Array) ? Result.new(data: result.size == 1 ? result.first : result) : result)
+      end || EmptyResult.new(status_code: response.code, response: response)
 
       data.status_code ||= 200
       data.source, data.field = subject, field
