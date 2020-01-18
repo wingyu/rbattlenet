@@ -12,6 +12,7 @@ module RBattlenet
         "professions",
         "quests",
         "mounts",
+        "titles",
       ]
 
       def self.path(character)
