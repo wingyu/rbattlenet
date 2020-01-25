@@ -3,6 +3,7 @@ module RBattlenet
   @@locale = "en_gb"
   @@raw = false
   @@concurrency = 20
+  @@timeout = 30
 
   #Set Access Token for requests. Required
   def self.authenticate(client_id:, client_secret:)
@@ -15,8 +16,8 @@ module RBattlenet
     true
   end
 
-  def self.set_options(region: @@region, locale: @@locale, raw_response: @@raw, concurrency: @@concurrency)
-    @@region, @@locale, @@raw, @@concurrency = region, locale, raw_response, concurrency
+  def self.set_options(region: @@region, locale: @@locale, raw_response: @@raw, concurrency: @@concurrency, timeout: @@timeout)
+    @@region, @@locale, @@raw, @@concurrency, @@timeout = region, locale, raw_response, concurrency, timeout
     true
   end
 
@@ -33,7 +34,7 @@ module RBattlenet
       hydra = Typhoeus::Hydra.new(max_concurrency: @@concurrency)
       subjects.each do |uris, subject|
         uris.each do |field, uri|
-          request = Typhoeus::Request.new(URI.encode(uri), headers: headers)
+          request = Typhoeus::Request.new(URI.encode(uri), headers: headers, timeout: @@timeout)
 
           request.on_complete do |response|
             if @@raw
