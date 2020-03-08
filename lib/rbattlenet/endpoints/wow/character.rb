@@ -14,8 +14,28 @@ module RBattlenet
           RBattlenet::Wow::Character::Achievements
         end
 
+        def achievement_statistics
+          RBattlenet::Wow::Character::AchievementStatistics
+        end
+
+        def active_quests
+          RBattlenet::Wow::Character::ActiveQuests
+        end
+
         def appearance
           RBattlenet::Wow::Character::Appearance
+        end
+
+        def completed_dungeons
+          RBattlenet::Wow::Character::CompletedDungeons
+        end
+
+        def completed_quests
+          RBattlenet::Wow::Character::CompletedQuests
+        end
+
+        def completed_raids
+          RBattlenet::Wow::Character::CompletedRaids
         end
 
         def equipment

@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/quests?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUwirJ2L8Z9vFZjdkTFQv52o8jyUe6VkcQ
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Sun, 08 Mar 2020 12:28:46 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sat, 7 Mar 2020 09:41:13 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - character-quests
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15f9e472-561c-ab10-34f0-fa165b63c5df
+      x-trace-spanid:
+      - 15f9e472-561c-ad20-34f0-fa165b63c5df
+      x-trace-parentspanid:
+      - 15f9e472-561c-acf0-34f0-fa165b63c5df
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/quests?namespace=profile-eu"}},"character":{"key":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday?namespace=profile-eu"},"name":"Sheday","id":142650023,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"}},"in_progress":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/quest/54978?namespace=static-8.3.0_32861-eu"},"name":"Against
+        Overwhelming Odds","id":54978},{"key":{"href":"https://eu.api.blizzard.com/data/wow/quest/58373?namespace=static-8.3.0_32861-eu"},"name":"Ny''alotha:
+        MOTHER''s Guidance","id":58373},{"key":{"href":"https://eu.api.blizzard.com/data/wow/quest/58374?namespace=static-8.3.0_32861-eu"},"name":"Ny''alotha:
+        MOTHER''s Guidance","id":58374},{"key":{"href":"https://eu.api.blizzard.com/data/wow/quest/58455?namespace=static-8.3.0_32861-eu"},"name":"Shadowy
+        Showdown","id":58455},{"key":{"href":"https://eu.api.blizzard.com/data/wow/quest/58825?namespace=static-8.3.0_32861-eu"},"name":"Super
+        Jelly","id":58825}],"completed":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/quests/completed?namespace=profile-eu"}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/quests?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 08 Mar 2020 12:28:47 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/howling-fjord/%D0%B0%D0%BB%D1%8C%D0%B2%D0%B5%D0%BE%D0%BD%D1%8F%D1%88%D0%B0/quests?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUwirJ2L8Z9vFZjdkTFQv52o8jyUe6VkcQ
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Sun, 08 Mar 2020 12:28:46 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sun, 8 Mar 2020 00:53:20 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - character-quests
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15f9e473-28ce-ae70-18bd-fa165b2fd169
+      x-trace-spanid:
+      - 15f9e473-28ce-bd10-18bd-fa165b2fd169
+      x-trace-parentspanid:
+      - 15f9e473-28ce-bce0-18bd-fa165b2fd169
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJfbGlua3MiOnsic2VsZiI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL3Byb2ZpbGUvd293L2NoYXJhY3Rlci9ob3dsaW5nLWZqb3JkLyVEMCVCMCVEMCVCQiVEMSU4QyVEMCVCMiVEMCVCNSVEMCVCRSVEMCVCRCVEMSU4RiVEMSU4OCVEMCVCMC9xdWVzdHM/bmFtZXNwYWNlPXByb2ZpbGUtZXUifX0sImNoYXJhY3RlciI6eyJrZXkiOnsiaHJlZiI6Imh0dHBzOi8vZXUuYXBpLmJsaXp6YXJkLmNvbS9wcm9maWxlL3dvdy9jaGFyYWN0ZXIvaG93bGluZy1mam9yZC8lRDAlQjAlRDAlQkIlRDElOEMlRDAlQjIlRDAlQjUlRDAlQkUlRDAlQkQlRDElOEYlRDElODglRDAlQjA/bmFtZXNwYWNlPXByb2ZpbGUtZXUifSwibmFtZSI6ItCQ0LvRjNCy0LXQvtC90Y/RiNCwIiwiaWQiOjEwNDYxMjAyNCwicmVhbG0iOnsia2V5Ijp7ImhyZWYiOiJodHRwczovL2V1LmFwaS5ibGl6emFyZC5jb20vZGF0YS93b3cvcmVhbG0vMTYxNT9uYW1lc3BhY2U9ZHluYW1pYy1ldSJ9LCJuYW1lIjoiSG93bGluZyBGam9yZCIsImlkIjoxNjE1LCJzbHVnIjoiaG93bGluZy1mam9yZCJ9fSwiaW5fcHJvZ3Jlc3MiOlt7ImtleSI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL2RhdGEvd293L3F1ZXN0LzI5Njk0P25hbWVzcGFjZT1zdGF0aWMtOC4zLjBfMzI4NjEtZXUifSwibmFtZSI6IlJlZ3JvdXAhIiwiaWQiOjI5Njk0fSx7ImtleSI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL2RhdGEvd293L3F1ZXN0LzQ5NTg2P25hbWVzcGFjZT1zdGF0aWMtOC4zLjBfMzI4NjEtZXUifSwibmFtZSI6IkRpZ2dpbmcgVGhyb3VnaCB0aGUgUGFzdCIsImlkIjo0OTU4Nn0seyJrZXkiOnsiaHJlZiI6Imh0dHBzOi8vZXUuYXBpLmJsaXp6YXJkLmNvbS9kYXRhL3dvdy9xdWVzdC81MzAzNz9uYW1lc3BhY2U9c3RhdGljLTguMy4wXzMyODYxLWV1In0sIm5hbWUiOiJFbWlzc2FyeSBvZiBXYXIiLCJpZCI6NTMwMzd9LHsia2V5Ijp7ImhyZWYiOiJodHRwczovL2V1LmFwaS5ibGl6emFyZC5jb20vZGF0YS93b3cvcXVlc3QvNTM4MTc/bmFtZXNwYWNlPXN0YXRpYy04LjMuMF8zMjg2MS1ldSJ9LCJuYW1lIjoiV2hhdGV2ZXIgSGFwcGVuZWQgdG8gR3JpenplayBGaXp6d3JlbmNoPyIsImlkIjo1MzgxN30seyJrZXkiOnsiaHJlZiI6Imh0dHBzOi8vZXUuYXBpLmJsaXp6YXJkLmNvbS9kYXRhL3dvdy9xdWVzdC81NjQwMT9uYW1lc3BhY2U9c3RhdGljLTguMy4wXzMyODYxLWV1In0sIm5hbWUiOiJBIEJvbHQgZnJvbSB0aGUgQmx1ZSIsImlkIjo1NjQwMX0seyJrZXkiOnsiaHJlZiI6Imh0dHBzOi8vZXUuYXBpLmJsaXp6YXJkLmNvbS9kYXRhL3dvdy9xdWVzdC81ODM3ND9uYW1lc3BhY2U9c3RhdGljLTguMy4wXzMyODYxLWV1In0sIm5hbWUiOiJOeSdhbG90aGE6IE1PVEhFUidzIEd1aWRhbmNlIiwiaWQiOjU4Mzc0fSx7ImtleSI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL2RhdGEvd293L3F1ZXN0LzU4Mzc1P25hbWVzcGFjZT1zdGF0aWMtOC4zLjBfMzI4NjEtZXUifSwibmFtZSI6Ik55J2Fsb3RoYTogTU9USEVSJ3MgR3VpZGFuY2UiLCJpZCI6NTgzNzV9LHsia2V5Ijp7ImhyZWYiOiJodHRwczovL2V1LmFwaS5ibGl6emFyZC5jb20vZGF0YS93b3cvcXVlc3QvNTg2NzI/bmFtZXNwYWNlPXN0YXRpYy04LjMuMF8zMjg2MS1ldSJ9LCJuYW1lIjoiQSBHYXRoZXJpbmcgb2YgQ2hhbXBpb25zIiwiaWQiOjU4NjcyfV0sImNvbXBsZXRlZCI6eyJocmVmIjoiaHR0cHM6Ly9ldS5hcGkuYmxpenphcmQuY29tL3Byb2ZpbGUvd293L2NoYXJhY3Rlci9ob3dsaW5nLWZqb3JkLyVEMCVCMCVEMCVCQiVEMSU4QyVEMCVCMiVEMCVCNSVEMCVCRSVEMCVCRCVEMSU4RiVEMSU4OCVEMCVCMC9xdWVzdHMvY29tcGxldGVkP25hbWVzcGFjZT1wcm9maWxlLWV1In19
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/howling-fjord/%D0%B0%D0%BB%D1%8C%D0%B2%D0%B5%D0%BE%D0%BD%D1%8F%D1%88%D0%B0/quests?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 08 Mar 2020 12:28:47 GMT
+recorded_with: VCR 2.9.3
