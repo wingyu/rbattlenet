@@ -14,7 +14,7 @@ module RBattlenet
       data = if response.code == 200
         result = JSON.parse(response.body, object_class: Result) rescue nil
         result && (result.is_a?(Array) ? Result.new(data: result.size == 1 ? result.first : result) : result)
-      end || EmptyResult.new(status_code: response.code, response: response)
+      end || EmptyResult.new(status_code: response.code)
 
       data.status_code ||= 200
       data.source, data.field = subject, field
@@ -26,7 +26,7 @@ module RBattlenet
       if subject_results.size == results_needed
         @results.reject!{ |result| result.source == subject }
 
-        unless base_result = subject_results.select{ |result| result.class == EmptyResult }.first
+        unless base_result = subject_results.select(&:empty?).first
           base_result = subject_results.select{ |result| result.field == :itself }.first
           (subject_results - [base_result]).each{ |result| base_result << result }
         end
@@ -47,7 +47,16 @@ module RBattlenet
     def <<(result)
       send("#{result.field}=", result.send(result.field) || result)
     end
+
+    def empty?
+      false
+    end
   end
 
-  class EmptyResult < Result; end
+  class EmptyResult < Result
+    def empty?
+      # It is possible for some fields to not exist even though the resource itself exists
+      ![:pvp_bracket_2v2, :pvp_bracket_3v3].include?(field)
+    end
+  end
 end
