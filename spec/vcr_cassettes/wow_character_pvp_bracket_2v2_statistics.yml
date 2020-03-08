@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/pvp-bracket/2v2?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUwirJ2L8Z9vFZjdkTFQv52o8jyUe6VkcQ
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '7'
+      Date:
+      - Sun, 08 Mar 2020 14:30:58 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Sat, 7 Mar 2020 09:41:13 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - pvp-bracket
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15f9e46f-2de9-ac00-81e2-fa165bbb2748
+      x-trace-spanid:
+      - 15f9e46f-2de9-ade0-81e2-fa165bbb2748
+      x-trace-parentspanid:
+      - 15f9e46f-2de9-adb0-81e2-fa165bbb2748
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/pvp-bracket/2v2?namespace=profile-eu"}},"character":{"key":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday?namespace=profile-eu"},"name":"Sheday","id":142650023,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"}},"faction":{"type":"ALLIANCE","name":"Alliance"},"bracket":{"id":0,"type":"ARENA_2v2"},"rating":1466,"season":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-season/29?namespace=dynamic-eu"},"id":29},"tier":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-tier/2?namespace=static-8.3.0_32861-eu"},"id":2},"season_match_statistics":{"played":25,"won":16,"lost":9},"weekly_match_statistics":{"played":0,"won":0,"lost":0}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/pvp-bracket/2v2?namespace=profile-eu&locale=en_gb
+  recorded_at: Sun, 08 Mar 2020 14:30:59 GMT
+recorded_with: VCR 2.9.3

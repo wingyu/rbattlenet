@@ -62,6 +62,14 @@ module RBattlenet
           RBattlenet::Wow::Character::Pets
         end
 
+        def pvp_bracket_2v2
+          RBattlenet::Wow::Character::PvpBracket2v2
+        end
+
+        def pvp_bracket_3v3
+          RBattlenet::Wow::Character::PvpBracket3v3
+        end
+
         def pvp_summary
           RBattlenet::Wow::Character::PvpSummary
         end
