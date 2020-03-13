@@ -26,11 +26,10 @@ module RBattlenet
       if subject_results.size == results_needed
         @results.reject!{ |result| result.source == subject }
 
-        unless base_result = subject_results.select(&:empty?).first
-          base_result = subject_results.select{ |result| result.field == :itself }.first
-          (subject_results - [base_result]).each{ |result| base_result << result }
-        end
+        base_result = subject_results.select(&:empty?).first ||
+          subject_results.select{ |result| result.field == :itself }.first
 
+        (subject_results - [base_result]).each{ |result| base_result << result }
         @results << base_result
         base_result
       end
