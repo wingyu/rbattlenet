@@ -56,7 +56,7 @@ module RBattlenet
   class EmptyResult < Result
     def empty?
       # It is possible for some fields to not exist even though the resource itself exists
-      ![:pvp_bracket_2v2, :pvp_bracket_3v3].include?(field)
+      ![:pvp_bracket_2v2, :pvp_bracket_3v3, :pvp_bracket_rbg].include?(field)
     end
   end
 end
