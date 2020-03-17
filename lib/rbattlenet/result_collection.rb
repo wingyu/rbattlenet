@@ -25,18 +25,12 @@ module RBattlenet
       subject_results = @results.group_by(&:source)[subject]
       if subject_results.size == results_needed
         @results.reject!{ |result| result.source == subject }
-
-        base_result = subject_results.select(&:empty?).first ||
-          subject_results.select{ |result| result.field == :itself }.first
-
+        base_result = subject_results.select{ |result| result.field == :itself }.first
         (subject_results - [base_result]).each{ |result| base_result << result }
+
         @results << base_result
         base_result
       end
-    end
-
-    def has_errors?
-      @results.map(&:class).include? EmptyResult
     end
 
     def_delegators :results, :first, :last, :size
@@ -46,16 +40,7 @@ module RBattlenet
     def <<(result)
       send("#{result.field}=", result.send(result.field) || result)
     end
-
-    def empty?
-      false
-    end
   end
 
-  class EmptyResult < Result
-    def empty?
-      # It is possible for some fields to not exist even though the resource itself exists
-      ![:pvp_bracket_2v2, :pvp_bracket_3v3, :pvp_bracket_rbg].include?(field)
-    end
-  end
+  class EmptyResult < Result; end
 end

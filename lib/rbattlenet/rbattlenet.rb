@@ -3,7 +3,7 @@ module RBattlenet
   @@locale = "en_gb"
   @@raw = false
   @@concurrency = 20
-  @@timeout = 30
+  @@timeout = 120
 
   #Set Access Token for requests. Required
   def self.authenticate(client_id:, client_secret:)
