@@ -1,7 +1,7 @@
 module RBattlenet
   module Wow
     class Character < RBattlenet::Endpoints::Base
-      SUPPORTED_FIELDS = [:itself, :achievements, :appearance, :equipment, :hunter_pets, :keystones, :media,
+      SUPPORTED_FIELDS = [:itself, :achievements, :appearance, :encounters, :equipment, :hunter_pets, :keystones, :media,
                           :mounts, :pets, :pvp_summary, :reputations, :specializations, :statistics, :status,
                           :titles]
 
@@ -16,6 +16,10 @@ module RBattlenet
 
         def appearance
           RBattlenet::Wow::Character::Appearance
+        end
+
+        def encounters
+          RBattlenet::Wow::Character::Encounters
         end
 
         def equipment
