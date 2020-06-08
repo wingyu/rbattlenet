@@ -1,0 +1,721 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/professions?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUF9tA9fYvFeXBeD1RnPfCit71pQgb92Rs
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Mon, 08 Jun 2020 16:00:50 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Mon, 8 Jun 2020 11:30:19 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - character-professions
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 93ced4f7-2afd-35fe-9a74-98c55ad942b8
+      x-trace-spanid:
+      - 160c77c6-f6e4-8b80-9d8a-fa165ac57d21
+      x-trace-parentspanid:
+      - 160c77c6-f6e4-8b50-9d8a-fa165ac57d21
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/professions?namespace=profile-eu"}},"primaries":[{"profession":{"key":{"href":"https://eu.api.blizzard.com/data/wow/profession/171?namespace=static-8.3.0_32861-eu"},"name":"Alchemy","id":171},"tiers":[{"skill_points":175,"max_skill_points":175,"tier":{"name":"Kul
+        Tiran Alchemy","id":2478},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38774?namespace=static-8.3.0_32861-eu"},"name":"Steelskin
+        Potion","id":38774},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38777?namespace=static-8.3.0_32861-eu"},"name":"Potion
+        of Replenishment","id":38777},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38780?namespace=static-8.3.0_32861-eu"},"name":"Potion
+        of Bursting Blood","id":38780},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38783?namespace=static-8.3.0_32861-eu"},"name":"Potion
+        of Rising Death","id":38783},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38787?namespace=static-8.3.0_32861-eu"},"name":"Flask
+        of the Currents","id":38787},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38789?namespace=static-8.3.0_32861-eu"},"name":"Flask
+        of Endless Fathoms","id":38789},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38793?namespace=static-8.3.0_32861-eu"},"name":"Flask
+        of the Vast Horizon","id":38793},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38796?namespace=static-8.3.0_32861-eu"},"name":"Flask
+        of the Undertow","id":38796},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38801?namespace=static-8.3.0_32861-eu"},"name":"Endless
+        Tincture of Renewed Combat","id":38801},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38804?namespace=static-8.3.0_32861-eu"},"name":"Siren''s
+        Alchemist Stone","id":38804},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38810?namespace=static-8.3.0_32861-eu"},"name":"Endless
+        Tincture of Fractional Power","id":38810},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38813?namespace=static-8.3.0_32861-eu"},"name":"Surging
+        Alchemist Stone","id":38813},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38817?namespace=static-8.3.0_32861-eu"},"name":"Coastal
+        Healing Potion","id":38817},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38820?namespace=static-8.3.0_32861-eu"},"name":"Coastal
+        Mana Potion","id":38820},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38823?namespace=static-8.3.0_32861-eu"},"name":"Coastal
+        Rejuvenation Potion","id":38823},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38826?namespace=static-8.3.0_32861-eu"},"name":"Demitri''s
+        Draught of Deception","id":38826},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38828?namespace=static-8.3.0_32861-eu"},"name":"Transmute:
+        Herbs to Ore","id":38828},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38829?namespace=static-8.3.0_32861-eu"},"name":"Transmute:
+        Herbs to Cloth","id":38829},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38830?namespace=static-8.3.0_32861-eu"},"name":"Transmute:
+        Ore to Herbs","id":38830},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38831?namespace=static-8.3.0_32861-eu"},"name":"Transmute:
+        Ore to Cloth","id":38831},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38832?namespace=static-8.3.0_32861-eu"},"name":"Transmute:
+        Ore to Gems","id":38832},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38833?namespace=static-8.3.0_32861-eu"},"name":"Transmute:
+        Cloth to Skins","id":38833},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38834?namespace=static-8.3.0_32861-eu"},"name":"Transmute:
+        Meat to Pet","id":38834},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38835?namespace=static-8.3.0_32861-eu"},"name":"Transmute:
+        Fish to Gems","id":38835},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38836?namespace=static-8.3.0_32861-eu"},"name":"Transmute:
+        Expulsom","id":38836},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38839?namespace=static-8.3.0_32861-eu"},"name":"Lightfoot
+        Potion","id":38839},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38842?namespace=static-8.3.0_32861-eu"},"name":"Sea
+        Mist Potion","id":38842},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38845?namespace=static-8.3.0_32861-eu"},"name":"Potion
+        of Concealment","id":38845},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39816?namespace=static-8.3.0_32861-eu"},"name":"Mystical
+        Cauldron","id":39816},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39844?namespace=static-8.3.0_32861-eu"},"name":"Potion
+        of Herb Tracking","id":39844},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39857?namespace=static-8.3.0_32861-eu"},"name":"Battle
+        Potion of Agility","id":39857},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39860?namespace=static-8.3.0_32861-eu"},"name":"Battle
+        Potion of Intellect","id":39860},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39863?namespace=static-8.3.0_32861-eu"},"name":"Battle
+        Potion of Stamina","id":39863},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39867?namespace=static-8.3.0_32861-eu"},"name":"Battle
+        Potion of Strength","id":39867},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40149?namespace=static-8.3.0_32861-eu"},"name":"Transmute:
+        Herbs to Anchors","id":40149},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40152?namespace=static-8.3.0_32861-eu"},"name":"Sanguinated
+        Dilution","id":40152},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40200?namespace=static-8.3.0_32861-eu"},"name":"Tidal
+        Alchemist Stone","id":40200},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40210?namespace=static-8.3.0_32861-eu"},"name":"Aqueous
+        Dilution","id":40210},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40218?namespace=static-8.3.0_32861-eu"},"name":"Vial
+        of Obfuscation","id":40218},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40219?namespace=static-8.3.0_32861-eu"},"name":"Potion
+        of the Unveiling Eye","id":40219},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40237?namespace=static-8.3.0_32861-eu"},"name":"Silas''
+        Sphere of Transmutation","id":40237},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40337?namespace=static-8.3.0_32861-eu"},"name":"Sanguinated
+        Alchemist Stone","id":40337},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40653?namespace=static-8.3.0_32861-eu"},"name":"Superior
+        Battle Potion of Agility","id":40653},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40655?namespace=static-8.3.0_32861-eu"},"name":"Potion
+        of Empowered Proximity","id":40655},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40659?namespace=static-8.3.0_32861-eu"},"name":"Superior
+        Steelskin Potion","id":40659},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40665?namespace=static-8.3.0_32861-eu"},"name":"Superior
+        Battle Potion of Intellect","id":40665},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40668?namespace=static-8.3.0_32861-eu"},"name":"Potion
+        of Focused Resolve","id":40668},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40671?namespace=static-8.3.0_32861-eu"},"name":"Superior
+        Battle Potion of Stamina","id":40671},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40674?namespace=static-8.3.0_32861-eu"},"name":"Superior
+        Battle Potion of Strength","id":40674},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40685?namespace=static-8.3.0_32861-eu"},"name":"Greater
+        Flask of the Currents","id":40685},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40688?namespace=static-8.3.0_32861-eu"},"name":"Greater
+        Flask of Endless Fathoms","id":40688},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40691?namespace=static-8.3.0_32861-eu"},"name":"Greater
+        Flask of the Vast Horizon","id":40691},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40694?namespace=static-8.3.0_32861-eu"},"name":"Greater
+        Flask of the Undertow","id":40694},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40697?namespace=static-8.3.0_32861-eu"},"name":"Greater
+        Mystical Cauldron","id":40697},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40701?namespace=static-8.3.0_32861-eu"},"name":"Abyssal
+        Alchemist Stone","id":40701},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40702?namespace=static-8.3.0_32861-eu"},"name":"Crushing
+        Alchemist Stone","id":40702},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40703?namespace=static-8.3.0_32861-eu"},"name":"Ascended
+        Alchemist Stone","id":40703},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40843?namespace=static-8.3.0_32861-eu"},"name":"Potion
+        of Unbridled Fury","id":40843},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40846?namespace=static-8.3.0_32861-eu"},"name":"Potion
+        of Wild Mending","id":40846},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40900?namespace=static-8.3.0_32861-eu"},"name":"Abyssal
+        Healing Potion","id":40900},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/41111?namespace=static-8.3.0_32861-eu"},"name":"Unbound
+        Alchemist Stone","id":41111},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/41112?namespace=static-8.3.0_32861-eu"},"name":"Awakened
+        Alchemist Stone","id":41112},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/41113?namespace=static-8.3.0_32861-eu"},"name":"Peerless
+        Alchemist Stone","id":41113},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/42345?namespace=static-8.3.0_32861-eu"},"name":"Void
+        Focus","id":42345}]},{"skill_points":1,"max_skill_points":300,"tier":{"name":"Alchemy","id":2485},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1377?namespace=static-8.3.0_32861-eu"},"name":"Minor
+        Healing Potion","id":1377},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1378?namespace=static-8.3.0_32861-eu"},"name":"Elixir
+        of Lion''s Strength","id":1378},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4178?namespace=static-8.3.0_32861-eu"},"name":"Elixir
+        of Minor Defense","id":4178},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39671?namespace=static-8.3.0_32861-eu"},"name":"Anti-Venom","id":39671}]}]},{"profession":{"key":{"href":"https://eu.api.blizzard.com/data/wow/profession/202?namespace=static-8.3.0_32861-eu"},"name":"Engineering","id":202},"tiers":[{"skill_points":175,"max_skill_points":175,"tier":{"name":"Kul
+        Tiran Engineering","id":2499},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38896?namespace=static-8.3.0_32861-eu"},"name":"F.R.I.E.D.","id":38896},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38900?namespace=static-8.3.0_32861-eu"},"name":"Thermo-Accelerated
+        Plague Spreader","id":38900},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38914?namespace=static-8.3.0_32861-eu"},"name":"Organic
+        Discombobulation Grenade","id":38914},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38920?namespace=static-8.3.0_32861-eu"},"name":"XA-1000
+        Surface Skimmer","id":38920},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38923?namespace=static-8.3.0_32861-eu"},"name":"Electroshock
+        Mount Motivator","id":38923},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38926?namespace=static-8.3.0_32861-eu"},"name":"Interdimensional
+        Companion Repository","id":38926},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38929?namespace=static-8.3.0_32861-eu"},"name":"Deployable
+        Attire Rearranger","id":38929},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/38933?namespace=static-8.3.0_32861-eu"},"name":"Finely-Tuned
+        Stormsteel Destroyer","id":38933},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39232?namespace=static-8.3.0_32861-eu"},"name":"Precision
+        Attitude Adjuster","id":39232},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39234?namespace=static-8.3.0_32861-eu"},"name":"Magnetic
+        Discombobulator","id":39234},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39236?namespace=static-8.3.0_32861-eu"},"name":"Crow''s
+        Nest Scope","id":39236},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39240?namespace=static-8.3.0_32861-eu"},"name":"Monelite
+        Scope of Alacrity","id":39240},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39242?namespace=static-8.3.0_32861-eu"},"name":"Incendiary
+        Ammunition","id":39242},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39245?namespace=static-8.3.0_32861-eu"},"name":"Frost-Laced
+        Ammunition","id":39245},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39436?namespace=static-8.3.0_32861-eu"},"name":"Belt
+        Enchant: Personal Space Amplifier","id":39436},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39437?namespace=static-8.3.0_32861-eu"},"name":"Belt
+        Enchant: Holographic Horror Projector","id":39437},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39438?namespace=static-8.3.0_32861-eu"},"name":"Belt
+        Enchant: Miniaturized Plasma Shield","id":39438},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39552?namespace=static-8.3.0_32861-eu"},"name":"Honorable
+        Combatant''s Discombobulator","id":39552},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39555?namespace=static-8.3.0_32861-eu"},"name":"Honorable
+        Combatant''s Stormsteel Destroyer","id":39555},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39595?namespace=static-8.3.0_32861-eu"},"name":"AZ3-R1-T3
+        Synthetic Specs","id":39595},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39598?namespace=static-8.3.0_32861-eu"},"name":"AZ3-R1-T3
+        Gearspun Goggles","id":39598},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39601?namespace=static-8.3.0_32861-eu"},"name":"AZ3-R1-T3
+        Bionic Bifocals","id":39601},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39604?namespace=static-8.3.0_32861-eu"},"name":"AZ3-R1-T3
+        Orthogonal Optics","id":39604},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39691?namespace=static-8.3.0_32861-eu"},"name":"Mecha-Mogul
+        Mk2","id":39691},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39836?namespace=static-8.3.0_32861-eu"},"name":"Makeshift
+        Azerite Detector","id":39836},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39837?namespace=static-8.3.0_32861-eu"},"name":"Monelite
+        Fish Finder","id":39837},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39997?namespace=static-8.3.0_32861-eu"},"name":"Magical
+        Intrusion Dampener","id":39997},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40055?namespace=static-8.3.0_32861-eu"},"name":"Sinister
+        Combatant''s Discombobulator","id":40055},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40058?namespace=static-8.3.0_32861-eu"},"name":"Sinister
+        Combatant''s Stormsteel Destroyer","id":40058},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40121?namespace=static-8.3.0_32861-eu"},"name":"Unstable
+        Temporal Time Shifter","id":40121},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40155?namespace=static-8.3.0_32861-eu"},"name":"Sanguinated
+        Thermo-Degradation","id":40155},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40188?namespace=static-8.3.0_32861-eu"},"name":"Surging
+        Synthetic Specs","id":40188},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40191?namespace=static-8.3.0_32861-eu"},"name":"Surging
+        Gearspun Goggles","id":40191},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40194?namespace=static-8.3.0_32861-eu"},"name":"Surging
+        Bionic Bifocals","id":40194},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40197?namespace=static-8.3.0_32861-eu"},"name":"Surging
+        Orthogonal Optics","id":40197},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40213?namespace=static-8.3.0_32861-eu"},"name":"Aqueous
+        Thermo-Degradation","id":40213},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40340?namespace=static-8.3.0_32861-eu"},"name":"Imbued
+        Synthetic Specs","id":40340},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40342?namespace=static-8.3.0_32861-eu"},"name":"Imbued
+        Gearspun Goggles","id":40342},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40344?namespace=static-8.3.0_32861-eu"},"name":"Imbued
+        Bionic Bifocals","id":40344},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40346?namespace=static-8.3.0_32861-eu"},"name":"Imbued
+        Orthogonal Optics","id":40346},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40352?namespace=static-8.3.0_32861-eu"},"name":"The
+        Ub3r-Spanner","id":40352},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40432?namespace=static-8.3.0_32861-eu"},"name":"Ub3r-Module:
+        Ub3r-Improved Target Dummy","id":40432},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40433?namespace=static-8.3.0_32861-eu"},"name":"Ub3r-Module:
+        Ub3r S3ntry Mk. X8.0","id":40433},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40434?namespace=static-8.3.0_32861-eu"},"name":"Ub3r-Module:
+        Short-Fused Bomb Bots","id":40434},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40506?namespace=static-8.3.0_32861-eu"},"name":"Notorious
+        Combatant''s Discombobulator","id":40506},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40509?namespace=static-8.3.0_32861-eu"},"name":"Notorious
+        Combatant''s Stormsteel Destroyer","id":40509},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40632?namespace=static-8.3.0_32861-eu"},"name":"Ub3r-Module:
+        P.O.G.O.","id":40632},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40633?namespace=static-8.3.0_32861-eu"},"name":"Ub3r-Module:
+        Scrap Cannon","id":40633},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40634?namespace=static-8.3.0_32861-eu"},"name":"Ub3r-Module:
+        Ub3r-Coil","id":40634},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40698?namespace=static-8.3.0_32861-eu"},"name":"Blingtron
+        7000","id":40698},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40743?namespace=static-8.3.0_32861-eu"},"name":"Wormhole
+        Generator: Zandalar","id":40743},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40744?namespace=static-8.3.0_32861-eu"},"name":"Wormhole
+        Generator: Kul Tiras","id":40744},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/41090?namespace=static-8.3.0_32861-eu"},"name":"A-N0M-A-L0U5
+        Synthetic Specs","id":41090},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/41093?namespace=static-8.3.0_32861-eu"},"name":"A-N0M-A-L0U5
+        Gearspun Goggles","id":41093},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/41096?namespace=static-8.3.0_32861-eu"},"name":"A-N0M-A-L0U5
+        Bionic Bifocals","id":41096},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/41099?namespace=static-8.3.0_32861-eu"},"name":"A-N0M-A-L0U5
+        Orthogonal Optics","id":41099},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/41100?namespace=static-8.3.0_32861-eu"},"name":"Superior
+        Orthogonal Optics","id":41100},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/41101?namespace=static-8.3.0_32861-eu"},"name":"Paramount
+        Orthogonal Optics","id":41101},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/42347?namespace=static-8.3.0_32861-eu"},"name":"Void
+        Focus","id":42347}]},{"skill_points":100,"max_skill_points":100,"tier":{"name":"Legion
+        Engineering","id":2500},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35096?namespace=static-8.3.0_32861-eu"},"name":"Blink-Trigger
+        Headgun","id":35096},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35097?namespace=static-8.3.0_32861-eu"},"name":"Tactical
+        Headgun","id":35097},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35098?namespace=static-8.3.0_32861-eu"},"name":"Bolt-Action
+        Headgun","id":35098},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35099?namespace=static-8.3.0_32861-eu"},"name":"Reinforced
+        Headgun","id":35099},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35106?namespace=static-8.3.0_32861-eu"},"name":"Pump-Action
+        Bandage Gun","id":35106},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35111?namespace=static-8.3.0_32861-eu"},"name":"Intra-Dalaran
+        Wormhole Generator","id":35111},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35114?namespace=static-8.3.0_32861-eu"},"name":"Reaves
+        Battery","id":35114},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35116?namespace=static-8.3.0_32861-eu"},"name":"Reaves
+        Module: Repair Mode","id":35116},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35119?namespace=static-8.3.0_32861-eu"},"name":"Reaves
+        Module: Fireworks Display Mode","id":35119},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35120?namespace=static-8.3.0_32861-eu"},"name":"Reaves
+        Module: Snack Distribution Mode","id":35120},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35131?namespace=static-8.3.0_32861-eu"},"name":"Deployable
+        Bullet Dispenser","id":35131},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35135?namespace=static-8.3.0_32861-eu"},"name":"Auto-Hammer","id":35135},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35146?namespace=static-8.3.0_32861-eu"},"name":"Gunpowder
+        Charge","id":35146},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35159?namespace=static-8.3.0_32861-eu"},"name":"Sonic
+        Environment Enhancer","id":35159},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35783?namespace=static-8.3.0_32861-eu"},"name":"\"The
+        Felic\"","id":35783},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35784?namespace=static-8.3.0_32861-eu"},"name":"Shockinator","id":35784},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/36452?namespace=static-8.3.0_32861-eu"},"name":"Rechargeable
+        Reaves Battery","id":36452},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/36650?namespace=static-8.3.0_32861-eu"},"name":"Wormhole
+        Generator: Argus","id":36650}]},{"skill_points":100,"max_skill_points":100,"tier":{"name":"Draenor
+        Engineering","id":2501},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32679?namespace=static-8.3.0_32861-eu"},"name":"Night-Vision
+        Mechshades","id":32679},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32685?namespace=static-8.3.0_32861-eu"},"name":"Oglethorpe''s
+        Missile Splitter","id":32685},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32687?namespace=static-8.3.0_32861-eu"},"name":"Goblin
+        Glider Kit","id":32687},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32690?namespace=static-8.3.0_32861-eu"},"name":"Stealthman
+        54","id":32690},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32695?namespace=static-8.3.0_32861-eu"},"name":"Didi''s
+        Delicate Assembly","id":32695},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32699?namespace=static-8.3.0_32861-eu"},"name":"Wormhole
+        Centrifuge","id":32699},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32701?namespace=static-8.3.0_32861-eu"},"name":"Blingtron
+        5000","id":32701},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32702?namespace=static-8.3.0_32861-eu"},"name":"Gearspring
+        Parts","id":32702},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/33218?namespace=static-8.3.0_32861-eu"},"name":"Ultimate
+        Gnomish Army Knife","id":33218},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/33565?namespace=static-8.3.0_32861-eu"},"name":"Shieldtronic
+        Shield","id":33565},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/33566?namespace=static-8.3.0_32861-eu"},"name":"Mecha-Blast
+        Rocket","id":33566},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/33709?namespace=static-8.3.0_32861-eu"},"name":"Secrets
+        of Draenor Engineering","id":33709}]},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Pandaria
+        Engineering","id":2502},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27126?namespace=static-8.3.0_32861-eu"},"name":"Goblin
+        Glider","id":27126},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27331?namespace=static-8.3.0_32861-eu"},"name":"Big
+        Game Hunter","id":27331},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27332?namespace=static-8.3.0_32861-eu"},"name":"Blingtron
+        4000","id":27332},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27337?namespace=static-8.3.0_32861-eu"},"name":"G91
+        Landshark","id":27337},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27338?namespace=static-8.3.0_32861-eu"},"name":"Geosynchronous
+        World Spinner","id":27338},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27339?namespace=static-8.3.0_32861-eu"},"name":"Ghost
+        Iron Bolts","id":27339},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27340?namespace=static-8.3.0_32861-eu"},"name":"Ghost
+        Iron Dragonling","id":27340},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27341?namespace=static-8.3.0_32861-eu"},"name":"Goblin
+        Dragon Gun, Mark II","id":27341},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27342?namespace=static-8.3.0_32861-eu"},"name":"High-Explosive
+        Gunpowder","id":27342},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27344?namespace=static-8.3.0_32861-eu"},"name":"Locksmith''s
+        Powderkeg","id":27344},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27345?namespace=static-8.3.0_32861-eu"},"name":"Long-Range
+        Trillium Sniper","id":27345},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27346?namespace=static-8.3.0_32861-eu"},"name":"Lord
+        Blastington''s Scope of Doom","id":27346},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27347?namespace=static-8.3.0_32861-eu"},"name":"Mechanical
+        Pandaren Dragonling","id":27347},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27348?namespace=static-8.3.0_32861-eu"},"name":"Mirror
+        Scope","id":27348},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27349?namespace=static-8.3.0_32861-eu"},"name":"Mist-Piercing
+        Goggles","id":27349},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27350?namespace=static-8.3.0_32861-eu"},"name":"Reinforced
+        Retinal Armor","id":27350},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27351?namespace=static-8.3.0_32861-eu"},"name":"Specialized
+        Retinal Armor","id":27351},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27352?namespace=static-8.3.0_32861-eu"},"name":"Thermal
+        Anvil","id":27352},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27353?namespace=static-8.3.0_32861-eu"},"name":"Watergliding
+        Jets","id":27353},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27354?namespace=static-8.3.0_32861-eu"},"name":"Wormhole
+        Generator: Pandaria","id":27354},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27415?namespace=static-8.3.0_32861-eu"},"name":"Flashing
+        Tinker''s Gear","id":27415},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27416?namespace=static-8.3.0_32861-eu"},"name":"Fractured
+        Tinker''s Gear","id":27416},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27417?namespace=static-8.3.0_32861-eu"},"name":"Precise
+        Tinker''s Gear","id":27417},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27418?namespace=static-8.3.0_32861-eu"},"name":"Quick
+        Tinker''s Gear","id":27418},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27419?namespace=static-8.3.0_32861-eu"},"name":"Rigid
+        Tinker''s Gear","id":27419},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27420?namespace=static-8.3.0_32861-eu"},"name":"Smooth
+        Tinker''s Gear","id":27420},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27421?namespace=static-8.3.0_32861-eu"},"name":"Sparkling
+        Tinker''s Gear","id":27421},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27422?namespace=static-8.3.0_32861-eu"},"name":"Subtle
+        Tinker''s Gear","id":27422},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27454?namespace=static-8.3.0_32861-eu"},"name":"Pandaria
+        Fireworks","id":27454},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27468?namespace=static-8.3.0_32861-eu"},"name":"Tinker''s
+        Kit","id":27468},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/31385?namespace=static-8.3.0_32861-eu"},"name":"Pierre","id":31385},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/31386?namespace=static-8.3.0_32861-eu"},"name":"Sky
+        Golem","id":31386},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/31387?namespace=static-8.3.0_32861-eu"},"name":"Advanced
+        Refrigeration Unit","id":31387},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/31427?namespace=static-8.3.0_32861-eu"},"name":"Jard''s
+        Peculiar Energy Source","id":31427},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/31652?namespace=static-8.3.0_32861-eu"},"name":"Rascal-Bot","id":31652}]},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Cataclysm
+        Engineering","id":2503},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22125?namespace=static-8.3.0_32861-eu"},"name":"Specialized
+        Bio-Optic Killshades","id":22125},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22126?namespace=static-8.3.0_32861-eu"},"name":"Reinforced
+        Bio-Optic Killshades","id":22126},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22252?namespace=static-8.3.0_32861-eu"},"name":"Kickback
+        5000","id":22252},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22253?namespace=static-8.3.0_32861-eu"},"name":"Overpowered
+        Chicken Splitter","id":22253},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22254?namespace=static-8.3.0_32861-eu"},"name":"Heat-Treated
+        Spinning Lure","id":22254},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22255?namespace=static-8.3.0_32861-eu"},"name":"Goblin
+        Barbecue","id":22255},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22256?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        X-Ray Scope","id":22256},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22257?namespace=static-8.3.0_32861-eu"},"name":"Grounded
+        Plasma Shield","id":22257},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22258?namespace=static-8.3.0_32861-eu"},"name":"Cardboard
+        Assassin","id":22258},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22261?namespace=static-8.3.0_32861-eu"},"name":"Loot-a-Rang","id":22261},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22262?namespace=static-8.3.0_32861-eu"},"name":"Finely-Tuned
+        Throat Needler","id":22262},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22263?namespace=static-8.3.0_32861-eu"},"name":"Elementium
+        Dragonling","id":22263},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22264?namespace=static-8.3.0_32861-eu"},"name":"Volatile
+        Thunderstick","id":22264},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22265?namespace=static-8.3.0_32861-eu"},"name":"Elementium
+        Toolbox","id":22265},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22266?namespace=static-8.3.0_32861-eu"},"name":"Lure
+        Master Tackle Box","id":22266},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22267?namespace=static-8.3.0_32861-eu"},"name":"De-Weaponized
+        Mechanical Companion","id":22267},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22269?namespace=static-8.3.0_32861-eu"},"name":"High-Powered
+        Bolt Gun","id":22269},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22270?namespace=static-8.3.0_32861-eu"},"name":"Safety
+        Catch Removal Kit","id":22270},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22271?namespace=static-8.3.0_32861-eu"},"name":"Volatile
+        Seaforium Blastpack","id":22271},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22272?namespace=static-8.3.0_32861-eu"},"name":"R19
+        Threatfinder","id":22272},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22274?namespace=static-8.3.0_32861-eu"},"name":"Authentic
+        Jr. Engineer Goggles","id":22274},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22275?namespace=static-8.3.0_32861-eu"},"name":"Handful
+        of Obsidium Bolts","id":22275},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22278?namespace=static-8.3.0_32861-eu"},"name":"Spinal
+        Healing Injector","id":22278},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/24014?namespace=static-8.3.0_32861-eu"},"name":"Invisibility
+        Field","id":24014},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/24063?namespace=static-8.3.0_32861-eu"},"name":"Electrostatic
+        Condenser","id":24063},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/24064?namespace=static-8.3.0_32861-eu"},"name":"Electrified
+        Ether","id":24064},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/24134?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Gravity Well","id":24134}]},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Northrend
+        Engineering","id":2504},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14369?namespace=static-8.3.0_32861-eu"},"name":"Titanium
+        Toolbox","id":14369},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/18024?namespace=static-8.3.0_32861-eu"},"name":"Volatile
+        Blasting Trigger","id":18024},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/18537?namespace=static-8.3.0_32861-eu"},"name":"Mark
+        \"S\" Boomstick","id":18537},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19261?namespace=static-8.3.0_32861-eu"},"name":"Scrapbot
+        Construction Kit","id":19261},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19538?namespace=static-8.3.0_32861-eu"},"name":"Handful
+        of Cobalt Bolts","id":19538},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19539?namespace=static-8.3.0_32861-eu"},"name":"EMP
+        Generator","id":19539},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19543?namespace=static-8.3.0_32861-eu"},"name":"Flexweave
+        Underlay","id":19543},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19544?namespace=static-8.3.0_32861-eu"},"name":"Frag
+        Belt","id":19544},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19545?namespace=static-8.3.0_32861-eu"},"name":"Nitro
+        Boosts","id":19545},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19553?namespace=static-8.3.0_32861-eu"},"name":"Cobalt
+        Frag Bomb","id":19553},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19554?namespace=static-8.3.0_32861-eu"},"name":"Hammer
+        Pick","id":19554},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19555?namespace=static-8.3.0_32861-eu"},"name":"Bladed
+        Pickaxe","id":19555},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19556?namespace=static-8.3.0_32861-eu"},"name":"Overcharged
+        Capacitor","id":19556},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19557?namespace=static-8.3.0_32861-eu"},"name":"Explosive
+        Decoy","id":19557},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19560?namespace=static-8.3.0_32861-eu"},"name":"Froststeel
+        Tube","id":19560},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19561?namespace=static-8.3.0_32861-eu"},"name":"Sonic
+        Booster","id":19561},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19562?namespace=static-8.3.0_32861-eu"},"name":"Noise
+        Machine","id":19562},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19563?namespace=static-8.3.0_32861-eu"},"name":"Box
+        of Bombs","id":19563},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19564?namespace=static-8.3.0_32861-eu"},"name":"Sun
+        Scope","id":19564},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19565?namespace=static-8.3.0_32861-eu"},"name":"MOLL-E","id":19565},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19567?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        X-Ray Specs","id":19567},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19570?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Army Knife","id":19570},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19571?namespace=static-8.3.0_32861-eu"},"name":"Healing
+        Injector Kit","id":19571},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19572?namespace=static-8.3.0_32861-eu"},"name":"Mana
+        Injector Kit","id":19572},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19573?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Lightning Generator","id":19573},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19574?namespace=static-8.3.0_32861-eu"},"name":"Heartseeker
+        Scope","id":19574},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19575?namespace=static-8.3.0_32861-eu"},"name":"Armor
+        Plated Combat Shotgun","id":19575},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19576?namespace=static-8.3.0_32861-eu"},"name":"Armored
+        Titanium Goggles","id":19576},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19590?namespace=static-8.3.0_32861-eu"},"name":"Charged
+        Titanium Specs","id":19590},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20289?namespace=static-8.3.0_32861-eu"},"name":"Mekgineer''s
+        Chopper","id":20289},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20291?namespace=static-8.3.0_32861-eu"},"name":"Nesingwary
+        4000","id":20291},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20650?namespace=static-8.3.0_32861-eu"},"name":"Diamond-cut
+        Refractor Scope","id":20650},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20655?namespace=static-8.3.0_32861-eu"},"name":"Mechanized
+        Snow Goggles","id":20655},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20759?namespace=static-8.3.0_32861-eu"},"name":"Unbreakable
+        Healing Amplifiers","id":20759},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/21233?namespace=static-8.3.0_32861-eu"},"name":"Goblin
+        Beam Welder","id":21233},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/21251?namespace=static-8.3.0_32861-eu"},"name":"Wormhole
+        Generator: Northrend","id":21251},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/21254?namespace=static-8.3.0_32861-eu"},"name":"Jeeves","id":21254},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/21258?namespace=static-8.3.0_32861-eu"},"name":"Mind
+        Amplification Dish","id":21258}]},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Outland
+        Engineering","id":2505},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14348?namespace=static-8.3.0_32861-eu"},"name":"Fel
+        Iron Bomb","id":14348},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14349?namespace=static-8.3.0_32861-eu"},"name":"Adamantite
+        Grenade","id":14349},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14350?namespace=static-8.3.0_32861-eu"},"name":"Fel
+        Iron Musket","id":14350},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14351?namespace=static-8.3.0_32861-eu"},"name":"Adamantite
+        Rifle","id":14351},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14354?namespace=static-8.3.0_32861-eu"},"name":"Cogspinner
+        Goggles","id":14354},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14356?namespace=static-8.3.0_32861-eu"},"name":"Ultra-Spectropic
+        Detection Goggles","id":14356},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14358?namespace=static-8.3.0_32861-eu"},"name":"Adamantite
+        Scope","id":14358},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14361?namespace=static-8.3.0_32861-eu"},"name":"Crashin''
+        Thrashin'' Robot","id":14361},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14362?namespace=static-8.3.0_32861-eu"},"name":"White
+        Smoke Flare","id":14362},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14368?namespace=static-8.3.0_32861-eu"},"name":"Fel
+        Iron Toolbox","id":14368},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14370?namespace=static-8.3.0_32861-eu"},"name":"Elemental
+        Blasting Powder","id":14370},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14371?namespace=static-8.3.0_32861-eu"},"name":"Fel
+        Iron Casing","id":14371},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14372?namespace=static-8.3.0_32861-eu"},"name":"Handful
+        of Fel Iron Bolts","id":14372},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14373?namespace=static-8.3.0_32861-eu"},"name":"Adamantite
+        Frame","id":14373},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14374?namespace=static-8.3.0_32861-eu"},"name":"Hardened
+        Adamantite Tube","id":14374},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14375?namespace=static-8.3.0_32861-eu"},"name":"Khorium
+        Power Core","id":14375},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14376?namespace=static-8.3.0_32861-eu"},"name":"Felsteel
+        Stabilizer","id":14376},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14404?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Flame Turret","id":14404},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14405?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Poultryizer","id":14405},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14406?namespace=static-8.3.0_32861-eu"},"name":"Nigh-Invulnerability
+        Belt","id":14406},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14408?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Power Goggles","id":14408},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/14409?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Battle Goggles","id":14409},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15702?namespace=static-8.3.0_32861-eu"},"name":"Ultrasafe
+        Transporter - Toshley''s Station","id":15702},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15812?namespace=static-8.3.0_32861-eu"},"name":"Icy
+        Blasting Primers","id":15812},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15813?namespace=static-8.3.0_32861-eu"},"name":"Frost
+        Grenade","id":15813},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15833?namespace=static-8.3.0_32861-eu"},"name":"Furious
+        Gizmatic Goggles","id":15833},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15849?namespace=static-8.3.0_32861-eu"},"name":"Gyro-balanced
+        Khorium Destroyer","id":15849},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15850?namespace=static-8.3.0_32861-eu"},"name":"Justicebringer
+        2000 Specs","id":15850},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15851?namespace=static-8.3.0_32861-eu"},"name":"Tankatronic
+        Goggles","id":15851},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16017?namespace=static-8.3.0_32861-eu"},"name":"Flying
+        Machine","id":16017},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16018?namespace=static-8.3.0_32861-eu"},"name":"Turbo-Charged
+        Flying Machine","id":16018},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16034?namespace=static-8.3.0_32861-eu"},"name":"Field
+        Repair Bot 110G","id":16034}]},{"skill_points":300,"max_skill_points":300,"tier":{"name":"Engineering","id":2506},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2413?namespace=static-8.3.0_32861-eu"},"name":"Rough
+        Blasting Powder","id":2413},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2414?namespace=static-8.3.0_32861-eu"},"name":"Rough
+        Dynamite","id":2414},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2417?namespace=static-8.3.0_32861-eu"},"name":"Handful
+        of Copper Bolts","id":2417},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2418?namespace=static-8.3.0_32861-eu"},"name":"Rough
+        Copper Bomb","id":2418},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2420?namespace=static-8.3.0_32861-eu"},"name":"Rough
+        Boomstick","id":2420},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2421?namespace=static-8.3.0_32861-eu"},"name":"Crude
+        Scope","id":2421},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2422?namespace=static-8.3.0_32861-eu"},"name":"Silver
+        Contact","id":2422},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2425?namespace=static-8.3.0_32861-eu"},"name":"Coarse
+        Blasting Powder","id":2425},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2427?namespace=static-8.3.0_32861-eu"},"name":"Coarse
+        Dynamite","id":2427},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2428?namespace=static-8.3.0_32861-eu"},"name":"Target
+        Dummy","id":2428},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2430?namespace=static-8.3.0_32861-eu"},"name":"Flying
+        Tiger Goggles","id":2430},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2431?namespace=static-8.3.0_32861-eu"},"name":"Deadly
+        Blunderbuss","id":2431},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2432?namespace=static-8.3.0_32861-eu"},"name":"Large
+        Copper Bomb","id":2432},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2433?namespace=static-8.3.0_32861-eu"},"name":"Bronze
+        Tube","id":2433},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2435?namespace=static-8.3.0_32861-eu"},"name":"Standard
+        Scope","id":2435},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2436?namespace=static-8.3.0_32861-eu"},"name":"Lovingly
+        Crafted Boomstick","id":2436},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2438?namespace=static-8.3.0_32861-eu"},"name":"Small
+        Bronze Bomb","id":2438},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2439?namespace=static-8.3.0_32861-eu"},"name":"Whirring
+        Bronze Gizmo","id":2439},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2441?namespace=static-8.3.0_32861-eu"},"name":"Heavy
+        Blasting Powder","id":2441},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2442?namespace=static-8.3.0_32861-eu"},"name":"Heavy
+        Dynamite","id":2442},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2444?namespace=static-8.3.0_32861-eu"},"name":"Silver-plated
+        Shotgun","id":2444},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2445?namespace=static-8.3.0_32861-eu"},"name":"Big
+        Bronze Bomb","id":2445},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2447?namespace=static-8.3.0_32861-eu"},"name":"Bronze
+        Framework","id":2447},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2449?namespace=static-8.3.0_32861-eu"},"name":"Explosive
+        Sheep","id":2449},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2450?namespace=static-8.3.0_32861-eu"},"name":"Green
+        Tinted Goggles","id":2450},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2452?namespace=static-8.3.0_32861-eu"},"name":"Iron
+        Strut","id":2452},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2455?namespace=static-8.3.0_32861-eu"},"name":"Gyrochronatom","id":2455},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2456?namespace=static-8.3.0_32861-eu"},"name":"Iron
+        Grenade","id":2456},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2457?namespace=static-8.3.0_32861-eu"},"name":"Compact
+        Harvest Reaper Kit","id":2457},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2459?namespace=static-8.3.0_32861-eu"},"name":"Accurate
+        Scope","id":2459},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2460?namespace=static-8.3.0_32861-eu"},"name":"Advanced
+        Target Dummy","id":2460},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2462?namespace=static-8.3.0_32861-eu"},"name":"Big
+        Iron Bomb","id":2462},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3945?namespace=static-8.3.0_32861-eu"},"name":"Ornate
+        Spyglass","id":3945},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4294?namespace=static-8.3.0_32861-eu"},"name":"Arclight
+        Spanner","id":4294},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4606?namespace=static-8.3.0_32861-eu"},"name":"Clockwork
+        Box","id":4606},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4607?namespace=static-8.3.0_32861-eu"},"name":"EZ-Thro
+        Dynamite","id":4607},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/5067?namespace=static-8.3.0_32861-eu"},"name":"Aquadynamic
+        Fish Attractor","id":5067},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6857?namespace=static-8.3.0_32861-eu"},"name":"Gold
+        Power Core","id":6857},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6858?namespace=static-8.3.0_32861-eu"},"name":"Solid
+        Blasting Powder","id":6858},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6859?namespace=static-8.3.0_32861-eu"},"name":"Solid
+        Dynamite","id":6859},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6861?namespace=static-8.3.0_32861-eu"},"name":"Gyromatic
+        Micro-Adjustor","id":6861},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6862?namespace=static-8.3.0_32861-eu"},"name":"Mithril
+        Tube","id":6862},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6863?namespace=static-8.3.0_32861-eu"},"name":"Unstable
+        Trigger","id":6863},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6864?namespace=static-8.3.0_32861-eu"},"name":"Fire
+        Goggles","id":6864},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6865?namespace=static-8.3.0_32861-eu"},"name":"Mithril
+        Blunderbuss","id":6865},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6868?namespace=static-8.3.0_32861-eu"},"name":"Mithril
+        Casing","id":6868},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6869?namespace=static-8.3.0_32861-eu"},"name":"Mithril
+        Frag Bomb","id":6869},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6872?namespace=static-8.3.0_32861-eu"},"name":"Spellpower
+        Goggles Xtreme","id":6872},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6874?namespace=static-8.3.0_32861-eu"},"name":"Deepdive
+        Helmet","id":6874},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6875?namespace=static-8.3.0_32861-eu"},"name":"Rose
+        Colored Goggles","id":6875},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6876?namespace=static-8.3.0_32861-eu"},"name":"Hi-Explosive
+        Bomb","id":6876},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6879?namespace=static-8.3.0_32861-eu"},"name":"Green
+        Lens","id":6879},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/6950?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Death Ray","id":6950},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/7063?namespace=static-8.3.0_32861-eu"},"name":"Inlaid
+        Mithril Cylinder Plans","id":7063},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/7064?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Goggles","id":7064},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/7065?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Shrink Ray","id":7065},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/7067?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Net-o-Matic Projector","id":7067},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/7068?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Harm Prevention Belt","id":7068},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/7070?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Rocket Boots","id":7070},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/7071?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Battle Chicken","id":7071},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/7072?namespace=static-8.3.0_32861-eu"},"name":"Gnomish
+        Mind Control Cap","id":7072},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8196?namespace=static-8.3.0_32861-eu"},"name":"Mechanical
+        Repair Kit","id":8196},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8465?namespace=static-8.3.0_32861-eu"},"name":"Pet
+        Bombling","id":8465},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11228?namespace=static-8.3.0_32861-eu"},"name":"Dense
+        Blasting Powder","id":11228},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11229?namespace=static-8.3.0_32861-eu"},"name":"Thorium
+        Grenade","id":11229},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11230?namespace=static-8.3.0_32861-eu"},"name":"Thorium
+        Rifle","id":11230},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11231?namespace=static-8.3.0_32861-eu"},"name":"Thorium
+        Widget","id":11231},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11233?namespace=static-8.3.0_32861-eu"},"name":"Spellpower
+        Goggles Xtreme Plus","id":11233},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11236?namespace=static-8.3.0_32861-eu"},"name":"Thorium
+        Tube","id":11236},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11243?namespace=static-8.3.0_32861-eu"},"name":"Master
+        Engineer''s Goggles","id":11243},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/12139?namespace=static-8.3.0_32861-eu"},"name":"Snowmaster
+        9000","id":12139},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/12296?namespace=static-8.3.0_32861-eu"},"name":"Field
+        Repair Bot 74A","id":12296},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/12319?namespace=static-8.3.0_32861-eu"},"name":"Biznicks
+        247x128 Accurascope","id":12319},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/12321?namespace=static-8.3.0_32861-eu"},"name":"Force
+        Reactive Disk","id":12321},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/12421?namespace=static-8.3.0_32861-eu"},"name":"Green
+        Firework","id":12421},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/12424?namespace=static-8.3.0_32861-eu"},"name":"Dense
+        Dynamite","id":12424},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/12425?namespace=static-8.3.0_32861-eu"},"name":"Truesilver
+        Transformer","id":12425},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/12617?namespace=static-8.3.0_32861-eu"},"name":"Ultrasafe
+        Transporter - Gadgetzan","id":12617},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15808?namespace=static-8.3.0_32861-eu"},"name":"Fused
+        Wiring","id":15808},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20880?namespace=static-8.3.0_32861-eu"},"name":"High-powered
+        Flashlight","id":20880}]}],"specialization":{"name":"Gnomish Engineer"}}],"secondaries":[{"profession":{"key":{"href":"https://eu.api.blizzard.com/data/wow/profession/185?namespace=static-8.3.0_32861-eu"},"name":"Cooking","id":185},"tiers":[{"skill_points":175,"max_skill_points":175,"tier":{"name":"Kul
+        Tiran Cooking","id":2541},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39614?namespace=static-8.3.0_32861-eu"},"name":"Kul
+        Tiramisu","id":39614},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39618?namespace=static-8.3.0_32861-eu"},"name":"Ravenberry
+        Tarts","id":39618},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39620?namespace=static-8.3.0_32861-eu"},"name":"Grilled
+        Catfish","id":39620},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39624?namespace=static-8.3.0_32861-eu"},"name":"Loa
+        Loaf","id":39624},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39627?namespace=static-8.3.0_32861-eu"},"name":"Mon''Dazi","id":39627},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39630?namespace=static-8.3.0_32861-eu"},"name":"Galley
+        Banquet","id":39630},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39633?namespace=static-8.3.0_32861-eu"},"name":"Bountiful
+        Captain''s Feast","id":39633},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39635?namespace=static-8.3.0_32861-eu"},"name":"Honey-Glazed
+        Haunches","id":39635},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39639?namespace=static-8.3.0_32861-eu"},"name":"Swamp
+        Fish ''n Chips","id":39639},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39641?namespace=static-8.3.0_32861-eu"},"name":"Seasoned
+        Loins","id":39641},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39645?namespace=static-8.3.0_32861-eu"},"name":"Sailor''s
+        Pie","id":39645},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/39648?namespace=static-8.3.0_32861-eu"},"name":"Spiced
+        Snapper","id":39648},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40140?namespace=static-8.3.0_32861-eu"},"name":"Honey
+        Potpie","id":40140},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40205?namespace=static-8.3.0_32861-eu"},"name":"Sanguinated
+        Feast","id":40205},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40229?namespace=static-8.3.0_32861-eu"},"name":"Wild
+        Berry Bread","id":40229},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40232?namespace=static-8.3.0_32861-eu"},"name":"Seasoned
+        Steak and Potatoes","id":40232},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40334?namespace=static-8.3.0_32861-eu"},"name":"Boralus
+        Blood Sausage","id":40334},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40589?namespace=static-8.3.0_32861-eu"},"name":"Mech-Dowel''s
+        \"Big Mech\"","id":40589},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40591?namespace=static-8.3.0_32861-eu"},"name":"Baked
+        Port Tato","id":40591},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40594?namespace=static-8.3.0_32861-eu"},"name":"Abyssal-Fried
+        Rissole","id":40594},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40597?namespace=static-8.3.0_32861-eu"},"name":"Fragrant
+        Kakavia","id":40597},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40600?namespace=static-8.3.0_32861-eu"},"name":"Bil''Tong","id":40600},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40604?namespace=static-8.3.0_32861-eu"},"name":"Famine
+        Evaluator And Snack Table","id":40604},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/40901?namespace=static-8.3.0_32861-eu"},"name":"Mecha-Bytes","id":40901},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/43086?namespace=static-8.3.0_32861-eu"},"name":"Grilled
+        Gnasher","id":43086},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/43087?namespace=static-8.3.0_32861-eu"},"name":"Dubious
+        Delight","id":43087},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/43088?namespace=static-8.3.0_32861-eu"},"name":"Ghastly
+        Goulash","id":43088},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/43089?namespace=static-8.3.0_32861-eu"},"name":"Baked
+        Voidfin","id":43089},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/43090?namespace=static-8.3.0_32861-eu"},"name":"K''Bab","id":43090}]},{"skill_points":100,"max_skill_points":100,"tier":{"name":"Legion
+        Cooking","id":2542},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35179?namespace=static-8.3.0_32861-eu"},"name":"Bear
+        Tartare","id":35179},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35184?namespace=static-8.3.0_32861-eu"},"name":"Deep-Fried
+        Mossgill","id":35184},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35185?namespace=static-8.3.0_32861-eu"},"name":"Pickled
+        Stormray","id":35185},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35187?namespace=static-8.3.0_32861-eu"},"name":"Spiced
+        Rib Roast","id":35187},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35190?namespace=static-8.3.0_32861-eu"},"name":"Barracuda
+        Mrglgagh","id":35190},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35191?namespace=static-8.3.0_32861-eu"},"name":"Koi-Scented
+        Stormray","id":35191},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35192?namespace=static-8.3.0_32861-eu"},"name":"Drogbar-Style
+        Salmon","id":35192},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35193?namespace=static-8.3.0_32861-eu"},"name":"The
+        Hungry Magister","id":35193},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35197?namespace=static-8.3.0_32861-eu"},"name":"Fishbrul
+        Special","id":35197},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35198?namespace=static-8.3.0_32861-eu"},"name":"Dried
+        Mackerel Strips","id":35198},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35200?namespace=static-8.3.0_32861-eu"},"name":"Fighter
+        Chow","id":35200},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35202?namespace=static-8.3.0_32861-eu"},"name":"Lavish
+        Suramar Feast","id":35202},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35206?namespace=static-8.3.0_32861-eu"},"name":"Faronaar
+        Fizz","id":35206},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35208?namespace=static-8.3.0_32861-eu"},"name":"Leybeque
+        Ribs","id":35208},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35209?namespace=static-8.3.0_32861-eu"},"name":"Suramar
+        Surf and Turf","id":35209},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35214?namespace=static-8.3.0_32861-eu"},"name":"Azshari
+        Salad","id":35214},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35215?namespace=static-8.3.0_32861-eu"},"name":"Nightborne
+        Delicacy Platter","id":35215},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35216?namespace=static-8.3.0_32861-eu"},"name":"Seed-Battered
+        Fish Plate","id":35216},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/35224?namespace=static-8.3.0_32861-eu"},"name":"Crispy
+        Bacon","id":35224},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/36313?namespace=static-8.3.0_32861-eu"},"name":"Spiced
+        Falcosaur Omelet","id":36313}]},{"skill_points":100,"max_skill_points":100,"tier":{"name":"Draenor
+        Cooking","id":2543},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32618?namespace=static-8.3.0_32861-eu"},"name":"Hearty
+        Elekk Steak","id":32618},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32619?namespace=static-8.3.0_32861-eu"},"name":"Feast
+        of Blood","id":32619},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32620?namespace=static-8.3.0_32861-eu"},"name":"Blackrock
+        Ham","id":32620},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32621?namespace=static-8.3.0_32861-eu"},"name":"Pan-Seared
+        Talbuk","id":32621},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32623?namespace=static-8.3.0_32861-eu"},"name":"Braised
+        Riverbeast","id":32623},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32624?namespace=static-8.3.0_32861-eu"},"name":"Rylak
+        Crepes","id":32624},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32625?namespace=static-8.3.0_32861-eu"},"name":"Clefthoof
+        Sausages","id":32625},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32626?namespace=static-8.3.0_32861-eu"},"name":"Steamed
+        Scorpion","id":32626},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32627?namespace=static-8.3.0_32861-eu"},"name":"Feast
+        of the Waters","id":32627},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32629?namespace=static-8.3.0_32861-eu"},"name":"Sturgeon
+        Stew","id":32629},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32631?namespace=static-8.3.0_32861-eu"},"name":"Fat
+        Sleeper Cakes","id":32631},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32632?namespace=static-8.3.0_32861-eu"},"name":"Fiery
+        Calamari","id":32632},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32633?namespace=static-8.3.0_32861-eu"},"name":"Skulker
+        Chowder","id":32633},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32636?namespace=static-8.3.0_32861-eu"},"name":"Blackrock
+        Barbecue","id":32636},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32640?namespace=static-8.3.0_32861-eu"},"name":"Calamari
+        Crepes","id":32640},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32641?namespace=static-8.3.0_32861-eu"},"name":"Gorgrond
+        Chowder","id":32641},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32642?namespace=static-8.3.0_32861-eu"},"name":"Saberfish
+        Broth","id":32642},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/32643?namespace=static-8.3.0_32861-eu"},"name":"Grilled
+        Saberfish","id":32643}]},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Pandaria
+        Cooking","id":2544},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/24787?namespace=static-8.3.0_32861-eu"},"name":"Golden
+        Carp Consomme","id":24787},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/24788?namespace=static-8.3.0_32861-eu"},"name":"Fish
+        Cake","id":24788},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26768?namespace=static-8.3.0_32861-eu"},"name":"Pounded
+        Rice Cake","id":26768},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26769?namespace=static-8.3.0_32861-eu"},"name":"Yak
+        Cheese Curds","id":26769},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26770?namespace=static-8.3.0_32861-eu"},"name":"Toasted
+        Fish Jerky","id":26770},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26771?namespace=static-8.3.0_32861-eu"},"name":"Dried
+        Peaches","id":26771},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26772?namespace=static-8.3.0_32861-eu"},"name":"Dried
+        Needle Mushrooms","id":26772},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26773?namespace=static-8.3.0_32861-eu"},"name":"Boiled
+        Silkworm Pupa","id":26773},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26774?namespace=static-8.3.0_32861-eu"},"name":"Red
+        Bean Bun","id":26774},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26775?namespace=static-8.3.0_32861-eu"},"name":"Tangy
+        Yogurt","id":26775},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26776?namespace=static-8.3.0_32861-eu"},"name":"Green
+        Curry Fish","id":26776},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26777?namespace=static-8.3.0_32861-eu"},"name":"Peach
+        Pie","id":26777},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26778?namespace=static-8.3.0_32861-eu"},"name":"Blanched
+        Needle Mushrooms","id":26778},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26779?namespace=static-8.3.0_32861-eu"},"name":"Skewered
+        Peanut Chicken","id":26779},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26974?namespace=static-8.3.0_32861-eu"},"name":"Sliced
+        Peaches","id":26974},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26975?namespace=static-8.3.0_32861-eu"},"name":"Perfectly
+        Cooked Instant Noodles","id":26975},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26976?namespace=static-8.3.0_32861-eu"},"name":"Roasted
+        Barley Tea","id":26976},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26977?namespace=static-8.3.0_32861-eu"},"name":"Pearl
+        Milk Tea","id":26977},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26978?namespace=static-8.3.0_32861-eu"},"name":"Rice
+        Pudding","id":26978},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/26979?namespace=static-8.3.0_32861-eu"},"name":"Wildfowl
+        Ginseng Soup","id":26979},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27217?namespace=static-8.3.0_32861-eu"},"name":"Spicy
+        Vegetable Chips","id":27217},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/27218?namespace=static-8.3.0_32861-eu"},"name":"Spicy
+        Salmon","id":27218}]},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Cataclysm
+        Cooking","id":2545},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22914?namespace=static-8.3.0_32861-eu"},"name":"Baked
+        Rockfish","id":22914},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22915?namespace=static-8.3.0_32861-eu"},"name":"Basilisk
+        Liverdog","id":22915},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22916?namespace=static-8.3.0_32861-eu"},"name":"Beer-Basted
+        Crocolisk","id":22916},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22917?namespace=static-8.3.0_32861-eu"},"name":"Blackbelly
+        Sushi","id":22917},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22918?namespace=static-8.3.0_32861-eu"},"name":"Blackened
+        Surprise","id":22918},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22919?namespace=static-8.3.0_32861-eu"},"name":"Broiled
+        Dragon Feast","id":22919},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22920?namespace=static-8.3.0_32861-eu"},"name":"Broiled
+        Mountain Trout","id":22920},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22921?namespace=static-8.3.0_32861-eu"},"name":"Chocolate
+        Cookie","id":22921},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22922?namespace=static-8.3.0_32861-eu"},"name":"Crocolisk
+        Au Gratin","id":22922},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22923?namespace=static-8.3.0_32861-eu"},"name":"Darkbrew
+        Lager","id":22923},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22924?namespace=static-8.3.0_32861-eu"},"name":"Delicious
+        Sagefish Tail","id":22924},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22925?namespace=static-8.3.0_32861-eu"},"name":"Feathered
+        Lure","id":22925},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22926?namespace=static-8.3.0_32861-eu"},"name":"Fish
+        Fry","id":22926},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22927?namespace=static-8.3.0_32861-eu"},"name":"Fortune
+        Cookie","id":22927},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22928?namespace=static-8.3.0_32861-eu"},"name":"Grilled
+        Dragon","id":22928},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22929?namespace=static-8.3.0_32861-eu"},"name":"Hearty
+        Seafood Soup","id":22929},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22930?namespace=static-8.3.0_32861-eu"},"name":"Highland
+        Spirits","id":22930},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22931?namespace=static-8.3.0_32861-eu"},"name":"Lavascale
+        Fillet","id":22931},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22932?namespace=static-8.3.0_32861-eu"},"name":"Lavascale
+        Minestrone","id":22932},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22933?namespace=static-8.3.0_32861-eu"},"name":"Lightly
+        Fried Lurker","id":22933},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22934?namespace=static-8.3.0_32861-eu"},"name":"Lurker
+        Lunch","id":22934},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22935?namespace=static-8.3.0_32861-eu"},"name":"Mushroom
+        Sauce Mudfish","id":22935},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22936?namespace=static-8.3.0_32861-eu"},"name":"Pickled
+        Guppy","id":22936},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22937?namespace=static-8.3.0_32861-eu"},"name":"Salted
+        Eye","id":22937},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22938?namespace=static-8.3.0_32861-eu"},"name":"Seafood
+        Magnifique Feast","id":22938},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22939?namespace=static-8.3.0_32861-eu"},"name":"Seasoned
+        Crab","id":22939},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22940?namespace=static-8.3.0_32861-eu"},"name":"Severed
+        Sagefish Head","id":22940},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22941?namespace=static-8.3.0_32861-eu"},"name":"Skewered
+        Eel","id":22941},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22942?namespace=static-8.3.0_32861-eu"},"name":"South
+        Island Iced Tea","id":22942},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22943?namespace=static-8.3.0_32861-eu"},"name":"Starfire
+        Espresso","id":22943},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22944?namespace=static-8.3.0_32861-eu"},"name":"Tender
+        Baked Turtle","id":22944},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/22945?namespace=static-8.3.0_32861-eu"},"name":"Whitecrest
+        Gumbo","id":22945},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/24137?namespace=static-8.3.0_32861-eu"},"name":"Scalding
+        Murglesnout","id":24137}]},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Northrend
+        Cooking","id":2546},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/17986?namespace=static-8.3.0_32861-eu"},"name":"Kungaloosh","id":17986},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19712?namespace=static-8.3.0_32861-eu"},"name":"Smoked
+        Rockfin","id":19712},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19713?namespace=static-8.3.0_32861-eu"},"name":"Grilled
+        Bonescale","id":19713},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19714?namespace=static-8.3.0_32861-eu"},"name":"Sauteed
+        Goby","id":19714},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19715?namespace=static-8.3.0_32861-eu"},"name":"Grilled
+        Sculpin","id":19715},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19716?namespace=static-8.3.0_32861-eu"},"name":"Smoked
+        Salmon","id":19716},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19717?namespace=static-8.3.0_32861-eu"},"name":"Poached
+        Nettlefish","id":19717},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19718?namespace=static-8.3.0_32861-eu"},"name":"Baked
+        Manta Ray","id":19718},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19719?namespace=static-8.3.0_32861-eu"},"name":"Pickled
+        Fangtooth","id":19719},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19720?namespace=static-8.3.0_32861-eu"},"name":"Northern
+        Stew","id":19720},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19721?namespace=static-8.3.0_32861-eu"},"name":"Mammoth
+        Meal","id":19721},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19722?namespace=static-8.3.0_32861-eu"},"name":"Shoveltusk
+        Steak","id":19722},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19723?namespace=static-8.3.0_32861-eu"},"name":"Worm
+        Delight","id":19723},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19724?namespace=static-8.3.0_32861-eu"},"name":"Roasted
+        Worg","id":19724},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19725?namespace=static-8.3.0_32861-eu"},"name":"Rhino
+        Dogs","id":19725},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19726?namespace=static-8.3.0_32861-eu"},"name":"Great
+        Feast","id":19726},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19727?namespace=static-8.3.0_32861-eu"},"name":"Fish
+        Feast","id":19727},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19728?namespace=static-8.3.0_32861-eu"},"name":"Mega
+        Mammoth Meal","id":19728},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19729?namespace=static-8.3.0_32861-eu"},"name":"Tender
+        Shoveltusk Steak","id":19729},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19730?namespace=static-8.3.0_32861-eu"},"name":"Spiced
+        Worm Burger","id":19730},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19731?namespace=static-8.3.0_32861-eu"},"name":"Very
+        Burnt Worg","id":19731},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19732?namespace=static-8.3.0_32861-eu"},"name":"Mighty
+        Rhino Dogs","id":19732},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19733?namespace=static-8.3.0_32861-eu"},"name":"Poached
+        Northern Sculpin","id":19733},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19734?namespace=static-8.3.0_32861-eu"},"name":"Firecracker
+        Salmon","id":19734},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19735?namespace=static-8.3.0_32861-eu"},"name":"Spicy
+        Blue Nettlefish","id":19735},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19736?namespace=static-8.3.0_32861-eu"},"name":"Imperial
+        Manta Steak","id":19736},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19737?namespace=static-8.3.0_32861-eu"},"name":"Spicy
+        Fried Herring","id":19737},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19738?namespace=static-8.3.0_32861-eu"},"name":"Rhinolicious
+        Wormsteak","id":19738},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19739?namespace=static-8.3.0_32861-eu"},"name":"Critter
+        Bites","id":19739},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19740?namespace=static-8.3.0_32861-eu"},"name":"Hearty
+        Rhino","id":19740},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19741?namespace=static-8.3.0_32861-eu"},"name":"Snapper
+        Extreme","id":19741},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19742?namespace=static-8.3.0_32861-eu"},"name":"Blackened
+        Worg Steak","id":19742},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19743?namespace=static-8.3.0_32861-eu"},"name":"Cuttlesteak","id":19743},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19744?namespace=static-8.3.0_32861-eu"},"name":"Spiced
+        Mammoth Treats","id":19744},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19745?namespace=static-8.3.0_32861-eu"},"name":"Blackened
+        Dragonfin","id":19745},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19746?namespace=static-8.3.0_32861-eu"},"name":"Dragonfin
+        Filet","id":19746},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19747?namespace=static-8.3.0_32861-eu"},"name":"Tracker
+        Snacks","id":19747},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/19969?namespace=static-8.3.0_32861-eu"},"name":"Dalaran
+        Clam Chowder","id":19969},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20021?namespace=static-8.3.0_32861-eu"},"name":"Tasty
+        Cupcake","id":20021},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20022?namespace=static-8.3.0_32861-eu"},"name":"Last
+        Week''s Mammoth","id":20022},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20023?namespace=static-8.3.0_32861-eu"},"name":"Bad
+        Clams","id":20023},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20024?namespace=static-8.3.0_32861-eu"},"name":"Haunted
+        Herring","id":20024},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20025?namespace=static-8.3.0_32861-eu"},"name":"Gigantic
+        Feast","id":20025},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20026?namespace=static-8.3.0_32861-eu"},"name":"Small
+        Feast","id":20026},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20760?namespace=static-8.3.0_32861-eu"},"name":"Worg
+        Tartare","id":20760},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20993?namespace=static-8.3.0_32861-eu"},"name":"Black
+        Jelly","id":20993}]},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Outland
+        Cooking","id":2547},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15003?namespace=static-8.3.0_32861-eu"},"name":"Buzzard
+        Bites","id":15003},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15004?namespace=static-8.3.0_32861-eu"},"name":"Ravager
+        Dog","id":15004},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15006?namespace=static-8.3.0_32861-eu"},"name":"Blackened
+        Basilisk","id":15006},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15007?namespace=static-8.3.0_32861-eu"},"name":"Roasted
+        Clefthoof","id":15007},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15008?namespace=static-8.3.0_32861-eu"},"name":"Warp
+        Burger","id":15008},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15009?namespace=static-8.3.0_32861-eu"},"name":"Talbuk
+        Steak","id":15009},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15010?namespace=static-8.3.0_32861-eu"},"name":"Blackened
+        Trout","id":15010},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15011?namespace=static-8.3.0_32861-eu"},"name":"Feltail
+        Delight","id":15011},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15012?namespace=static-8.3.0_32861-eu"},"name":"Blackened
+        Sporefish","id":15012},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15013?namespace=static-8.3.0_32861-eu"},"name":"Grilled
+        Mudfish","id":15013},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15014?namespace=static-8.3.0_32861-eu"},"name":"Poached
+        Bluefish","id":15014},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15016?namespace=static-8.3.0_32861-eu"},"name":"Golden
+        Fish Sticks","id":15016},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15017?namespace=static-8.3.0_32861-eu"},"name":"Spicy
+        Crawdad","id":15017},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15638?namespace=static-8.3.0_32861-eu"},"name":"Clam
+        Bar","id":15638},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15736?namespace=static-8.3.0_32861-eu"},"name":"Crunchy
+        Serpent","id":15736},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15737?namespace=static-8.3.0_32861-eu"},"name":"Mok''Nathal
+        Shortribs","id":15737},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15874?namespace=static-8.3.0_32861-eu"},"name":"Stewed
+        Trout","id":15874},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15875?namespace=static-8.3.0_32861-eu"},"name":"Fisherman''s
+        Feast","id":15875},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15876?namespace=static-8.3.0_32861-eu"},"name":"Hot
+        Buttered Trout","id":15876},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16003?namespace=static-8.3.0_32861-eu"},"name":"Skullfish
+        Soup","id":16003},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16004?namespace=static-8.3.0_32861-eu"},"name":"Stormchops","id":16004},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16005?namespace=static-8.3.0_32861-eu"},"name":"Broiled
+        Bloodfin","id":16005},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16006?namespace=static-8.3.0_32861-eu"},"name":"Spicy
+        Hot Talbuk","id":16006}]},{"skill_points":300,"max_skill_points":300,"tier":{"name":"Cooking","id":2548},"known_recipes":[{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1535?namespace=static-8.3.0_32861-eu"},"name":"Charred
+        Wolf Meat","id":1535},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1536?namespace=static-8.3.0_32861-eu"},"name":"Spiced
+        Wolf Meat","id":1536},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1537?namespace=static-8.3.0_32861-eu"},"name":"Roasted
+        Boar Meat","id":1537},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1538?namespace=static-8.3.0_32861-eu"},"name":"Coyote
+        Steak","id":1538},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1539?namespace=static-8.3.0_32861-eu"},"name":"Goretusk
+        Liver Pie","id":1539},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1540?namespace=static-8.3.0_32861-eu"},"name":"Westfall
+        Stew","id":1540},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1543?namespace=static-8.3.0_32861-eu"},"name":"Crab
+        Cake","id":1543},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1544?namespace=static-8.3.0_32861-eu"},"name":"Cooked
+        Crab Claw","id":1544},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1545?namespace=static-8.3.0_32861-eu"},"name":"Dry
+        Pork Ribs","id":1545},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1546?namespace=static-8.3.0_32861-eu"},"name":"Redridge
+        Goulash","id":1546},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1547?namespace=static-8.3.0_32861-eu"},"name":"Succulent
+        Pork Ribs","id":1547},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1548?namespace=static-8.3.0_32861-eu"},"name":"Seasoned
+        Wolf Kabob","id":1548},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1674?namespace=static-8.3.0_32861-eu"},"name":"Beer
+        Basted Boar Ribs","id":1674},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1871?namespace=static-8.3.0_32861-eu"},"name":"Crocolisk
+        Steak","id":1871},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1872?namespace=static-8.3.0_32861-eu"},"name":"Blood
+        Sausage","id":1872},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1873?namespace=static-8.3.0_32861-eu"},"name":"Murloc
+        Fin Soup","id":1873},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1874?namespace=static-8.3.0_32861-eu"},"name":"Crocolisk
+        Gumbo","id":1874},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1875?namespace=static-8.3.0_32861-eu"},"name":"Curiously
+        Tasty Omelet","id":1875},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1876?namespace=static-8.3.0_32861-eu"},"name":"Gooey
+        Spider Cake","id":1876},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1901?namespace=static-8.3.0_32861-eu"},"name":"Big
+        Bear Steak","id":1901},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1902?namespace=static-8.3.0_32861-eu"},"name":"Hot
+        Lion Chops","id":1902},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1903?namespace=static-8.3.0_32861-eu"},"name":"Tasty
+        Lion Steak","id":1903},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/1904?namespace=static-8.3.0_32861-eu"},"name":"Soothing
+        Turtle Bisque","id":1904},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/2499?namespace=static-8.3.0_32861-eu"},"name":"Barbecued
+        Buzzard Wing","id":2499},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3926?namespace=static-8.3.0_32861-eu"},"name":"Kaldorei
+        Spider Kabob","id":3926},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3927?namespace=static-8.3.0_32861-eu"},"name":"Scorpid
+        Surprise","id":3927},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3928?namespace=static-8.3.0_32861-eu"},"name":"Roasted
+        Kodo Meat","id":3928},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3929?namespace=static-8.3.0_32861-eu"},"name":"Fillet
+        of Frenzy","id":3929},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3930?namespace=static-8.3.0_32861-eu"},"name":"Strider
+        Stew","id":3930},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3931?namespace=static-8.3.0_32861-eu"},"name":"Dig
+        Rat Stew","id":3931},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3932?namespace=static-8.3.0_32861-eu"},"name":"Crispy
+        Lizard Tail","id":3932},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3933?namespace=static-8.3.0_32861-eu"},"name":"Lean
+        Venison","id":3933},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3962?namespace=static-8.3.0_32861-eu"},"name":"Clam
+        Chowder","id":3962},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3963?namespace=static-8.3.0_32861-eu"},"name":"Goblin
+        Deviled Clams","id":3963},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/3964?namespace=static-8.3.0_32861-eu"},"name":"Boiled
+        Clams","id":3964},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4204?namespace=static-8.3.0_32861-eu"},"name":"Giant
+        Clam Scorcho","id":4204},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4353?namespace=static-8.3.0_32861-eu"},"name":"Brilliant
+        Smallfish","id":4353},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4354?namespace=static-8.3.0_32861-eu"},"name":"Slitherskin
+        Mackerel","id":4354},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4355?namespace=static-8.3.0_32861-eu"},"name":"Longjaw
+        Mud Snapper","id":4355},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4356?namespace=static-8.3.0_32861-eu"},"name":"Loch
+        Frenzy Delight","id":4356},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4359?namespace=static-8.3.0_32861-eu"},"name":"Bristle
+        Whisker Catfish","id":4359},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4391?namespace=static-8.3.0_32861-eu"},"name":"Rainbow
+        Fin Albacore","id":4391},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4392?namespace=static-8.3.0_32861-eu"},"name":"Rockscale
+        Cod","id":4392},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4569?namespace=static-8.3.0_32861-eu"},"name":"Savory
+        Deviate Delight","id":4569},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4786?namespace=static-8.3.0_32861-eu"},"name":"Herb
+        Baked Egg","id":4786},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/4787?namespace=static-8.3.0_32861-eu"},"name":"Smoked
+        Bear Meat","id":4787},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8616?namespace=static-8.3.0_32861-eu"},"name":"Crispy
+        Bat Wing","id":8616},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8617?namespace=static-8.3.0_32861-eu"},"name":"Lean
+        Wolf Steak","id":8617},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8618?namespace=static-8.3.0_32861-eu"},"name":"Roast
+        Raptor","id":8618},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8619?namespace=static-8.3.0_32861-eu"},"name":"Hot
+        Wolf Ribs","id":8619},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8620?namespace=static-8.3.0_32861-eu"},"name":"Jungle
+        Stew","id":8620},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8621?namespace=static-8.3.0_32861-eu"},"name":"Carrion
+        Surprise","id":8621},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8622?namespace=static-8.3.0_32861-eu"},"name":"Mystery
+        Stew","id":8622},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8623?namespace=static-8.3.0_32861-eu"},"name":"Dragonbreath
+        Chili","id":8623},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8624?namespace=static-8.3.0_32861-eu"},"name":"Heavy
+        Kodo Stew","id":8624},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8625?namespace=static-8.3.0_32861-eu"},"name":"Spiced
+        Chili Crab","id":8625},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/8626?namespace=static-8.3.0_32861-eu"},"name":"Monster
+        Omelet","id":8626},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/10243?namespace=static-8.3.0_32861-eu"},"name":"Cooked
+        Glossy Mightfish","id":10243},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/10244?namespace=static-8.3.0_32861-eu"},"name":"Spotted
+        Yellowtail","id":10244},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/10245?namespace=static-8.3.0_32861-eu"},"name":"Filet
+        of Redgill","id":10245},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/10246?namespace=static-8.3.0_32861-eu"},"name":"Grilled
+        Squid","id":10246},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/10247?namespace=static-8.3.0_32861-eu"},"name":"Hot
+        Smoked Bass","id":10247},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/10248?namespace=static-8.3.0_32861-eu"},"name":"Nightfin
+        Soup","id":10248},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/10249?namespace=static-8.3.0_32861-eu"},"name":"Poached
+        Sunscale Salmon","id":10249},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/10250?namespace=static-8.3.0_32861-eu"},"name":"Lobster
+        Stew","id":10250},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/10251?namespace=static-8.3.0_32861-eu"},"name":"Mightfish
+        Steak","id":10251},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/10252?namespace=static-8.3.0_32861-eu"},"name":"Baked
+        Salmon","id":10252},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11740?namespace=static-8.3.0_32861-eu"},"name":"Undermine
+        Clam Chowder","id":11740},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11873?namespace=static-8.3.0_32861-eu"},"name":"Mithril
+        Head Trout","id":11873},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11976?namespace=static-8.3.0_32861-eu"},"name":"Winter
+        Veil Egg Nog","id":11976},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11977?namespace=static-8.3.0_32861-eu"},"name":"Gingerbread
+        Cookie","id":11977},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/11997?namespace=static-8.3.0_32861-eu"},"name":"Spider
+        Sausage","id":11997},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/12236?namespace=static-8.3.0_32861-eu"},"name":"Tender
+        Wolf Steak","id":12236},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/12304?namespace=static-8.3.0_32861-eu"},"name":"Runn
+        Tum Tuber Surprise","id":12304},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/12905?namespace=static-8.3.0_32861-eu"},"name":"Heavy
+        Crocolisk Stew","id":12905},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/13056?namespace=static-8.3.0_32861-eu"},"name":"Smoked
+        Desert Dumplings","id":13056},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/13344?namespace=static-8.3.0_32861-eu"},"name":"Smoked
+        Sagefish","id":13344},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/13375?namespace=static-8.3.0_32861-eu"},"name":"Sagefish
+        Delight","id":13375},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/13924?namespace=static-8.3.0_32861-eu"},"name":"Crunchy
+        Spider Surprise","id":13924},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15000?namespace=static-8.3.0_32861-eu"},"name":"Lynx
+        Steak","id":15000},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15001?namespace=static-8.3.0_32861-eu"},"name":"Roasted
+        Moongraze Tenderloin","id":15001},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15002?namespace=static-8.3.0_32861-eu"},"name":"Bat
+        Bites","id":15002},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/15707?namespace=static-8.3.0_32861-eu"},"name":"Spice
+        Bread","id":15707},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16007?namespace=static-8.3.0_32861-eu"},"name":"Delicious
+        Chocolate Cake","id":16007},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16157?namespace=static-8.3.0_32861-eu"},"name":"Hot
+        Apple Cider","id":16157},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16160?namespace=static-8.3.0_32861-eu"},"name":"Kibler''s
+        Bits","id":16160},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16198?namespace=static-8.3.0_32861-eu"},"name":"Goldthorn
+        Tea","id":16198},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16228?namespace=static-8.3.0_32861-eu"},"name":"Captain
+        Rumsey''s Lager","id":16228},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16292?namespace=static-8.3.0_32861-eu"},"name":"Charred
+        Bear Kabobs","id":16292},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/16293?namespace=static-8.3.0_32861-eu"},"name":"Juicy
+        Bear Burger","id":16293},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20734?namespace=static-8.3.0_32861-eu"},"name":"Slow-Roasted
+        Turkey","id":20734},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20735?namespace=static-8.3.0_32861-eu"},"name":"Pumpkin
+        Pie","id":20735},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20737?namespace=static-8.3.0_32861-eu"},"name":"Candied
+        Sweet Potato","id":20737},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20738?namespace=static-8.3.0_32861-eu"},"name":"Spice
+        Bread Stuffing","id":20738},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20739?namespace=static-8.3.0_32861-eu"},"name":"Cranberry
+        Chutney","id":20739},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/20914?namespace=static-8.3.0_32861-eu"},"name":"Clamlette
+        Magnifique","id":20914},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/21048?namespace=static-8.3.0_32861-eu"},"name":"Bread
+        of the Dead","id":21048},{"key":{"href":"https://eu.api.blizzard.com/data/wow/recipe/23825?namespace=static-8.3.0_32861-eu"},"name":"Venison
+        Jerky","id":23825}]}]},{"profession":{"key":{"href":"https://eu.api.blizzard.com/data/wow/profession/356?namespace=static-8.3.0_32861-eu"},"name":"Fishing","id":356},"tiers":[{"skill_points":175,"max_skill_points":175,"tier":{"name":"Kul
+        Tiran Fishing","id":2585}},{"skill_points":100,"max_skill_points":100,"tier":{"name":"Legion
+        Fishing","id":2586}},{"skill_points":100,"max_skill_points":100,"tier":{"name":"Draenor
+        Fishing","id":2587}},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Pandaria
+        Fishing","id":2588}},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Cataclysm
+        Fishing","id":2589}},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Northrend
+        Fishing","id":2590}},{"skill_points":75,"max_skill_points":75,"tier":{"name":"Outland
+        Fishing","id":2591}},{"skill_points":300,"max_skill_points":300,"tier":{"name":"Fishing","id":2592}}]},{"profession":{"key":{"href":"https://eu.api.blizzard.com/data/wow/profession/794?namespace=static-8.3.0_32861-eu"},"name":"Archaeology","id":794},"skill_points":950,"max_skill_points":950}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/professions?namespace=profile-eu&locale=en_gb
+  recorded_at: Mon, 08 Jun 2020 16:00:51 GMT
+recorded_with: VCR 2.9.3
