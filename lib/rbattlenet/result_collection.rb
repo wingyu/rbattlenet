@@ -46,7 +46,7 @@ module RBattlenet
 
   class HashResult < Hash
     def <<(result)
-      self[result.field] = result[result.field] || result
+      self[result[:field]] = result[result[:field]] || result
     end
   end
 
