@@ -31,4 +31,16 @@ describe RBattlenet::Wow::Title do
       end
     end
   end
+
+  describe "#as_hash" do
+    describe "#find_all_titles" do
+      it "fetches all title data" do
+        with_connection("wow_title_all") do
+          RBattlenet.set_options(response_type: :hash)
+          result = RBattlenet::Wow::Title.all
+          expect(result['titles'].size).to be >= 368
+        end
+      end
+    end
+  end
 end
