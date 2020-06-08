@@ -62,6 +62,10 @@ module RBattlenet
           RBattlenet::Wow::Character::Pets
         end
 
+        def professions
+          RBattlenet::Wow::Character::Professions
+        end
+
         def pvp_bracket_2v2
           RBattlenet::Wow::Character::PvpBracket2v2
         end
