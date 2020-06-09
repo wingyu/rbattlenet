@@ -2,6 +2,8 @@
 
 A Ruby gem that wraps Blizzard's Game Data and Profile APIs.
 
+### Please note, this project is not actively maintained, but PRs are always welcome!
+
 ## Installation
 
 Add this line to your application's Gemfile:
