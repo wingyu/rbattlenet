@@ -1,11 +1,14 @@
 module RBattlenet
   @@region = "eu"
   @@locale = "en_gb"
-  @@raw = false
+  @@response_type = :struct
+  @@concurrency = 20
+  @@timeout = 120
 
   #Set Access Token for requests. Required
   def self.authenticate(client_id:, client_secret:)
-    response = Typhoeus.post("https://#{@@region}.battle.net/oauth/token",
+    oauth_region = ["kr", "tw"].include?(@@region.downcase) ? "apac" : @@region
+    response = Typhoeus.post("https://#{oauth_region}.battle.net/oauth/token",
       body: { grant_type: :client_credentials },
       userpwd: "#{client_id}:#{client_secret}",
     )
@@ -14,8 +17,8 @@ module RBattlenet
     true
   end
 
-  def self.set_options(region: @@region, locale: @@locale, raw_response: @@raw)
-    @@region, @@locale, @@raw = region, locale, raw_response
+  def self.set_options(region: @@region, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout)
+    @@region, @@locale, @@response_type, @@concurrency, @@timeout = region, locale, response_type, concurrency, timeout
     true
   end
 
@@ -23,19 +26,19 @@ module RBattlenet
 
   class << self
     def get(subjects)
-      store = @@raw ? [] : RBattlenet::ResultCollection.new
+      store = @@response_type == :raw ? [] : RBattlenet::ResultCollection.new(@@response_type)
 
       headers = {}
       headers['Authorization'] = "Bearer #{@@token}" if @@token
 
       # Limit concurrency to prevent hitting the API request per-second cap.
-      hydra = Typhoeus::Hydra.new(max_concurrency: 50)
+      hydra = Typhoeus::Hydra.new(max_concurrency: @@concurrency)
       subjects.each do |uris, subject|
         uris.each do |field, uri|
-          request = Typhoeus::Request.new(URI.encode(uri), headers: headers)
+          request = Typhoeus::Request.new(URI.encode(uri), headers: headers, timeout: @@timeout)
 
           request.on_complete do |response|
-            if @@raw
+            if @@response_type == :raw
               store << response
             else
               store.add(subject, field, response)
@@ -52,8 +55,6 @@ module RBattlenet
 
       hydra.run
       store.size == 1 ? store.first : store
-    rescue => err
-      raise RBattlenet::Errors::ConnectionError.new
     end
 
     def uri(path)

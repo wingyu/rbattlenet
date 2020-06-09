@@ -32,11 +32,13 @@ RBattlenet.set_options(region: "us", locale: "en_US")
 ```
 
 Singular requests will be returned as a `RBattlenet::Result` object. Requests with an array passed in will
-be returned as a `RBattlenet::ResultCollection` object. If you want to simply receive the raw HTTP response you can
-set that like so:
+be returned as a `RBattlenet::ResultCollection` object by default. If you want to simply receive the raw HTTP response
+or the response as a Hash you can set that like so:
 
 ```ruby
-RBattlenet.set_options(raw_response: true)
+RBattlenet.set_options(response_type: :struct) # Default
+RBattlenet.set_options(response_type: :hash)
+RBattlenet.set_options(response_type: :raw)
 ```
 
 #### Step 3. Call the API methods to request data

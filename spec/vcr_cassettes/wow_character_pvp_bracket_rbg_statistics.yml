@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/noldorimbor/pvp-bracket/rbg?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EUsDFXcA4FAVZEKXCyfiGhVjtEVMZwYDIl
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '7'
+      Date:
+      - Fri, 13 Mar 2020 08:29:44 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Thu, 12 Mar 2020 21:05:48 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - pvp-bracket
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 15fb538a-aa32-9660-26fb-fa165ade9430
+      x-trace-spanid:
+      - 15fb538a-aa32-9ae0-26fb-fa165ade9430
+      x-trace-parentspanid:
+      - 15fb538a-aa32-9ab0-26fb-fa165ade9430
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/noldorimbor/pvp-bracket/rbg?namespace=profile-eu"}},"character":{"key":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/noldorimbor?namespace=profile-eu"},"name":"Noldorimbor","id":93944115,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"}},"faction":{"type":"ALLIANCE","name":"Alliance"},"bracket":{"id":3,"type":"BATTLEGROUNDS"},"rating":192,"season":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-season/29?namespace=dynamic-eu"},"id":29},"tier":{"key":{"href":"https://eu.api.blizzard.com/data/wow/pvp-tier/16?namespace=static-8.3.0_32861-eu"},"id":16},"season_match_statistics":{"played":4,"won":1,"lost":3},"weekly_match_statistics":{"played":0,"won":0,"lost":0}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/noldorimbor/pvp-bracket/rbg?namespace=profile-eu&locale=en_gb
+  recorded_at: Fri, 13 Mar 2020 08:29:44 GMT
+recorded_with: VCR 2.9.3

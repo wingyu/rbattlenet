@@ -3,7 +3,7 @@ module RBattlenet
     class Character < RBattlenet::Endpoints::Base
       SUPPORTED_FIELDS = [:itself, :achievements, :appearance, :equipment, :hunter_pets, :keystones, :media,
                           :mounts, :pets, :pvp_summary, :reputations, :specializations, :statistics, :status,
-                          :titles]
+                          :titles, :legacy]
 
       class << self
         def path(character)
@@ -14,8 +14,28 @@ module RBattlenet
           RBattlenet::Wow::Character::Achievements
         end
 
+        def achievement_statistics
+          RBattlenet::Wow::Character::AchievementStatistics
+        end
+
+        def active_quests
+          RBattlenet::Wow::Character::ActiveQuests
+        end
+
         def appearance
           RBattlenet::Wow::Character::Appearance
+        end
+
+        def completed_dungeons
+          RBattlenet::Wow::Character::CompletedDungeons
+        end
+
+        def completed_quests
+          RBattlenet::Wow::Character::CompletedQuests
+        end
+
+        def completed_raids
+          RBattlenet::Wow::Character::CompletedRaids
         end
 
         def equipment
@@ -42,6 +62,22 @@ module RBattlenet
           RBattlenet::Wow::Character::Pets
         end
 
+        def professions
+          RBattlenet::Wow::Character::Professions
+        end
+
+        def pvp_bracket_2v2
+          RBattlenet::Wow::Character::PvpBracket2v2
+        end
+
+        def pvp_bracket_3v3
+          RBattlenet::Wow::Character::PvpBracket3v3
+        end
+
+        def pvp_bracket_rbg
+          RBattlenet::Wow::Character::PvpBracketRbg
+        end
+
         def pvp_summary
           RBattlenet::Wow::Character::PvpSummary
         end
@@ -64,6 +100,10 @@ module RBattlenet
 
         def titles
           RBattlenet::Wow::Character::Titles
+        end
+
+        def legacy
+          RBattlenet::Wow::Character::Legacy
         end
       end
     end
