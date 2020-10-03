@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Typhoeus - https://github.com/typhoeus/typhoeus
       Authorization:
-      - Bearer EUVm8EwO3fHFv4QPKEr83N7cRXGFSeFbk1
+      - Bearer abcdefghijklmnopqrstuvwxyz01234567
       Expect:
       - ''
   response:
