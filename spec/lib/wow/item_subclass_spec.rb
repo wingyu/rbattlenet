@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::ItemSubclass do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::ItemSubclass, type: :game_data do
 
   describe "#find_item_subclass" do
     it "fetches item subclass data" do

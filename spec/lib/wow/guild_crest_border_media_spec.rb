@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::GuildCrestBorderMedia do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::GuildCrestBorderMedia, type: :game_data do
 
   describe "#find_guild_crest_border_media" do
     it "fetches guild crest border media data" do

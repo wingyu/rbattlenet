@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Sc2::League do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Sc2::League, type: :game_data do
 
   describe "#find_league" do
     it "fetches league data" do

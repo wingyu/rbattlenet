@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Sc2::Legacy::ProfileLadders do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Sc2::Legacy::ProfileLadders, type: :community do
 
   describe "#find_legacy_profile_ladders" do
     it "fetches legacy profile ladders data" do

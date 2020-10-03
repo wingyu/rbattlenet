@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::D3::Skill do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::D3::Skill, type: :community do
 
   describe "#find_skill" do
     it "fetches skill data" do

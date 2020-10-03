@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::Mount do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::Mount, type: :game_data do
 
   describe "#find_mount" do
     it "fetches mount data" do

@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::D3::ItemType do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::D3::ItemType, type: :community do
 
   describe "#find_item_type" do
     it "fetches item_type data" do

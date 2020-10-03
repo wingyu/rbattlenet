@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::D3::Hero::Items do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::D3::Hero::Items, type: :community do
 
   describe "#find_hero_items" do
     it "fetches hero items data" do

@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Hearthstone::Card do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Hearthstone::Card, type: :game_data do
 
   describe "#find_single_card" do
     it "fetches card data" do

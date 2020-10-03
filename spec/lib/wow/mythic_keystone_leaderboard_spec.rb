@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::MythicKeystoneLeaderboard do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::MythicKeystoneLeaderboard, type: :game_data do
 
   describe "#find_mythic_keystone_leaderboard" do
     it "fetches keystone leaderboard data" do

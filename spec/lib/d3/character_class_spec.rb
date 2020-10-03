@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::D3::CharacterClass do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::D3::CharacterClass, type: :community do
 
   describe "#find_character_class" do
     it "fetches character_class data" do

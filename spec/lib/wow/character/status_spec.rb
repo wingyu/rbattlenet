@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::Character::Status do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::Character::Status, type: :game_data do
 
   describe "#find_character_status" do
     it "fetches character data" do

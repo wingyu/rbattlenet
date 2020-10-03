@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::PvpSeason::Rewards do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::PvpSeason::Rewards, type: :game_data do
 
   describe "#find_pvp_season_rewards" do
     it "fetches pvp season reward data" do

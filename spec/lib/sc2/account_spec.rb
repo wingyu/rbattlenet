@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Sc2::Account do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Sc2::Account, type: :community do
 
   describe "#find_account" do
     it "fetches account data" do
