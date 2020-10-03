@@ -84,11 +84,18 @@ characters = RBattlenet::Wow::Character.all
 ```
 
 ## Testing
+Test against the stored VCR cassettes
 ```ruby
-CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
+bundle exec rspec spec/ # Execute all the tests
+bundle exec rspec spec/lib/wow/character_spec.rb # Execute only the character_spec tests
 ```
 
-If you wish to test with real API connections:
+If there is no VCR cassette for the test
+```ruby
+RECORD_CASSETTE=1 CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
+```
+
+If you wish to test against the real API and bypass the :
 ```ruby
 REAL_CONNECTIONS=1 CLIENT_ID=<your_id> CLIENT_SECRET=<your_secret> bundle exec rspec
 ```
