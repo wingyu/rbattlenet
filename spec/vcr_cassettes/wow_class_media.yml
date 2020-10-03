@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/media/playable-class/8?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer abcdefghijklmnopqrstuvwxyz01234567
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Sat, 03 Oct 2020 22:06:35 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 30 Sep 2020 01:07:25 GMT
+      Battlenet-Namespace:
+      - static-8.3.7_35114-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - media
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 7c01f43b-77e9-375c-9a4c-8d424849bf60
+      x-trace-spanid:
+      - 16371d6a-63cc-fe10-16be-fa165a30479e
+      x-trace-parentspanid:
+      - 16371d6a-63cc-fde0-16be-fa165a30479e
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/media/playable-class/8?namespace=static-8.3.7_35114-eu"}},"assets":[{"key":"icon","value":"https://render-eu.worldofwarcraft.com/icons/56/classicon_mage.jpg","file_data_id":626001}],"id":8}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/media/playable-class/8?namespace=static-eu&locale=en_gb
+  recorded_at: Sat, 03 Oct 2020 22:06:35 GMT
+recorded_with: VCR 2.9.3
