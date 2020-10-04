@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::AchievementMedia do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::AchievementMedia, type: :game_data do
 
   describe "#find_achievement_media" do
     it "fetches achievement media data" do

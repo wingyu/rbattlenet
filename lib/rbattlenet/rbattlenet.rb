@@ -17,6 +17,11 @@ module RBattlenet
     true
   end
 
+  # Set a fake token for RSpec tests
+  def self.fake_authenticate
+    @@token = "abcdefghijklmnopqrstuvwxyz01234567"
+  end
+
   def self.set_options(region: @@region, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout)
     @@region, @@locale, @@response_type, @@concurrency, @@timeout = region, locale, response_type, concurrency, timeout
     true
@@ -35,7 +40,7 @@ module RBattlenet
       hydra = Typhoeus::Hydra.new(max_concurrency: @@concurrency)
       subjects.each do |uris, subject|
         uris.each do |field, uri|
-          request = Typhoeus::Request.new(URI.encode(uri), headers: headers, timeout: @@timeout)
+          request = Typhoeus::Request.new(URI::DEFAULT_PARSER.escape(uri), headers: headers, timeout: @@timeout)
 
           request.on_complete do |response|
             if @@response_type == :raw

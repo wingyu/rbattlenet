@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::PlayableClassMedia do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::PlayableClassMedia, type: :game_data do
 
   describe "#find_playable_class_media" do
     it "fetches playable class media data" do

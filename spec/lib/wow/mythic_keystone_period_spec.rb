@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::MythicKeystonePeriod do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::MythicKeystonePeriod, type: :game_data do
 
   describe "#find_mythic_keystone_period" do
     it "fetches mythic keystone period data" do

@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::Character::Legacy do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::Character::Legacy, type: :game_data do
 
   describe "#find_legacy_characters" do
     it "fetches legacy character data" do

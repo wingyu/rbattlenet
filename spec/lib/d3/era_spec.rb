@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::D3::Era do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::D3::Era, type: :game_data do
 
   describe "#find_era" do
     it "fetches era data" do

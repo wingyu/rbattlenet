@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Typhoeus - https://github.com/typhoeus/typhoeus
       Authorization:
-      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      - Bearer abcdefghijklmnopqrstuvwxyz01234567
       Expect:
       - ''
   response:
@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Battlenet-Schema-Revision:
-      - '6'
+      - '7'
       Date:
-      - Sun, 22 Dec 2019 15:54:49 GMT
+      - Sat, 03 Oct 2020 20:37:48 GMT
       Server:
       - Apache-Coyote/1.1
       Last-Modified:
-      - Wed, 18 Dec 2019 02:19:56 GMT
+      - Wed, 30 Sep 2020 01:07:24 GMT
       Battlenet-Namespace:
       - dynamic-eu
       vary:
@@ -39,11 +39,11 @@ http_interactions:
       transfer-encoding:
       - chunked
       x-trace-traceid:
-      - 15c864e9-2c37-5910-c980-fa165ba0f208
+      - b52bdaec-532a-35c8-90b5-6240c0a6cccd
       x-trace-spanid:
-      - 15c864e9-2c37-5a30-c980-fa165ba0f208
+      - 16371d67-92d3-7380-2a1b-fa165a91e7e1
       x-trace-parentspanid:
-      - 15c864e9-2c37-5a00-c980-fa165ba0f208
+      - 16371d67-92d3-7350-2a1b-fa165a91e7e1
       x-frame-options:
       - SAMEORIGIN
       X-Content-Type-Options:
@@ -57,5 +57,5 @@ http_interactions:
     http_version: '1.1'
     adapter_metadata:
       effective_url: https://eu.api.blizzard.com/data/wow/realm/index?namespace=dynamic-eu&locale=en_gb
-  recorded_at: Sun, 22 Dec 2019 15:54:49 GMT
+  recorded_at: Sat, 03 Oct 2020 20:37:48 GMT
 recorded_with: VCR 2.9.3

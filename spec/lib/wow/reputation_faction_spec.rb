@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::ReputationFaction do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::ReputationFaction, type: :game_data do
 
   describe "#find_reputation_faction" do
     it "fetches reputation faction data" do

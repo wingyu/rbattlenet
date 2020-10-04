@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::MythicKeystoneDungeon do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::MythicKeystoneDungeon, type: :game_data do
 
   describe "#find_mythic_keystone_dungeon" do
     it "fetches mythic keystone dungeon data" do
