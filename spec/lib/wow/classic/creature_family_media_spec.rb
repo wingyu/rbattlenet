@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::Classic::CreatureFamilyMedia do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::Classic::CreatureFamilyMedia, type: :game_data do
 
   describe "#find_creature_family_media" do
     it "fetches creature media data" do

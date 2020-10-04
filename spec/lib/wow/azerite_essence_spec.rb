@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::AzeriteEssence do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::AzeriteEssence, type: :game_data do
 
   describe "#find_azerite_essence" do
     it "fetches azerite essence data" do

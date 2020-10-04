@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::GuildCrestMedia do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::GuildCrestMedia, type: :game_data do
 
   describe "#find_all_guild_crest_media" do
     it "fetches all guild crest media" do

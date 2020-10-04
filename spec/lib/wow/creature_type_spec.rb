@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Wow::CreatureType do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Wow::CreatureType, type: :game_data do
 
   describe "#find_creature_type" do
     it "fetches creature type data" do

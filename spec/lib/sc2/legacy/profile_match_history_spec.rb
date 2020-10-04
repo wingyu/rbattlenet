@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::Sc2::Legacy::ProfileMatchHistory do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::Sc2::Legacy::ProfileMatchHistory, type: :community do
 
   describe "#find_legacy_profile_match_history" do
     it "fetches legacy profile match history data" do

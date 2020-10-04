@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::D3::Hero::FollowerItems do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::D3::Hero::FollowerItems, type: :community do
 
   describe "#find_hero_follower_items" do
     it "fetches hero follower items data" do

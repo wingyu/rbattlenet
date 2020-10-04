@@ -1,9 +1,6 @@
 require 'spec_helper'
 
 describe RBattlenet::Hearthstone::Metadata do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
 
   describe "#find_metadata" do
     it "fetches metadata" do

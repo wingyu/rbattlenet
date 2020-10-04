@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Typhoeus - https://github.com/typhoeus/typhoeus
       Authorization:
-      - Bearer EUUKegKqZAdwS8EL5clKeq67gpz4HqdbQc
+      - Bearer EUVm8EwO3fHFv4QPKEr83N7cRXGFSeFbk1
       Expect:
       - ''
   response:
@@ -21,11 +21,11 @@ http_interactions:
       Battlenet-Schema-Revision:
       - '2'
       Date:
-      - Sun, 22 Dec 2019 15:54:51 GMT
+      - Sat, 03 Oct 2020 21:10:34 GMT
       Server:
       - Apache-Coyote/1.1
       Last-Modified:
-      - Sun, 22 Dec 2019 15:35:31 GMT
+      - Sat, 3 Oct 2020 21:08:05 GMT
       Battlenet-Namespace:
       - dynamic-eu
       vary:
@@ -39,11 +39,11 @@ http_interactions:
       transfer-encoding:
       - chunked
       x-trace-traceid:
-      - 15c86553-2470-f8b0-f981-fa165bcda32d
+      - df31ee86-d268-3e82-8768-2ae367626e48
       x-trace-spanid:
-      - 15c86553-2470-fa40-f981-fa165bcda32d
+      - 16371d6a-b498-3780-13e9-fa165a9d7aff
       x-trace-parentspanid:
-      - 15c86553-2470-fa10-f981-fa165bcda32d
+      - 16371d6a-b498-3750-13e9-fa165a9d7aff
       x-frame-options:
       - SAMEORIGIN
       X-Content-Type-Options:
@@ -52,9 +52,9 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/token/?namespace=dynamic-eu"}},"last_updated_timestamp":1577028931000,"price":2352340000}'
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/token/?namespace=dynamic-eu"}},"last_updated_timestamp":1601759284000,"price":1894280000}'
     http_version: '1.1'
     adapter_metadata:
       effective_url: https://eu.api.blizzard.com/data/wow/token/index?namespace=dynamic-eu&locale=en_gb
-  recorded_at: Sun, 22 Dec 2019 15:54:51 GMT
+  recorded_at: Sat, 03 Oct 2020 21:10:34 GMT
 recorded_with: VCR 2.9.3

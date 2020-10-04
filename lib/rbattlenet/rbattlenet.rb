@@ -17,6 +17,11 @@ module RBattlenet
     true
   end
 
+  # Set a fake token for RSpec tests
+  def self.fake_authenticate
+    @@token = "abcdefghijklmnopqrstuvwxyz01234567"
+  end
+
   def self.set_options(region: @@region, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout)
     @@region, @@locale, @@response_type, @@concurrency, @@timeout = region, locale, response_type, concurrency, timeout
     true

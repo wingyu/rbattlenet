@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::D3::Act do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::D3::Act, type: :community do
 
   describe "#find_act" do
     it "fetches act data" do

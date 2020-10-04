@@ -1,9 +1,6 @@
 require 'spec_helper'
 
-describe RBattlenet::D3::Artisan do
-  before do
-    RBattlenet.authenticate(client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"])
-  end
+describe RBattlenet::D3::Artisan, type: :community do
 
   describe "#find_artisan" do
     it "fetches artisan data" do
