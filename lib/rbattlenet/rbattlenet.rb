@@ -4,6 +4,7 @@ module RBattlenet
   @@response_type = :struct
   @@concurrency = 20
   @@timeout = 120
+  @@token = nil
 
   #Set Access Token for requests. Required
   def self.authenticate(client_id:, client_secret:)
