@@ -83,6 +83,17 @@ characters = RBattlenet::Wow::Character.all
 # => RBattlenet::Errors::IndexNotSupported (Retrieving all entities of this endpoint is not supported)
 ```
 
+### Profile API
+
+The [Account Profile API](https://develop.battle.net/documentation/world-of-warcraft/profile-apis) needs an access token acquired via the [Authorization Code Flow](https://develop.battle.net/documentation/guides/using-oauth/authorization-code-flow).
+
+It concerns the following requests:
+
+* `RBattlenet::Wow::Profile::User`
+* `RBattlenet::Wow::Profile::ProtectedSummary`
+* `RBattlenet::Wow::Profile::MountsCollection`
+* `RBattlenet::Wow::Profile::PetsCollection`
+
 ## Testing
 Test against the stored VCR cassettes
 ```ruby
