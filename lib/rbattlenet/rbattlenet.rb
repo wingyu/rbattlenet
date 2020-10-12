@@ -33,13 +33,12 @@ module RBattlenet
     def get(subjects)
       store = @@response_type == :raw ? [] : RBattlenet::ResultCollection.new(@@response_type)
 
-      headers = {}
-      headers['Authorization'] = "Bearer #{@@token}" if @@token
-
       # Limit concurrency to prevent hitting the API request per-second cap.
       hydra = Typhoeus::Hydra.new(max_concurrency: @@concurrency)
       subjects.each do |uris, subject|
         uris.each do |field, uri|
+          headers = {}
+          headers['Authorization'] = "Bearer #{@@token}" if @@token && !uri.include?('access_token')
           request = Typhoeus::Request.new(URI::DEFAULT_PARSER.escape(uri), headers: headers, timeout: @@timeout)
 
           request.on_complete do |response|
@@ -52,7 +51,6 @@ module RBattlenet
               end
             end
           end
-
 
           hydra.queue request
         end
