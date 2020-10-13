@@ -4,6 +4,7 @@ module RBattlenet
   @@response_type = :struct
   @@concurrency = 20
   @@timeout = 120
+  @@token = nil
 
   #Set Access Token for requests. Required
   def self.authenticate(client_id:, client_secret:)
@@ -46,7 +47,7 @@ module RBattlenet
               store << response
             else
               store.add(subject, field, response)
-              if data = store.complete(subject, uris.size)
+              if (data = store.complete(subject, uris.size))
                 yield subject, data
               end
             end
@@ -61,7 +62,9 @@ module RBattlenet
     end
 
     def uri(path)
-      "https://#{@@region}.api.blizzard.com/#{path}#{@@region}&locale=#{@@locale}"
+      request_locale = @@locale == 'all' ? '' : "&locale=#{@@locale}"
+
+      "https://#{@@region}.api.blizzard.com/#{path}#{@@region}#{request_locale}"
     end
   end
 end

@@ -33,6 +33,12 @@ Your region and locale defaults to EU and en_GB respectively. However, these can
 RBattlenet.set_options(region: "us", locale: "en_US")
 ```
 
+It's possible to include all available locales like this:
+
+```ruby
+RBattlenet.set_options(locale: "all")
+```
+
 Singular requests will be returned as a `RBattlenet::Result` object. Requests with an array passed in will
 be returned as a `RBattlenet::ResultCollection` object by default. If you want to simply receive the raw HTTP response
 or the response as a Hash you can set that like so:
