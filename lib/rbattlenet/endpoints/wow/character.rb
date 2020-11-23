@@ -2,8 +2,8 @@ module RBattlenet
   module Wow
     class Character < RBattlenet::Endpoints::Base
       SUPPORTED_FIELDS = [:itself, :achievements, :appearance, :equipment, :hunter_pets, :keystones, :media,
-                          :mounts, :pets, :pvp_summary, :reputations, :specializations, :statistics, :status,
-                          :titles, :legacy]
+                          :mounts, :pets, :pvp_summary, :reputations, :soulbinds, :specializations, :statistics,
+                          :status, :titles, :legacy]
 
       class << self
         def path(character)
@@ -83,6 +83,10 @@ module RBattlenet
         end
 
         def reputations
+          RBattlenet::Wow::Character::Reputations
+        end
+
+        def soulbinds
           RBattlenet::Wow::Character::Reputations
         end
 
