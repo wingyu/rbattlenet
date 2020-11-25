@@ -87,7 +87,7 @@ module RBattlenet
         end
 
         def soulbinds
-          RBattlenet::Wow::Character::Reputations
+          RBattlenet::Wow::Character::Soulbinds
         end
 
         def specializations
