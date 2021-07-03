@@ -1,0 +1,183 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/covenant/conduit/40?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EU9UTgGxUGGNV2468OnmLjJiKYHlMFGSGw
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Wed, 25 Nov 2020 20:44:53 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 25 Nov 2020 02:09:28 GMT
+      Battlenet-Namespace:
+      - static-9.0.2_36532-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - covenant-conduit
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - bae07e03-1629-3065-a1da-81c738be8c3d
+      x-trace-spanid:
+      - 16480bf3-daa1-fe00-3aa9-fa165ba2e3cd
+      x-trace-parentspanid:
+      - 16480bf3-daa1-fdd0-3aa9-fa165ba2e3cd
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/covenant/conduit/40?namespace=static-9.0.2_36532-eu"}},"id":40,"name":"Ire
+        of the Ascended","item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/181600?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":181600},"socket_type":{"type":"POTENCY","name":"Potency
+        Conduit Slot"},"ranks":[{"id":535,"tier":0,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 5.0%.","cast_time":"Passive"}},{"id":536,"tier":1,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 5.5%.","cast_time":"Passive"}},{"id":537,"tier":2,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 6.0%.","cast_time":"Passive"}},{"id":538,"tier":3,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 6.5%.","cast_time":"Passive"}},{"id":539,"tier":4,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 7.0%.","cast_time":"Passive"}},{"id":540,"tier":5,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 7.5%.","cast_time":"Passive"}},{"id":541,"tier":6,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 8.0%.","cast_time":"Passive"}},{"id":542,"tier":7,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 8.5%.","cast_time":"Passive"}},{"id":543,"tier":8,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 9.0%.","cast_time":"Passive"}},{"id":544,"tier":9,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 9.5%.","cast_time":"Passive"}},{"id":545,"tier":10,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 10.0%.","cast_time":"Passive"}},{"id":546,"tier":11,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 10.5%.","cast_time":"Passive"}},{"id":547,"tier":12,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 11.0%.","cast_time":"Passive"}},{"id":548,"tier":13,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 11.5%.","cast_time":"Passive"}},{"id":549,"tier":14,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/337058?namespace=static-9.0.2_36532-eu"},"name":"Ire
+        of the Ascended","id":337058},"description":"Radiant Spark increases the damage
+        your spells deal to the target by an additional 12.0%.","cast_time":"Passive"}}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/covenant/conduit/40?namespace=static-eu&locale=en_gb
+  recorded_at: Wed, 25 Nov 2020 20:44:54 GMT
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/data/wow/covenant/conduit/39?namespace=static-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EU9UTgGxUGGNV2468OnmLjJiKYHlMFGSGw
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '1'
+      Date:
+      - Wed, 25 Nov 2020 20:44:53 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 25 Nov 2020 02:09:28 GMT
+      Battlenet-Namespace:
+      - static-9.0.2_36532-eu
+      vary:
+      - accept-encoding
+      Cache-Control:
+      - public, max-age=86400
+      Battlenet-Schema:
+      - covenant-conduit
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 9042d09d-9f2b-36ac-b80e-a594610b1fb0
+      x-trace-spanid:
+      - 16480bfc-5224-d480-4a80-fa165a3e94e0
+      x-trace-parentspanid:
+      - 16480bfc-5224-d450-4a80-fa165a3e94e0
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/data/wow/covenant/conduit/39?namespace=static-9.0.2_36532-eu"}},"id":39,"name":"Gift
+        of the Lich","item":{"key":{"href":"https://eu.api.blizzard.com/data/wow/item/181553?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":181553},"socket_type":{"type":"POTENCY","name":"Potency
+        Conduit Slot"},"ranks":[{"id":520,"tier":0,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 6.0 sec.","cast_time":"Passive"}},{"id":521,"tier":1,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 6.6 sec.","cast_time":"Passive"}},{"id":522,"tier":2,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 7.2 sec.","cast_time":"Passive"}},{"id":523,"tier":3,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 7.8 sec.","cast_time":"Passive"}},{"id":524,"tier":4,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 8.4 sec.","cast_time":"Passive"}},{"id":525,"tier":5,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 9.0 sec.","cast_time":"Passive"}},{"id":526,"tier":6,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 9.6 sec.","cast_time":"Passive"}},{"id":527,"tier":7,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 10.2 sec.","cast_time":"Passive"}},{"id":528,"tier":8,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 10.8 sec.","cast_time":"Passive"}},{"id":529,"tier":9,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 11.4 sec.","cast_time":"Passive"}},{"id":530,"tier":10,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 12.0 sec.","cast_time":"Passive"}},{"id":531,"tier":11,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 12.6 sec.","cast_time":"Passive"}},{"id":532,"tier":12,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 13.2 sec.","cast_time":"Passive"}},{"id":533,"tier":13,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 13.8 sec.","cast_time":"Passive"}},{"id":534,"tier":14,"spell_tooltip":{"spell":{"key":{"href":"https://eu.api.blizzard.com/data/wow/spell/336999?namespace=static-9.0.2_36532-eu"},"name":"Gift
+        of the Lich","id":336999},"description":"Deathborne''s duration is increased
+        by 14.4 sec.","cast_time":"Passive"}}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/data/wow/covenant/conduit/39?namespace=static-eu&locale=en_gb
+  recorded_at: Wed, 25 Nov 2020 20:44:54 GMT
+recorded_with: VCR 2.9.3

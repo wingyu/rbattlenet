@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/soulbinds?namespace=profile-eu&locale=en_gb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Authorization:
+      - Bearer EU9UTgGxUGGNV2468OnmLjJiKYHlMFGSGw
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Battlenet-Schema-Revision:
+      - '2'
+      Date:
+      - Wed, 25 Nov 2020 19:18:52 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Last-Modified:
+      - Wed, 25 Nov 2020 17:14:04 GMT
+      Battlenet-Namespace:
+      - profile-eu
+      vary:
+      - accept-encoding
+      Battlenet-Schema:
+      - character-soulbinds
+      content-type:
+      - application/json;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      x-trace-traceid:
+      - 938f89d9-c728-31f1-b5e5-667e2baef32e
+      x-trace-spanid:
+      - 16480bf4-5da1-f0b0-b5df-fa165a29e16a
+      x-trace-parentspanid:
+      - 16480bf4-5da1-f080-b5df-fa165a29e16a
+      x-frame-options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/soulbinds?namespace=profile-eu"}},"character":{"key":{"href":"https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday?namespace=profile-eu"},"name":"Sheday","id":142650023,"realm":{"key":{"href":"https://eu.api.blizzard.com/data/wow/realm/550?namespace=dynamic-eu"},"name":"Stormrage","id":550,"slug":"stormrage"}},"chosen_covenant":{"key":{"href":"https://eu.api.blizzard.com/data/wow/covenant/3?namespace=static-9.0.2_36532-eu"},"name":"Night
+        Fae","id":3},"renown_level":2,"soulbinds":[{"soulbind":{"key":{"href":"https://eu.api.blizzard.com/data/wow/covenant/soulbind/1?namespace=static-9.0.2_36532-eu"},"name":"Niya","id":1},"traits":[{"trait":{"key":{"href":"https://eu.api.blizzard.com/data/wow/tech-talent/864?namespace=static-9.0.2_36532-eu"},"name":"Cycle
+        of Seasons","id":864},"tier":0,"display_order":1},{"conduit_socket":{"type":{"type":"POTENCY","name":"Potency
+        Conduit Slot"},"socket":{"conduit":{"key":{"href":"https://eu.api.blizzard.com/data/wow/covenant/conduit/182?namespace=static-9.0.2_36532-eu"},"name":"Virtuous
+        Command","id":182},"rank":1}},"tier":1,"display_order":0}],"is_active":true}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://eu.api.blizzard.com/profile/wow/character/stormrage/sheday/soulbinds?namespace=profile-eu&locale=en_gb
+  recorded_at: Wed, 25 Nov 2020 19:18:52 GMT
+recorded_with: VCR 2.9.3
