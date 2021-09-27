@@ -16,7 +16,7 @@ module RBattlenet
       data = if response.code == 200
         result = JSON.parse(response.body, object_class: @response_object) rescue nil
         result && (result.is_a?(Array) ? @response_object.new(data: result.size == 1 ? result.first : result) : result)
-      end || @empty_response_object.new(status_code: response.code)
+      end || @empty_response_object.new(status_code: response.code, timeout: response.timed_out?)
 
       data[:status_code] ||= 200
       data[:source], data[:field] = subject, field

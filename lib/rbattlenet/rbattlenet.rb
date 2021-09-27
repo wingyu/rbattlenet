@@ -4,6 +4,7 @@ module RBattlenet
   @@response_type = :struct
   @@concurrency = 20
   @@timeout = 120
+  @@retries = 0
 
   #Set Access Token for requests. Required
   def self.authenticate(client_id:, client_secret:)
@@ -17,8 +18,8 @@ module RBattlenet
     true
   end
 
-  def self.set_options(region: @@region, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout)
-    @@region, @@locale, @@response_type, @@concurrency, @@timeout = region, locale, response_type, concurrency, timeout
+  def self.set_options(region: @@region, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout, retries: @@retries)
+    @@region, @@locale, @@response_type, @@concurrency, @@timeout, @@retries = region, locale, response_type, concurrency, timeout, retries
     true
   end
 
@@ -26,6 +27,7 @@ module RBattlenet
 
   class << self
     def get(subjects)
+      retried = {}
       store = @@response_type == :raw ? [] : RBattlenet::ResultCollection.new(@@response_type)
 
       headers = {}
@@ -35,10 +37,13 @@ module RBattlenet
       hydra = Typhoeus::Hydra.new(max_concurrency: @@concurrency)
       subjects.each do |uris, subject|
         uris.each do |field, uri|
-          request = Typhoeus::Request.new(URI.encode(uri), headers: headers, timeout: @@timeout)
+          request = Typhoeus::Request.new(URI.encode(uri), headers: headers, timeout: @@timeout, connecttimeout: @@timeout)
 
           request.on_complete do |response|
-            if @@response_type == :raw
+            if @@retries > 0 && (retried[uri] || 0) < @@retries && (response.timed_out? || response.code == 429)
+              retried[uri] = (retried[uri] || 0) + 1
+              hydra.queue response.request
+            elsif @@response_type == :raw
               store << response
             else
               store.add(subject, field, response)
