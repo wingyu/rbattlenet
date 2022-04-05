@@ -19,7 +19,7 @@ module RBattlenet
   end
 
   def self.set_options(region: @@region, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout, retries: @@retries)
-    @@region, @@locale, @@response_type, @@concurrency, @@timeout, @@retries = region, locale, response_type, concurrency, timeout, retries
+    @@region, @@locale, @@response_type, @@concurrency, @@timeout, @@retries = (region || "eu"), locale, response_type, concurrency, timeout, retries
     true
   end
 
