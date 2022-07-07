@@ -37,7 +37,7 @@ module RBattlenet
       hydra = Typhoeus::Hydra.new(max_concurrency: @@concurrency)
       subjects.each do |uris, subject|
         uris.each do |field, uri|
-          request = Typhoeus::Request.new(URI.encode(uri), headers: headers, timeout: @@timeout, connecttimeout: @@timeout)
+          request = Typhoeus::Request.new(Addressable::URI.parse(uri).normalize.to_s, headers: headers, timeout: @@timeout, connecttimeout: @@timeout)
 
           request.on_complete do |response|
             if @@retries > 0 && (retried[uri] || 0) < @@retries && (response.timed_out? || response.code == 429)
