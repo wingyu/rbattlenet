@@ -36,6 +36,8 @@ module RBattlenet
       # Limit concurrency to prevent hitting the API request per-second cap.
       hydra = Typhoeus::Hydra.new(max_concurrency: @@concurrency)
       subjects.each do |uris, subject|
+        subject_brackets = []
+
         uris.each do |field, uri|
           request = Typhoeus::Request.new(Addressable::URI.parse(uri).normalize.to_s, headers: headers, timeout: @@timeout, connecttimeout: @@timeout)
 
@@ -46,8 +48,20 @@ module RBattlenet
             elsif @@response_type == :raw
               store << response
             else
+              # TODO: make this generic and move it to a proper place!
+              if field == :pvp_summary && uri.include?("pvp-summary") && response.code == 200
+                result = JSON.parse(response.body) rescue nil
+                subject_brackets += (result&.dig('brackets') || []).map { |br| br['href'] if br['href'].include?('shuffle') }.compact
+
+                subject_brackets.each do |bracket_uri|
+                  bracket_request = Typhoeus::Request.new(Addressable::URI.parse(bracket_uri).normalize.to_s, headers: headers, timeout: @@timeout, connecttimeout: @@timeout)
+                  bracket_response = bracket_request.run
+                  store.add(subject, bracket_uri.split('pvp-bracket/').last.split('?').first, bracket_response)
+                end
+              end
+
               store.add(subject, field, response)
-              if data = store.complete(subject, uris.size)
+              if data = store.complete(subject, uris.size + subject_brackets.size)
                 yield subject, data
               end
             end
