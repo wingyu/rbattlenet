@@ -21,7 +21,7 @@ describe RBattlenet::Sc2::Legacy::Ladder do
           { region_id: 2, id: 2200 },
           { region_id: 2, id: 2201 },
         ])
-        expect(collection.results.map(&:ladderMembers).map(&:size).sort).to eq [200, 300]
+        expect(collection.map(&:ladderMembers).map(&:size).sort).to eq [200, 300]
       end
     end
   end

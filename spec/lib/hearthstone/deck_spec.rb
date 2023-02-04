@@ -23,7 +23,7 @@ describe RBattlenet::Hearthstone::Deck do
           "AAECAQcG+wyd8AKS+AKggAOblAPanQMMS6IE/web8wLR9QKD+wKe+wKz/AL1gAOXlAOalAOSnwMA",
           "AAECAf0EHk27AskDqwTFBMsElgXyBYoH7Ae+7ALG+AKggAOfmwOgmwOKngOhoQP8owOLpAOSpAPypQOEpwP1rAP6rAPsrwPwrwOBsQORsQPhtgOftwMAAA"
         ])
-        expect(collection.results.map(&:hero).map(&:id).sort).to eq [7, 637]
+        expect(collection.map(&:hero).map(&:id).sort).to eq [7, 637]
       end
     end
   end

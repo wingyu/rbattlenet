@@ -18,7 +18,7 @@ describe RBattlenet::Wow::ReputationFaction do
     it "fetches reputation faction data" do
       with_connection("wow_reputation_faction_multiple") do
         collection = RBattlenet::Wow::ReputationFaction.find([21, 47])
-        expect(collection.results.map(&:name).sort).to eq ["Booty Bay", "Ironforge"]
+        expect(collection.map(&:name).sort).to eq ["Booty Bay", "Ironforge"]
       end
     end
   end

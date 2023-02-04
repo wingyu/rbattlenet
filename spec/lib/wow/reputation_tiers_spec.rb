@@ -18,7 +18,7 @@ describe RBattlenet::Wow::ReputationTiers do
     it "fetches reputation tier data" do
       with_connection("wow_reputation_tier_multiple") do
         collection = RBattlenet::Wow::ReputationTiers.find([2, 22])
-        expect(collection.results.map(&:tiers).map(&:first).map(&:name).sort).to eq ["Stranger", "Stranger"]
+        expect(collection.map(&:tiers).map(&:first).map(&:name).sort).to eq ["Stranger", "Stranger"]
       end
     end
   end

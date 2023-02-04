@@ -21,7 +21,7 @@ describe RBattlenet::Wow::MythicRaidLeaderboard do
           { raid: "uldir", faction: "alliance" },
           { raid: "crucible-of-storms", faction: "horde" }
         ])
-        expect(collection.results.map(&:slug).sort).to eq ["crucible-of-storms-horde", "uldir-alliance"]
+        expect(collection.map(&:slug).sort).to eq ["crucible-of-storms-horde", "uldir-alliance"]
       end
     end
   end

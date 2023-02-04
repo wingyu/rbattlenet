@@ -54,7 +54,7 @@ You can pass in an Array to every endpoint. Requests will be made in parallel au
 ```ruby
 collection = RBattlenet::Wow::Item.find([18803, 18804])
 
-collection.results.map(&:name) # => ["Finkle's Lava Dredger", "Lord Grayson's Satchel"]
+collection.map(&:name) # => ["Finkle's Lava Dredger", "Lord Grayson's Satchel"]
 ```
 
 For some endpoints you can pass in fields to automatically (in parallel) retrieve resources that belong to them:
@@ -69,9 +69,8 @@ character.mounts.first.name # => "Black War Bear"
 
 #### Step 4. Error handling
 
-Each `RBattlenet::Result` object has a `status_code` property. When the code is not 200, the raw HTTP response is
-included (`response` property) and it'll be a `RBattlenet::EmptyResult` object instead. `RBattlenet::ResultCollection`
-objects can contain both `Result` and `EmptyResult` objects simultaneously. Exceptions are not raised for non-200 responses.
+Each response has a `status_code` or `status_codes` property, depending on the number of fields requested.
+When the code is not 200, this will be indicated there, but no exceptions will be raised.
 
 Client side exceptions will be raised if there are issues, for example:
 

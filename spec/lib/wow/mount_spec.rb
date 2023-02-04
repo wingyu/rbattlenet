@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Mount do
     it "fetches mount data" do
       with_connection("wow_mount_multiple") do
         collection = RBattlenet::Wow::Mount.find([6, 7])
-        expect(collection.results.map(&:name).sort).to eq ["Brown Horse", "Gray Wolf"]
+        expect(collection.map(&:name).sort).to eq ["Brown Horse", "Gray Wolf"]
       end
     end
   end

@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Classic::CreatureFamilyMedia do
     it "fetches creature media data" do
       with_connection("wow_classic_creature_family_media_multiple") do
         collection = RBattlenet::Wow::Classic::CreatureFamilyMedia.find([1, 2])
-        expect(collection.results.map(&:assets).map(&:first).map(&:key).sort).to eq ["icon", "icon"]
+        expect(collection.map(&:assets).map(&:first).map(&:key).sort).to eq ["icon", "icon"]
       end
     end
   end

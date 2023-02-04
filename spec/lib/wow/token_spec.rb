@@ -9,7 +9,7 @@ describe RBattlenet::Wow::Token do
     it "fetches token data" do
       with_connection("wow_token") do
         result = RBattlenet::Wow::Token.all
-        expect(result.last_updated_timestamp).to be >= 1577024131000
+        expect(result[:last_updated_timestamp]).to be >= 1577024131000
       end
     end
   end

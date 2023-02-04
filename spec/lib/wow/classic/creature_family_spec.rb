@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Classic::CreatureFamily do
     it "fetches creature family data" do
       with_connection("wow_classic_creature_family_multiple") do
         collection = RBattlenet::Wow::Classic::CreatureFamily.find([1, 2])
-        expect(collection.results.map(&:name).sort).to eq ["Cat", "Wolf"]
+        expect(collection.map(&:name).sort).to eq ["Cat", "Wolf"]
       end
     end
   end

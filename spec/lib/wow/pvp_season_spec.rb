@@ -18,7 +18,7 @@ describe RBattlenet::Wow::PvpSeason do
     it "fetches pvp season data" do
       with_connection("wow_pvp_season_multiple") do
         collection = RBattlenet::Wow::PvpSeason.find([27, 28])
-        expect(collection.results.map(&:season_start_timestamp)).to eq [1548226800000, 1562742000000]
+        expect(collection.map(&:season_start_timestamp)).to eq [1548226800000, 1562742000000]
       end
     end
   end

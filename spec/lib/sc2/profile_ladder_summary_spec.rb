@@ -21,9 +21,9 @@ describe RBattlenet::Sc2::ProfileLadderSummary do
           { region_id: 2, realm_id: 1, id: 2137104 },
           { region_id: 2, realm_id: 1, id: 2137105 },
         ])
-        expect(collection.results.size).to eq 2
-        expect(collection.results[0].allLadderMemberships.class).to eq Array
-        expect(collection.results[1].allLadderMemberships.class).to eq Array
+        expect(collection.size).to eq 2
+        expect(collection[0].allLadderMemberships.class).to eq Array
+        expect(collection[1].allLadderMemberships.class).to eq Array
       end
     end
   end

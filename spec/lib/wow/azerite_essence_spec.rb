@@ -18,7 +18,7 @@ describe RBattlenet::Wow::AzeriteEssence do
     it "fetches azerite essence data" do
       with_connection("wow_azerite_essence_multiple") do
         collection = RBattlenet::Wow::AzeriteEssence.find([2, 3])
-        expect(collection.results.map(&:name).sort).to eq ["Azeroth's Undying Gift", "Sphere of Suppression"]
+        expect(collection.map(&:name).sort).to eq ["Azeroth's Undying Gift", "Sphere of Suppression"]
       end
     end
   end

@@ -18,7 +18,7 @@ describe RBattlenet::Sc2::Account do
     it "fetches account data" do
       with_connection("sc2_account_multiple") do
         collection = RBattlenet::Sc2::Account.find([2137104, 2137105])
-        expect(collection.results.map(&:data).map(&:name).sort).to eq ["Rigs", "add"]
+        expect(collection.map(&:data).map(&:name).sort).to eq ["Rigs", "add"]
       end
     end
   end

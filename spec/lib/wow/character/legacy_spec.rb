@@ -30,7 +30,7 @@ describe RBattlenet::Wow::Character::Legacy do
             name: "marks",
           }
         ])
-        expect(collection.results.map(&:name).sort).to eq ["Marks", "Sheday"]
+        expect(collection.map(&:name).sort).to eq ["Marks", "Sheday"]
       end
     end
   end

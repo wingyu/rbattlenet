@@ -21,7 +21,7 @@ describe RBattlenet::D3::SeasonLeaderboard do
           { season: 1, id: 74987245615154 },
           { season: 1, id: 74987244621930 }
         ])
-        expect(collection.results.map(&:row).map(&:class).sort).to eq [Array, Array]
+        expect(collection.map(&:row).map(&:class).sort).to eq [Array, Array]
       end
     end
   end

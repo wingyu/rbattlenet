@@ -18,7 +18,7 @@ describe RBattlenet::Wow::MythicKeystoneAffix do
     it "fetches keystone affix data" do
       with_connection("wow_mythic_keystone_affix_multiple") do
         collection = RBattlenet::Wow::MythicKeystoneAffix.find([6, 7])
-        expect(collection.results.map(&:name).sort).to eq ["Bolstering", "Raging"]
+        expect(collection.map(&:name).sort).to eq ["Bolstering", "Raging"]
       end
     end
   end

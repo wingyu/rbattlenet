@@ -18,7 +18,7 @@ describe RBattlenet::Wow::AchievementMedia do
     it "fetches achievement media data" do
       with_connection("wow_achievement_media_multiple") do
         collection = RBattlenet::Wow::AchievementMedia.find([6, 7])
-        expect(collection.results.map(&:assets).map(&:first).map(&:key).sort).to eq ["icon", "icon"]
+        expect(collection.map(&:assets).map(&:first).map(&:key).sort).to eq ["icon", "icon"]
       end
     end
   end

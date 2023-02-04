@@ -18,7 +18,7 @@ describe RBattlenet::Sc2::Leaderboard do
     it "fetches leaderboard profile data" do
       with_connection("sc2_leaderboard_multiple") do
         collection = RBattlenet::Sc2::Leaderboard.find([1, 2])
-        expect(collection.results.map(&:ladderTeams).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:ladderTeams).map(&:class)).to eq [Array, Array]
       end
     end
   end

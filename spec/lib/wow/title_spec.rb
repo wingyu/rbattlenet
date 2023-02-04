@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Title do
     it "fetches title data" do
       with_connection("wow_title_multiple") do
         collection = RBattlenet::Wow::Title.find([6, 7])
-        expect(collection.results.map(&:name).sort).to eq ["Knight", "Knight-Lieutenant"]
+        expect(collection.map(&:name).sort).to eq ["Knight", "Knight-Lieutenant"]
       end
     end
   end
@@ -38,7 +38,7 @@ describe RBattlenet::Wow::Title do
         with_connection("wow_title_all") do
           RBattlenet.set_options(response_type: :hash)
           result = RBattlenet::Wow::Title.all
-          expect(result['titles'].size).to be >= 368
+          expect(result[:titles].size).to be >= 368
         end
       end
     end

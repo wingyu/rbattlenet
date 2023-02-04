@@ -21,7 +21,7 @@ describe RBattlenet::Sc2::Legacy::ProfileLadders do
           { region_id: 2, realm_id: 1, id: 2137104 },
           { region_id: 2, realm_id: 1, id: 2137105 },
         ])
-        expect(collection.results.map(&:currentSeason).map(&:class).sort).to eq [Array, Array]
+        expect(collection.map(&:currentSeason).map(&:class).sort).to eq [Array, Array]
       end
     end
   end

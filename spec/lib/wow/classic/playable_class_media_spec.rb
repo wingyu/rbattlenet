@@ -9,7 +9,7 @@ describe RBattlenet::Wow::Classic::PlayableClassMedia do
     it "fetches playable class media data" do
       with_connection("wow_classic_playable_class_media") do
         result = RBattlenet::Wow::Classic::PlayableClassMedia.find(7)
-        expect(result.status_code).to be 200
+        expect(result.status_code.code).to be 200
       end
     end
   end
@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Classic::PlayableClassMedia do
     it "fetches playable class media data" do
       with_connection("wow_classic_playable_class_media_multiple") do
         collection = RBattlenet::Wow::Classic::PlayableClassMedia.find([7, 8])
-        expect(collection.results.map(&:status_code)).to eq [200, 200]
+        expect(collection.map(&:status_code).map(&:code)).to eq [200, 200]
       end
     end
   end

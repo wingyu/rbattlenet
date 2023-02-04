@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Character do
     it "returns an empty result" do
       with_connection("wow_character_empty") do
         result = RBattlenet::Wow::Character.find(realm: "stormrage", name: "whowouldeverusethisforacharactername")
-        expect(result.class).to eq RBattlenet::EmptyResult
+        expect(result.data).to eq nil
       end
     end
   end
@@ -30,7 +30,7 @@ describe RBattlenet::Wow::Character do
           { realm: "stormrage", name: "sheday" },
           { realm: "howling-fjord", name: "альвеоняша" },
         ])
-        expect(collection.results.map(&:name).sort).to eq ["Sheday", "Альвеоняша"]
+        expect(collection.map(&:name).sort).to eq ["Sheday", "Альвеоняша"]
       end
     end
   end
@@ -53,8 +53,8 @@ describe RBattlenet::Wow::Character do
           { realm: "stormrage", name: "sheday" },
           { realm: "howling-fjord", name: "альвеоняша" },
         ], fields: [:keystones, :achievements])
-        expect(collection.results.map(&:name).sort).to eq ["Sheday", "Альвеоняша"]
-        expect(collection.results.map(&:achievements).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:name).sort).to eq ["Sheday", "Альвеоняша"]
+        expect(collection.map(&:achievements).map(&:class)).to eq [Array, Array]
       end
     end
   end

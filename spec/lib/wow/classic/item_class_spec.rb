@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Classic::ItemClass do
     it "fetches item class data" do
       with_connection("wow_classic_item_class_multiple") do
         collection = RBattlenet::Wow::Classic::ItemClass.find([1, 2])
-        expect(collection.results.map(&:name).sort).to eq ["Container", "Weapon"]
+        expect(collection.map(&:name).sort).to eq ["Container", "Weapon"]
       end
     end
   end

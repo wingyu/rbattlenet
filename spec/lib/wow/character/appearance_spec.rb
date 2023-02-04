@@ -21,7 +21,7 @@ describe RBattlenet::Wow::Character::Appearance do
           { realm: "stormrage", name: "sheday" },
           { realm: "howling-fjord", name: "альвеоняша" },
         ])
-        expect(collection.results.map(&:appearance).map(&:face_variation).sort).to eq [2, 11]
+        expect(collection.map(&:appearance).map(&:face_variation).sort).to eq [2, 11]
       end
     end
   end

@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Pet do
     it "fetches pet data" do
       with_connection("wow_pet_multiple") do
         collection = RBattlenet::Wow::Pet.find([40, 39])
-        expect(collection.results.map(&:name).sort).to eq ["Bombay Cat", "Mechanical Squirrel"]
+        expect(collection.map(&:name).sort).to eq ["Bombay Cat", "Mechanical Squirrel"]
       end
     end
   end

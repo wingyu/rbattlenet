@@ -18,7 +18,7 @@ describe RBattlenet::Wow::CreatureType do
     it "fetches creature type data" do
       with_connection("wow_creature_type_multiple") do
         collection = RBattlenet::Wow::CreatureType.find([1, 2])
-        expect(collection.results.map(&:name).sort).to eq ["Beast", "Dragonkin"]
+        expect(collection.map(&:name).sort).to eq ["Beast", "Dragonkin"]
       end
     end
   end

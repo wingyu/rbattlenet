@@ -21,7 +21,7 @@ describe RBattlenet::Wow::Character::Equipment do
           { realm: "stormrage", name: "sheday" },
           { realm: "howling-fjord", name: "альвеоняша" },
         ])
-        expect(collection.results.map(&:equipped_items).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:equipped_items).map(&:class)).to eq [Array, Array]
       end
     end
   end

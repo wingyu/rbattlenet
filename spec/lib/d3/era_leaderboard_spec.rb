@@ -21,7 +21,7 @@ describe RBattlenet::D3::EraLeaderboard do
           { era: 1, id: "rift-wd" },
           { era: 1, id: "rift-hardcore-dh" }
         ])
-        expect(collection.results.map(&:row).map(&:class).sort).to eq [Array, Array]
+        expect(collection.map(&:row).map(&:class).sort).to eq [Array, Array]
       end
     end
   end

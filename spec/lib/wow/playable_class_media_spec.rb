@@ -18,7 +18,7 @@ describe RBattlenet::Wow::PlayableClassMedia do
     it "fetches playable class media data" do
       with_connection("wow_playable_class_media_multiple") do
         collection = RBattlenet::Wow::PlayableClassMedia.find([1, 2])
-        expect(collection.results.map(&:assets).map(&:first).map(&:key).sort).to eq ["icon", "icon"]
+        expect(collection.map(&:assets).map(&:first).map(&:key).sort).to eq ["icon", "icon"]
       end
     end
   end

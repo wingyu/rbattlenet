@@ -21,7 +21,7 @@ describe RBattlenet::Wow::Guild::Achievements do
           { realm: "stormrage", name: "avalerion" },
           { realm: "azuremyst", name: "imperium" },
         ])
-        expect(collection.results.map(&:achievements).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:achievements).map(&:class)).to eq [Array, Array]
       end
     end
   end

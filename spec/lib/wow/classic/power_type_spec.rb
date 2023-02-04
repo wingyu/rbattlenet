@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Classic::PowerType do
     it "fetches power type data" do
       with_connection("wow_classic_power_type_multiple") do
         collection = RBattlenet::Wow::Classic::PowerType.find([1, 2])
-        expect(collection.results.map(&:name).sort).to eq ["Focus", "Rage"]
+        expect(collection.map(&:name).sort).to eq ["Focus", "Rage"]
       end
     end
   end

@@ -21,7 +21,7 @@ describe RBattlenet::Sc2::Legacy::Profile do
           { region_id: 2, realm_id: 1, id: 2137104 },
           { region_id: 2, realm_id: 1, id: 2137105 },
         ])
-        expect(collection.results.map(&:displayName).sort).to eq ["Shadow", "katarn"]
+        expect(collection.map(&:displayName).sort).to eq ["Shadow", "katarn"]
       end
     end
   end
@@ -46,9 +46,9 @@ describe RBattlenet::Sc2::Legacy::Profile do
           { region_id: 2, realm_id: 1, id: 2137104 },
           { region_id: 2, realm_id: 1, id: 2137105 },
         ], fields: [:matches, :ladders])
-        expect(collection.results.map(&:displayName).sort).to eq ["Shadow", "katarn"]
-        expect(collection.results.map(&:matches).map(&:first).map(&:type).sort).to eq ["2v2", "Co-Op"]
-        expect(collection.results.map(&:ladders).map(&:currentSeason).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:displayName).sort).to eq ["Shadow", "katarn"]
+        expect(collection.map(&:matches).map(&:first).map(&:type).sort).to eq ["2v2", "Co-Op"]
+        expect(collection.map(&:ladders).map(&:currentSeason).map(&:class)).to eq [Array, Array]
       end
     end
   end

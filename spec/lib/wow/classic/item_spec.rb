@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Classic::Item do
     it "fetches item data" do
       with_connection("wow_classic_item_multiple") do
         collection = RBattlenet::Wow::Classic::Item.find([19019, 19020])
-        expect(collection.results.map(&:name).sort).to eq [
+        expect(collection.map(&:name).sort).to eq [
           "Camp Mojache Zukk'ash Report",
           "Thunderfury, Blessed Blade of the Windseeker"
         ]

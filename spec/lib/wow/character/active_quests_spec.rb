@@ -21,7 +21,7 @@ describe RBattlenet::Wow::Character::ActiveQuests do
           { realm: "stormrage", name: "sheday" },
           { realm: "howling-fjord", name: "альвеоняша" },
         ])
-        expect(collection.results.map(&:in_progress).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:in_progress).map(&:class)).to eq [Array, Array]
       end
     end
   end

@@ -18,7 +18,7 @@ describe RBattlenet::Wow::PlayableRace do
     it "fetches playable race data" do
       with_connection("wow_playable_race_multiple") do
         collection = RBattlenet::Wow::PlayableRace.find([1, 2])
-        expect(collection.results.map(&:name).sort).to eq ["Human", "Orc"]
+        expect(collection.map(&:name).sort).to eq ["Human", "Orc"]
       end
     end
   end

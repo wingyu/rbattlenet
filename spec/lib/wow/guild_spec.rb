@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Guild do
     it "returns an empty result" do
       with_connection("wow_guild_empty") do
         result = RBattlenet::Wow::Guild.find(realm: "stormrage", name: "whowouldeverusethisforaguildname")
-        expect(result.class).to eq RBattlenet::EmptyResult
+        expect(result.data).to eq nil
       end
     end
   end
@@ -30,7 +30,7 @@ describe RBattlenet::Wow::Guild do
           { realm: "stormrage", name: "avalerion" },
           { realm: "azuremyst", name: "imperium" },
         ])
-        expect(collection.results.map(&:name).sort).to eq ["Avalerion", "Imperium"]
+        expect(collection.map(&:name).sort).to eq ["Avalerion", "Imperium"]
       end
     end
   end
@@ -53,9 +53,9 @@ describe RBattlenet::Wow::Guild do
           { realm: "stormrage", name: "avalerion" },
           { realm: "azuremyst", name: "imperium" },
         ], fields: [:members, :achievements])
-        expect(collection.results.map(&:name).sort).to eq ["Avalerion", "Imperium"]
-        expect(collection.results.map(&:members).map(&:class)).to eq [Array, Array]
-        expect(collection.results.map(&:achievements).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:name).sort).to eq ["Avalerion", "Imperium"]
+        expect(collection.map(&:members).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:achievements).map(&:class)).to eq [Array, Array]
       end
     end
   end

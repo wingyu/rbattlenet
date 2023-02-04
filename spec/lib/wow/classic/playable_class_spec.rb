@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Classic::PlayableClass do
     it "fetches playable class data" do
       with_connection("wow_classic_playable_class_multiple") do
         collection = RBattlenet::Wow::Classic::PlayableClass.find([1, 2])
-        expect(collection.results.map(&:name).sort).to eq ["Paladin", "Warrior"]
+        expect(collection.map(&:name).sort).to eq ["Paladin", "Warrior"]
       end
     end
   end

@@ -21,7 +21,7 @@ describe RBattlenet::Wow::Character::AchievementStatistics do
           { realm: "stormrage", name: "sheday" },
           { realm: "howling-fjord", name: "альвеоняша" },
         ])
-        expect(collection.results.map(&:statistics).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:statistics).map(&:class)).to eq [Array, Array]
       end
     end
   end

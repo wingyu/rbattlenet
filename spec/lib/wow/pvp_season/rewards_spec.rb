@@ -18,7 +18,7 @@ describe RBattlenet::Wow::PvpSeason::Rewards do
     it "fetches pvp season reward data" do
       with_connection("wow_pvp_season_rewards_multiple") do
         collection = RBattlenet::Wow::PvpSeason::Rewards.find([28, 27])
-        expect(collection.results.map(&:rewards).map(&:size)).to eq [4, 4]
+        expect(collection.map(&:rewards).map(&:size)).to eq [4, 4]
       end
     end
   end

@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Creature do
     it "fetches creature data" do
       with_connection("wow_creature_multiple") do
         collection = RBattlenet::Wow::Creature.find([30, 330])
-        expect(collection.results.map(&:name).sort).to eq ["Forest Spider", "Princess"]
+        expect(collection.map(&:name).sort).to eq ["Forest Spider", "Princess"]
       end
     end
   end

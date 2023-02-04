@@ -18,7 +18,7 @@ describe RBattlenet::Sc2::Legacy::Achievements do
     it "fetches achievements profile data" do
       with_connection("sc2_legacy_achievements_multiple") do
         collection = RBattlenet::Sc2::Legacy::Achievements.find([1, 2])
-        expect(collection.results.map(&:achievements).map(&:size).sort).to eq [1293, 1293]
+        expect(collection.map(&:achievements).map(&:size).sort).to eq [1293, 1293]
       end
     end
   end

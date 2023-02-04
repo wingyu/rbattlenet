@@ -23,7 +23,7 @@ describe RBattlenet::Wow::MythicKeystoneLeaderboard do
           { connected_realm_id: 509, dungeon_id: 244, period: 682 },
           { connected_realm_id: 510, dungeon_id: 244, period: 682 },
         ])
-        expect(collection.results.map(&:map).map(&:name).sort).to eq ["Atal'Dazar", "Atal'Dazar"]
+        expect(collection.map(&:map).map(&:name).sort).to eq ["Atal'Dazar", "Atal'Dazar"]
       end
     end
   end

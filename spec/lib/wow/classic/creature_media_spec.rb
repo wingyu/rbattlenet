@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Classic::CreatureMedia do
     it "fetches creature media data" do
       with_connection("wow_classic_creature_media_multiple") do
         collection = RBattlenet::Wow::Classic::CreatureMedia.find([382, 8871])
-        expect(collection.results.map(&:assets).map(&:first).map(&:key).sort).to eq ["portrait", "portrait"]
+        expect(collection.map(&:assets).map(&:first).map(&:key).sort).to eq ["portrait", "portrait"]
       end
     end
   end

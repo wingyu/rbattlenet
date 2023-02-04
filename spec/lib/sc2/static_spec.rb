@@ -18,7 +18,7 @@ describe RBattlenet::Sc2::Static do
     it "fetches static profile data" do
       with_connection("sc2_static_multiple") do
         collection = RBattlenet::Sc2::Static.find([1, 2])
-        expect(collection.results.map(&:achievements).map(&:size).sort).to eq [2549, 2549]
+        expect(collection.map(&:achievements).map(&:size).sort).to eq [2549, 2549]
       end
     end
   end

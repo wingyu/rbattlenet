@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Realm do
     it "fetches realm data" do
       with_connection("wow_realm_multiple") do
         collection = RBattlenet::Wow::Realm.find([500, 501])
-        expect(collection.results.map(&:name).sort).to eq ["Aggramar", "Arathor"]
+        expect(collection.map(&:name).sort).to eq ["Aggramar", "Arathor"]
       end
     end
   end

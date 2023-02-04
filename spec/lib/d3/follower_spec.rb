@@ -18,7 +18,7 @@ describe RBattlenet::D3::Follower do
     it "fetches follower data" do
       with_connection("d3_follower_multiple") do
         collection = RBattlenet::D3::Follower.find(["templar", "enchantress"])
-        expect(collection.results.map(&:realName).sort).to eq ["Eirena", "Kormac"]
+        expect(collection.map(&:realName).sort).to eq ["Eirena", "Kormac"]
       end
     end
   end

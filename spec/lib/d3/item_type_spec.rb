@@ -18,7 +18,7 @@ describe RBattlenet::D3::ItemType do
     it "fetches item_type data" do
       with_connection("d3_item_type_multiple") do
         collection = RBattlenet::D3::ItemType.find(["sword2h", "axe2h"])
-        expect(collection.results.map(&:data).map(&:size).sort).to eq [27, 37]
+        expect(collection.map(&:data).map(&:size).sort).to eq [27, 37]
       end
     end
   end

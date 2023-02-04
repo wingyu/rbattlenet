@@ -2,10 +2,11 @@ module RBattlenet
   module Endpoints
     class Base
       SUPPORTED_FIELDS = [:itself]
+      EAGER_CHILDREN = false
 
       def self.all
         raise RBattlenet::Errors::IndexNotSupported.new unless defined?(index_path)
-        RBattlenet.get [[[[:itself, index_path]], :index]] do |subject, data|
+        RBattlenet.get([[[[:itself, index_path]], :index]], block_given?) do |subject, data|
           yield(subject, data) if block_given?
         end
       end
@@ -19,10 +20,10 @@ module RBattlenet
 
         payload = [subjects].flatten.map do |subject|
           subject_fields = [:itself] + fields + (subject[:fields] if subject.is_a?(Hash)).to_a
-          [subject_fields.uniq.map{ |field| [field, send(field).path(subject)] }, subject]
+          [subject_fields.uniq.map{ |field| [field, send(field)] }, subject]
         end
 
-        RBattlenet.get payload do |subject, data|
+        RBattlenet.get(payload, block_given?) do |subject, data|
           yield(subject, data) if block_given?
         end
       end

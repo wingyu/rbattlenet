@@ -18,7 +18,7 @@ describe RBattlenet::Wow::PlayableSpecialization do
     it "fetches playable spec data" do
       with_connection("wow_playable_spec_multiple") do
         collection = RBattlenet::Wow::PlayableSpecialization.find([62, 63])
-        expect(collection.results.map(&:name).sort).to eq ["Arcane", "Fire"]
+        expect(collection.map(&:name).sort).to eq ["Arcane", "Fire"]
       end
     end
   end

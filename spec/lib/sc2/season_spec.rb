@@ -18,7 +18,7 @@ describe RBattlenet::Sc2::Season do
     it "fetches season profile data" do
       with_connection("sc2_season_multiple") do
         collection = RBattlenet::Sc2::Season.find([1, 2])
-        expect(collection.results.map(&:startDate).sort).to eq ["1574796158", "1574819530"]
+        expect(collection.map(&:startDate).sort).to eq ["1574796158", "1574819530"]
       end
     end
   end

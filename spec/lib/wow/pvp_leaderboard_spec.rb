@@ -21,7 +21,7 @@ describe RBattlenet::Wow::PvpLeaderboard do
           { season: 27, bracket: "2v2" },
           { season: 27, bracket: "3v3" }
         ])
-        expect(collection.results.map(&:entries).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:entries).map(&:class)).to eq [Array, Array]
       end
     end
   end

@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Achievement do
     it "fetches achievement data" do
       with_connection("wow_achievement_multiple") do
         collection = RBattlenet::Wow::Achievement.find([6, 7])
-        expect(collection.results.map(&:name).sort).to eq ["Level 10", "Level 20"]
+        expect(collection.map(&:name).sort).to eq ["Level 10", "Level 20"]
       end
     end
   end

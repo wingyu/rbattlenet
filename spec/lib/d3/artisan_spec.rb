@@ -18,7 +18,7 @@ describe RBattlenet::D3::Artisan do
     it "fetches artisan data" do
       with_connection("d3_artisan_multiple") do
         collection = RBattlenet::D3::Artisan.find([1, 2])
-        expect(collection.results.map(&:name).sort).to eq ["Jeweler", "Mystic"]
+        expect(collection.map(&:name).sort).to eq ["Jeweler", "Mystic"]
       end
     end
   end

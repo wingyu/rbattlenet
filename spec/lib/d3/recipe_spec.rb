@@ -22,7 +22,7 @@ describe RBattlenet::D3::Recipe do
           { artisan: "jeweler", id: "flawless-amethyst" }
         ])
 
-        expect(collection.results.map(&:name).sort).to eq ["Apprentice Flamberge", "Flawless Amethyst"]
+        expect(collection.map(&:name).sort).to eq ["Apprentice Flamberge", "Flawless Amethyst"]
       end
     end
   end

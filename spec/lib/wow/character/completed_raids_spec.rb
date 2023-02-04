@@ -21,7 +21,7 @@ describe RBattlenet::Wow::Character::CompletedRaids do
           { realm: "stormrage", name: "sheday" },
           { realm: "howling-fjord", name: "альвеоняша" },
         ])
-        expect(collection.results.map(&:expansions).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:expansions).map(&:class)).to eq [Array, Array]
       end
     end
   end

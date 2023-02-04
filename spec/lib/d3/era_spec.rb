@@ -18,7 +18,7 @@ describe RBattlenet::D3::Era do
     it "fetches era data" do
       with_connection("d3_era_multiple") do
         collection = RBattlenet::D3::Era.find([1, 2])
-        expect(collection.results.map(&:leaderboard).map(&:size).sort).to eq [18, 18]
+        expect(collection.map(&:leaderboard).map(&:size).sort).to eq [18, 18]
       end
     end
   end

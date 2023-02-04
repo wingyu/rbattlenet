@@ -8,29 +8,35 @@ module RBattlenet
 
     def initialize(response_type)
       @response_object = response_type == :hash ? HashResult : Result
-      @empty_response_object = response_type == :hash ? EmptyHashResult : EmptyResult
       @results = []
+      @status_codes = {}
     end
 
-    def add(subject, field, response)
+    def add(field, response)
       data = if response.code == 200
-        result = JSON.parse(response.body, object_class: @response_object) rescue nil
+        result = Oj.load(response.body, mode: :compat, object_class: @response_object, symbol_keys: true) rescue nil
         result && (result.is_a?(Array) ? @response_object.new(data: result.size == 1 ? result.first : result) : result)
-      end || @empty_response_object.new(status_code: response.code, timeout: response.timed_out?)
+      end || @response_object.new(data: nil)
 
-      data[:status_code] ||= 200
-      data[:source], data[:field] = subject, field
+      status = @response_object.new
+      status[:code] = response.code
+      status[:timeout] = response.timed_out?
+      @status_codes[field] = status
+
+      data[:field] = field
       @results << data
     end
 
-    def complete(subject, results_needed)
-      subject_results = @results.group_by{ |result| result[:source] }[subject]
-      if subject_results.size == results_needed
-        @results.reject!{ |result| result[:source] == subject }
-        base_result = subject_results.select{ |result| result[:field] == :itself }.first
-        (subject_results - [base_result]).each{ |result| base_result << result }
+    def complete(results_needed)
+      if @results.size == results_needed
+        base_result = @results.find { |result| result[:field] == :itself }
+        (@results - [base_result]).each{ |result| base_result << result }
 
-        @results << base_result
+        if @status_codes.size == 1
+          base_result[:status_code] = @status_codes.values.first
+        else
+          base_result[:status_codes] = @status_codes
+        end
         base_result
       end
     end
@@ -49,7 +55,4 @@ module RBattlenet
       self[result[:field]] = result[result[:field]] || result
     end
   end
-
-  class EmptyResult < Result; end
-  class EmptyHashResult < HashResult; end
 end

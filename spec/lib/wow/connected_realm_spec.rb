@@ -18,7 +18,7 @@ describe RBattlenet::Wow::ConnectedRealm do
     it "fetches connected realm data" do
       with_connection("wow_connected_realm_multiple") do
         collection = RBattlenet::Wow::ConnectedRealm.find([509, 510])
-        expect(collection.results.map(&:realms).map(&:first).map(&:name).sort).to eq [
+        expect(collection.map(&:realms).map(&:first).map(&:name).sort).to eq [
           "Garona", "Vol'jin"
         ]
       end

@@ -18,7 +18,7 @@ describe RBattlenet::Wow::MythicKeystoneDungeon do
     it "fetches mythic keystone dungeon data" do
       with_connection("wow_mythic_keystone_dungeon_multiple") do
         collection = RBattlenet::Wow::MythicKeystoneDungeon.find([244, 245])
-        expect(collection.results.map(&:name).sort).to eq ["Atal'Dazar", "Freehold"]
+        expect(collection.map(&:name).sort).to eq ["Atal'Dazar", "Freehold"]
       end
     end
   end

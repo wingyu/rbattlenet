@@ -21,7 +21,7 @@ describe RBattlenet::Hearthstone::Card do
           { slug: "52119-arch-villain-rafaam" },
           "53002-kalecgos",
         ])
-        expect(collection.results.map(&:name).sort).to eq ["Arch-Villain Rafaam", "Kalecgos"]
+        expect(collection.map(&:name).sort).to eq ["Arch-Villain Rafaam", "Kalecgos"]
       end
     end
   end
@@ -42,7 +42,7 @@ describe RBattlenet::Hearthstone::Card do
           { manaCost: 1, attack: 1, health: 1 },
           { manaCost: 3, attack: 5, health: 1 },
         ])
-        expect(collection.results.map(&:cards).map(&:size).sort).to eq [4, 40]
+        expect(collection.map(&:cards).map(&:size).sort).to eq [4, 40]
       end
     end
   end

@@ -18,7 +18,7 @@ describe RBattlenet::D3::CharacterClass do
     it "fetches character_class data" do
       with_connection("d3_character_class_multiple") do
         collection = RBattlenet::D3::CharacterClass.find([1, 2])
-        expect(collection.results.map(&:name).sort).to eq ["Barbarian", "Wizard"]
+        expect(collection.map(&:name).sort).to eq ["Barbarian", "Wizard"]
       end
     end
   end

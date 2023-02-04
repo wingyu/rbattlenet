@@ -18,7 +18,7 @@ describe RBattlenet::Wow::AchievementCategory do
     it "fetches achievement category data" do
       with_connection("wow_achievement_category_multiple") do
         collection = RBattlenet::Wow::AchievementCategory.find([81, 92])
-        expect(collection.results.map(&:name).sort).to eq ["Character", "Feats of Strength"]
+        expect(collection.map(&:name).sort).to eq ["Character", "Feats of Strength"]
       end
     end
   end

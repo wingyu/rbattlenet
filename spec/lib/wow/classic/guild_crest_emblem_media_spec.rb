@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Classic::GuildCrestEmblemMedia do
     it "fetches guild crest emblem media data" do
       with_connection("wow_classic_guild_crest_emblem_media_multiple") do
         collection = RBattlenet::Wow::Classic::GuildCrestEmblemMedia.find([1, 2])
-        expect(collection.results.map(&:assets).map(&:first).map(&:key).sort).to eq ["image", "image"]
+        expect(collection.map(&:assets).map(&:first).map(&:key).sort).to eq ["image", "image"]
       end
     end
   end

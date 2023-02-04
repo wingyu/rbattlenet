@@ -18,7 +18,7 @@ describe RBattlenet::Wow::PvpTierMedia do
     it "fetches pvp tier media data" do
       with_connection("wow_pvp_tier_media_multiple") do
         collection = RBattlenet::Wow::PvpTierMedia.find([1, 2])
-        expect(collection.results.map(&:assets).map(&:size).sort).to eq [1, 1]
+        expect(collection.map(&:assets).map(&:size).sort).to eq [1, 1]
       end
     end
   end

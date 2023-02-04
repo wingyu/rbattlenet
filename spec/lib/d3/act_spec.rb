@@ -18,7 +18,7 @@ describe RBattlenet::D3::Act do
     it "fetches act data" do
       with_connection("d3_act_multiple") do
         collection = RBattlenet::D3::Act.find([1, 2])
-        expect(collection.results.map(&:name).sort).to eq ["Act I", "Act II"]
+        expect(collection.map(&:name).sort).to eq ["Act I", "Act II"]
       end
     end
   end

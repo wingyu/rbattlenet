@@ -18,7 +18,7 @@ describe RBattlenet::Wow::MythicKeystoneSeason do
     it "fetches mythic keystone season data" do
       with_connection("wow_mythic_keystone_season_multiple") do
         collection = RBattlenet::Wow::MythicKeystoneSeason.find([1, 2])
-        expect(collection.results.map(&:periods).map(&:size).sort).to eq [22, 24]
+        expect(collection.map(&:periods).map(&:size).sort).to eq [22, 24]
       end
     end
   end

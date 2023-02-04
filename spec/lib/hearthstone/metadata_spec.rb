@@ -18,7 +18,7 @@ describe RBattlenet::Hearthstone::Metadata do
     it "fetches metadata" do
       with_connection("hearthstone_metadata_multiple") do
         collection = RBattlenet::Hearthstone::Metadata.find([:sets, :keywords])
-        expect(collection.results.map(&:data).map(&:size).sort).to eq [20, 31]
+        expect(collection.map(&:data).map(&:size).sort).to eq [20, 31]
       end
     end
   end

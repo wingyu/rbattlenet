@@ -21,9 +21,9 @@ describe RBattlenet::Sc2::ProfileMetadata do
           { region_id: 2, realm_id: 1, id: 2137104 },
           { region_id: 2, realm_id: 1, id: 2137105 },
         ])
-        expect(collection.results.size).to eq 2
-        expect(collection.results[0].profileUrl).to eq "https://www.starcraft2.com/profile/2/1/2137104"
-        expect(collection.results[1].profileUrl).to eq "https://www.starcraft2.com/profile/2/1/2137105"
+        expect(collection.size).to eq 2
+        expect(collection[0].profileUrl).to eq "https://www.starcraft2.com/profile/2/1/2137104"
+        expect(collection[1].profileUrl).to eq "https://www.starcraft2.com/profile/2/1/2137105"
       end
     end
   end

@@ -21,7 +21,7 @@ describe RBattlenet::D3::Skill do
           { class_slug: "barbarian", id: "bash" },
           { class_slug: "necromancer", id: "bone-spear" }
         ])
-        expect(collection.results.map(&:skill).map(&:name).sort).to eq ["Bash", "Bone Spear"]
+        expect(collection.map(&:skill).map(&:name).sort).to eq ["Bash", "Bone Spear"]
       end
     end
   end

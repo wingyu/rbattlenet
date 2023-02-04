@@ -5,6 +5,7 @@ module RBattlenet
   @@concurrency = 20
   @@timeout = 120
   @@retries = 0
+  @@eager_children = false
 
   #Set Access Token for requests. Required
   def self.authenticate(client_id:, client_secret:)
@@ -14,31 +15,31 @@ module RBattlenet
       userpwd: "#{client_id}:#{client_secret}",
     )
     raise RBattlenet::Errors::Unauthorized.new if response.code == 401
-    @@token = JSON.parse(response.body)['access_token']
+    @@token = Oj.load(response.body)['access_token']
     true
   end
 
-  def self.set_options(region: @@region, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout, retries: @@retries)
-    @@region, @@locale, @@response_type, @@concurrency, @@timeout, @@retries = (region || "eu"), locale, response_type, concurrency, timeout, retries
+  def self.set_options(region: @@region, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout, retries: @@retries, eager_children: @@eager_children)
+    @@region, @@locale, @@response_type, @@concurrency, @@timeout, @@retries, @@recursive = (region || "eu"), locale, response_type, concurrency, timeout, retries, eager_children
     true
   end
 
   private
 
   class << self
-    def get(subjects)
+    def get(subjects, block_given)
+      results = []
       retried = {}
-      store = @@response_type == :raw ? [] : RBattlenet::ResultCollection.new(@@response_type)
-
       headers = {}
       headers['Authorization'] = "Bearer #{@@token}" if @@token
 
       # Limit concurrency to prevent hitting the API request per-second cap.
       hydra = Typhoeus::Hydra.new(max_concurrency: @@concurrency)
-      subjects.each do |uris, subject|
-        subject_brackets = []
+      subjects.each do |fields, subject|
+        store = @@response_type == :raw ? [] : RBattlenet::ResultCollection.new(@@response_type)
 
-        uris.each do |field, uri|
+        fields.each do |name, klass|
+          uri = klass.is_a?(String) ? klass : klass.path(subject)
           request = Typhoeus::Request.new(Addressable::URI.parse(uri).normalize.to_s, headers: headers, timeout: @@timeout, connecttimeout: @@timeout)
 
           request.on_complete do |response|
@@ -48,32 +49,25 @@ module RBattlenet
             elsif @@response_type == :raw
               store << response
             else
-              # TODO: make this generic and move it to a proper place!
-              if field == :pvp_summary && uri.include?("pvp-summary") && response.code == 200
-                result = JSON.parse(response.body) rescue nil
-                subject_brackets += (result&.dig('brackets') || []).map { |br| br['href'] if br['href'].include?('shuffle') }.compact
-
-                subject_brackets.each do |bracket_uri|
-                  bracket_request = Typhoeus::Request.new(Addressable::URI.parse(bracket_uri).normalize.to_s, headers: headers, timeout: @@timeout, connecttimeout: @@timeout)
-                  bracket_response = bracket_request.run
-                  store.add(subject, bracket_uri.split('pvp-bracket/').last.split('?').first, bracket_response)
+              extra_requests = !klass.is_a?(String) && klass::EAGER_CHILDREN && @@eager_children && response.code == 200 ? klass.get_children(headers, store, response) : 0
+              store.add(name, response)
+              if data = store.complete(fields.size + extra_requests)
+                if block_given
+                  yield subject, data
+                  store = nil
+                else
+                  results << data
                 end
-              end
-
-              store.add(subject, field, response)
-              if data = store.complete(subject, uris.size + subject_brackets.size)
-                yield subject, data
               end
             end
           end
-
 
           hydra.queue request
         end
       end
 
       hydra.run
-      store.size == 1 ? store.first : store
+      (results.size == 1 ? results.first : results) unless block_given
     end
 
     def uri(path)

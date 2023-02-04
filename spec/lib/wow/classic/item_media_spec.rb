@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Classic::ItemMedia do
     it "fetches item media data" do
       with_connection("wow_classic_item_media_multiple") do
         collection = RBattlenet::Wow::Classic::ItemMedia.find([19019, 19020])
-        expect(collection.results.map(&:assets).map(&:first).map(&:key).sort).to eq ["icon", "icon"]
+        expect(collection.map(&:assets).map(&:first).map(&:key).sort).to eq ["icon", "icon"]
       end
     end
   end

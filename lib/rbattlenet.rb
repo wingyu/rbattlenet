@@ -1,5 +1,5 @@
 require 'typhoeus'
-require 'json'
+require 'oj'
 require 'addressable/uri'
 
 require 'require_all'

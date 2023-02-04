@@ -18,7 +18,7 @@ describe RBattlenet::Wow::MythicKeystonePeriod do
     it "fetches mythic keystone period data" do
       with_connection("wow_mythic_keystone_period_multiple") do
         collection = RBattlenet::Wow::MythicKeystonePeriod.find([682, 683])
-        expect(collection.results.map(&:start_timestamp).sort).to eq [1548226800000, 1548831600000]
+        expect(collection.map(&:start_timestamp).sort).to eq [1548226800000, 1548831600000]
       end
     end
   end

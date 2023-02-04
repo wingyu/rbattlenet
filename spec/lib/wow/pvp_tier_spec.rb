@@ -18,7 +18,7 @@ describe RBattlenet::Wow::PvpTier do
     it "fetches pvp tier data" do
       with_connection("wow_pvp_tier_multiple") do
         collection = RBattlenet::Wow::PvpTier.find([1, 2])
-        expect(collection.results.map(&:name).sort).to eq ["Combatant", "Unranked"]
+        expect(collection.map(&:name).sort).to eq ["Combatant", "Unranked"]
       end
     end
   end

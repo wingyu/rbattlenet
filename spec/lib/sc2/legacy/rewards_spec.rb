@@ -18,7 +18,7 @@ describe RBattlenet::Sc2::Legacy::Rewards do
     it "fetches rewards profile data" do
       with_connection("sc2_legacy_rewards_multiple") do
         collection = RBattlenet::Sc2::Legacy::Rewards.find([1, 2])
-        expect(collection.results.map(&:portraits).map(&:size).sort).to eq [549, 549]
+        expect(collection.map(&:portraits).map(&:size).sort).to eq [549, 549]
       end
     end
   end

@@ -18,7 +18,7 @@ describe RBattlenet::D3::Season do
     it "fetches season data" do
       with_connection("d3_season_multiple") do
         collection = RBattlenet::D3::Season.find([1, 2])
-        expect(collection.results.map(&:leaderboard).map(&:size).sort).to eq [29, 29]
+        expect(collection.map(&:leaderboard).map(&:size).sort).to eq [29, 29]
       end
     end
   end

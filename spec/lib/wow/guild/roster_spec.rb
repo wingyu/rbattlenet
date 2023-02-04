@@ -21,7 +21,7 @@ describe RBattlenet::Wow::Guild::Roster do
           { realm: "stormrage", name: "avalerion" },
           { realm: "azuremyst", name: "imperium" },
         ])
-        expect(collection.results.map(&:members).map(&:class)).to eq [Array, Array]
+        expect(collection.map(&:members).map(&:class)).to eq [Array, Array]
       end
     end
   end

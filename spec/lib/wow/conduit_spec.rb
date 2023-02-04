@@ -18,7 +18,7 @@ describe RBattlenet::Wow::Conduit do
     it "fetches conduit data" do
       with_connection("wow_conduit_multiple") do
         collection = RBattlenet::Wow::Conduit.find([40, 39])
-        expect(collection.results.map(&:name).sort).to eq ["Gift of the Lich", "Ire of the Ascended"]
+        expect(collection.map(&:name).sort).to eq ["Gift of the Lich", "Ire of the Ascended"]
       end
     end
   end
