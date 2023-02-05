@@ -20,7 +20,7 @@ module RBattlenet
 
       status = @response_object.new
       status[:code] = response.code
-      status[:timeout] = response.timed_out?
+      status[:timeout] = response.timed_out? && response.code != 200
       @status_codes[field] = status
 
       data[:field] = field
