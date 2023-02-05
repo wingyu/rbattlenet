@@ -50,9 +50,13 @@ module RBattlenet
             elsif @@response_type == :raw
               store << response
             else
-              extra_requests_by_subject[subject] ||= !klass.is_a?(String) && klass::EAGER_CHILDREN && @@eager_children && response.code == 200 ? klass.get_children(headers, store, response) : 0
               store.add(name, response)
-              if data = store.complete(fields.size + extra_requests_by_subject[subject])
+
+              if !klass.is_a?(String) && klass::EAGER_CHILDREN && @@eager_children && response.code == 200
+                extra_requests_by_subject[subject] = klass.get_children(headers, store, response)
+              end
+
+              if data = store.complete(fields.size + (extra_requests_by_subject[subject] || 0))
                 if block_given
                   yield subject, data
                   store = nil
