@@ -16,7 +16,7 @@ module RBattlenet
       data = if response.code == 200
         result = Oj.load(response.body, mode: :compat, object_class: @response_object, symbol_keys: true) rescue nil
         result && (result.is_a?(Array) ? @response_object.new(data: result.size == 1 ? result.first : result) : result)
-      end || @response_object.new(data: nil)
+      end || @response_object.new(empty: true)
 
       status = @response_object.new
       status[:code] = response.code
@@ -46,13 +46,15 @@ module RBattlenet
 
   class Result < OpenStruct
     def <<(result)
-      send("#{result.field}=", result.send(result.field) || result)
+      data = result.send(result.field)
+      send("#{result.field}=", data.is_a?(self.class) && data.empty ? nil : (data || result))
     end
   end
 
   class HashResult < Hash
     def <<(result)
-      self[result[:field]] = result[result[:field]] || result
+      data = result[result[:field]]
+      self[result[:field]] = data.is_a?(Hash) && data[:empty] ? nil : (data || result)
     end
   end
 end
