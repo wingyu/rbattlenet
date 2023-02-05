@@ -20,7 +20,7 @@ module RBattlenet
   end
 
   def self.set_options(region: @@region, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout, retries: @@retries, eager_children: @@eager_children)
-    @@region, @@locale, @@response_type, @@concurrency, @@timeout, @@retries, @@recursive = (region || "eu"), locale, response_type, concurrency, timeout, retries, eager_children
+    @@region, @@locale, @@response_type, @@concurrency, @@timeout, @@retries, @@eager_children = (region || "eu"), locale, response_type, concurrency, timeout, retries, eager_children
     true
   end
 
@@ -31,6 +31,7 @@ module RBattlenet
       results = []
       retried = {}
       headers = {}
+      extra_requests_by_subject = {}
       headers['Authorization'] = "Bearer #{@@token}" if @@token
 
       # Limit concurrency to prevent hitting the API request per-second cap.
@@ -49,9 +50,9 @@ module RBattlenet
             elsif @@response_type == :raw
               store << response
             else
-              extra_requests = !klass.is_a?(String) && klass::EAGER_CHILDREN && @@eager_children && response.code == 200 ? klass.get_children(headers, store, response) : 0
+              extra_requests_by_subject[subject] ||= !klass.is_a?(String) && klass::EAGER_CHILDREN && @@eager_children && response.code == 200 ? klass.get_children(headers, store, response) : 0
               store.add(name, response)
-              if data = store.complete(fields.size + extra_requests)
+              if data = store.complete(fields.size + extra_requests_by_subject[subject])
                 if block_given
                   yield subject, data
                   store = nil
