@@ -25,6 +25,8 @@ module RBattlenet
 
       data[:field] = field
       @results << data
+
+      data
     end
 
     def complete(results_needed)

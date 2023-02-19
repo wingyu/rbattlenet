@@ -24,57 +24,13 @@ module RBattlenet
     true
   end
 
+  def self.option(name)
+    class_variable_get("@@#{name}".to_sym)
+  end
+
   private
 
   class << self
-    def get(subjects, block_given)
-      results = []
-      retried = {}
-      headers = {}
-      extra_requests_by_subject = {}
-      headers['Authorization'] = "Bearer #{@@token}" if @@token
-
-      # Limit concurrency to prevent hitting the API request per-second cap.
-      hydra = Typhoeus::Hydra.new(max_concurrency: @@concurrency)
-      subjects.each do |fields, subject|
-        store = @@response_type == :raw ? [] : RBattlenet::ResultCollection.new(@@response_type)
-
-        fields.each do |name, klass|
-          uri = klass.is_a?(String) ? klass : klass.path(subject)
-          request = Typhoeus::Request.new(Addressable::URI.parse(uri).normalize.to_s, headers: headers, timeout: @@timeout, connecttimeout: @@timeout)
-
-          request.on_complete do |response|
-            if @@retries > 0 && (retried[uri] || 0) < @@retries && ((response.code != 200 && response.timed_out?) || response.code == 429)
-              retried[uri] = (retried[uri] || 0) + 1
-              hydra.queue response.request
-            elsif @@response_type == :raw
-              store << response
-            else
-              store.add(name, response)
-
-              if !klass.is_a?(String) && klass::EAGER_CHILDREN && @@eager_children && response.code == 200
-                extra_requests_by_subject[subject] = klass.get_children(headers, store, response)
-              end
-
-              if data = store.complete(fields.size + (extra_requests_by_subject[subject] || 0))
-                if block_given
-                  yield subject, data
-                  store = nil
-                else
-                  results << data
-                end
-              end
-            end
-          end
-
-          hydra.queue request
-        end
-      end
-
-      hydra.run
-      (results.size == 1 ? results.first : results) unless block_given
-    end
-
     def uri(path)
       "https://#{@@region}.api.blizzard.com/#{path}#{@@region}&locale=#{@@locale}"
     end
