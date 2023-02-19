@@ -34,7 +34,7 @@ module RBattlenet
           @retried[uri] = (@retried[uri] || 0) + 1
           @hydra.queue response.request
         else
-          fetch_fields = fields.size > 1 && name == :itself
+          fetch_fields = fields.size > 1 && name == :itself && response.code == 200
 
           if RBattlenet.option(:response_type) == :raw
             store << response
