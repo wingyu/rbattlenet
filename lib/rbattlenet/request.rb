@@ -53,8 +53,8 @@ module RBattlenet
               @extra_requests_by_subject[subject] = klass.get_children(@headers, store, response)
             end
 
-            if !fetch_fields && (data = store.complete(fields.size + (@extra_requests_by_subject[subject] || 0)))
-              subject[:skipped] = (name == :itself) if subject.is_a?(Hash) && fields.size > 1
+            if data = store.complete(fields.size + (@extra_requests_by_subject[subject] || 0), !fetch_fields && name == :itself)
+              subject[:skipped] = (name == :itself && response.code == 200) if subject.is_a?(Hash) && fields.size > 1
               if block_given
                 yield subject, data
                 store = nil

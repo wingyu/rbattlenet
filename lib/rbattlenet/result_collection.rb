@@ -15,8 +15,21 @@ module RBattlenet
     def add(field, response)
       data = if response.code == 200
         result = Oj.load(response.body, mode: :compat, object_class: @response_object, symbol_keys: true) rescue nil
-        result && (result.is_a?(Array) ? @response_object.new(data: result.size == 1 ? result.first : result) : result)
-      end || @response_object.new(empty: true)
+        if result
+          if result.is_a?(Array)
+            container = @response_object.new
+            container[:data] = result.size == 1 ? result.first : result
+            container
+          else
+            result
+          end
+        end
+      end
+
+      if !data
+        data = @response_object.new
+        data[:empty] = true
+      end
 
       status = @response_object.new
       status[:code] = response.code
@@ -29,16 +42,17 @@ module RBattlenet
       data
     end
 
-    def complete(results_needed)
-      if @results.size == results_needed
+    def complete(results_needed, skipped_or_done)
+      if @results.size == results_needed || skipped_or_done
         base_result = @results.find { |result| result[:field] == :itself }
         (@results - [base_result]).each{ |result| base_result << result }
 
         if @status_codes.size == 1
           base_result[:status_code] = @status_codes.values.first
         else
-          base_result[:status_codes] = @status_codes
+          base_result[:status_code] = @status_codes[:itself]
         end
+        base_result[:status_codes] = @status_codes
         base_result
       end
     end
