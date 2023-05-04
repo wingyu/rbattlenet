@@ -14,6 +14,12 @@ module RBattlenet
       end
     end
 
+    class RemoteServerError < Error
+      def initialize
+        super("Blizzard's server returned an error response when trying to authenticate")
+      end
+    end
+
     class Unauthorized < Error
       def initialize
         super("Could not connect using the specified client credentials")

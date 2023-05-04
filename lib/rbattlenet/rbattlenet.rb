@@ -8,13 +8,20 @@ module RBattlenet
   @@eager_children = false
 
   #Set Access Token for requests. Required
-  def self.authenticate(client_id:, client_secret:)
+  def self.authenticate(client_id:, client_secret:, depth: 0)
     oauth_region = ["kr", "tw"].include?(@@region.downcase) ? "apac" : @@region
     response = Typhoeus.post("https://#{oauth_region}.battle.net/oauth/token",
       body: { grant_type: :client_credentials },
       userpwd: "#{client_id}:#{client_secret}",
     )
     raise RBattlenet::Errors::Unauthorized.new if response.code == 401
+
+    if response.code >= 500
+      puts "Blizzard's server returned an error. Retrying... #{depth + 1}/10"
+      return self.authenticate(client_id: client_id, client_secret: client_secret, depth: depth + 1) if depth < 10
+      raise RBattlenet::Errors::RemoteServerError.new
+    end
+
     @@token = Oj.load(response.body)['access_token']
     true
   end
