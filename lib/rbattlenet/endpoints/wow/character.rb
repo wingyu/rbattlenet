@@ -3,7 +3,7 @@ module RBattlenet
     class Character < RBattlenet::Endpoints::Base
       SUPPORTED_FIELDS = [:itself, :achievements, :appearance, :equipment, :hunter_pets, :keystones, :media,
                           :mounts, :pets, :pvp_summary, :reputations, :soulbinds, :specializations, :statistics,
-                          :status, :titles, :legacy, :season_keystones]
+                          :status, :titles, :toys, :legacy, :season_keystones]
 
       class << self
         def path(character)

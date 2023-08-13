@@ -1,5 +1,6 @@
 module RBattlenet
   @@region = "eu"
+  @@namespace = @@region
   @@locale = "en_gb"
   @@response_type = :struct
   @@concurrency = 20
@@ -26,8 +27,8 @@ module RBattlenet
     true
   end
 
-  def self.set_options(region: @@region, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout, retries: @@retries, eager_children: @@eager_children)
-    @@region, @@locale, @@response_type, @@concurrency, @@timeout, @@retries, @@eager_children = (region || "eu"), locale, response_type, concurrency, timeout, retries, eager_children
+  def self.set_options(region: @@region, namespace: @@namespace, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout, retries: @@retries, eager_children: @@eager_children)
+    @@region, @@namespace, @@locale, @@response_type, @@concurrency, @@timeout, @@retries, @@eager_children = (region || "eu"), namespace, locale, response_type, concurrency, timeout, retries, eager_children
     true
   end
 
@@ -39,7 +40,7 @@ module RBattlenet
 
   class << self
     def uri(path)
-      "https://#{@@region}.api.blizzard.com/#{path}#{@@region}&locale=#{@@locale}"
+      "https://#{@@region}.api.blizzard.com/#{path}#{@@namespace}&locale=#{@@locale}"
     end
   end
 end

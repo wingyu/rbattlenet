@@ -182,7 +182,7 @@ RBattlenet::Wow::Character.find(realm: "stormrage", name: "sheday", fields: [:ac
 ```
 
 Supported fields:
-`achievements`, `appearance`, `equipment`, `hunter_pets`, `keystones`, `media`, `mounts`, `pets`, `pvp_summary`, `reputations`, `specializations`, `statistics`, `status`, `titles`
+`achievements`, `appearance`, `equipment`, `hunter_pets`, `keystones`, `media`, `mounts`, `pets`, `pvp_summary`, `reputations`, `specializations`, `statistics`, `status`, `titles`, `toys`
 
 ---
 
