@@ -10,8 +10,7 @@ module RBattlenet
 
   #Set Access Token for requests. Required
   def self.authenticate(client_id:, client_secret:, depth: 0)
-    oauth_region = ["kr", "tw"].include?(@@region.downcase) ? "apac" : @@region
-    response = Typhoeus.post("https://#{oauth_region}.battle.net/oauth/token",
+    response = Typhoeus.post("https://oauth.battle.net/token",
       body: { grant_type: :client_credentials },
       userpwd: "#{client_id}:#{client_secret}",
     )
