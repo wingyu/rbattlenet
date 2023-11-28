@@ -78,6 +78,10 @@ module RBattlenet
           RBattlenet::Wow::Character::PvpBracket3v3
         end
 
+        def pvp_bracket_5v5
+          RBattlenet::Wow::Character::PvpBracket5v5
+        end
+
         def pvp_bracket_rbg
           RBattlenet::Wow::Character::PvpBracketRbg
         end
