@@ -22,6 +22,7 @@ module RBattlenet
       raise RBattlenet::Errors::RemoteServerError.new
     end
 
+    puts response.body
     @@token = Oj.load(response.body)['access_token']
     true
   end
