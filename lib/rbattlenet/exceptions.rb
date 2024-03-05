@@ -26,6 +26,12 @@ module RBattlenet
       end
     end
 
+    class Forbidden < Error
+      def initialize
+        super("Blizzard's server did not accept the authentication request")
+      end
+    end
+
     class ConnectionError < Error
       def initialize
         super("Unable to connect or send HTTP request")

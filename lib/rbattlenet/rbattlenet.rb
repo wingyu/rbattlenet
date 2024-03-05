@@ -15,6 +15,7 @@ module RBattlenet
       userpwd: "#{client_id}:#{client_secret}",
     )
     raise RBattlenet::Errors::Unauthorized.new if response.code == 401
+    raise RBattlenet::Errors::Forbidden.new if response.code == 403
 
     if response.code >= 500
       puts "Blizzard's server returned an error. Retrying... #{depth + 1}/10"
@@ -26,8 +27,8 @@ module RBattlenet
     true
   end
 
-  def self.set_options(region: @@region, namespace: @@namespace, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout, retries: @@retries, eager_children: @@eager_children)
-    @@region, @@namespace, @@locale, @@response_type, @@concurrency, @@timeout, @@retries, @@eager_children = (region || "eu"), namespace, locale, response_type, concurrency, timeout, retries, eager_children
+  def self.set_options(region: @@region, namespace: @@namespace, locale: @@locale, response_type: @@response_type, concurrency: @@concurrency, timeout: @@timeout, retries: @@retries, eager_children: @@eager_children, token: @@token)
+    @@region, @@namespace, @@locale, @@response_type, @@concurrency, @@timeout, @@retries, @@eager_children, @@token = (region || "eu"), namespace, locale, response_type, concurrency, timeout, retries, eager_children, token
     true
   end
 
