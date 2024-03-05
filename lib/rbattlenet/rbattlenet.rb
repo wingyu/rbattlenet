@@ -14,7 +14,7 @@ module RBattlenet
       body: { grant_type: :client_credentials },
       userpwd: "#{client_id}:#{client_secret}",
     )
-    raise RBattlenet::Errors::Unauthorized.new if response.code == 401 || response.code == 403
+    raise RBattlenet::Errors::Unauthorized.new if response.code == 401
 
     if response.code >= 500
       puts "Blizzard's server returned an error. Retrying... #{depth + 1}/10"
