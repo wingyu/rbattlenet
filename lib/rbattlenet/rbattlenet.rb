@@ -14,7 +14,7 @@ module RBattlenet
       body: { grant_type: :client_credentials },
       userpwd: "#{client_id}:#{client_secret}",
     )
-    raise RBattlenet::Errors::Unauthorized.new if response.code == 401
+    raise RBattlenet::Errors::Unauthorized.new if response.code == 401 || response.code == 403
 
     if response.code >= 500
       puts "Blizzard's server returned an error. Retrying... #{depth + 1}/10"
@@ -22,7 +22,6 @@ module RBattlenet
       raise RBattlenet::Errors::RemoteServerError.new
     end
 
-    puts response.body
     @@token = Oj.load(response.body)['access_token']
     true
   end
