@@ -8,6 +8,10 @@ module RBattlenet
       def self.index_path
         RBattlenet.uri("data/wow/connected-realm/index?namespace=dynamic-")
       end
+
+      def self.search_path
+        RBattlenet.uri("data/wow/search/connected-realm?namespace=dynamic-")
+      end
     end
   end
 end
