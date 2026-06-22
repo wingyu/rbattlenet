@@ -30,6 +30,8 @@ module RBattlenet
       request = Typhoeus::Request.new(Addressable::URI.parse(uri).normalize.to_s, headers: @headers, timeout: RBattlenet.option(:timeout), connecttimeout: RBattlenet.option(:timeout))
 
       request.on_complete do |response|
+        RBattlenet.notify_response(response)
+
         if RBattlenet.option(:retries) > 0 && (@retried[uri] || 0) < RBattlenet.option(:retries) && ((response.code != 200 && response.timed_out?) || response.code == 429)
           @retried[uri] = (@retried[uri] || 0) + 1
           @hydra.queue response.request

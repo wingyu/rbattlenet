@@ -7,6 +7,19 @@ module RBattlenet
   @@timeout = 120
   @@retries = 0
   @@eager_children = false
+  @@on_response = nil
+
+  # Register an optional callback invoked for every completed HTTP response
+  # (including retries). Used by consumers for instrumentation; kept dependency-free.
+  def self.on_response(&block)
+    @@on_response = block
+  end
+
+  def self.notify_response(response)
+    @@on_response.call(response) if @@on_response
+  rescue StandardError
+    # Never let instrumentation break a request.
+  end
 
   #Set Access Token for requests. Required
   def self.authenticate(client_id:, client_secret:, depth: 0)
